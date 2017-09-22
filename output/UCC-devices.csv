@@ -1,0 +1,123 @@
+192.168.61.255||||23|
+192.168.61.255||||80|
+192.168.61.255||||443|||
+192.168.61.31||||22|
+192.168.61.31||||80|cpe:/o:vmware:esxi
+192.168.61.31||||443|cpe:/o:vmware:esxi|commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US|2025-10-16
+192.168.61.19||||22|cpe:/h:hp:integrated_lights-out
+192.168.61.19||||80|cpe:/h:hp:integrated_lights-out:1.30
+192.168.61.19||||443|cpe:/h:hp:integrated_lights-out:1.30|commonName=UCC-VMHOSTDR1-i/organizationName=Hewlett-Packard Company/stateOrProvinceName=Texas/countryName=US|2029-01-13
+192.168.61.11||||22|
+192.168.61.11||||80|cpe:/h:dell:idrac6
+192.168.61.11||||443|cpe:/h:dell:idrac6|commonName=iDRAC6 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2023-01-01
+192.168.61.0||||23|
+192.168.61.0||||80|
+192.168.61.0||||443|||
+192.168.61.2||||23|
+192.168.61.2||||80|
+192.168.61.2||||443|cpe:/h:linksys:srw2024||
+192.168.61.3||||23|
+192.168.61.3||||80|
+192.168.61.3||||443|cpe:/h:linksys:srw2024||
+192.168.65.1||||22|cpe:/o:cisco:ios
+192.168.61.10||||22|cpe:/h:hp:integrated_lights-out
+192.168.61.10||||80|cpe:/h:hp:integrated_lights-out:1.30
+192.168.61.10||||443|cpe:/h:hp:integrated_lights-out:1.30|commonName=UCC-BACKUPDRilo/organizationName=Hewlett-Packard Company/stateOrProvinceName=Texas/countryName=US|2029-04-23
+192.168.61.100|ucc-vcenterdr.national.ucc|||22|
+192.168.61.100|ucc-vcenterdr.national.ucc|||80|cpe:/o:vmware:esxi
+192.168.61.100|ucc-vcenterdr.national.ucc|||443|cpe:/o:vmware:esxi|commonName=VMware default certificate/organizationName=VMware, Inc.|2024-04-18
+192.168.59.1||||22|
+192.168.59.1||||23|
+192.168.61.29||||22|cpe:/h:hp:integrated_lights-out
+192.168.61.29||||80|cpe:/h:hp:integrated_lights-out:1.30
+192.168.61.29||||443|cpe:/h:hp:integrated_lights-out:1.30|commonName=UCC-VMHOSTDR2-i/organizationName=Hewlett-Packard Company/stateOrProvinceName=Texas/countryName=US|2029-04-15
+192.168.61.22||||22|cpe:/h:hp:integrated_lights-out
+192.168.61.22||||80|cpe:/h:hp:integrated_lights-out:1.30
+192.168.61.22||||443|cpe:/h:hp:integrated_lights-out:1.30|commonName=UUC-MAIL-iLO/organizationName=Hewlett-Packard Company/stateOrProvinceName=Texas/countryName=US|2029-04-15
+192.168.61.21||||22|
+192.168.61.21||||80|cpe:/o:vmware:esxi
+192.168.61.21||||443|cpe:/o:vmware:esxi|commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US|2025-05-29
+192.168.61.20||||22|
+192.168.61.20||||80|cpe:/o:vmware:esxi
+192.168.61.20||||443|cpe:/o:vmware:esxi|commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US|2025-05-29
+192.168.59.2||||23|cpe:/o:cisco:ios
+192.168.60.2||||22|cpe:/o:cisco:ios
+192.168.61.30||||22|
+192.168.61.30||||80|cpe:/o:vmware:esxi
+192.168.61.30||||443|cpe:/o:vmware:esxi|commonName=localhost.localdomain/organizationName=VMware, Inc/stateOrProvinceName=California/countryName=US|2025-10-16
+192.168.50.254||00:1D:70:FE:F5:3F|Cisco Systems|22|cpe:/o:cisco:ios
+192.168.48.60||00:50:56:9B:56:E1|VMware|22|
+192.168.48.60||00:50:56:9B:56:E1|VMware|80|
+192.168.48.60||00:50:56:9B:56:E1|VMware|443||commonName=monitor.national.ucc/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--|2018-08-02
+192.168.48.78|vmhost3.national.ucc|18:66:DA:80:75:E3||22|
+192.168.48.78|vmhost3.national.ucc|18:66:DA:80:75:E3||80|cpe:/o:vmware:esxi
+192.168.48.78|vmhost3.national.ucc|18:66:DA:80:75:E3||443|cpe:/o:vmware:esxi|commonName=vmhost3.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-11-21
+192.168.48.81|drac-john.national.ucc|D4:BE:D9:AF:D5:C8|Dell|22|
+192.168.48.81|drac-john.national.ucc|D4:BE:D9:AF:D5:C8|Dell|80|cpe:/h:dell:idrac6
+192.168.48.81|drac-john.national.ucc|D4:BE:D9:AF:D5:C8|Dell|443|cpe:/h:dell:idrac6|commonName=iDRAC6 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2023-01-01
+192.168.48.84||00:50:56:63:1A:E6|VMware|22|
+192.168.48.84||00:50:56:63:1A:E6|VMware|80|cpe:/o:vmware:esxi
+192.168.48.84||00:50:56:63:1A:E6|VMware|443|cpe:/o:vmware:esxi|commonName=vmhost1.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-10-26
+192.168.48.111|pcns.national.ucc|00:50:56:9B:03:4F|VMware|22|
+192.168.48.86||00:50:56:6E:AD:FB|VMware|22|
+192.168.48.86||00:50:56:6E:AD:FB|VMware|80|cpe:/o:vmware:esxi
+192.168.48.86||00:50:56:6E:AD:FB|VMware|443|cpe:/o:vmware:esxi|commonName=vmhost2.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-11-02
+192.168.48.133|ucc-backup1drac.national.ucc|5C:F9:DD:F4:BF:17|Dell|22|
+192.168.48.133|ucc-backup1drac.national.ucc|5C:F9:DD:F4:BF:17|Dell|80|
+192.168.48.133|ucc-backup1drac.national.ucc|5C:F9:DD:F4:BF:17|Dell|443||commonName=iDRAC7 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2021-06-04
+192.168.48.1||00:1D:70:FE:F5:3F|Cisco Systems|22|cpe:/o:cisco:ios
+192.168.48.236||00:1F:9D:57:7F:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.251||00:A0:C8:A4:FE:56|Adtran|22|
+192.168.48.251||00:A0:C8:A4:FE:56|Adtran|23|
+192.168.48.252||C4:7D:4F:85:10:4B|Cisco Systems|22|cpe:/o:cisco:ios
+192.168.48.239||00:22:55:2C:CF:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.237||00:22:55:08:02:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.15|ucc-bkws-drac.national.ucc|E0:DB:55:01:81:56|Dell|22|
+192.168.48.15|ucc-bkws-drac.national.ucc|E0:DB:55:01:81:56|Dell|80|
+192.168.48.15|ucc-bkws-drac.national.ucc|E0:DB:55:01:81:56|Dell|443||commonName=iDRAC7 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2021-06-04
+192.168.48.14|ucc-bkws.national.ucc|E0:DB:55:01:C8:E5|Dell|23|
+192.168.48.14|ucc-bkws.national.ucc|E0:DB:55:01:C8:E5|Dell|80|cpe:/o:microsoft:windows
+192.168.48.77||18:66:DA:6D:C6:4B||22|
+192.168.48.77||18:66:DA:6D:C6:4B||80|
+192.168.48.77||18:66:DA:6D:C6:4B||443||commonName=idrac-3J8MSD2/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2026-10-15
+192.168.48.75||18:66:DA:6D:BD:02||22|
+192.168.48.75||18:66:DA:6D:BD:02||80|
+192.168.48.75||18:66:DA:6D:BD:02||443||commonName=idrac-3J8LSD2/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2026-10-15
+192.168.48.74|vmhost1.national.ucc|18:66:DA:6D:BC:FE||22|
+192.168.48.74|vmhost1.national.ucc|18:66:DA:6D:BC:FE||80|cpe:/o:vmware:esxi
+192.168.48.74|vmhost1.national.ucc|18:66:DA:6D:BC:FE||443|cpe:/o:vmware:esxi|commonName=vmhost1.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-10-26
+192.168.48.76|vmhost2.national.ucc|18:66:DA:6D:C6:47||22|
+192.168.48.76|vmhost2.national.ucc|18:66:DA:6D:C6:47||80|cpe:/o:vmware:esxi
+192.168.48.76|vmhost2.national.ucc|18:66:DA:6D:C6:47||443|cpe:/o:vmware:esxi|commonName=vmhost2.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-11-02
+192.168.48.71|drac-dc1.national.ucc|78:2B:CB:73:22:31|Dell|22|
+192.168.48.71|drac-dc1.national.ucc|78:2B:CB:73:22:31|Dell|80|cpe:/h:dell:idrac6
+192.168.48.71|drac-dc1.national.ucc|78:2B:CB:73:22:31|Dell|443|cpe:/h:dell:idrac6|commonName=iDRAC6 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2023-01-01
+192.168.48.42|ucc-ccre.national.ucc|00:50:56:9B:0D:21|VMware|22|
+192.168.48.42|ucc-ccre.national.ucc|00:50:56:9B:0D:21|VMware|80|
+192.168.48.42|ucc-ccre.national.ucc|00:50:56:9B:0D:21|VMware|443||commonName=opmantek.local/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--|2017-05-23
+192.168.48.79||18:66:DA:80:75:E7||22|
+192.168.48.79||18:66:DA:80:75:E7||80|
+192.168.48.79||18:66:DA:80:75:E7||443||commonName=idrac-7YN3ND2/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2026-11-18
+192.168.48.238||00:22:55:06:15:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.100|ucc-vcenter.national.ucc|00:50:56:9B:78:B2|VMware|22|
+192.168.48.100|ucc-vcenter.national.ucc|00:50:56:9B:78:B2|VMware|80|cpe:/o:vmware:esxi
+192.168.48.100|ucc-vcenter.national.ucc|00:50:56:9B:78:B2|VMware|443|cpe:/o:vmware:esxi|commonName=VMware default certificate/organizationName=VMware, Inc.|2023-02-03
+192.168.48.243||00:1F:9E:84:CF:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.253||F4:AC:C1:C9:8B:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.253||F4:AC:C1:C9:8B:40|Cisco Systems|80|cpe:/o:cisco:ios
+192.168.48.69||00:1B:4D:41:BE:64|Areca Technology|23|
+192.168.48.69||00:1B:4D:41:BE:64|Areca Technology|80|
+192.168.54.1||00:1D:70:FE:F5:3F|Cisco Systems|22|cpe:/o:cisco:ios
+192.168.48.247||00:22:0C:DE:5B:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.246||00:22:0D:50:E2:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.245||00:22:0D:50:DE:C0|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.244||00:21:D7:33:E1:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.242||00:21:D7:D5:41:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.241||00:22:55:2C:C4:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.240||00:22:0C:E6:18:40|Cisco Systems|23|cpe:/o:cisco:ios
+192.168.48.88||00:50:56:6B:41:05|VMware|22|
+192.168.48.88||00:50:56:6B:41:05|VMware|80|cpe:/o:vmware:esxi
+192.168.48.88||00:50:56:6B:41:05|VMware|443|cpe:/o:vmware:esxi|commonName=vmhost3.national.ucc/organizationName=VMware/stateOrProvinceName=California/countryName=US|2021-11-21
+192.168.48.56|ucc-wsus-01.national.ucc|90:B1:1C:11:FC:87|Dell|22|
+192.168.48.56|ucc-wsus-01.national.ucc|90:B1:1C:11:FC:87|Dell|80|
+192.168.48.56|ucc-wsus-01.national.ucc|90:B1:1C:11:FC:87|Dell|443||commonName=iDRAC7 default certificate/organizationName=Dell Inc./stateOrProvinceName=Texas/countryName=US|2021-06-04

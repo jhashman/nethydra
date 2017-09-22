@@ -1,0 +1,1048 @@
+: Saved
+: 
+: Serial Number: JMX1416L2CV
+: Hardware:   ASA5510, 1024 MB RAM, CPU Pentium 4 Celeron 1600 MHz
+:
+ASA Version 9.1(6)11 
+!
+hostname uccfw02
+domain-name national.ucc
+enable password DPBzP588uSJxD68Z encrypted
+xlate per-session deny tcp any4 any6
+xlate per-session deny tcp any6 any4
+xlate per-session deny tcp any6 any6
+xlate per-session deny udp any4 any6 eq domain
+xlate per-session deny udp any6 any4 eq domain
+xlate per-session deny udp any6 any6 eq domain
+passwd 2KFQnbNIdI.2KYOU encrypted
+no names
+name 192.168.50.100 CNKT051 description UCC-IB
+name 192.168.50.78 S10F6D4F description UCC-IB
+name 192.168.50.1 ntserver description UCC-IB
+name 192.168.48.50 VC_CLE_1 description Cleveland Video Conference Unit
+name 192.168.49.0 Wireless description Wireless DHCP
+name 192.168.54.92 HazardStreaming description Web Streaming PC
+name 192.168.48.36 UCC-RES-01
+name 65.105.56.2 WASHINGTON
+name 68.165.123.98 UCCIB
+name 198.17.225.62 Rigel
+name 192.168.48.0 UCC-CLE
+name 132.131.0.0 UCC-BEREA
+name 132.132.0.0 UCC-CLE-OLD
+name 192.168.1.0 UCC-CLE-VPN
+name 10.10.10.0 UCC-DC
+name 192.168.48.17 UCC-EXC-02
+name 10.0.1.0 UCC-CLE-VOIP description CLE Voice Network
+name 10.0.3.0 UCC-DC-VOIP description Washington Voice Network
+name 192.168.48.42 UCC-CCRE description Convio Connector to RE
+name 172.18.24.0 PB-CLE-NET description Pension Board Cleveland network
+name 172.18.8.0 PB-NY-NET description Pension Board New York network
+name 192.168.48.38 UCC-DOCSCANNER
+name 172.18.24.6 UCC-DOCSCANNER-NAT
+name 172.18.24.7 CP-5E-C500-NAT
+name 192.168.48.23 UCC-EXC-01
+name 208.70.233.24 WILLIS
+name 192.168.48.44 ArchivesResCarta
+name 172.30.251.0 UCC-VPNTEST
+name 192.168.49.45 CP-5E-C500 description 5th Floor Copier
+name 192.168.48.14 UCC-BWKS description Elan (New Bookworks) Inside Address
+name 192.168.48.70 UCC-DC1
+name 74.220.145.9 MSG description Media Services Group
+name 12.226.150.242 RAISERS-EDGE
+name 12.226.150.245 vccle1 description Cleveland Video Conference Unit
+name 12.226.150.246 MAIL.UCC.ORG
+name 12.226.150.247 ElanPublic description Elan (New Bookworks) Public NAT
+name 12.226.150.248 ResCarta description Archives Server
+dns-guard
+ip local pool vpnpoolNEW 172.30.251.1-172.30.251.254 mask 255.255.255.0
+ip local pool vpnpool 192.168.1.1-192.168.1.254 mask 255.255.255.0
+!
+interface Ethernet0/0
+ nameif outside
+ security-level 0
+ ip address 12.226.150.182 255.255.255.252 
+!
+interface Ethernet0/1
+ nameif inside
+ security-level 100
+ ip address 192.168.48.252 255.255.254.0 
+!
+interface Ethernet0/2
+ nameif DMZ
+ security-level 0
+ ip address 10.10.10.1 255.255.255.0 
+!
+interface Ethernet0/3
+ nameif pb_dmz
+ security-level 10
+ ip address 172.18.24.5 255.255.248.0 
+!
+interface Management0/0
+ management-only
+ nameif management
+ security-level 100
+ no ip address
+!
+banner motd WARNING!!!
+banner motd This system is solely for the use of authorized users for official purposes.
+banner motd You have no expectation of privacy in its use and to ensure that the system
+banner motd is functioning properly, individuals using this computer system are subject
+banner motd to having all of their activities monitored and recorded by system
+banner motd personnel. Use of this system evidences an express consent to such
+banner motd monitoring and agreement that if such monitoring reveals evidence of
+banner motd possible abuse or criminal activity, system personnel may provide the
+banner motd results of such monitoring to appropriate officials.
+boot system disk0:/asa916-11-k8-guest.bin
+ftp mode passive
+clock timezone EST -5
+clock summer-time EDT recurring
+dns domain-lookup inside
+dns server-group DefaultDNS
+ name-server 192.168.48.106
+ name-server 192.168.48.105
+ domain-name national.ucc
+object network UCC-CLE
+ subnet 192.168.48.0 255.255.254.0
+ description Created during name migration
+object network UCC-BEREA
+ subnet 132.131.0.0 255.255.0.0
+ description Created during name migration
+object network UCC-CLE-VOIP
+ subnet 10.0.1.0 255.255.255.0
+ description Created during name migration
+object network Wireless
+ subnet 192.168.49.0 255.255.255.0
+ description Created during name migration
+object network UCC-CLE_1
+ subnet 192.168.48.0 255.255.248.0
+ description Created during name migration
+object network UCC-DC-VOIP
+ subnet 10.0.3.0 255.255.255.0
+ description Created during name migration
+object network UCC-CLE-OLD
+ subnet 132.132.0.0 255.255.0.0
+ description Created during name migration
+object network UCC-CLE-VPN
+ subnet 192.168.1.0 255.255.255.0
+ description Created during name migration
+object network UCC-EXC-01
+ host 192.168.48.23
+ description Created during name migration
+object network UCC-EXC-02
+ host 192.168.48.17
+ description Created during name migration
+object network UCC-DOCSCANNER-NAT
+ host 172.18.24.6
+ description Created during name migration
+object network CP-5E-C500-NAT
+ host 172.18.24.7
+ description Created during name migration
+object network UCC-DOCSCANNER
+ host 192.168.48.38
+ description Created during name migration
+object network UCC-VPNTEST
+ subnet 172.30.251.0 255.255.255.0
+object network obj-192.168.50.0
+ subnet 192.168.50.0 255.255.255.0
+object network obj-170.30.188.0
+ subnet 170.30.188.0 255.255.254.0
+object network UCC-CLE-01
+ subnet 192.168.48.0 255.255.248.0
+object network obj-10.0.0.0
+ subnet 10.0.0.0 255.0.0.0
+object network obj-10.120.32.0
+ subnet 10.120.32.0 255.255.255.0
+object network UCC-DC
+ subnet 10.10.10.0 255.255.255.0
+object network PB-NY-NET
+ subnet 172.18.8.0 255.255.248.0
+object network obj-192.168.75.0
+ subnet 192.168.75.0 255.255.255.0
+object network Rigel
+ host 198.17.225.62
+object network obj-192.168.56.0
+ subnet 192.168.56.0 255.255.255.252
+object network obj-192.168.56.4
+ subnet 192.168.56.4 255.255.255.252
+object network obj-10.0.1.1
+ host 10.0.1.1
+object network obj-192.168.59.0
+ subnet 192.168.59.0 255.255.255.0
+object network obj-10.0.3.1
+ host 10.0.3.1
+object network obj-192.168.57.0
+ subnet 192.168.57.0 255.255.255.0
+object network obj-192.168.0.0
+ subnet 192.168.0.0 255.255.0.0
+object network HazardStreaming
+ host 192.168.54.92
+object network ArchivesResCarta
+ host 192.168.48.44
+object network ResCarta
+ host 12.226.150.248
+object network ntserver
+ host 192.168.50.1
+object network S10F6D4F
+ host 192.168.50.78
+object network VC_CLE_1
+ host 192.168.48.50
+object network vccle1
+ host 12.226.150.245
+object network CNKT051
+ host 192.168.50.100
+object network obj-192.168.48.33
+ host 192.168.48.33
+object network obj-192.168.48.34
+ host 192.168.48.34
+object network obj-192.168.48.63
+ host 192.168.48.63
+object network RAISERS-EDGE
+ host 12.226.150.242
+object network obj-192.168.49.168
+ host 192.168.49.168
+object network obj-192.168.48.95
+ host 192.168.48.95
+object network MAIL.UCC.ORG
+ host 12.226.150.246
+object network UCC-CCRE
+ host 192.168.48.42
+object network CONVIO-CONNECTOR.UCC.ORG
+ host 12.217.124.52
+object network CP-5E-C500
+ host 192.168.49.45
+object network obj-192.168.48.43
+ host 192.168.48.43
+object network PICPhotos
+ host 12.217.124.53
+object network UCC-BWKS
+ host 192.168.48.14
+object network ElanPublic
+ host 12.226.150.247
+object network obj-192.168.50.112
+ host 192.168.50.112
+object network obj_any
+ subnet 0.0.0.0 0.0.0.0
+object network UCC-DC1
+ host 192.168.48.70
+ description Created during name migration
+object network MSG
+ host 74.220.145.9
+ description Created during name migration
+object network PB-CLE-NET
+ subnet 172.18.24.0 255.255.248.0
+ description Created during name migration
+object network obj-192.168.48.72
+ host 192.168.48.72
+object network obj-192.168.48.70
+ host 192.168.48.70
+object network obj-10.212.21.0
+ subnet 10.212.21.0 255.255.255.0
+object network obj-192.168.48.39
+ host 192.168.48.39
+object network obj-192.168.48.57
+ host 192.168.48.57
+object network obj-192.168.48.23
+ host 192.168.48.23
+object network obj-192.168.60.0
+ subnet 192.168.60.0 255.255.255.0
+object network obj-192.168.54.0
+ subnet 192.168.54.0 255.255.255.0
+object network obj-172.16.0.0
+ subnet 172.16.0.0 255.255.255.0
+object network obj-172.16.0.102
+ host 172.16.0.102
+object network obj-172.16.0.103
+ host 172.16.0.103
+object network obj-192.168.48.62
+ host 192.168.48.62
+object-group network Local-Nets
+ description Internal networks
+ network-object object UCC-CLE
+ network-object 192.168.51.0 255.255.255.0
+ network-object 192.168.50.0 255.255.255.0
+ network-object 192.168.54.0 255.255.254.0
+ network-object object UCC-BEREA
+ network-object 192.168.59.0 255.255.255.0
+ network-object 192.168.58.0 255.255.255.0
+ network-object object UCC-CLE-VOIP
+object-group service Outbound-TCP tcp
+ description TCP Packets allowed out
+ port-object range 3389 3389
+ port-object eq echo
+ port-object eq www
+ port-object eq telnet
+ port-object eq ssh
+ port-object eq https
+ port-object eq ftp
+ port-object eq pcanywhere-data
+ port-object range 1024 65535
+ port-object eq ftp-data
+object-group service Outbound-UDP udp
+ description UDP packets allowed out
+ port-object eq pcanywhere-status
+ port-object eq domain
+ port-object range 33430 33500
+ port-object eq ntp
+ port-object eq snmptrap
+ port-object eq tftp
+object-group icmp-type Outbound-ICMP
+ icmp-object echo
+ icmp-object echo-reply
+ icmp-object time-exceeded
+ icmp-object traceroute
+ icmp-object unreachable
+object-group service VPN-UDP udp
+ description VPN protocols allowed out
+ port-object eq 4500
+ port-object eq isakmp
+object-group network OpenIP
+ description Internal hosts without inside limitations
+ network-object 192.168.51.0 255.255.255.0
+ network-object object Wireless
+ network-object host 192.168.48.30
+ network-object host 192.168.49.126
+ network-object host 192.168.49.133
+object-group icmp-type Inbound-ICMP
+ icmp-object echo-reply
+ icmp-object time-exceeded
+ icmp-object unreachable
+object-group network Local-Nets_2
+ description Internal networks
+ network-object object UCC-CLE_1
+ network-object object UCC-BEREA
+ network-object 192.168.56.0 255.255.255.252
+ network-object object UCC-CLE-VOIP
+ network-object 192.168.56.4 255.255.255.252
+ network-object 192.168.59.0 255.255.255.0
+ network-object object UCC-DC-VOIP
+ network-object object UCC-CLE-OLD
+ network-object object UCC-CLE-VPN
+object-group network Mail-Svrs
+ description Internal mail hosts
+ network-object object UCC-EXC-01
+ network-object object UCC-EXC-02
+object-group service Outbound-Mail tcp
+ port-object eq pop3
+ port-object eq smtp
+object-group network Mail-Clients
+ description Clients allowed to send mail
+ network-object host 192.168.49.130
+ network-object host 192.168.49.131
+ network-object host 192.168.49.132
+ network-object host 192.168.49.133
+ network-object host 192.168.49.134
+ network-object host 192.168.49.135
+ network-object host 192.168.49.136
+ network-object host 192.168.49.137
+ network-object host 192.168.49.138
+ network-object host 192.168.49.139
+ network-object host 192.168.49.140
+object-group network Postini
+ network-object 64.18.0.0 255.255.240.0
+object-group network TCS-Monitored-Nets
+ network-object object UCC-BEREA
+ network-object object UCC-CLE_1
+ network-object 192.168.56.0 255.255.255.252
+ network-object 192.168.59.0 255.255.255.0
+object-group network ConvioConnect
+ description Convio Connector to RE
+ network-object 209.163.168.192 255.255.255.192
+ network-object 66.45.103.0 255.255.255.128
+ network-object 69.48.252.128 255.255.255.128
+ network-object 198.17.225.0 255.255.255.0
+object-group network PB-Allowed
+ description Internal hosts Pension Board can access
+ network-object object UCC-DOCSCANNER-NAT
+ network-object object CP-5E-C500-NAT
+object-group icmp-type DM_INLINE_ICMP_1
+ icmp-object echo
+ icmp-object echo-reply
+object-group network PB-Allowed_2
+ network-object object UCC-DOCSCANNER
+ network-object object CP-5E-C500-NAT
+access-list inside_access_in extended permit tcp host 192.168.48.23 any eq smtp 
+access-list inside_access_in extended deny tcp any any eq smtp 
+access-list inside_access_in extended permit ip object-group OpenIP any4 
+access-list inside_access_in extended permit tcp object-group Local-Nets any4 object-group Outbound-TCP 
+access-list inside_access_in extended permit udp object-group Local-Nets any4 object-group Outbound-UDP 
+access-list inside_access_in extended permit icmp object-group Local-Nets any4 object-group Outbound-ICMP 
+access-list inside_access_in extended permit udp object-group Local-Nets any4 object-group VPN-UDP 
+access-list inside_access_in extended permit esp object-group Local-Nets any4 
+access-list inside_access_in extended permit tcp any4 any4 eq 1194 
+access-list inside_access_in remark Video Conference out
+access-list inside_access_in extended permit ip object VC_CLE_1 any4 
+access-list inside_access_in remark WashDC Video Conference Out
+access-list inside_access_in extended permit ip host 192.168.59.50 any4 
+access-list inside_access_in remark Archives ResCarta Server
+access-list inside_access_in extended permit ip object ArchivesResCarta any4 
+access-list inside_access_in remark PIC Photo Server
+access-list inside_access_in extended permit ip host 192.168.48.43 any4 
+access-list inside_access_in remark LifeSize Video protocols
+access-list inside_access_in extended permit tcp any4 eq h323 any4 
+access-list inside_access_in remark LifeSize Video protocols
+access-list inside_access_in extended permit tcp any4 range sip 5061 any4 
+access-list inside_access_in remark LifeSize Video protocols
+access-list inside_access_in extended permit tcp any4 range 60000 64999 any4 
+access-list inside_access_in extended permit ip any4 any4 log errors 
+access-list nonat extended permit ip 192.168.50.0 255.255.255.0 170.30.188.0 255.255.254.0 
+access-list nonat extended permit ip object UCC-CLE_1 object UCC-CLE-VPN 
+access-list nonat extended permit ip object UCC-CLE_1 object UCC-VPNTEST 
+access-list nonat extended permit ip 192.168.50.0 255.255.255.0 10.0.0.0 255.0.0.0 
+access-list nonat extended permit ip 192.168.50.0 255.255.255.0 10.120.32.0 255.255.255.0 
+access-list nonat extended permit ip object UCC-CLE_1 object UCC-DC 
+access-list nonat extended permit ip object UCC-CLE_1 object PB-NY-NET 
+access-list nonat extended permit ip object UCC-CLE_1 192.168.75.0 255.255.255.0 
+access-list nonat extended permit ip object UCC-CLE-OLD object UCC-DC 
+access-list nonat extended permit ip object UCC-BEREA object UCC-DC 
+access-list nonat extended permit ip object UCC-CLE_1 object Rigel 
+access-list nonat extended permit ip object UCC-BEREA object Rigel 
+access-list nonat extended permit ip 192.168.56.0 255.255.255.252 object Rigel 
+access-list nonat extended permit ip object UCC-CLE-VOIP object UCC-CLE-VPN 
+access-list nonat extended permit ip 192.168.56.4 255.255.255.252 object Rigel 
+access-list nonat extended permit ip host 10.0.1.1 object Rigel 
+access-list nonat extended permit ip 192.168.59.0 255.255.255.0 object Rigel 
+access-list nonat extended permit ip host 10.0.3.1 object Rigel 
+access-list nonat extended permit ip object UCC-CLE_1 192.168.57.0 255.255.255.0 
+access-list nonat extended permit ip object Rigel 192.168.57.0 255.255.255.0 
+access-list nonat extended permit ip 192.168.0.0 255.255.0.0 object UCC-VPNTEST 
+access-list CSC_Tunnel extended permit ip 192.168.50.0 255.255.255.0 170.30.188.0 255.255.254.0 
+access-list vpngroup_splitTunnelAcl standard permit host 192.168.50.78 
+access-list vpngroup_splitTunnelAcl standard permit host 192.168.50.1 
+access-list outside_cryptomap_40 extended permit ip object UCC-CLE_1 object UCC-DC 
+access-list outside_cryptomap_40 extended permit ip object UCC-CLE-OLD object UCC-DC 
+access-list outside_cryptomap_40 extended permit ip object UCC-BEREA object UCC-DC 
+access-list outside_100_cryptomap extended permit ip object UCC-CLE_1 192.168.75.0 255.255.255.0 
+access-list outside_120_cryptomap extended permit ip object UCC-CLE_1 192.168.75.0 255.255.255.0 
+access-list TCS-Sel extended permit ip object UCC-CLE_1 object Rigel 
+access-list TCS-Sel extended permit ip object UCC-BEREA object Rigel 
+access-list TCS-Sel extended permit ip 192.168.56.0 255.255.255.252 object Rigel 
+access-list TCS-Sel extended permit ip 192.168.56.4 255.255.255.252 object Rigel 
+access-list TCS-Sel extended permit ip host 10.0.1.1 object Rigel 
+access-list TCS-Sel extended permit ip 192.168.59.0 255.255.255.0 object Rigel 
+access-list TCS-Sel extended permit ip host 10.0.3.1 object Rigel 
+access-list test extended permit ip object ntserver 10.120.32.0 255.255.255.0 
+access-list UCC_IB-PET-Sel extended permit ip object UCC-CLE_1 192.168.57.0 255.255.255.0 
+access-list UCC_IB-PET-Sel extended permit ip object Rigel 192.168.57.0 255.255.255.0 
+access-list Berea_Split extended permit ip object UCC-CLE_1 object UCC-CLE-VPN 
+access-list willis_sel extended permit ip 192.168.50.0 255.255.255.0 10.0.0.0 255.0.0.0 
+access-list Full_Split_Tunnel_ACL standard permit 192.168.48.0 255.255.248.0 
+access-list capin extended permit tcp any4 any4 eq 16471 
+access-list capin extended permit tcp any4 any4 eq 16470 
+access-list Cornerstone_VPN standard permit host 192.168.48.70 
+access-list Cornerstone_VPN standard permit host 192.168.48.72 
+access-list Cornerstone_VPN standard permit host 192.168.60.3 
+access-list Cornerstone_VPN standard permit host 192.168.60.4 
+access-list Cornerstone_VPN standard permit host 192.168.48.23 
+access-list Cornerstone_VPN_filter extended permit tcp any4 object UCC-DC1 eq domain 
+access-list Cornerstone_VPN_filter extended permit tcp any4 host 192.168.48.72 eq domain 
+access-list Cornerstone_VPN_filter extended permit ip any4 host 192.168.60.3 
+access-list Cornerstone_VPN_filter extended permit ip any4 host 192.168.60.4 
+access-list Cornerstone_VPN_filter extended permit udp any4 host 192.168.48.72 eq domain 
+access-list Cornerstone_VPN_filter extended permit udp any4 object UCC-DC1 eq domain 
+access-list Cornerstone_VPN_filter extended permit ip any host 192.168.48.23 
+access-list testcornerstonevpn extended permit ip object UCC-VPNTEST 192.168.60.0 255.255.255.0 
+access-list testcornerstonevpn extended permit ip 192.168.60.0 255.255.255.0 object UCC-VPNTEST 
+access-list outside_access_in extended deny icmp host 103.14.44.2 any 
+access-list outside_access_in extended deny ip host 103.14.44.2 any 
+access-list outside_access_in extended deny ip host 190.213.250.82 any 
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq www 
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq https 
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq 8040 
+access-list outside_access_in extended permit ip any4 object VC_CLE_1 
+access-list outside_access_in extended permit tcp any4 object HazardStreaming eq 86 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.33 eq www 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.33 eq https 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.34 eq www 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.34 eq https 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.33 eq ftp 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.33 eq ftp-data 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.63 eq www 
+access-list outside_access_in extended permit tcp any4 host 192.168.49.168 eq www 
+access-list outside_access_in extended permit tcp any4 host 192.168.49.168 eq https 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.95 eq https 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.95 eq www 
+access-list outside_access_in extended permit udp object MSG object UCC-BWKS eq 1604 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 6004 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 6002 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 6001 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 3391 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 1604 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq citrix-ica 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq telnet 
+access-list outside_access_in extended permit udp object MSG object UCC-BWKS eq 5003 
+access-list outside_access_in extended permit tcp object MSG object UCC-BWKS eq 5003 
+access-list outside_access_in remark Archives Server
+access-list outside_access_in extended permit tcp any4 object UCC-EXC-01 eq www 
+access-list outside_access_in extended permit tcp any4 object UCC-EXC-01 eq https 
+access-list outside_access_in remark Insurance Board
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq 8020 
+access-list outside_access_in remark Insurance Board
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq 8030 
+access-list outside_access_in remark Insurance Board
+access-list outside_access_in extended permit tcp any4 object S10F6D4F eq 3059 
+access-list outside_access_in remark Insurance Board
+access-list outside_access_in extended permit tcp any4 object ntserver eq 3389 inactive 
+access-list outside_access_in extended permit icmp any4 any4 object-group Inbound-ICMP 
+access-list outside_access_in extended permit ip object-group ConvioConnect object UCC-CCRE log debugging 
+access-list outside_access_in extended permit icmp any4 object UCC-CCRE object-group DM_INLINE_ICMP_1 log debugging inactive 
+access-list outside_access_in extended permit tcp host 156.77.68.142 any4 eq 2021 
+access-list outside_access_in remark PIC UNIX Photo server
+access-list outside_access_in extended permit ip any4 host 192.168.48.43 
+access-list outside_access_in extended permit tcp 207.211.31.0 255.255.255.128 object UCC-EXC-01 eq smtp 
+access-list outside_access_in extended permit tcp 207.211.30.0 255.255.255.0 object UCC-EXC-01 eq smtp 
+access-list outside_access_in extended permit tcp 205.139.110.0 255.255.255.0 object UCC-EXC-01 eq smtp 
+access-list outside_access_in extended permit tcp 205.139.111.0 255.255.255.0 object UCC-EXC-01 eq smtp 
+access-list outside_access_in extended permit tcp any4 object ArchivesResCarta eq www 
+access-list outside_access_in extended permit tcp any4 host 192.168.50.112 eq https 
+access-list outside_access_in extended permit tcp any4 host 192.168.50.112 eq ssh 
+access-list outside_access_in extended permit tcp any4 host 192.168.50.112 eq 3668 
+access-list outside_access_in extended permit tcp any4 host 192.168.50.112 eq 5869 
+access-list outside_access_in extended permit tcp host 40.118.246.204 host 192.168.48.57 eq 1433 
+access-list outside_access_in extended permit tcp any4 host 192.168.48.62 eq ssh 
+access-list outside_access_in extended deny ip any any log 
+access-list pb_access_in extended permit ip object PB-CLE-NET object-group PB-Allowed_2 
+access-list pb_access_in extended permit ip object PB-CLE-NET object PB-NY-NET 
+access-list pb_access_in extended permit ip 172.18.24.0 255.255.255.0 host 192.168.49.45 
+access-list pb_access_in extended permit ip 172.18.25.0 255.255.255.0 host 192.168.49.45 
+access-list global_mpc extended permit ip any any 
+access-list UCC_IB_VPN_filter extended permit ip 172.30.251.0 255.255.255.0 192.168.50.0 255.255.255.0 
+access-list BlueBridge extended permit ip host 192.168.48.70 10.212.21.0 255.255.255.0 
+access-list BlueBridge extended permit ip host 192.168.48.72 10.212.21.0 255.255.255.0 
+access-list BlueBridge extended permit ip host 192.168.48.39 10.212.21.0 255.255.255.0 
+access-list BlueBridge extended permit ip host 192.168.48.23 10.212.21.0 255.255.255.0 
+access-list TrinergyVPN extended permit ip 192.168.54.0 255.255.255.0 host 172.16.0.103 
+access-list TrinergyVPN extended permit ip 192.168.60.0 255.255.255.0 host 172.16.0.102 
+pager lines 30
+logging enable
+logging timestamp
+logging list DJP level errors
+logging buffer-size 100000
+logging monitor informational
+logging buffered informational
+logging trap informational
+logging asdm informational
+logging from-address administrator@ucc.org
+logging recipient-address patchind@ucc.org level errors
+logging host inside 192.168.48.39
+logging host inside 192.168.48.93
+no logging message 106015
+no logging message 313001
+no logging message 313008
+no logging message 106023
+no logging message 710003
+no logging message 106100
+no logging message 302015
+no logging message 302014
+no logging message 302013
+no logging message 302018
+no logging message 302017
+no logging message 302016
+no logging message 302021
+no logging message 302020
+logging message 106006 level informational
+logging message 106007 level informational
+logging message 106001 level informational
+flow-export destination inside 192.168.48.93 9996
+mtu outside 1500
+mtu inside 1500
+mtu DMZ 1500
+mtu pb_dmz 1500
+mtu management 1500
+ip audit name UCCI info action alarm
+ip audit name UCCA attack action alarm
+ip audit interface outside UCCA
+ip audit interface inside UCCA
+icmp unreachable rate-limit 1 burst-size 1
+icmp permit any echo-reply outside
+icmp permit any time-exceeded outside
+icmp permit any unreachable outside
+icmp permit host 198.17.225.7 outside
+icmp permit any outside
+icmp permit any inside
+icmp permit host 198.17.225.62 inside
+icmp permit any time-exceeded inside
+icmp permit any unreachable inside
+icmp permit any DMZ
+asdm image disk0:/asdm-722.bin
+asdm history enable
+arp timeout 14400
+arp permit-nonconnected
+nat (inside,any) source static obj-192.168.50.0 obj-192.168.50.0 destination static obj-170.30.188.0 obj-170.30.188.0 no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static UCC-CLE-VPN UCC-CLE-VPN no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static UCC-VPNTEST UCC-VPNTEST no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.50.0 obj-192.168.50.0 destination static obj-10.0.0.0 obj-10.0.0.0 no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.50.0 obj-192.168.50.0 destination static obj-10.120.32.0 obj-10.120.32.0 no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static UCC-DC UCC-DC no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static PB-NY-NET PB-NY-NET no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static obj-192.168.75.0 obj-192.168.75.0 no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-OLD UCC-CLE-OLD destination static UCC-DC UCC-DC no-proxy-arp route-lookup
+nat (inside,any) source static UCC-BEREA UCC-BEREA destination static UCC-DC UCC-DC no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static UCC-BEREA UCC-BEREA destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.56.0 obj-192.168.56.0 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-VOIP UCC-CLE-VOIP destination static UCC-CLE-VPN UCC-CLE-VPN no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.56.4 obj-192.168.56.4 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static obj-10.0.1.1 obj-10.0.1.1 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.59.0 obj-192.168.59.0 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static obj-10.0.3.1 obj-10.0.3.1 destination static Rigel Rigel no-proxy-arp route-lookup
+nat (inside,any) source static UCC-CLE-01 UCC-CLE-01 destination static obj-192.168.57.0 obj-192.168.57.0 no-proxy-arp route-lookup
+nat (inside,any) source static Rigel Rigel destination static obj-192.168.57.0 obj-192.168.57.0 no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.0.0 obj-192.168.0.0 destination static UCC-VPNTEST UCC-VPNTEST no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.48.70 obj-192.168.48.70 destination static obj-10.212.21.0 obj-10.212.21.0 no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.48.72 obj-192.168.48.72 destination static obj-10.212.21.0 obj-10.212.21.0 no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.48.39 obj-192.168.48.39 destination static obj-10.212.21.0 obj-10.212.21.0 no-proxy-arp route-lookup
+nat (inside,any) source static obj-192.168.48.23 obj-192.168.48.23 destination static obj-10.212.21.0 obj-10.212.21.0 no-proxy-arp route-lookup
+nat (inside,outside) source static obj-192.168.60.0 obj-192.168.60.0 destination static obj-172.16.0.102 obj-172.16.0.102 no-proxy-arp route-lookup
+nat (inside,outside) source static obj-192.168.54.0 obj-192.168.54.0 destination static obj-172.16.0.103 obj-172.16.0.103 no-proxy-arp route-lookup
+!
+object network UCC-CLE-VOIP
+ nat (outside,outside) dynamic interface
+object network UCC-CLE-VPN
+ nat (outside,outside) dynamic interface
+object network UCC-EXC-01
+ nat (inside,outside) static MAIL.UCC.ORG
+object network UCC-DOCSCANNER
+ nat (inside,pb_dmz) static UCC-DOCSCANNER-NAT
+object network UCC-VPNTEST
+ nat (outside,outside) dynamic interface
+object network HazardStreaming
+ nat (inside,outside) static interface service tcp 86 86 
+object network ArchivesResCarta
+ nat (inside,outside) static ResCarta service tcp www www 
+object network VC_CLE_1
+ nat (inside,outside) static vccle1
+object network obj-192.168.48.33
+ nat (inside,outside) static 12.226.150.240
+object network obj-192.168.48.34
+ nat (inside,outside) static 12.226.150.241
+object network obj-192.168.48.63
+ nat (inside,outside) static RAISERS-EDGE
+object network obj-192.168.49.168
+ nat (inside,outside) static 12.226.150.243
+object network obj-192.168.48.95
+ nat (inside,outside) static 12.226.150.244
+object network CP-5E-C500
+ nat (inside,pb_dmz) static CP-5E-C500-NAT
+object network UCC-BWKS
+ nat (inside,outside) static ElanPublic
+object network obj_any
+ nat (inside,outside) dynamic interface
+object network obj-192.168.48.57
+ nat (inside,outside) static 12.226.150.249 service tcp 1433 1433 
+object network obj-192.168.48.62
+ nat (inside,outside) static 12.226.150.250 service tcp ssh ssh 
+access-group outside_access_in in interface outside
+access-group inside_access_in in interface inside
+access-group pb_access_in in interface pb_dmz
+route outside 0.0.0.0 0.0.0.0 12.226.150.181 1 
+route outside 10.0.0.0 255.0.0.0 12.226.150.181 1 
+route inside 10.0.1.0 255.255.255.0 192.168.48.251 1 
+route inside 10.0.3.0 255.255.255.0 192.168.48.251 1 
+route outside 65.105.56.2 255.255.255.255 12.226.150.181 1 
+route outside 68.165.123.98 255.255.255.255 12.226.150.181 1 
+route outside 71.248.100.234 255.255.255.255 12.226.150.181 1 
+route outside 75.101.46.40 255.255.255.255 12.226.150.181 1 
+route inside 132.131.0.0 255.255.0.0 192.168.48.251 1 
+route inside 132.132.0.0 255.255.0.0 192.168.48.1 1 
+route outside 172.18.8.0 255.255.248.0 12.226.150.181 1 
+route inside 192.168.50.0 255.255.255.0 192.168.48.1 1 
+route inside 192.168.51.0 255.255.255.0 192.168.48.1 1 
+route inside 192.168.54.0 255.255.254.0 192.168.48.1 1 
+route inside 192.168.56.0 255.255.255.252 192.168.48.251 1 
+route inside 192.168.56.4 255.255.255.252 192.168.48.251 1 
+route outside 192.168.57.0 255.255.255.0 12.226.150.181 1 
+route inside 192.168.58.0 255.255.255.0 192.168.48.251 1 
+route inside 192.168.59.0 255.255.255.0 192.168.48.251 1 
+route inside 192.168.60.0 255.255.255.0 192.168.48.1 1 
+route inside 192.168.61.0 255.255.255.0 192.168.48.251 1 
+route inside 192.168.65.0 255.255.255.0 192.168.48.1 1 
+route inside 192.168.66.0 255.255.255.0 192.168.48.251 1 
+route outside 192.168.75.0 255.255.255.0 12.226.150.181 1 
+route outside 198.17.225.7 255.255.255.255 12.226.150.181 1 
+route outside 198.17.225.62 255.255.255.255 12.226.150.181 1 
+route outside 198.17.225.97 255.255.255.255 12.226.150.181 1 
+route outside 208.70.233.24 255.255.255.255 12.226.150.181 1 
+timeout xlate 3:00:00
+timeout pat-xlate 0:00:30
+timeout conn 1:00:00 half-closed 0:10:00 udp 0:02:00 icmp 0:00:02
+timeout sunrpc 0:10:00 h323 0:05:00 h225 1:00:00 mgcp 0:05:00 mgcp-pat 0:05:00
+timeout sip 0:30:00 sip_media 0:02:00 sip-invite 0:03:00 sip-disconnect 0:02:00
+timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+timeout tcp-proxy-reassembly 0:01:00
+timeout floating-conn 0:00:00
+ldap attribute-map UCC_IB_VPN
+  map-name  memberOf Group-Policy
+  map-value memberOf "CN=UCC_IB_VPN,OU=UCCIB,OU=National Offices,DC=national,DC=ucc" UCC_IB_VPN
+dynamic-access-policy-record DfltAccessPolicy
+aaa-server Trend protocol tacacs+
+aaa-server Trend (inside) host 198.17.225.62
+ key *****
+aaa-server MSNT protocol nt
+aaa-server MSNT (inside) host 192.168.48.70
+ nt-auth-domain-controller 192.168.48.70
+aaa-server MSNT (inside) host 192.168.48.72
+aaa-server LDAP protocol ldap
+aaa-server LDAP (inside) host 192.168.48.70
+ server-port 389
+ ldap-base-dn DC=national,DC=ucc
+ ldap-scope subtree
+ ldap-naming-attribute sAMAccountName
+ ldap-login-password *****
+ ldap-login-dn svc_LDAP_ASA@national.ucc
+ server-type microsoft
+ ldap-attribute-map UCC_IB_VPN
+user-identity default-domain LOCAL
+aaa authentication enable console LOCAL 
+aaa authentication ssh console LOCAL 
+aaa authentication http console LOCAL 
+http server enable 8181
+http 192.168.1.0 255.255.255.0 management
+http 0.0.0.0 0.0.0.0 management
+http 0.0.0.0 0.0.0.0 inside
+http 198.17.225.62 255.255.255.255 inside
+http 192.168.48.0 255.255.248.0 inside
+http 192.168.51.0 255.255.255.0 inside
+http 192.168.1.0 255.255.255.0 inside
+http 192.168.54.0 255.255.254.0 inside
+snmp-server group ntst-snmp v3 priv 
+snmp-server user ntst-snmp ntst-snmp v3 encrypted auth sha 89:42:8b:a5:ba:c4:fe:13:0b:63:7b:ad:30:58:c2:9d:9a:7f:6a:14 priv aes 128 89:42:8b:a5:ba:c4:fe:13:0b:63:7b:ad:30:58:c2:9d 
+snmp-server host inside 192.168.48.39 version 3 ntst-snmp
+no snmp-server location
+no snmp-server contact
+snmp-server enable traps snmp authentication linkup linkdown coldstart
+snmp-server enable traps entity config-change
+crypto ipsec ikev1 transform-set strongaes esp-aes-256 esp-sha-hmac 
+crypto ipsec ikev1 transform-set ESP-3DES-SHA esp-3des esp-sha-hmac 
+crypto ipsec ikev1 transform-set ESP-DES-MD5 esp-des esp-md5-hmac 
+crypto ipsec ikev1 transform-set ESP-AES-256-MD5 esp-aes-256 esp-md5-hmac 
+crypto ipsec security-association pmtu-aging infinite
+crypto dynamic-map outside_dyn_map 20 set ikev1 transform-set ESP-3DES-SHA
+crypto map outside_map 22 match address BlueBridge
+crypto map outside_map 22 set peer 74.214.25.155 
+crypto map outside_map 22 set ikev1 transform-set strongaes
+crypto map outside_map 25 match address CSC_Tunnel
+crypto map outside_map 25 set peer 20.137.73.199 
+crypto map outside_map 25 set ikev1 transform-set strongaes
+crypto map outside_map 26 match address UCC_IB-PET-Sel
+crypto map outside_map 26 set peer 75.101.46.40 
+crypto map outside_map 26 set ikev1 transform-set strongaes
+crypto map outside_map 30 match address outside_120_cryptomap
+crypto map outside_map 30 set peer 71.248.100.234 
+crypto map outside_map 30 set ikev1 transform-set strongaes
+crypto map outside_map 40 match address outside_cryptomap_40
+crypto map outside_map 40 set peer 65.105.56.2 
+crypto map outside_map 40 set ikev1 transform-set ESP-DES-MD5
+crypto map outside_map 80 match address willis_sel
+crypto map outside_map 80 set peer 208.70.233.24 
+crypto map outside_map 80 set ikev1 transform-set ESP-AES-256-MD5
+crypto map outside_map 100 match address outside_100_cryptomap
+crypto map outside_map 100 set peer 68.165.123.98 
+crypto map outside_map 100 set ikev1 transform-set ESP-AES-256-MD5
+crypto map outside_map 110 match address TrinergyVPN
+crypto map outside_map 110 set peer 98.100.131.187 209.225.106.50 
+crypto map outside_map 110 set ikev1 transform-set strongaes
+crypto map outside_map 535 ipsec-isakmp dynamic outside_dyn_map
+crypto map outside_map interface outside
+crypto ca trustpoint ASDM_TrustPoint0
+ crl configure
+crypto ca trustpoint ASDM_TrustPoint12
+ keypair ASDM_TrustPoint0
+ crl configure
+crypto ca trustpool policy
+crypto ca certificate chain ASDM_TrustPoint12
+ certificate 00eeb8763b6361295b
+    3082052d 30820415 a0030201 02020900 eeb8763b 6361295b 300d0609 2a864886 
+    f70d0101 0b050030 81b4310b 30090603 55040613 02555331 10300e06 03550408 
+    13074172 697a6f6e 61311330 11060355 0407130a 53636f74 74736461 6c65311a 
+    30180603 55040a13 11476f44 61646479 2e636f6d 2c20496e 632e312d 302b0603 
+    55040b13 24687474 703a2f2f 63657274 732e676f 64616464 792e636f 6d2f7265 
+    706f7369 746f7279 2f313330 31060355 0403132a 476f2044 61646479 20536563 
+    75726520 43657274 69666963 61746520 41757468 6f726974 79202d20 4732301e 
+    170d3136 31323236 31363039 30305a17 0d313830 32323431 39333734 315a3039 
+    3121301f 06035504 0b131844 6f6d6169 6e20436f 6e74726f 6c205661 6c696461 
+    74656431 14301206 03550403 130b7670 6e2e7563 632e6f72 67308201 22300d06 
+    092a8648 86f70d01 01010500 0382010f 00308201 0a028201 0100cf16 076e9534 
+    85d9ad8f 34516a00 47442792 2a0dc404 4dd926c3 4b491444 256742d8 5df1cadd 
+    31bbcf7a 4bbcfe52 b5029494 a4f25f06 86122cd2 05de4dfa 942df6cb 0ddcbf71 
+    5a4f44bb 628f1a16 5d5c8f9c 664a0993 51509a14 9ae96c30 4b8bc16b 02d6fbbd 
+    f4533a04 4a5420e9 dd1235a6 d31799a0 739b4a23 6decc6b8 08ab22d8 89005932 
+    faf6bcbc 0bb76997 8bdd94ff b0ef3379 214d8afa fd7432ef 1dca3c6c 50b1504a 
+    6d9075ba acba3f59 04557f25 8930fb18 32c66e91 49347c69 bd028464 3a11477f 
+    d2a03078 4856da8b 0cc8c191 1b42a64a a427d02c e33df91f e0f39f21 81ca680b 
+    584bd17a dd7ba22f a53691a1 f75b2291 d2118015 84eed90c dc8f0203 010001a3 
+    8201ba30 8201b630 0c060355 1d130101 ff040230 00301d06 03551d25 04163014 
+    06082b06 01050507 03010608 2b060105 05070302 300e0603 551d0f01 01ff0404 
+    030205a0 30370603 551d1f04 30302e30 2ca02aa0 28862668 7474703a 2f2f6372 
+    6c2e676f 64616464 792e636f 6d2f6764 69673273 312d3337 312e6372 6c305d06 
+    03551d20 04563054 3048060b 60864801 86fd6d01 07170130 39303706 082b0601 
+    05050702 01162b68 7474703a 2f2f6365 72746966 69636174 65732e67 6f646164 
+    64792e63 6f6d2f72 65706f73 69746f72 792f3008 06066781 0c010201 30760608 
+    2b060105 05070101 046a3068 30240608 2b060105 05073001 86186874 74703a2f 
+    2f6f6373 702e676f 64616464 792e636f 6d2f3040 06082b06 01050507 30028634 
+    68747470 3a2f2f63 65727469 66696361 7465732e 676f6461 6464792e 636f6d2f 
+    7265706f 7369746f 72792f67 64696732 2e637274 301f0603 551d2304 18301680 
+    1440c2bd 278ecc34 8330a233 d7fb6cb3 f0b42c80 ce302706 03551d11 0420301e 
+    820b7670 6e2e7563 632e6f72 67820f77 77772e76 706e2e75 63632e6f 7267301d 
+    0603551d 0e041604 14846d41 3bf076cb c3cef91e 1511a6fb 908c5203 00300d06 
+    092a8648 86f70d01 010b0500 03820101 0083ca54 c5eb1687 45446ea0 3818c0da 
+    10bebe06 c958979b 4a8309f8 a147ce8b 57b99fa6 aae0c2c1 4f39e9d8 d5e89ccf 
+    ba731e87 92009624 49f2b29e bb72737f 86efe05f d52bf2e3 677b63b6 1e4f720c 
+    0c381d0a 88328848 6cc81984 51a46134 227bddde 40a42937 6a7e41b5 eb42d029 
+    360a8053 e718570e 3a1591ec e62b91df 51bf3768 73f868d9 8ade583c 28b75978 
+    2f49ec2c 85e20dd9 6850974d 68640769 e14df8f6 0fffd774 4c342bbb c5d0e745 
+    0847aa3f a060b085 5307cbfc a7081ada f763f433 1e361999 0f788595 f0f4ca58 
+    613645b1 1937fc61 45b92516 1148bce1 d4a4dac2 2bce3920 847cad07 77d1e4bb 
+    84f368e6 7678c843 0c2feccf 228489f5 2e
+  quit
+crypto isakmp identity address 
+crypto ikev1 enable outside
+crypto ikev1 am-disable
+crypto ikev1 ipsec-over-tcp port 10000 
+crypto ikev1 policy 5
+ authentication pre-share
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto ikev1 policy 10
+ authentication pre-share
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto ikev1 policy 30
+ authentication pre-share
+ encryption aes-256
+ hash md5
+ group 2
+ lifetime 86400
+crypto ikev1 policy 50
+ authentication pre-share
+ encryption des
+ hash md5
+ group 1
+ lifetime 86400
+crypto ikev1 policy 70
+ authentication pre-share
+ encryption aes-256
+ hash md5
+ group 5
+ lifetime 86400
+crypto ikev1 policy 80
+ authentication pre-share
+ encryption aes-256
+ hash sha
+ group 5
+ lifetime 86400
+telnet timeout 5
+ssh stricthostkeycheck
+ssh 38.104.87.186 255.255.255.255 outside
+ssh 74.142.113.10 255.255.255.255 outside
+ssh 0.0.0.0 0.0.0.0 inside
+ssh 192.168.48.0 255.255.248.0 inside
+ssh 192.168.1.0 255.255.255.0 inside
+ssh 198.17.225.62 255.255.255.255 inside
+ssh 192.168.51.0 255.255.255.0 inside
+ssh 192.168.54.0 255.255.254.0 inside
+ssh 0.0.0.0 0.0.0.0 management
+ssh timeout 20
+ssh key-exchange group dh-group1-sha1
+console timeout 0
+management-access inside
+dhcpd dns 8.8.8.8
+!
+dhcpd address 10.10.10.10-10.10.10.50 DMZ
+dhcpd enable DMZ
+!
+threat-detection basic-threat
+threat-detection statistics port
+threat-detection statistics protocol
+threat-detection statistics access-list
+threat-detection statistics tcp-intercept rate-interval 30 burst-rate 400 average-rate 200
+ntp server 192.168.48.1 source inside
+ssl trust-point ASDM_TrustPoint12 outside
+webvpn
+ enable outside
+ anyconnect-essentials
+ anyconnect image disk0:/anyconnect-win-3.1.05160-k9.pkg 1
+ anyconnect image disk0:/anyconnect-macosx-i386-3.1.05160-k9.pkg 2
+ anyconnect profiles Anyconnect disk0:/anyconnect.xml
+ anyconnect enable
+ tunnel-group-list enable
+ cache
+  disable
+group-policy NOACCESS internal
+group-policy NOACCESS attributes
+ vpn-simultaneous-logins 0
+group-policy GroupPolicy1 internal
+group-policy GroupPolicy1 attributes
+ dns-server value 192.168.48.70 192.168.48.72
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value vpngroup_splitTunnelAcl
+group-policy UCCIBVPNGroup internal
+group-policy UCCIBVPNGroup attributes
+ banner value WARNING! This is a private system. Unauthorized use of this
+ banner value system may subject you to criminal prosecution and penalties.
+ banner value By accessing and using this system you are consenting to
+ banner value system monitoring for law enforcement and policy compliance.
+ wins-server value 192.168.48.106 192.168.48.105
+ dns-server value 192.168.50.1 192.168.48.106
+ vpn-simultaneous-logins 3
+ vpn-idle-timeout 20
+ password-storage disable
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value vpngroup_splitTunnelAcl
+ default-domain value uccib.com
+group-policy UCC_IS_Policy internal
+group-policy UCC_IS_Policy attributes
+ vpn-tunnel-protocol ikev1 ssl-clientless
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value Berea_Split
+group-policy UCC_IB_VPN internal
+group-policy UCC_IB_VPN attributes
+ banner value WARNING! This is a private system. Unauthorized use of this
+ banner value system may subject you to criminal prosecution and penalties.
+ banner value By accessing and using this system you are consenting to
+ banner value system monitoring for law enforcement and policy compliance.
+ dns-server value 192.168.50.2 192.168.50.3
+ vpn-simultaneous-logins 3
+ vpn-idle-timeout 60
+ vpn-filter value UCC_IB_VPN_filter
+ vpn-tunnel-protocol ssl-client 
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value vpngroup_splitTunnelAcl
+ default-domain value ad.insuranceboard.org
+group-policy vpngroup internal
+group-policy vpngroup attributes
+ banner value WARNING! This is a private system. Unauthorized use of this
+ banner value system may subject you to criminal prosecution and penalties.
+ banner value By accessing and using this system you are consenting to
+ banner value system monitoring for law enforcement and policy compliance.
+ wins-server value 192.168.48.105
+ dns-server value 192.168.48.70 192.168.48.72
+ vpn-idle-timeout 60
+ vpn-tunnel-protocol ssl-client ssl-clientless
+ password-storage disable
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value Full_Split_Tunnel_ACL
+ default-domain value national.ucc
+ webvpn
+  anyconnect profiles value Anyconnect type user
+group-policy Cornerstone_vpngroup internal
+group-policy Cornerstone_vpngroup attributes
+ banner value WARNING! This is a private system. Unauthorized use of this
+ banner value system may subject you to criminal prosecution and penalties.
+ banner value By accessing and using this system you are consenting to
+ banner value system monitoring for law enforcement and policy compliance.
+ wins-server value 192.168.48.105
+ dns-server value 192.168.48.70 192.168.48.72
+ vpn-idle-timeout 60
+ vpn-filter value Cornerstone_VPN_filter
+ vpn-tunnel-protocol ssl-client ssl-clientless
+ password-storage disable
+ split-tunnel-policy tunnelspecified
+ split-tunnel-network-list value Cornerstone_VPN
+ default-domain value national.ucc
+username nocops password H7vnDaGO.jHaoab1 encrypted
+tunnel-group 20.137.73.199 type ipsec-l2l
+tunnel-group 20.137.73.199 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 20.137..73.199 type ipsec-l2l
+tunnel-group 20.137..73.199 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group vpngroup type remote-access
+tunnel-group vpngroup general-attributes
+ address-pool vpnpoolNEW
+ authentication-server-group MSNT
+ default-group-policy vpngroup
+tunnel-group vpngroup webvpn-attributes
+ group-alias vpngroup_anyconnect enable
+tunnel-group 208.70.233.24 type ipsec-l2l
+tunnel-group 208.70.233.24 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 65.105.56.2 type ipsec-l2l
+tunnel-group 65.105.56.2 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 68.165.123.98 type ipsec-l2l
+tunnel-group 68.165.123.98 general-attributes
+ default-group-policy UCCIBVPNGroup
+tunnel-group 68.165.123.98 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 71.248.100.234 type ipsec-l2l
+tunnel-group 71.248.100.234 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 74.214.25.155 type ipsec-l2l
+tunnel-group 74.214.25.155 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 75.101.46.40 type ipsec-l2l
+tunnel-group 75.101.46.40 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group Cornerstone_vpngroup type remote-access
+tunnel-group Cornerstone_vpngroup general-attributes
+ address-pool vpnpoolNEW
+ authentication-server-group MSNT
+ default-group-policy Cornerstone_vpngroup
+tunnel-group Cornerstone_vpngroup webvpn-attributes
+ group-alias Cornerstone_vpngroup_anyconnect enable
+tunnel-group UCC_IB_VPN type remote-access
+tunnel-group UCC_IB_VPN general-attributes
+ address-pool vpnpoolNEW
+ authentication-server-group LDAP
+ default-group-policy NOACCESS
+tunnel-group UCC_IB_VPN webvpn-attributes
+ group-alias UCC_IB_VPN enable
+tunnel-group 98.100.131.187 type ipsec-l2l
+tunnel-group 98.100.131.187 ipsec-attributes
+ ikev1 pre-shared-key *****
+tunnel-group 209.225.106.50 type ipsec-l2l
+tunnel-group 209.225.106.50 ipsec-attributes
+ ikev1 pre-shared-key *****
+!
+class-map global-class
+ match access-list global_mpc
+class-map inspection_default
+ match default-inspection-traffic
+!
+!
+policy-map type inspect dns migrated_dns_map_1
+ parameters
+  message-length maximum client auto
+  message-length maximum 512
+policy-map global_policy
+ class inspection_default
+  inspect dns migrated_dns_map_1 
+  inspect ftp 
+  inspect h323 h225 
+  inspect h323 ras 
+  inspect rsh 
+  inspect rtsp 
+  inspect esmtp 
+  inspect sqlnet 
+  inspect skinny  
+  inspect sunrpc 
+  inspect xdmcp 
+  inspect sip  
+  inspect netbios 
+  inspect tftp 
+  inspect ip-options 
+  inspect icmp 
+ class global-class
+  flow-export event-type all destination 192.168.48.93
+!
+service-policy global_policy global
+smtp-server 192.168.48.23 192.168.48.17
+prompt hostname context 
+no call-home reporting anonymous
+call-home
+ profile CiscoTAC-1
+  no active
+  destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService
+  destination address email callhome@cisco.com
+  destination transport-method http
+  subscribe-to-alert-group diagnostic
+  subscribe-to-alert-group environment
+  subscribe-to-alert-group inventory periodic monthly
+  subscribe-to-alert-group configuration periodic monthly
+  subscribe-to-alert-group telemetry periodic daily
+Cryptochecksum:155eb4c6fffc4e066cdb92d667231d8a
+: end

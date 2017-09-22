@@ -1,0 +1,357 @@
+2017-09-19 09:58:44,148 - __main__ - INFO - Sending command...
+2017-09-19 10:00:19,418 - __main__ - INFO - Sending command...
+2017-09-19 10:00:52,364 - __main__ - INFO - Sending command...
+2017-09-19 10:03:03,896 - __main__ - INFO - Sending command...
+2017-09-19 10:03:42,342 - __main__ - INFO - Sending command...
+2017-09-19 10:09:57,460 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:09:59,834 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:09:59,837 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:10:04,111 - __main__ - INFO - Sending command...
+2017-09-19 10:10:21,102 - __main__ - INFO - Sending command...
+2017-09-19 10:10:23,245 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:10:24,519 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:10:24,522 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:10:28,732 - __main__ - INFO - Sending command...
+2017-09-19 10:10:32,629 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:10:33,979 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:10:33,983 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:11:18,751 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:11:20,090 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:11:20,093 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:11:24,265 - __main__ - INFO - Sending command...
+2017-09-19 10:11:37,464 - __main__ - INFO - Sending command...
+2017-09-19 10:11:38,587 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:11:39,905 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:11:39,908 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:11:44,204 - __main__ - INFO - Sending command...
+2017-09-19 10:11:48,258 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:11:49,589 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:11:49,592 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:11:53,724 - __main__ - INFO - Sending command...
+2017-09-19 10:11:57,622 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:11:58,950 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 10:11:58,953 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:12:03,222 - __main__ - INFO - Sending command...
+2017-09-19 10:12:16,397 - __main__ - INFO - Sending command...
+2017-09-19 10:12:17,313 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 10:12:17,482 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 10:12:21,704 - __main__ - INFO - Sending command...
+2017-09-19 11:57:25,076 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 11:57:26,396 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 11:57:26,399 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 11:57:41,905 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 11:57:43,174 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 11:57:43,177 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 11:57:47,812 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 11:57:49,119 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 11:57:49,122 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 11:58:58,032 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 11:58:59,347 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 11:58:59,350 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 11:59:13,343 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 11:59:14,623 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 11:59:14,626 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 11:59:19,273 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:01:37,754 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:01:39,072 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:01:39,076 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:01:53,074 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:01:54,375 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:01:54,378 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:01:59,012 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:02:00,342 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:02:00,345 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:02:05,001 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:02:06,324 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:02:06,328 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:02:20,284 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:02:20,417 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:08:42,771 - __main__ - INFO - CONNECTING TO 192.168.65.1
+2017-09-19 12:08:42,775 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:08:44,086 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:08:44,089 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:08:48,712 - __main__ - INFO - CONNECTING TO 192.168.59.2
+2017-09-19 12:08:58,058 - __main__ - INFO - CONNECTING TO 192.168.60.2
+2017-09-19 12:08:58,083 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:08:59,386 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:08:59,389 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:09:04,022 - __main__ - INFO - CONNECTING TO 192.168.50.254
+2017-09-19 12:09:04,026 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:09:05,322 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:09:05,326 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:09:09,975 - __main__ - INFO - CONNECTING TO 192.168.48.1
+2017-09-19 12:09:09,985 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:09:11,250 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:09:11,253 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:09:15,876 - __main__ - INFO - CONNECTING TO 192.168.48.236
+2017-09-19 12:09:25,201 - __main__ - INFO - CONNECTING TO 192.168.48.252
+2017-09-19 12:09:25,203 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:09:25,370 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:09:29,983 - __main__ - INFO - CONNECTING TO 192.168.48.239
+2017-09-19 12:09:39,308 - __main__ - INFO - CONNECTING TO 192.168.48.237
+2017-09-19 12:09:48,633 - __main__ - INFO - CONNECTING TO 192.168.48.238
+2017-09-19 12:09:57,958 - __main__ - INFO - CONNECTING TO 192.168.48.243
+2017-09-19 12:10:07,283 - __main__ - INFO - CONNECTING TO 192.168.48.253
+2017-09-19 12:10:16,607 - __main__ - INFO - CONNECTING TO 192.168.54.1
+2017-09-19 12:10:16,612 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 12:10:17,940 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 12:10:17,943 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 12:10:22,569 - __main__ - INFO - CONNECTING TO 192.168.48.247
+2017-09-19 12:10:31,894 - __main__ - INFO - CONNECTING TO 192.168.48.246
+2017-09-19 12:10:41,220 - __main__ - INFO - CONNECTING TO 192.168.48.245
+2017-09-19 12:10:50,549 - __main__ - INFO - CONNECTING TO 192.168.48.244
+2017-09-19 12:10:59,874 - __main__ - INFO - CONNECTING TO 192.168.48.242
+2017-09-19 12:11:09,204 - __main__ - INFO - CONNECTING TO 192.168.48.241
+2017-09-19 12:11:18,532 - __main__ - INFO - CONNECTING TO 192.168.48.240

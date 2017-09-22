@@ -1,0 +1,185 @@
+Building configuration...
+
+Current configuration : 4326 bytes
+!
+! Last configuration change at 14:27:59 EDT Tue Sep 5 2017 by nocops
+! NVRAM config last updated at 14:28:02 EDT Tue Sep 5 2017 by nocops
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec localtime
+service timestamps log datetime msec localtime
+service password-encryption
+!
+hostname clel2sm-1
+!
+logging buffered 10000 debugging
+enable secret 5 $1$JHLa$8FXtlzHuvw9Gx6xFBB/vg1
+enable password 7 094F471A1A0A
+!
+username nocops password 7 01301F065E19515771
+aaa new-model
+aaa accounting system default start-stop group tacacs+
+!
+aaa session-id common
+clock timezone EST -5
+clock summer-time EDT recurring
+system mtu routing 1500
+vtp domain ucc
+vtp mode transparent
+ip subnet-zero
+no ip domain-lookup
+ip domain-name national.ucc
+ip name-server 192.168.48.106
+!
+!
+!
+!
+no file verify auto
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+interface Port-channel1
+!
+interface GigabitEthernet0/1
+ description KM printer
+ spanning-tree portfast
+!
+interface GigabitEthernet0/2
+ spanning-tree portfast
+!
+interface GigabitEthernet0/3
+ description Multi-function printer
+ spanning-tree portfast
+!
+interface GigabitEthernet0/4
+ spanning-tree portfast
+!
+interface GigabitEthernet0/5
+ spanning-tree portfast
+!
+interface GigabitEthernet0/6
+ spanning-tree portfast
+!
+interface GigabitEthernet0/7
+ spanning-tree portfast
+!
+interface GigabitEthernet0/8
+ spanning-tree portfast
+!
+interface GigabitEthernet0/9
+ spanning-tree portfast
+!
+interface GigabitEthernet0/10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/11
+ spanning-tree portfast
+!
+interface GigabitEthernet0/12
+ spanning-tree portfast
+!
+interface GigabitEthernet0/13
+ spanning-tree portfast
+!
+interface GigabitEthernet0/14
+ spanning-tree portfast
+!
+interface GigabitEthernet0/15
+ spanning-tree portfast
+!
+interface GigabitEthernet0/16
+ spanning-tree portfast
+!
+interface GigabitEthernet0/17
+ description Multi-function printer
+ spanning-tree portfast
+!
+interface GigabitEthernet0/18
+ spanning-tree portfast
+!
+interface GigabitEthernet0/19
+ spanning-tree portfast
+!
+interface GigabitEthernet0/20
+ description KM printer
+ spanning-tree portfast
+!
+interface GigabitEthernet0/21
+ spanning-tree portfast
+!
+interface GigabitEthernet0/22
+ spanning-tree portfast
+!
+interface GigabitEthernet0/23
+ description clel2s2-1
+ channel-group 1 mode desirable
+ spanning-tree portfast
+!
+interface GigabitEthernet0/24
+ description clel2s2-1
+ channel-group 1 mode desirable
+ spanning-tree portfast
+!
+interface GigabitEthernet0/25
+!
+interface GigabitEthernet0/26
+!
+interface GigabitEthernet0/27
+!
+interface GigabitEthernet0/28
+!
+interface Vlan1
+ ip address 192.168.48.244 255.255.254.0
+!
+ip default-gateway 192.168.48.1
+ip classless
+no ip http server
+!
+access-list 25 permit 198.17.225.62
+access-list 25 permit 192.168.48.39
+snmp-server group ntst v3 auth read ntst-read notify ntst-view access 25
+snmp-server group ntst-snmp v3 auth notify *tv.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF0F 
+snmp-server view ntst-read iso included
+snmp-server view ntst-view iso included
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps tty
+snmp-server enable traps entity
+snmp-server enable traps envmon fan shutdown supply temperature
+snmp-server host 192.168.48.39 version 3 auth ntst-snmp 
+tacacs-server host 198.17.225.62
+tacacs-server directed-request
+tacacs-server key 7 073B331F400D3A36
+radius-server source-ports 1645-1646
+!
+control-plane
+!
+banner login ^C
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+^C
+alias exec st sh interface status
+alias exec br sh ip int brief
+!
+line con 0
+ exec-timeout 30 0
+ password 7 112A000712005C5454
+line vty 0 4
+ exec-timeout 30 0
+ password 7 112A000712005C5454
+line vty 5 15
+!
+ntp clock-period 36028970
+ntp server 192.168.48.1
+end

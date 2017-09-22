@@ -1,0 +1,306 @@
+2017-09-19 16:39:37,157 - paramiko.transport - DEBUG - starting thread (client mode): 0x748ba510L
+2017-09-19 16:39:37,158 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:39:37,166 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:39:37,166 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:39:37,166 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:39:37,167 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:39:37,167 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:39:37,167 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:39:37,167 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:39:37,168 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:39:38,273 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:39:38,274 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:39:38,282 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:39:38,487 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:39:38,488 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:39:40,496 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:39:40,509 - paramiko.transport - DEBUG - starting thread (client mode): 0x72de0990L
+2017-09-19 16:39:40,509 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:39:40,519 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:39:40,519 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:39:40,519 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:39:40,520 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:39:40,520 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:39:40,520 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:39:40,520 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:39:40,520 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:39:41,572 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:39:41,572 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:39:41,574 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:39:41,783 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:39:41,784 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:39:41,787 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:39:41,790 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2017-09-19 16:39:41,795 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2017-09-19 16:39:41,795 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2017-09-19 16:39:41,798 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:39:41,800 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:39:43,300 - paramiko.transport - DEBUG - EOF in transport thread
+2017-09-19 16:40:09,250 - paramiko.transport - DEBUG - starting thread (client mode): 0x50e21510L
+2017-09-19 16:40:09,251 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:40:09,252 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:40:09,252 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:40:09,254 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:40:09,254 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:40:09,254 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:40:09,254 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:40:09,255 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:40:09,255 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:40:10,348 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:40:10,348 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:40:10,351 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:40:10,551 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:40:10,552 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:40:12,554 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:40:12,557 - paramiko.transport - DEBUG - starting thread (client mode): 0x500bb990L
+2017-09-19 16:40:12,557 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:40:12,561 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:40:12,561 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:40:12,562 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:40:12,562 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:40:12,563 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:40:12,563 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:40:12,563 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:40:12,563 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:40:13,613 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:40:13,614 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:40:13,622 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:40:13,822 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:40:13,823 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:40:13,826 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:40:13,830 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2017-09-19 16:40:13,832 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2017-09-19 16:40:13,832 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2017-09-19 16:40:13,835 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:40:13,837 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:40:37,687 - paramiko.transport - DEBUG - EOF in transport thread
+2017-09-19 16:46:36,028 - paramiko.transport - DEBUG - starting thread (client mode): 0x1597b510L
+2017-09-19 16:46:36,029 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:46:36,032 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:46:36,032 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:46:36,032 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:46:36,033 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:46:36,033 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:46:36,033 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:46:36,033 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:46:36,033 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:46:37,143 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:46:37,144 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:46:37,147 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:46:37,346 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:46:37,347 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:46:39,349 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:46:39,353 - paramiko.transport - DEBUG - starting thread (client mode): 0x14414990L
+2017-09-19 16:46:39,353 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.2.1
+2017-09-19 16:46:39,354 - paramiko.transport - DEBUG - Remote version/idstring: SSH-1.99-Cisco-1.25
+2017-09-19 16:46:39,354 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - kex algos:[u'diffie-hellman-group1-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] server encrypt:[u'aes128-cbc', u'3des-cbc', u'aes192-cbc', u'aes256-cbc'] client mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] server mac:[u'hmac-sha1', u'hmac-sha1-96', u'hmac-md5', u'hmac-md5-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - Kex agreed: diffie-hellman-group1-sha1
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - HostKey agreed: ssh-rsa
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - Cipher agreed: aes128-cbc
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - MAC agreed: hmac-sha1
+2017-09-19 16:46:39,356 - paramiko.transport - DEBUG - Compression agreed: none
+2017-09-19 16:46:40,406 - paramiko.transport - DEBUG - kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+2017-09-19 16:46:40,407 - paramiko.transport - DEBUG - Switch to new keys ...
+2017-09-19 16:46:40,417 - paramiko.transport - DEBUG - Adding ssh-rsa host key for 192.168.65.1: b328961be9221dea04e2aaebf9edb5e9
+2017-09-19 16:46:40,608 - paramiko.transport - DEBUG - userauth is OK
+2017-09-19 16:46:40,608 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:46:40,612 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:46:40,618 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2017-09-19 16:46:40,619 - paramiko.transport - DEBUG - [chan 0] Max packet out: 4096 bytes
+2017-09-19 16:46:40,620 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2017-09-19 16:46:40,623 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:46:40,624 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2017-09-19 16:46:49,964 - paramiko.transport - DEBUG - EOF in transport thread
+2017-09-19 16:49:19,966 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:49:21,279 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:49:23,282 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:49:23,288 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:49:24,559 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:49:24,562 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:49:52,087 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:49:53,395 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:49:55,397 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:49:55,404 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:49:56,675 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:49:56,678 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:50:01,328 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:50:02,603 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:50:04,605 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:50:04,634 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:50:05,958 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:50:05,962 - paramiko.transport - INFO - Authentication (password) successful!
+2017-09-19 16:50:10,618 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:50:11,911 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:50:13,913 - paramiko.transport - INFO - Authentication (password) failed.
+2017-09-19 16:50:13,920 - paramiko.transport - INFO - Connected (version 1.99, client Cisco-1.25)
+2017-09-19 16:50:15,198 - paramiko.transport - INFO - Auth banner: 
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+
+2017-09-19 16:50:15,201 - paramiko.transport - INFO - Authentication (password) successful!

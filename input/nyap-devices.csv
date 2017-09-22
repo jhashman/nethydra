@@ -1,0 +1,7 @@
+ip,port,device_type
+swt_NYAP-HQ-SW1,22,cisco_ios
+swt_Fairmont,22,cisco_ios
+swt_Hampton,22,cisco_ios
+swt_Indianapolis,22,cisco_ios
+frw_NYAP-HQ-FW1,22,cisco_asa
+frw_Dayton_action,22,cisco_asa

@@ -1,0 +1,346 @@
+Building configuration...
+
+Current configuration : 7995 bytes
+!
+! Last configuration change at 13:53:49 EDT Wed Sep 13 2017 by nocops
+! NVRAM config last updated at 13:53:59 EDT Wed Sep 13 2017 by nocops
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec localtime
+service timestamps log datetime msec localtime
+service password-encryption
+!
+hostname clel2s5-1
+!
+logging buffered 10000 debugging
+enable secret 5 $1$ghO5$kCEf2.tfvfVJYyRCkaygo/
+enable password 7 094F471A1A0A
+!
+username nocops password 7 01301F065E19515771
+aaa new-model
+aaa accounting system default start-stop group tacacs+
+!
+aaa session-id common
+clock timezone EST -5
+clock summer-time EDT recurring
+system mtu routing 1500
+vtp domain ucc
+vtp mode transparent
+ip subnet-zero
+no ip domain-lookup
+ip domain-name national.ucc
+ip name-server 192.168.48.106
+!
+!
+!
+!
+no file verify auto
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 10
+ name PB_Vlan
+!
+vlan 50
+ name IB
+!
+vlan 51
+ name Static
+!
+vlan 54
+ name User
+!
+vlan 60
+ name Cornerstone
+!
+interface Port-channel5
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+ description FP D-11
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/2
+ description FP C-16
+ switchport access vlan 10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/3
+ description FP C-15
+ switchport access vlan 10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/4
+ description FP C-7
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/5
+ description FP C-24
+ switchport access vlan 10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/6
+ description FP C-9
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/7
+ description FP C-4
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/8
+ description FP D-12
+ switchport access vlan 10
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/9
+ switchport access vlan 10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/10
+ switchport access vlan 10
+ spanning-tree portfast
+!
+interface GigabitEthernet0/11
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/12
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/13
+ switchport access vlan 50
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/14
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/15
+ description Dell printer
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/16
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/17
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/18
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/19
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/20
+ switchport access vlan 60
+ spanning-tree portfast
+!
+interface GigabitEthernet0/21
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/22
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/23
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/24
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/25
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/26
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/27
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/28
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/29
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/30
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/31
+ description Cornerstone and printer vlan
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/32
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/33
+ description Cornerstone and printer vlan
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/34
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/35
+ description Cornerstone and printer vlan
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/36
+ description Cornerstone and printer vlan
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/37
+ description Cornerstone and printer vlan
+ switchport access vlan 50
+ spanning-tree portfast
+!
+interface GigabitEthernet0/38
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/39
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/40
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/41
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/42
+ description Cornerstone and printer vlan
+ switchport mode access
+ spanning-tree portfast
+!
+interface GigabitEthernet0/43
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/44
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/45
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/46
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/47
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/48
+ description Cornerstone and printer vlan
+ spanning-tree portfast
+!
+interface GigabitEthernet0/49
+ description clel3s6-core
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 5 mode desirable
+!
+interface GigabitEthernet0/50
+ description clel3s6-core
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 5 mode desirable
+!
+interface GigabitEthernet0/51
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/52
+!
+interface Vlan1
+ ip address 192.168.48.247 255.255.254.0
+!
+ip default-gateway 192.168.48.1
+ip classless
+no ip http server
+!
+access-list 25 permit 198.17.225.62
+access-list 25 permit 192.168.48.39
+snmp-server group ntst v3 auth read ntst-read notify ntst-view access 25
+snmp-server group ntst-snmp v3 auth notify *tv.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF0F 
+snmp-server view ntst-read iso included
+snmp-server view ntst-view iso included
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps tty
+snmp-server enable traps entity
+snmp-server enable traps envmon fan shutdown supply temperature
+snmp-server host 198.17.225.62 looker 
+snmp-server host 192.168.48.39 version 3 auth ntst-snmp 
+tacacs-server host 198.17.225.62
+tacacs-server directed-request
+tacacs-server key 7 073B331F400D3A36
+radius-server source-ports 1645-1646
+!
+control-plane
+!
+banner login ^C
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+^C
+alias exec st sh interface status
+alias exec br sh ip int brief
+!
+line con 0
+ exec-timeout 30 0
+ password 7 14340B0909167D7374
+line vty 0 4
+ exec-timeout 30 0
+ password 7 14340B0909167D7374
+line vty 5 15
+!
+ntp clock-period 36029123
+ntp server 192.168.48.1
+end

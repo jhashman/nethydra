@@ -1,0 +1,303 @@
+Building configuration...
+
+Current configuration : 6678 bytes
+!
+! Last configuration change at 14:15:05 EDT Tue Sep 5 2017 by nocops
+! NVRAM config last updated at 14:15:07 EDT Tue Sep 5 2017 by nocops
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec localtime
+service timestamps log datetime msec localtime
+service password-encryption
+!
+hostname clel2s4-2
+!
+logging buffered 10000 debugging
+enable secret 5 $1$Sg4c$wRpIi9t40yYxvLpTKXF/u1
+enable password 7 0822455D0A16
+!
+username nocops password 7 01301F065E19515771
+aaa new-model
+aaa accounting system default start-stop group tacacs+
+!
+aaa session-id common
+clock timezone EST -5
+clock summer-time EDT recurring
+system mtu routing 1500
+vtp domain ucc
+vtp mode transparent
+ip subnet-zero
+no ip domain-lookup
+ip domain-name national.ucc
+ip name-server 192.168.48.106
+!
+!
+!
+!
+no file verify auto
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 51
+ name Static
+!
+vlan 54
+ name User
+!
+interface FastEthernet0/1
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/2
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/3
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/4
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/5
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/6
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/7
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/8
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/9
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/10
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/11
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/12
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/13
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/14
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/15
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/16
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/17
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/18
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/19
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/20
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/21
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/22
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/23
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/24
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/25
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/26
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/27
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/28
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/29
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/30
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/31
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/32
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/33
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/34
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/35
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/36
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/37
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/38
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/39
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/40
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/41
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/42
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/43
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/44
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/45
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/46
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/47
+ switchport access vlan 54
+ spanning-tree portfast
+!
+interface FastEthernet0/48
+ description clel2s4-1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface Vlan1
+ ip address 192.168.48.241 255.255.254.0
+!
+ip default-gateway 192.168.48.1
+ip classless
+no ip http server
+!
+access-list 25 permit 198.17.225.62
+access-list 25 permit 192.168.48.39
+snmp-server group ntst v3 auth read ntst-read notify ntst-view access 25
+snmp-server group ntst-snmp v3 auth notify *tv.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF0F 
+snmp-server view ntst-read iso included
+snmp-server view ntst-view iso included
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps tty
+snmp-server enable traps entity
+snmp-server enable traps envmon fan shutdown supply temperature
+snmp-server host 198.17.225.62 looker 
+snmp-server host 192.168.48.39 version 3 auth ntst-snmp 
+tacacs-server host 198.17.225.62
+tacacs-server directed-request
+tacacs-server key 7 073B331F400D3A36
+radius-server source-ports 1645-1646
+!
+control-plane
+!
+banner login ^C
+
+WARNING!!!
+This system is solely for the use of authorized users for official purposes.
+You have no expectation of privacy in its use and to ensure that the system
+is functioning properly, individuals using this computer system are subject
+to having all of their activities monitored and recorded by system
+personnel. Use of this system evidences an express consent to such
+monitoring and agreement that if such monitoring reveals evidence of
+possible abuse or criminal activity, system personnel may provide the
+results of such monitoring to appropriate officials.
+
+^C
+alias exec st sh interface status
+alias exec br sh ip int brief
+!
+line con 0
+ exec-timeout 30 0
+ password 7 096F570B1C17404A5B
+line vty 0 4
+ exec-timeout 30 0
+ password 7 096F570B1C17404A5B
+line vty 5 15
+!
+ntp clock-period 36028670
+ntp server 192.168.48.1
+end
