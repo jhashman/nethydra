@@ -1,0 +1,16 @@
+ip,port,device_type
+192.168.48.1,22,cisco_ios
+192.168.48.236,23,cisco_ios_telnet
+192.168.48.237,23,cisco_ios_telnet
+192.168.48.238,23,cisco_ios_telnet
+192.168.48.239,23,cisco_ios_telnet
+192.168.48.240,23,cisco_ios_telnet
+192.168.48.241,23,cisco_ios_telnet
+192.168.48.242,23,cisco_ios_telnet
+192.168.48.243,23,cisco_ios_telnet
+192.168.48.244,23,cisco_ios_telnet
+192.168.48.245,23,cisco_ios_telnet
+192.168.48.246,23,cisco_ios_telnet
+192.168.48.247,23,cisco_ios_telnet
+192.168.48.252,22,cisco_ios
+192.168.48.253,23,cisco_ios_telnet

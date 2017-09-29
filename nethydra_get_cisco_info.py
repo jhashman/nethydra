@@ -40,7 +40,7 @@ netmiko_exceptions = (netmiko.ssh_exception.NetMikoTimeoutException,
 def main():
 	try:
 		# The nethydra_input file will be an script argument in the future
-		with open(local.nethydra_input) as csvfile:
+		with open(local.nethydra_input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
            		# For connections to local devices the IP can be used, through a tunnel use the hostname

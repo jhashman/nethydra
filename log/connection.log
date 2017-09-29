@@ -480,3 +480,67 @@ AttributeError: 'module' object has no attribute 'nethydra_input'
 2017-09-22 02:44:25,947 - NetHydra - INFO - frw_Dayton_action - CONNECTING...
 2017-09-22 02:44:33,959 - NetHydra - WARNING - frw_Dayton_action - CONNECTION FAILED
 2017-09-22 02:44:33,959 - NetHydra - ERROR - frw_Dayton_action - CONNECTION FAILED - 2nd user
+2017-09-22 13:40:23,924 - NetHydra - WARNING - 192.168.65.1 - CONNECTION FAILED
+2017-09-22 13:40:23,924 - NetHydra - ERROR - 192.168.65.1 - CONNECTION FAILED - 2nd user
+2017-09-22 13:41:23,846 - NetHydra - INFO - 192.168.65.1 - CONNECTION SUCCESSFUL
+2017-09-22 13:41:33,214 - NetHydra - INFO - 192.168.59.2 - CONNECTION SUCCESSFUL
+2017-09-22 13:41:39,153 - NetHydra - INFO - 192.168.60.2 - CONNECTION SUCCESSFUL
+2017-09-22 13:41:45,071 - NetHydra - INFO - 192.168.50.254 - CONNECTION SUCCESSFUL
+2017-09-22 13:41:50,974 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-09-22 13:42:00,300 - NetHydra - INFO - 192.168.48.236 - CONNECTION SUCCESSFUL
+2017-09-22 13:42:05,356 - NetHydra - INFO - 192.168.48.252 - CONNECTION SUCCESSFUL
+2017-09-22 13:42:14,682 - NetHydra - INFO - 192.168.48.239 - CONNECTION SUCCESSFUL
+2017-09-22 14:11:31,000 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "nethydra_validate.py", line 43, in main
+    with open(local.nethydra_input) as csvfile:
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/input/nethydra_input.csv'
+2017-09-22 14:12:03,659 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "nethydra_validate.py", line 43, in main
+    with open(local.nethydra_input_file) as csvfile:
+AttributeError: 'module' object has no attribute 'nethydra_input_file'
+2017-09-22 14:13:14,545 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "nethydra_validate.py", line 43, in main
+    with open(local.nethydra_input_file) as csvfile:
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/input/nethydra_input.csv'
+2017-09-22 14:14:06,518 - NetHydra - INFO - 192.168.65.1 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:15,865 - NetHydra - INFO - 192.168.59.2 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:21,797 - NetHydra - INFO - 192.168.60.2 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:27,720 - NetHydra - INFO - 192.168.50.254 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:33,607 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:42,931 - NetHydra - INFO - 192.168.48.236 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:47,885 - NetHydra - INFO - 192.168.48.252 - CONNECTION SUCCESSFUL
+2017-09-22 14:14:57,209 - NetHydra - INFO - 192.168.48.239 - CONNECTION SUCCESSFUL
+2017-09-22 14:15:06,537 - NetHydra - INFO - 192.168.48.237 - CONNECTION SUCCESSFUL
+2017-09-22 14:16:25,688 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "nethydra_get_cisco_info.py", line 43, in main
+    with open(local.nethydra_input) as csvfile:
+AttributeError: 'module' object has no attribute 'nethydra_input'
+2017-09-22 14:16:48,414 - NetHydra - INFO - 192.168.65.1 - CONNECTING...
+2017-09-22 14:16:53,738 - NetHydra - INFO - 192.168.65.1 - CONNECTION SUCCESSFUL
+2017-09-22 14:16:53,980 - NetHydra - INFO - 192.168.65.1 - Executing show running-config
+2017-09-22 14:16:57,988 - NetHydra - INFO - 192.168.65.1 - Saving running-config to file
+2017-09-22 14:16:57,989 - NetHydra - INFO - 192.168.65.1 - Executing show tech-support
+2017-09-22 14:17:21,264 - NetHydra - INFO - 192.168.65.1 - Saving tech-support to file
+2017-09-22 14:17:21,315 - NetHydra - INFO - 192.168.59.2 - CONNECTING...
+2017-09-22 14:25:34,630 - NetHydra - INFO - swt_NYAP-HQ-SW1 - CONNECTING...
+2017-09-22 14:25:42,643 - NetHydra - WARNING - swt_NYAP-HQ-SW1 - CONNECTION FAILED
+2017-09-22 14:25:42,644 - NetHydra - ERROR - swt_NYAP-HQ-SW1 - CONNECTION FAILED - 2nd user
+2017-09-22 14:25:42,644 - NetHydra - INFO - swt_Fairmont - CONNECTING...
+2017-09-22 14:25:50,658 - NetHydra - WARNING - swt_Fairmont - CONNECTION FAILED
+2017-09-22 14:25:50,658 - NetHydra - ERROR - swt_Fairmont - CONNECTION FAILED - 2nd user
+2017-09-22 14:25:50,658 - NetHydra - INFO - swt_Hampton - CONNECTING...
+2017-09-22 14:25:58,670 - NetHydra - WARNING - swt_Hampton - CONNECTION FAILED
+2017-09-22 14:25:58,670 - NetHydra - ERROR - swt_Hampton - CONNECTION FAILED - 2nd user
+2017-09-22 14:25:58,670 - NetHydra - INFO - swt_Indianapolis - CONNECTING...
+2017-09-22 14:25:58,673 - NetHydra - WARNING - swt_Indianapolis - CONNECTION FAILED
+2017-09-22 14:25:58,673 - NetHydra - ERROR - swt_Indianapolis - CONNECTION FAILED - 2nd user
+2017-09-22 14:25:58,673 - NetHydra - INFO - frw_NYAP-HQ-FW1 - CONNECTING...
+2017-09-22 14:25:58,702 - NetHydra - WARNING - frw_NYAP-HQ-FW1 - CONNECTION FAILED
+2017-09-22 14:25:58,703 - NetHydra - ERROR - frw_NYAP-HQ-FW1 - CONNECTION FAILED - 2nd user
+2017-09-22 14:25:58,703 - NetHydra - INFO - frw_Dayton_action - CONNECTING...
+2017-09-22 14:26:06,728 - NetHydra - WARNING - frw_Dayton_action - CONNECTION FAILED
+2017-09-22 14:26:06,729 - NetHydra - ERROR - frw_Dayton_action - CONNECTION FAILED - 2nd user

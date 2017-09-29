@@ -24,6 +24,16 @@
             "maxBytes": 10485760,
             "backupCount": 20,
             "encoding": "utf8"
+        },
+
+        "scan_fh": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "./log/scan.log",
+            "maxBytes": 10485760,
+            "backupCount": 20,
+            "encoding": "utf8"
         }
     },
 
@@ -31,6 +41,12 @@
         "NetHydra": {
             "level": "INFO",
             "handlers": ["connection_fh"],
+            "propagate": "no"
+		},
+
+        "scan": {
+            "level": "INFO",
+            "handlers": ["scan_fh"],
             "propagate": "no"
 		}
     },

@@ -1,0 +1,119 @@
+2017-09-28 15:40:01,105 - scan - INFO - Opening file 192.168.59.0
+2017-09-28 15:40:01,106 - scan - INFO - Opening file 192.168.61.0
+2017-09-28 15:40:01,106 - scan - INFO - Opening file 192.168.48.0
+2017-09-28 15:42:39,053 - scan - INFO - Opening file 192.168.59.0
+2017-09-28 15:42:39,054 - scan - INFO - Opening file 192.168.61.0
+2017-09-28 15:42:39,054 - scan - INFO - Opening file 192.168.48.0
+2017-09-28 15:42:39,054 - scan - INFO - Completed parsing of masscan oG output
+2017-09-28 15:43:36,706 - scan - INFO - Using this file for subnets to scan: /opt/nethydra/UCC/input/ucc_subnets
+2017-09-28 15:43:36,707 - scan - INFO - 192.168.48.0/24: Initiating masscan
+2017-09-28 15:44:01,879 - scan - INFO - 192.168.48.0/24: Masscan Complete
+2017-09-28 15:44:01,879 - scan - INFO - 192.168.61.0/24: Initiating masscan
+2017-09-28 15:44:25,043 - scan - INFO - 192.168.61.0/24: Masscan Complete
+2017-09-28 15:44:25,043 - scan - INFO - 192.168.59.0/24: Initiating masscan
+2017-09-28 15:44:47,263 - scan - INFO - 192.168.59.0/24: Masscan Complete
+2017-09-28 15:44:47,264 - scan - INFO - Opening file 192.168.59.0
+2017-09-28 15:44:47,264 - scan - INFO - Opening file 192.168.61.0
+2017-09-28 15:44:47,264 - scan - INFO - Opening file 192.168.48.0
+2017-09-28 15:44:47,265 - scan - INFO - Completed parsing of masscan oG output
+2017-09-28 15:50:30,138 - scan - INFO - Using this file for subnets to scan: /opt/nethydra/UCC/input/ucc_subnets
+2017-09-28 15:50:30,138 - scan - INFO - 192.168.48.0/24: Initiating masscan
+2017-09-28 15:50:54,407 - scan - INFO - 192.168.48.0/24: Masscan Complete
+2017-09-28 15:50:54,407 - scan - INFO - 192.168.61.0/24: Initiating masscan
+2017-09-28 15:51:17,575 - scan - INFO - 192.168.61.0/24: Masscan Complete
+2017-09-28 15:51:17,575 - scan - INFO - 192.168.59.0/24: Initiating masscan
+2017-09-28 15:51:39,787 - scan - INFO - 192.168.59.0/24: Masscan Complete
+2017-09-28 15:51:39,788 - scan - INFO - Parse file 192.168.59.0
+2017-09-28 15:51:39,788 - scan - INFO - Parse file 192.168.61.0
+2017-09-28 15:51:39,788 - scan - INFO - Parse file 192.168.48.0
+2017-09-28 15:51:39,789 - scan - INFO - Completed parsing of masscan oG output, saved to: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 16:39:39,080 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 16:39:52,515 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 16:41:11,127 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 16:41:11,129 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 16:44:35,446 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 16:44:35,447 - scan - INFO - Opening /opt/nethydra/UCC/output/nmap/UCC-devices.csv for nmap services csv
+2017-09-28 16:45:41,138 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 16:45:41,138 - scan - INFO - Opening /opt/nethydra/UCC/output/nmap/UCC-devices.csv for nmap services csv
+2017-09-28 16:45:41,139 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 16:45:41,139 - scan - INFO - Closing /opt/nethydra/UCC/output/nmap/UCC-devices.csv
+2017-09-28 18:16:24,095 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:16:52,895 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:16:52,895 - scan - INFO - Initiating nmap scan
+2017-09-28 18:16:52,899 - scan - INFO - NMAP scan complete
+2017-09-28 18:22:08,823 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:22:08,824 - scan - INFO - Initiating nmap scan
+2017-09-28 18:22:08,828 - scan - INFO - NMAP scan complete
+2017-09-28 18:24:45,042 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:24:45,043 - scan - INFO - Initiating nmap scan
+2017-09-28 18:24:45,046 - scan - INFO - NMAP scan complete
+2017-09-28 18:25:40,165 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:25:40,165 - scan - INFO - Initiating nmap scan
+2017-09-28 18:25:40,169 - scan - INFO - NMAP scan complete
+2017-09-28 18:27:41,417 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:27:41,418 - scan - INFO - Initiating nmap scan
+2017-09-28 18:27:41,421 - scan - INFO - NMAP scan complete
+2017-09-28 18:29:58,133 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:29:58,133 - scan - INFO - Initiating nmap scan
+2017-09-28 18:29:58,137 - scan - INFO - NMAP scan complete
+2017-09-28 18:31:10,610 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:31:10,610 - scan - INFO - Initiating nmap scan
+2017-09-28 18:31:56,890 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:31:56,891 - scan - INFO - Initiating nmap scan
+2017-09-28 18:32:46,831 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:32:46,831 - scan - INFO - Initiating nmap scan
+2017-09-28 18:34:18,136 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:34:18,136 - scan - INFO - Initiating nmap scan
+2017-09-28 18:35:20,811 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:35:20,812 - scan - INFO - Initiating nmap scan
+2017-09-28 18:36:08,748 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:36:08,748 - scan - INFO - Initiating nmap scan
+2017-09-28 18:36:08,752 - scan - INFO - NMAP scan complete
+2017-09-28 18:36:29,778 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:36:29,779 - scan - INFO - Initiating nmap scan
+2017-09-28 18:38:34,484 - scan - INFO - NMAP scan complete
+2017-09-28 18:44:29,310 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:44:29,310 - scan - INFO - Initiating nmap scan
+2017-09-28 18:44:54,376 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:44:54,376 - scan - INFO - Initiating nmap scan
+2017-09-28 18:45:52,972 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:45:52,972 - scan - INFO - Initiating nmap scan
+2017-09-28 18:47:16,994 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 18:47:16,994 - scan - INFO - Initiating nmap scan
+2017-09-28 19:01:00,881 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 19:01:00,881 - scan - INFO - Initiating nmap scan
+2017-09-28 19:02:35,766 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 19:02:35,766 - scan - INFO - Initiating nmap scan
+2017-09-28 19:04:09,811 - scan - INFO - Using this file for subnets to scan: /opt/nethydra/UCC/input/ucc_subnets
+2017-09-28 19:04:09,811 - scan - INFO - 192.168.48.0/24: Initiating masscan
+2017-09-28 19:04:34,971 - scan - INFO - 192.168.48.0/24: Masscan Complete
+2017-09-28 19:04:34,971 - scan - INFO - 192.168.61.0/24: Initiating masscan
+2017-09-28 19:04:58,131 - scan - INFO - 192.168.61.0/24: Masscan Complete
+2017-09-28 19:04:58,131 - scan - INFO - 192.168.59.0/24: Initiating masscan
+2017-09-28 19:05:20,347 - scan - INFO - 192.168.59.0/24: Masscan Complete
+2017-09-28 19:05:20,348 - scan - INFO - Parsing file 192.168.59.0
+2017-09-28 19:05:20,348 - scan - INFO - Parsing file 192.168.61.0
+2017-09-28 19:05:20,348 - scan - INFO - Parsing file 192.168.48.0
+2017-09-28 19:05:20,349 - scan - INFO - Parsed output: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 19:05:20,349 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-09-28 19:05:20,349 - scan - INFO - Initiating nmap scan...
+2017-09-28 19:18:23,510 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 19:18:23,510 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-09-28 19:18:23,512 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 19:18:23,512 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-09-28 21:47:15,482 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 21:47:15,482 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-09-28 21:47:15,483 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 21:47:15,484 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-09-28 21:49:32,809 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 21:49:32,809 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-09-28 21:49:32,811 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 21:49:32,812 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-09-28 21:50:05,677 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 21:50:05,678 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-09-28 21:50:05,679 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 21:50:05,679 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-09-28 21:52:10,366 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-09-28 21:52:10,366 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-09-28 21:52:10,368 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-09-28 21:52:10,368 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
