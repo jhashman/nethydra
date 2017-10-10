@@ -1,4 +1,0 @@
-# Masscan 1.0.3 scan initiated Thu Sep 28 23:04:59 2017
-# Ports scanned: TCP(2;22-23,) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.59.30 ()	Ports: 9100/open/tcp////
-# Masscan done at Thu Sep 28 23:05:20 2017

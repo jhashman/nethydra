@@ -1,6 +1,0 @@
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-clel2s2-1.national.ucc
-                 Gig 0/1           159           S I      WS-C3560G Gig 0/45
