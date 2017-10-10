@@ -1,0 +1,2494 @@
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.24-config-20170929-----
+-----hostname 1345N-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.42.20.3-config-20170929-----
+-----hostname NOC_Nexus_6001_2-----
+snmp-server contact IT Department
+snmp-server location COLO
+snmp-server globalEnforcePriv
+snmp-server user admin network-admin auth md5 0xcce420c9725990f4f20964649dcee1be priv 0xcce420c9725990f4f20964649dcee1be localizedkey
+snmp-server user MCSUser network-operator
+snmp-server user MCSUser network-admin
+snmp-server host 192.168.42.116 informs version 3 auth MCSUser udp-port 161
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps lldp lldpRemTablesChange
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps hsrp state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.132.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.200.50.20-config-20170929-----
+-----hostname Montfort-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.23-config-20170929-----
+-----hostname Samuell-AP3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.104.50.22-config-20170929-----
+-----hostname Westmoreland-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.25-config-20170929-----
+-----hostname Hillside-AP-10-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.35.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.130.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.21-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.34.50.20-config-20170929-----
+-----hostname TheBridge-AP-01-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.1-config-20170929-----
+-----hostname LK_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.35.1-config-20170929-----
+-----hostname 1345_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 145 River Bend, Suite 200
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps isis
+snmp-server enable traps local-auth
+snmp-server enable traps msdp
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.21-config-20170929-----
+-----hostname CCAM-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.30.10.1-config-20170929-----
+-----hostname CCAMII_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.217.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.152.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.25-config-20170929-----
+-----hostname Eastside-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.40-config-20170929-----
+-----hostname Hillside-AP-14-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.32-config-20170929-----
+-----hostname LK-AP-4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.25.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.30.50.1-config-20170929-----
+-----hostname CCAMII_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.27-config-20170929-----
+-----hostname Eastside-AP-4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.137.50.21-config-20170929-----
+-----hostname GrandPrairie-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.21-config-20170929-----
+-----hostname Samuell-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.33-config-20170929-----
+-----hostname Hillside-AP-13-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.33.50.20-config-20170929-----
+-----hostname 9708-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.22-config-20170929-----
+-----hostname Hillside-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.225.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.24-config-20170929-----
+-----hostname Hillside-AP-11-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.40.35.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.23-config-20170929-----
+-----hostname Hillside-AP-9-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.90.1-config-20170929-----
+-----hostname GrandPrairie_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.33-config-20170929-----
+-----hostname SNOP-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.140.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.227.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.27-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.25.15.1-config-20170929-----
+-----hostname Midway_MDF_3650-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.214.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.28-config-20170929-----
+-----hostname CCAM-AP-4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.242.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.24-config-20170929-----
+-----hostname Samuell-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.232.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.36.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.137.50.1-config-20170929-----
+-----hostname GrandPrairie_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.37.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.10.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.137.50.20-config-20170929-----
+-----hostname GrandPraire-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.104.50.20-config-20170929-----
+-----hostname Westmoreland-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.220.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.101.1-config-20170929-----
+-----hostname LK_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.25.10.28-config-20170929-----
+-----hostname Midway-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.210.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.25.10.26-config-20170929-----
+-----hostname Midway_AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.30.50.21-config-20170929-----
+-----hostname CCAMII-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.150.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.24-config-20170929-----
+-----hostname 1330Ste400-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.200.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.31-config-20170929-----
+-----hostname Hillside-AP-6-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.61.35.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.22-config-20170929-----
+-----hostname Eastside-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.185.1-config-20170929-----
+-----hostname Westmoreland_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.26-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP5-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.137.50.22-config-20170929-----
+-----hostname GrandPraire-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.33.50.22-config-20170929-----
+-----hostname 9704-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.29-config-20170929-----
+-----hostname Hillside-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.30.15.1-config-20170929-----
+-----hostname CCAMII_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.230.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.45.1-config-20170929-----
+-----hostname Wilmer_Main_1841ISR-----
+snmp-server group MHMR v3 priv 
+snmp-server location Wilmer bldg C
+snmp-server contact IT Department
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.20-config-20170929-----
+-----hostname 1330Ste200-AP3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.43.35.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.30.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.37-config-20170929-----
+-----hostname LK-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.104.50.21-config-20170929-----
+-----hostname Westmoreland-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.151.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.104.50.23-config-20170929-----
+-----hostname Westmoreland-AP-4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.35-config-20170929-----
+-----hostname SNOP-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.142.1-config-20170929-----
+-----hostname Samuel_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.28-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.21-config-20170929-----
+-----hostname 1345N-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.39.50.20-config-20170929-----
+-----hostname Mockingbird-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.26-config-20170929-----
+-----hostname SNOP-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.20-config-20170929-----
+-----hostname 1345S-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.39.50.21-config-20170929-----
+-----hostname Mockingbird-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.22-config-20170929-----
+-----hostname 1330Ste200-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.31.50.20-config-20170929-----
+-----hostname CCAMIII-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.34-config-20170929-----
+-----hostname Hillside-AP-7-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.137.10.1-config-20170929-----
+-----hostname GrandPrairie_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.26-config-20170929-----
+-----hostname Eastside-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.30.50.20-config-20170929-----
+-----hostname CCAMII-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.20-config-20170929-----
+-----hostname Hillside-AP-15-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.100.1-config-20170929-----
+-----hostname LK_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.20-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP8-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.36-config-20170929-----
+-----hostname Hillside-AP-19-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.200.50.21-config-20170929-----
+-----hostname Montfort-AP2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.23-config-20170929-----
+-----hostname CCAM-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.186.1-config-20170929-----
+-----hostname Westmoreland_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.235.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.25.10.37-config-20170929-----
+-----hostname Midway-AP3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.15.1-config-20170929-----
+-----hostname 1345_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 145 River Bend, Suite 200
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps isis
+snmp-server enable traps local-auth
+snmp-server enable traps msdp
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.15.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.29-config-20170929-----
+-----hostname CCAM-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.22-config-20170929-----
+-----hostname 1345N-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.10.1-config-20170929-----
+-----hostname 1345_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 145 River Bend, Suite 200
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps isis
+snmp-server enable traps local-auth
+snmp-server enable traps msdp
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.102.1-config-20170929-----
+-----hostname LK_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.215.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.26-config-20170929-----
+-----hostname 1330Ste200-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.240.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.35-config-20170929-----
+-----hostname Hillside-AP-16-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.104.50.1-config-20170929-----
+-----hostname Westmoreland_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.1-config-20170929-----
+-----hostname 1345_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 145 River Bend, Suite 200
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps bgp cbgp2
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps isis
+snmp-server enable traps local-auth
+snmp-server enable traps msdp
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.20.1-config-20170929-----
+-----hostname 1330RB_MDF_3650-----
+snmp-server group MHMR v3 priv read RW write RW 
+snmp-server view RW iso included
+snmp-server location 1330 River Bend, Suite 100
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+snmp-server enable traps flowmon
+snmp-server enable traps transceiver all
+snmp-server enable traps call-home message-send-fail server-fail
+snmp-server enable traps rf
+snmp-server enable traps memory
+snmp-server enable traps cpu threshold
+snmp-server enable traps wireless bsnMobileStation bsnAccessPoint bsnRogue bsn80211Security bsnAutoRF bsnGeneral SI mobility mfp RRM AP rogue client
+snmp-server enable traps tty
+snmp-server enable traps eigrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps ospf errors
+snmp-server enable traps ospf retransmit
+snmp-server enable traps ospf lsa
+snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+snmp-server enable traps ospf cisco-specific state-change shamlink interface
+snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+snmp-server enable traps ospf cisco-specific errors
+snmp-server enable traps ospf cisco-specific retransmit
+snmp-server enable traps ospf cisco-specific lsa
+snmp-server enable traps auth-framework sec-violation
+snmp-server enable traps flash insertion removal
+snmp-server enable traps power-ethernet group 1
+snmp-server enable traps power-ethernet police
+snmp-server enable traps energywise
+snmp-server enable traps vtp
+snmp-server enable traps vlancreate
+snmp-server enable traps vlandelete
+snmp-server enable traps license
+snmp-server enable traps envmon fan shutdown supply temperature status
+snmp-server enable traps stackwise
+snmp-server enable traps port-security
+snmp-server enable traps fru-ctrl
+snmp-server enable traps entity
+snmp-server enable traps trustsec-sxp conn-srcaddr-err msg-parse-err conn-config-err binding-err conn-up conn-down binding-expn-fail oper-nodeid-change binding-conflict
+snmp-server enable traps trustsec-server radius-server provision-secret
+snmp-server enable traps trustsec authz-file-error cache-file-error keystore-file-error keystore-sync-fail random-number-fail src-entropy-fail
+snmp-server enable traps trustsec-interface unauthorized sap-fail authc-fail supplicant-fail authz-fail
+snmp-server enable traps trustsec-policy peer-policy-updated authz-sgacl-fail
+snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency
+snmp-server enable traps config-copy
+snmp-server enable traps config
+snmp-server enable traps config-ctid
+snmp-server enable traps event-manager
+snmp-server enable traps hsrp
+snmp-server enable traps ipmulticast
+snmp-server enable traps ospfv3 state-change
+snmp-server enable traps ospfv3 errors
+snmp-server enable traps pim neighbor-change rp-mapping-change invalid-pim-message
+snmp-server enable traps vstack
+snmp-server enable traps bridge newroot topologychange
+snmp-server enable traps stpx inconsistency root-inconsistency loop-inconsistency
+snmp-server enable traps syslog
+snmp-server enable traps ipsla
+snmp-server enable traps ike policy add
+snmp-server enable traps ike policy delete
+snmp-server enable traps ike tunnel start
+snmp-server enable traps ike tunnel stop
+snmp-server enable traps ipsec cryptomap add
+snmp-server enable traps ipsec cryptomap delete
+snmp-server enable traps ipsec cryptomap attach
+snmp-server enable traps ipsec cryptomap detach
+snmp-server enable traps ipsec tunnel start
+snmp-server enable traps ipsec tunnel stop
+snmp-server enable traps ipsec too-many-sas
+snmp-server enable traps errdisable
+snmp-server enable traps mac-notification change move threshold
+snmp-server enable traps vlan-membership
+snmp-server enable traps bulkstat collection transfer
+snmp-server enable traps vrfmib vrf-up vrf-down vnet-trunk-up vnet-trunk-down
+snmp-server host 192.168.42.116 version 3 priv MCSUser 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.36-config-20170929-----
+-----hostname LK-AP-3-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.237.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.193.50.34-config-20170929-----
+-----hostname LK-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.29-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.42.20.1-config-20170929-----
+-----hostname NOC_Nexus_6001_1-----
+snmp-server contact IT Department
+snmp-server location COLO
+snmp-server globalEnforcePriv
+snmp-server user admin network-admin auth md5 0x81c487106e094314cfd9bb03ce2ddd84 priv 0x81c487106e094314cfd9bb03ce2ddd84 localizedkey
+snmp-server user MCSUser network-operator
+snmp-server user MCSUser network-admin
+snmp-server host 192.168.42.116 informs version 3 auth MCSUser udp-port 161
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps lldp lldpRemTablesChange
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps hsrp state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.42-config-20170929-----
+-----hostname Hillside-AP-8-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.40.50.1-config-20170929-----
+-----hostname 1835-ASA-5505-----
+snmp-server group MHMR v3 priv 
+snmp-server user MCSUser MHMR v3 encrypted auth md5 aa:a8:ad:4f:54:0d:43:ec:02:b7:eb:e7:cd:d7:5d:ef priv aes 128 96:73:02:37:74:ec:5d:57:90:68:47:71:27:19:31:67 
+snmp-server host inside 192.168.42.116 version 3 MCSUser udp-port 161
+snmp-server location 1835 Young street - StewPot
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkup linkdown coldstart
+snmp-server enable traps syslog
+snmp-server enable traps ipsec start stop
+snmp-server enable traps entity config-change fru-insert fru-remove
+snmp-server enable traps remote-access session-threshold-exceeded
+
+
+access-list outside_cryptomap extended permit ip object-group StewPot-LOCAL object-group COLO 
+access-list outside_cryptomap extended permit ip object-group StewPot-LOCAL object-group Montfort 
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.33.50.21-config-20170929-----
+-----hostname 9708-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.103.1-config-20170929-----
+-----hostname LK_MDF_3650-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.207.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.22-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP6-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.218.50.23-config-20170929-----
+-----hostname 1345S-AP-2-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.175.1-config-20170929-----
+-----hostname Bonita_Gardens_1841-----
+snmp-server group MHMR v3 priv 
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.40.50.20-config-20170929-----
+-----hostname StewPot-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.31.50.21-config-20170929-----
+-----hostname CCAMIII-AP-1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.38.50.23-config-20170929-----
+-----hostname 16160-Cohen-Veteran-AP7-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.41-config-20170929-----
+-----hostname Hillside-AP-17-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.27-config-20170929-----
+-----hostname 1330Ste820-AP1-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.28-config-20170929-----
+-----hostname Hillside-AP-20-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.175.5-config-20170929-----
+-----hostname Bonita_Gardens_Apts_2960-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.42.20.2-config-20170929-----
+-----hostname NOC_Nexus_6001_1-----
+snmp-server contact IT Department
+snmp-server location COLO
+snmp-server globalEnforcePriv
+snmp-server user admin network-admin auth md5 0x81c487106e094314cfd9bb03ce2ddd84 priv 0x81c487106e094314cfd9bb03ce2ddd84 localizedkey
+snmp-server user MCSUser network-operator
+snmp-server user MCSUser network-admin
+snmp-server host 192.168.42.116 informs version 3 auth MCSUser udp-port 161
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps lldp lldpRemTablesChange
+snmp-server enable traps cfs merge-failure
+snmp-server enable traps aaa server-state-change
+snmp-server enable traps hsrp state-change
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.205.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.202.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.135.50.20-config-20170929-----
+-----hostname Samuell-AP4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.199.50.25-config-20170929-----
+-----hostname 1330Ste200-AP4-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.211.50.30-config-20170929-----
+-----hostname Hillside-AP-5-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.25.10.1-config-20170929-----
+-----hostname Midway_MDF_3650-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+
+-----/opt/nethydra/Metrocare/output/configs/10.34.50.21-config-20170929-----
+-----hostname TheBridge-AP-02-----
+
+
+
+
+-----/opt/nethydra/Metrocare/output/configs/192.168.222.1-config-20170929-----
+-----hostname Hillside_MDF_3750-----
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+
+
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+
+

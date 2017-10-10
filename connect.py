@@ -47,7 +47,7 @@ def tunnel(ip, port, device_type, username, password, secret, ssh_config_file):
         net_connect = ConnectHandler(**device)
         return net_connect
     except netmiko_exceptions as e:
-        logger.warn('{0} - Connection failed for {1}'.format(ip, username), exc_info=True)
+        con_log.warn('{0} - Connection failed for {1}'.format(ip, username), exc_info=True)
 
 
 def check_port(ip, port):
@@ -59,7 +59,7 @@ def check_port(ip, port):
         con_log.info('{0} - Port {1} OPEN'.format(ip, port))
         return True
     except socket.error, e:
-        logger.error('{0} - Port {1} CLOSED'.format(ip, port), exc_info=True)
+        con_log.error('{0} - Port {1} CLOSED'.format(ip, port), exc_info=True)
         return False
 
 

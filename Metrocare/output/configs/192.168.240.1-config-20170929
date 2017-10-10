@@ -1,0 +1,413 @@
+Building configuration...
+
+Current configuration : 10266 bytes
+!
+! Last configuration change at 14:07:02 CDT Fri Jun 2 2017 by admin
+! NVRAM config last updated at 14:07:05 CDT Fri Jun 2 2017 by admin
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service sequence-numbers
+!
+hostname Hillside_MDF_3750
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition Mgmt-vrf
+ !
+ address-family ipv4
+ exit-address-family
+!
+no logging buffered
+no logging console
+no logging monitor
+enable secret 5 $1$asDe$fgqnz0MWHMNQFpuyCJbb..
+!
+username admin password 7 10635A0D1747112B1E570922372B6374
+aaa new-model
+!
+!
+aaa authentication login default local enable
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone CST -6 0
+clock summer-time CDT recurring
+switch 1 provision ws-c3750x-12s
+system mtu routing 1500
+!
+!
+!
+!
+device-sensor filter-spec dhcp exclude all
+no ip source-route
+ip routing
+no ip cef optimize neighbor resolution
+!
+ip dhcp bootp ignore
+!
+!
+no ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-230993920
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-230993920
+ revocation-check none
+ rsakeypair TP-self-signed-230993920
+!
+!
+crypto pki certificate chain TP-self-signed-230993920
+ certificate self-signed 01
+  30820247 308201B0 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 32333039 39333932 30301E17 0D393330 33303130 30303131 
+  365A170D 32303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F 
+  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3233 30393933 
+  39323030 819F300D 06092A86 4886F70D 01010105 0003818D 00308189 02818100 
+  AD9620BA A03C607A F6A29CC0 8C17B69F 43C3FA1D E37A67B5 B0E4B2FD 2A2F16DD 
+  C8EE3362 B1FCB794 5408AA26 7EB35C5E CF0BECCE 3543339B 55958A08 B0CBF903 
+  22F1E52F 5E0231C7 4F5E649A 8F3275A2 04FD3907 3A5A174B 5BC319A8 04EBA211 
+  3295A48B 353376E2 6E280626 1015F564 8D1A14AD D343DE29 1296341B 91343697 
+  02030100 01A37130 6F300F06 03551D13 0101FF04 05300301 01FF301C 0603551D 
+  11041530 13821148 696C6C73 6964655F 4D44465F 33373530 301F0603 551D2304 
+  18301680 14F0C8F4 450CC8FC 4BCBDA9B 57FF7176 734F4913 0A301D06 03551D0E 
+  04160414 F0C8F445 0CC8FC4B CBDA9B57 FF717673 4F49130A 300D0609 2A864886 
+  F70D0101 04050003 8181002B A8BC5106 E4AFB2D5 65B5611B 3C4A3A49 E480DFCD 
+  4A10FDAD 451549EB A49F6496 320AD4AA 7EE66476 B5A0B24C CEF7359A F29311E3 
+  4796C0D6 8D96C7E7 D45E85F9 24E8DB00 A0D852BF 1236AB5F A13B5CE3 249B1F25 
+  D668ABE9 D762D944 0F385085 33AA867E 46075BCC 54C7895D FC761A1B A58356CF 
+  287573CF 7F1A5AF7 FE9A15
+  	quit
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+lldp run
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0
+ no ip address
+ no ip route-cache
+!
+interface GigabitEthernet1/0/1
+ description Uplink_To_BldgA
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/2
+ description Uplink_To_BldgB
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/3
+ description Uplink_To_BldgCandD
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/4
+ description Uplink_To_cottage1
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/5
+ description Uplink_To_cottage2
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/6
+ description Uplink_To_cottage3
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/7
+ description Uplink_To_cottage4
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/8
+ description Uplink_To_cottage5
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/9
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/10
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/11
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/0/12
+ description Opteman_To_MDF
+ switchport trunk allowed vlan 211
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ speed 100
+ duplex full
+!
+interface GigabitEthernet1/1/1
+!
+interface GigabitEthernet1/1/2
+!
+interface GigabitEthernet1/1/3
+!
+interface GigabitEthernet1/1/4
+!
+interface TenGigabitEthernet1/1/1
+!
+interface TenGigabitEthernet1/1/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan50
+ description Private_Wireless
+ ip address 10.211.50.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+!
+interface Vlan110
+ ip address 190.100.110.1 255.255.255.0
+!
+interface Vlan200
+ description Hillside_Bldg_A_Data
+ ip address 192.168.200.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan202
+ description Hillside_Bldg_A_Voice
+ ip address 192.168.202.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan205
+ description Hillside_Bldg_B_Data
+ ip address 192.168.205.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan207
+ description Hillside_Bldg_B_Voice
+ ip address 192.168.207.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan210
+ description Hillside_Bldg_C-D_Data
+ ip address 192.168.210.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan211
+ description Opteman
+ ip address 192.168.211.2 255.255.255.0
+!
+interface Vlan214
+ description Hillside_Bldg_C-D_Voice
+ ip address 192.168.214.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan215
+ description Hillside_Bldg_F_Data
+ ip address 192.168.215.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan217
+ description Hillside_Bldg_F_Voice
+ ip address 192.168.217.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan220
+ description Hillside_Cottage1_Data
+ ip address 192.168.220.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan222
+ description Hillside_Cottage1_Voice
+ ip address 192.168.222.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan225
+ description Hillside_Cottage2_Data
+ ip address 192.168.225.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan227
+ description Hillside_Cottage2_Voice
+ ip address 192.168.227.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan230
+ description Hillside_Cottage3_Data
+ ip address 192.168.230.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan232
+ description Hillside_Cottage3_Voice
+ ip address 192.168.232.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan235
+ description Hillside_Cottage4_Data
+ ip address 192.168.235.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan237
+ description Hillside_Cottage4_Voice
+ ip address 192.168.237.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan240
+ description Hillside_Cottage5_Data
+ ip address 192.168.240.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan242
+ description Hillside_Cottage5_Voice
+ ip address 192.168.242.1 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+interface Vlan250
+ description Management
+ ip address 10.211.250.1 255.255.255.0
+!
+!
+router eigrp 199
+ network 10.211.0.0 0.0.255.255
+ network 192.168.0.0 0.0.255.255
+ eigrp stub connected
+!
+ip default-gateway 192.168.211.1
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip ssh logging events
+ip ssh version 2
+!
+!
+logging origin-id hostname
+logging facility syslog
+logging server-arp
+logging host 192.168.42.116 session-id hostname
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+!
+!
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+!
+!
+!
+no vstack
+banner motd ^CTHIS IS A PRIVATE COMPUTER SYSTEM. It is for authorized use only.
+Users (authorized or unauthorized) have no explicit or implicit
+expectation of privacy.
+
+Any or all uses of this system and all files on this system may
+be intercepted, monitored, recorded, copied, audited, inspected,
+and disclosed to authorized site and law enforcement personnel,
+as well as authorized officials of other agencies, both domestic
+and foreign.  By using this system, the user consents to such
+interception, monitoring, recording, copying, auditing, inspection,
+and disclosure at the discretion of authorized site personnel.
+
+Unauthorized or improper use of this system may result in
+administrative disciplinary action and civil and criminal penalties.
+By continuing to use this system you indicate your awareness of and
+consent to these terms and conditions of use.   LOG OFF IMMEDIATELY
+if you do not agree to the conditions stated in this warning.
+^C
+!
+line con 0
+ session-timeout 5 
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport preferred ssh
+ transport output ssh
+ stopbits 1
+line vty 0 4
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ length 0
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+!
+ntp server 108.61.73.243 minpoll 10 prefer
+!
+end

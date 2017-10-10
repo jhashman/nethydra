@@ -1,5 +1,5 @@
 base_path = '/opt/nethydra'
-org = 'Metrocare'
+org = 'UCC'
 org_path = base_path + '/' + org
 
 # nethydra.py
@@ -23,4 +23,6 @@ nmap_csv = org_path + '/output/' + org + '-devices.csv'
 # get_cisco_info
 config_file_path = org_path + '/output/configs/'
 tech_support_file_path = org_path + '/output/tech-support/'
+cdp_neighbor_file_path = org_path + '/output/cdp/'
 
+textfsm_templates = base_path + '/etc/templates/'

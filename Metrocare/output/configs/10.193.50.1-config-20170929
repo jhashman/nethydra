@@ -1,0 +1,601 @@
+Building configuration...
+
+Current configuration : 15782 bytes
+!
+! Last configuration change at 14:10:14 CDT Fri Jun 2 2017 by admin
+! NVRAM config last updated at 14:11:08 CDT Fri Jun 2 2017 by admin
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service compress-config
+service sequence-numbers
+!
+hostname LK_MDF_3650
+!
+boot-start-marker
+boot-end-marker
+!
+!
+vrf definition Mgmt-vrf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+logging console critical
+no logging monitor
+enable secret 5 $1$2gLy$yWCdyc36l0s2akMEWcOPl.
+!
+username admin password 7 080C1F5A1B49063700582F0D39287469
+aaa new-model
+!
+!
+aaa authentication login default local enable
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone CST -6 0
+clock summer-time CDT recurring
+switch 1 provision ws-c3650-24ps
+device-sensor filter-spec dhcp exclude all
+!
+!
+!
+!
+!
+no ip source-route
+ip routing
+!
+no ip domain-lookup
+ip dhcp bootp ignore
+!
+!
+qos queue-softmax-multiplier 100
+!
+flow record NFR_in
+ match ipv4 tos
+ match ipv4 protocol
+ match ipv4 source address
+ match ipv4 destination address
+ match transport source-port
+ match transport destination-port
+ match interface input
+ collect interface output
+ collect counter bytes long
+ collect counter packets long
+ collect timestamp absolute first
+!
+!
+flow record NFR_out
+ match ipv4 protocol
+ match ipv4 source address
+ match ipv4 destination address
+ match transport source-port
+ match transport destination-port
+ match interface output
+ collect interface input
+ collect counter bytes long
+ collect counter packets long
+ collect timestamp absolute first
+ collect timestamp absolute last
+!
+!
+flow exporter NFE
+ destination 10.199.20.83
+ source Vlan193
+ transport udp 8787
+!
+!
+flow monitor NFM_in
+ exporter NFE
+ record NFR_in
+!
+!
+flow monitor NFM_out
+ exporter NFE
+ record NFR_out
+!
+!
+table-map AutoQos-4.0-Trust-Cos-Table
+ default copy
+!
+!
+crypto pki trustpoint TP-self-signed-3203479172
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3203479172
+ revocation-check none
+ rsakeypair TP-self-signed-3203479172
+!
+!
+crypto pki certificate chain TP-self-signed-3203479172
+ certificate self-signed 01
+  30820243 308201AC A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33323033 34373931 3732301E 170D3135 30353131 31313138 
+  34365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 32303334 
+  37393137 3230819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100BC05 D23C7F92 6045A66D 1E5E45C2 5C0DA5D6 D6093CD9 57952441 64C5A02A 
+  9FC48950 DA444521 C00F289C 552DFD7A 5B407DAF D6CFC22E 967C8BEA EF038C19 
+  9EA4279D 2E0BA2EA 28D2CB37 6AF8AEC1 490C3EA4 F95ACB38 B35211EF BE1B2792 
+  3ED68199 7DA01015 E8D69FA8 260A4463 DF1F169B 1200EF0B F266E30F FB37D611 
+  67C90203 010001A3 6B306930 0F060355 1D130101 FF040530 030101FF 30160603 
+  551D1104 0F300D82 0B4C4B5F 4D44465F 33363530 301F0603 551D2304 18301680 
+  148976C5 BDEC94A8 679A1C23 CE822D5B BDBA91A5 2E301D06 03551D0E 04160414 
+  8976C5BD EC94A867 9A1C23CE 822D5BBD BA91A52E 300D0609 2A864886 F70D0101 
+  04050003 81810090 764B8AE7 93835D6B 8B743652 FB6AC57F C24084F1 F0ADD4EC 
+  F43B9466 25339612 03BD55CE 9CF12A83 9553BD1A D41CCCCF 75C7D4DC 1727F1B7 
+  15F99377 6531F53D DF2210EF E1B191D0 EB7AF143 5DF7D199 5312E825 C01662C3 
+  A6BA63BA 97D58C5A 5CC267B7 3B498CE7 BB70F693 5AB50612 563F75C2 21FBD75C 
+  17598CBF FBA563
+  	quit
+diagnostic bootup level minimal
+spanning-tree mode pvst
+spanning-tree extend system-id
+hw-switch switch 1 logging onboard message level 3
+!
+redundancy
+ mode sso
+!
+!
+vlan configuration 193
+ip flow monitor NFM_in input
+ip flow monitor NFM_out output
+lldp run
+!
+!
+class-map match-any AutoQos-4.0-Output-Multimedia-Conf-Queue
+ match dscp af41  af42  af43 
+ match cos  4 
+class-map match-any AutoQos-4.0-Output-Bulk-Data-Queue
+ match dscp af11  af12  af13 
+ match cos  1 
+class-map match-any AutoQos-4.0-Output-Priority-Queue
+ match dscp cs4  cs5  ef 
+ match cos  5 
+class-map match-any AutoQos-4.0-Output-Multimedia-Strm-Queue
+ match dscp af31  af32  af33 
+class-map match-any non-client-nrt-class
+class-map match-any AutoQos-4.0-Output-Trans-Data-Queue
+ match dscp af21  af22  af23 
+ match cos  2 
+class-map match-any AutoQos-4.0-Output-Scavenger-Queue
+ match dscp cs1 
+class-map match-any AutoQos-4.0-Output-Control-Mgmt-Queue
+ match dscp cs2  cs3  cs6  cs7 
+ match cos  3 
+!
+policy-map port_child_policy
+ class non-client-nrt-class
+  bandwidth remaining ratio 10
+policy-map AutoQos-4.0-Output-Policy
+ class AutoQos-4.0-Output-Priority-Queue
+  priority level 1 percent 30
+ class AutoQos-4.0-Output-Control-Mgmt-Queue
+  bandwidth remaining percent 10 
+  queue-limit dscp cs2 percent 80
+  queue-limit dscp cs3 percent 90
+  queue-limit dscp cs6 percent 100
+  queue-limit dscp cs7 percent 100
+  queue-buffers ratio 10
+ class AutoQos-4.0-Output-Multimedia-Conf-Queue
+  bandwidth remaining percent 10 
+  queue-buffers ratio 10
+ class AutoQos-4.0-Output-Trans-Data-Queue
+  bandwidth remaining percent 10 
+  queue-buffers ratio 10
+ class AutoQos-4.0-Output-Bulk-Data-Queue
+  bandwidth remaining percent 4 
+  queue-buffers ratio 10
+ class AutoQos-4.0-Output-Scavenger-Queue
+  bandwidth remaining percent 1 
+  queue-buffers ratio 10
+ class AutoQos-4.0-Output-Multimedia-Strm-Queue
+  bandwidth remaining percent 10 
+  queue-buffers ratio 10
+ class class-default
+  bandwidth remaining percent 25 
+  queue-buffers ratio 25
+policy-map AutoQos-4.0-Trust-Cos-Input-Policy
+ class class-default
+  set cos cos table AutoQos-4.0-Trust-Cos-Table
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ vrf forwarding Mgmt-vrf
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet1/0/1
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/2
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/3
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/4
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/5
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/6
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/7
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/8
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/9
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/10
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/11
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/12
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/13
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/14
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/15
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/16
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/17
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/18
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/19
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/20
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/21
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/22
+ switchport access vlan 100
+ switchport mode access
+ switchport voice vlan 102
+ auto qos trust 
+ spanning-tree portfast
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/0/23
+ description Voice_router
+ switchport access vlan 102
+!
+interface GigabitEthernet1/0/24
+ description OPTEMAN
+ switchport trunk allowed vlan 193
+ switchport mode trunk
+ ip device tracking maximum 0
+ speed 100
+ duplex full
+ auto qos trust 
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/1/1
+ switchport trunk native vlan 250
+ switchport mode trunk
+ auto qos trust 
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/1/2
+ switchport trunk native vlan 250
+ switchport mode trunk
+ auto qos trust 
+ service-policy input AutoQos-4.0-Trust-Cos-Input-Policy
+ service-policy output AutoQos-4.0-Output-Policy
+!
+interface GigabitEthernet1/1/3
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface GigabitEthernet1/1/4
+ switchport trunk native vlan 250
+ switchport mode trunk
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan50
+ description WAP
+ ip address 10.193.50.1 255.255.255.0
+ ip helper-address 10.42.20.24
+!
+interface Vlan100
+ description LK_Data
+ ip address 192.168.100.1 255.255.255.0
+ ip helper-address 10.42.20.24
+ ip helper-address 10.42.20.25
+!
+interface Vlan101
+ ip address 192.168.101.1 255.255.255.0
+ ip helper-address 10.42.20.25
+ ip helper-address 10.42.20.24
+!
+interface Vlan102
+ ip address 192.168.102.1 255.255.255.0
+ ip helper-address 10.42.20.24
+ ip helper-address 10.42.20.25
+!
+interface Vlan103
+ ip address 192.168.103.1 255.255.255.0
+ ip helper-address 10.42.20.25
+ ip helper-address 10.42.20.24
+!
+interface Vlan193
+ description Opteman
+ ip address 192.168.193.2 255.255.255.0
+!
+interface Vlan250
+ description mgmt
+ ip address 10.193.250.1 255.255.255.0
+!
+!
+router eigrp 199
+ network 10.193.0.0 0.0.255.255
+ network 192.168.0.0 0.0.255.255
+ eigrp stub connected
+!
+ip forward-protocol nd
+no ip http server
+ip http authentication local
+no ip http secure-server
+ip ssh logging events
+ip ssh version 2
+!
+!
+logging origin-id hostname
+logging facility syslog
+logging server-arp
+logging host 192.168.42.116 session-id hostname
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+!
+snmp-server group MHMR v3 priv 
+!
+!
+!
+no vstack
+banner motd ^CTHIS IS A PRIVATE COMPUTER SYSTEM. It is for authorized use only.
+Users (authorized or unauthorized) have no explicit or implicit
+expectation of privacy.
+
+Any or all uses of this system and all files on this system may
+be intercepted, monitored, recorded, copied, audited, inspected,
+and disclosed to authorized site and law enforcement personnel,
+as well as authorized officials of other agencies, both domestic
+and foreign.  By using this system, the user consents to such
+interception, monitoring, recording, copying, auditing, inspection,
+and disclosure at the discretion of authorized site personnel.
+
+Unauthorized or improper use of this system may result in
+administrative disciplinary action and civil and criminal penalties.
+By continuing to use this system you indicate your awareness of and
+consent to these terms and conditions of use.   LOG OFF IMMEDIATELY
+if you do not agree to the conditions stated in this warning.
+^C
+!
+line con 0
+ session-timeout 5 
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport preferred ssh
+ transport output ssh
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ length 0
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+!
+ntp server 108.61.73.243 minpoll 10 prefer
+wsma agent exec
+ profile httplistener
+ profile httpslistener
+!
+wsma agent config
+ profile httplistener
+ profile httpslistener
+!
+wsma agent filesys
+ profile httplistener
+ profile httpslistener
+!
+wsma agent notify
+ profile httplistener
+ profile httpslistener
+!
+!
+wsma profile listener httplistener
+ transport http
+!
+wsma profile listener httpslistener
+ transport https
+!
+ap group default-group
+end

@@ -1,0 +1,231 @@
+Building configuration...
+
+Current configuration : 5527 bytes
+!
+! Last configuration change at 11:15:16 CDT Thu Sep 28 2017
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service sequence-numbers
+!
+hostname Bonita_Gardens_Apts_2960
+!
+boot-start-marker
+boot-end-marker
+!
+logging buffered 16384
+logging console critical
+no logging monitor
+enable secret 5 $1$NINm$g2hNcdDTZbWxE8Y.vtaf2/
+!
+username admin password 7 00294012160B08261D726F471A1A5556
+aaa new-model
+!
+!
+aaa authentication login default local enable
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone CST -6 0
+clock summer-time CDT recurring
+switch 1 provision ws-c2960x-24ps-l
+!
+!
+!
+!
+device-sensor filter-spec dhcp exclude all
+no ip source-route
+ip dhcp bootp ignore
+!
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-2317871616
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2317871616
+ revocation-check none
+ rsakeypair TP-self-signed-2317871616
+!
+!
+crypto pki certificate chain TP-self-signed-2317871616
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 32333137 38373136 3136301E 170D3136 30323231 32303433 
+  35365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 33313738 
+  37313631 3630819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100A6AF 56629C92 12A8A17E 1E282DA2 176C0E4D F9AD83AA E7FD1206 8CD0C3BE 
+  95F6D12A A500EC3A C0D916C9 7DC086C2 AFF7C6D4 90B7FF71 6C5DF3A3 FFC0B95A 
+  C65A2F3F FF43FD5B 521474DB 053AD5BE 5F97D613 15EA4C6D E3397899 1FA92F97 
+  69890CEB B94799F7 A0E47329 8CB1A15D 9CD921B8 D9DF94DA C482A7DF 496B5BA6 
+  B2D70203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603 
+  551D2304 18301680 14B04747 CA7E2D59 DAB38C47 F4178A96 59E7E1AE A8301D06 
+  03551D0E 04160414 B04747CA 7E2D59DA B38C47F4 178A9659 E7E1AEA8 300D0609 
+  2A864886 F70D0101 05050003 81810064 375AC54E 69E2E7B3 D66F04F6 F0BD3761 
+  B8B1763A C891C033 07452438 1D072162 B8B58AE2 B61E3365 04CB15D9 FBA89739 
+  249B223F 2ADA0A16 5DE8AFE5 727A053D 0FD3B11A A356AB1E F0E4D405 4DE9D78F 
+  178EE493 3E3E6159 69179A01 684EA160 73C80D46 34E2A0E9 0BD5CC70 871559FB 
+  811CDF05 1225DC6F 0FC889CA 88F2B7
+  	quit
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0
+ no ip address
+!
+interface GigabitEthernet1/0/1
+!
+interface GigabitEthernet1/0/2
+!
+interface GigabitEthernet1/0/3
+!
+interface GigabitEthernet1/0/4
+!
+interface GigabitEthernet1/0/5
+!
+interface GigabitEthernet1/0/6
+!
+interface GigabitEthernet1/0/7
+!
+interface GigabitEthernet1/0/8
+!
+interface GigabitEthernet1/0/9
+!
+interface GigabitEthernet1/0/10
+!
+interface GigabitEthernet1/0/11
+!
+interface GigabitEthernet1/0/12
+!
+interface GigabitEthernet1/0/13
+!
+interface GigabitEthernet1/0/14
+!
+interface GigabitEthernet1/0/15
+!
+interface GigabitEthernet1/0/16
+!
+interface GigabitEthernet1/0/17
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+!
+interface GigabitEthernet1/0/20
+!
+interface GigabitEthernet1/0/21
+!
+interface GigabitEthernet1/0/22
+!
+interface GigabitEthernet1/0/23
+!
+interface GigabitEthernet1/0/24
+ switchport mode access
+!
+interface GigabitEthernet1/0/25
+!
+interface GigabitEthernet1/0/26
+!
+interface GigabitEthernet1/0/27
+!
+interface GigabitEthernet1/0/28
+!
+interface Vlan1
+ ip address 192.168.175.5 255.255.255.0
+ ip helper-address 10.42.20.24 
+ ip helper-address 10.42.20.25 
+!
+no ip http server
+no ip http secure-server
+!
+ip ssh logging events
+ip ssh version 2
+!
+logging origin-id hostname
+logging facility syslog
+logging server-arp
+logging host 192.168.42.116 session-id hostname
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+!
+snmp-server group MHMR v3 priv 
+snmp-server community metrocare RW
+!
+!
+no vstack
+banner motd ^CTHIS IS A PRIVATE COMPUTER SYSTEM. It is for authorized use only.
+Users (authorized or unauthorized) have no explicit or implicit
+expectation of privacy.
+
+Any or all uses of this system and all files on this system may
+be intercepted, monitored, recorded, copied, audited, inspected,
+and disclosed to authorized site and law enforcement personnel,
+as well as authorized officials of other agencies, both domestic
+and foreign.  By using this system, the user consents to such
+interception, monitoring, recording, copying, auditing, inspection,
+and disclosure at the discretion of authorized site personnel.
+
+Unauthorized or improper use of this system may result in
+administrative disciplinary action and civil and criminal penalties.
+By continuing to use this system you indicate your awareness of and
+consent to these terms and conditions of use.   LOG OFF IMMEDIATELY
+if you do not agree to the conditions stated in this warning.
+^C
+!
+line con 0
+ session-timeout 5 
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport preferred ssh
+ transport output ssh
+line vty 0 4
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+!
+ntp server 108.61.73.243 minpoll 10 prefer
+!
+end

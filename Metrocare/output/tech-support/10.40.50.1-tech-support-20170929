@@ -1,0 +1,1347 @@
+
+Cisco Adaptive Security Appliance Software Version 8.3(1) 
+Device Manager Version 6.3(1)
+
+Compiled on Thu 04-Mar-10 16:56 by builders
+System image file is "disk0:/asa831-k8.bin"
+Config file at boot was "startup-config"
+
+1835-ASA-5505 up 22 days 0 hours
+
+Hardware:   ASA5505, 512 MB RAM, CPU Geode 500 MHz
+Internal ATA Compact Flash, 128MB
+BIOS Flash M50FW016 @ 0xfff00000, 2048KB
+
+Encryption hardware device : Cisco ASA-5505 on-board accelerator (revision 0x0)
+                             Boot microcode   : CN1000-MC-BOOT-2.00 
+                             SSL/IKE microcode: CNLite-MC-SSLm-PLUS-2.03
+                             IPSec microcode  : CNlite-MC-IPSECm-MAIN-2.06
+ 0: Int: Internal-Data0/0    : address is 5475.d03e.4b95, irq 11
+ 1: Ext: Ethernet0/0         : address is 5475.d03e.4b8d, irq 255
+ 2: Ext: Ethernet0/1         : address is 5475.d03e.4b8e, irq 255
+ 3: Ext: Ethernet0/2         : address is 5475.d03e.4b8f, irq 255
+ 4: Ext: Ethernet0/3         : address is 5475.d03e.4b90, irq 255
+ 5: Ext: Ethernet0/4         : address is 5475.d03e.4b91, irq 255
+ 6: Ext: Ethernet0/5         : address is 5475.d03e.4b92, irq 255
+ 7: Ext: Ethernet0/6         : address is 5475.d03e.4b93, irq 255
+ 8: Ext: Ethernet0/7         : address is 5475.d03e.4b94, irq 255
+ 9: Int: Internal-Data0/1    : address is 0000.0003.0002, irq 255
+10: Int: Not used            : irq 255
+11: Int: Not used            : irq 255
+
+Licensed features for this platform:
+Maximum Physical Interfaces    : 8              perpetual
+VLANs                          : 3              DMZ Restricted
+Dual ISPs                      : Disabled       perpetual
+VLAN Trunk Ports               : 0              perpetual
+Inside Hosts                   : Unlimited      perpetual
+Failover                       : Disabled       perpetual
+VPN-DES                        : Enabled        perpetual
+VPN-3DES-AES                   : Enabled        perpetual
+SSL VPN Peers                  : 2              perpetual
+Total VPN Peers                : 10             perpetual
+Shared License                 : Disabled       perpetual
+AnyConnect for Mobile          : Disabled       perpetual
+AnyConnect for Cisco VPN Phone : Disabled       perpetual
+AnyConnect Essentials          : Disabled       perpetual
+Advanced Endpoint Assessment   : Disabled       perpetual
+UC Phone Proxy Sessions        : 2              perpetual
+Total UC Proxy Sessions        : 2              perpetual
+Botnet Traffic Filter          : Disabled       perpetual
+Intercompany Media Engine      : Disabled       perpetual
+
+This platform has a Base license.
+
+Serial Number: JMX14194171
+Running Permanent Activation Key: 0xf33acc5b 0x60e7b553 0x30122528 0xb9d038e4 0xc9142f9e 
+Configuration register is 0x1
+Configuration has not been modified since last system restart.
+
+------------------ show disk0: controller ------------------
+
+
+Flash Model: SMART CF
+
+
+------------------ show clock ------------------
+
+14:34:04.813 CDT Fri Sep 29 2017
+
+------------------ show crashinfo ------------------
+
+No crash file found.
+
+
+------------------ show module ------------------
+
+
+Mod Card Type                                    Model              Serial No. 
+--- -------------------------------------------- ------------------ -----------
+  0 ASA 5505 Adaptive Security Appliance         ASA5505            JMX14194171
+
+Mod MAC Address Range                 Hw Version   Fw Version   Sw Version     
+--- --------------------------------- ------------ ------------ ---------------
+  0 5475.d03e.4b8d to 5475.d03e.4b97  1.0          1.0(12)13    8.3(1)
+
+Mod SSC Application Name           Status           SSC Application Version
+--- ------------------------------ ---------------- --------------------------
+
+Mod Status             Data Plane Status     Compatibility
+--- ------------------ --------------------- -------------
+  0 Up Sys             Not Applicable         
+
+
+------------------ show memory ------------------
+
+Free memory:       341474424 bytes (64%)
+Used memory:       195396488 bytes (36%)
+-------------     ----------------
+Total memory:      536870912 bytes (100%)
+
+------------------ show conn count ------------------
+
+14 in use, 1029 most used
+
+------------------ show xlate count ------------------
+
+2 in use, 138 most used
+
+------------------ show blocks ------------------
+
+  SIZE    MAX    LOW    CNT
+     0    400    371    400
+     4    100     99     99
+    80    100     90    100
+   256    200    100    200
+  1550   6921   6903   6906
+  2048   1200   1200   1200
+  2560    264    264    264
+  4096    100    100    100
+  8192    100     99    100
+ 16384    102    102    102
+ 65536     16     16     16
+CORE  LIMIT  ALLOC   HIGH    CNT       FAILED
+   0  24576    168    168    167            0
+
+------------------ show blocks queue history detail ------------------
+
+History buffer memory usage: 2832 bytes (default)
+History analysis time limit: 100 msec
+
+Please see 'show blocks exhaustion snapshot' for more information
+
+------------------ show interface ------------------
+
+Interface Internal-Data0/0 "", is up, line protocol is up
+  Hardware is y88acs06, BW 1000 Mbps, DLY 10 usec
+	(Full-duplex), (1000 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	MAC address 5475.d03e.4b95, MTU not set
+	IP address unassigned
+	40736349 packets input, 20245675541 bytes, 0 no buffer
+	Received 108459 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops, 0 demux drops
+	40979842 packets output, 19745048729 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops, 0 tx hangs
+	input queue (blocks free curr/low): hardware (512/487)
+	output queue (blocks free curr/low): hardware (511/412)
+  Control Point Interface States:
+	Interface number is 3
+	Interface config status is active
+	Interface state is active
+Interface Internal-Data0/1 "", is up, line protocol is up
+  Hardware is 88E6095, BW 1000 Mbps, DLY 10 usec
+	(Full-duplex), (1000 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	MAC address 0000.0003.0002, MTU not set
+	IP address unassigned
+	40979206 packets input, 19744906081 bytes, 0 no buffer
+	Received 30560 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 switch ingress policy drops
+	40735965 packets output, 20245599315 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 12
+	Interface config status is active
+	Interface state is active
+Interface Vlan1 "inside", is up, line protocol is up
+  Hardware is EtherSVI, BW 100 Mbps, DLY 100 usec
+	MAC address 5475.d03e.4b95, MTU 1500
+	IP address 10.40.50.1, subnet mask 255.255.255.0
+  Traffic Statistics for "inside":
+	15855331 packets input, 3023022772 bytes
+	24226074 packets output, 14728654314 bytes
+	4142 packets dropped
+      1 minute input rate 7 pkts/sec,  2133 bytes/sec
+      1 minute output rate 8 pkts/sec,  4243 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 17 pkts/sec,  2959 bytes/sec
+      5 minute output rate 12 pkts/sec,  2581 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 15
+	Interface config status is active
+	Interface state is active
+Interface Vlan2 "outside", is up, line protocol is up
+  Hardware is EtherSVI, BW 100 Mbps, DLY 100 usec
+	MAC address 5475.d03e.4b95, MTU 1500
+	IP address 97.77.25.118, subnet mask 255.255.255.252
+  Traffic Statistics for "outside":
+	24943843 packets input, 16329470157 bytes
+	16753831 packets output, 4114316135 bytes
+	52034 packets dropped
+      1 minute input rate 8 pkts/sec,  4800 bytes/sec
+      1 minute output rate 7 pkts/sec,  2615 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 12 pkts/sec,  3372 bytes/sec
+      5 minute output rate 17 pkts/sec,  4128 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 16
+	Interface config status is active
+	Interface state is active
+Interface Virtual0 "_internal_loopback", is up, line protocol is up
+  Hardware is Virtual	MAC address 0000.0000.0000, MTU 1500
+	IP address 127.0.0.1, subnet mask 255.255.255.0
+  Traffic Statistics for "_internal_loopback":
+	1 packets input, 28 bytes
+	1 packets output, 28 bytes
+	1 packets dropped
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+  Control Point Interface States:
+	Interface number is 13
+	Interface config status is active
+	Interface state is active
+Interface Ethernet0/0 "", is up, line protocol is up
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex(Full-duplex), Auto-Speed(100 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b8d, MTU not set
+	IP address unassigned
+	25749543 packets input, 17033309957 bytes, 0 no buffer
+	Received 69943 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	868843 switch ingress policy drops
+	16753203 packets output, 4415789419 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 4
+	Interface config status is active
+	Interface state is active
+Interface Ethernet0/1 "", is up, line protocol is up
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex(Full-duplex), Auto-Speed(100 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b8e, MTU not set
+	IP address unassigned
+	93642 packets input, 15718801 bytes, 0 no buffer
+	Received 6519 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	398975 packets output, 310937970 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 5
+	Interface config status is active
+	Interface state is active
+Interface Ethernet0/2 "", is administratively down, line protocol is down
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b8f, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 6
+	Interface config status is not active
+	Interface state is not active
+Interface Ethernet0/3 "", is administratively down, line protocol is down
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b90, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 7
+	Interface config status is not active
+	Interface state is not active
+Interface Ethernet0/4 "", is administratively down, line protocol is down
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b91, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 8
+	Interface config status is not active
+	Interface state is not active
+Interface Ethernet0/5 "", is administratively down, line protocol is down
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b92, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 9
+	Interface config status is not active
+	Interface state is not active
+Interface Ethernet0/6 "", is administratively down, line protocol is down
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex, Auto-Speed
+	Input flow control is unsupported, output flow control is unsupported
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b93, MTU not set
+	IP address unassigned
+	0 packets input, 0 bytes, 0 no buffer
+	Received 0 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	0 switch ingress policy drops
+	0 packets output, 0 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 10
+	Interface config status is not active
+	Interface state is not active
+Interface Ethernet0/7 "", is up, line protocol is up
+  Hardware is 88E6095, BW 100 Mbps, DLY 100 usec
+	Auto-Duplex(Full-duplex), Auto-Speed(100 Mbps)
+	Input flow control is unsupported, output flow control is unsupported
+	Description: Wireless AP
+	Available but not configured via nameif
+	MAC address 5475.d03e.4b94, MTU not set
+	IP address unassigned
+	16069370 packets input, 3348882342 bytes, 0 no buffer
+	Received 31996 broadcasts, 0 runts, 0 giants
+	0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+	0 L2 decode drops
+	190360 switch ingress policy drops
+	24013774 packets output, 14902627588 bytes, 0 underruns
+	0 pause output, 0 resume output
+	0 output errors, 0 collisions, 0 interface resets
+	0 late collisions, 0 deferred
+	0 input reset drops, 0 output reset drops
+	0 rate limit drops
+	0 switch egress policy drops
+  Control Point Interface States:
+	Interface number is 11
+	Interface config status is active
+	Interface state is active
+
+------------------ show cpu usage ------------------
+
+CPU utilization for 5 seconds = 54%; 1 minute: 17%; 5 minutes: 13%
+
+------------------ show cpu hogging process ------------------
+
+
+Process:      Dispatch Unit, PROC_PC_TOTAL: 1, MAXHOG: 166, LASTHOG: 166
+LASTHOG At:   00:47:33 CDT Sep 23 2017
+PC:           81bd279 (suspend)
+
+Process:      Dispatch Unit, NUMHOG: 1, MAXHOG: 166, LASTHOG: 166
+LASTHOG At:   00:47:33 CDT Sep 23 2017
+PC:           81bd279 (suspend)
+Call stack:   81bd279  8062823
+
+Process:      IKE Daemon, PROC_PC_TOTAL: 2, MAXHOG: 24, LASTHOG: 14
+LASTHOG At:   13:48:18 CDT Sep 25 2017
+PC:           84db74d (suspend)
+
+Process:      IKE Daemon, NUMHOG: 2, MAXHOG: 24, LASTHOG: 14
+LASTHOG At:   13:48:18 CDT Sep 25 2017
+PC:           84db74d (suspend)
+Call stack:   8062823
+
+Process:      ssh_init, PROC_PC_TOTAL: 5, MAXHOG: 10, LASTHOG: 10
+LASTHOG At:   05:59:13 CDT Sep 29 2017
+PC:           80639b5 (suspend)
+
+Process:      ssh_init, NUMHOG: 5, MAXHOG: 10, LASTHOG: 10
+LASTHOG At:   05:59:13 CDT Sep 29 2017
+PC:           80639b5 (suspend)
+Call stack:   80639b5  814505b  933ab64  934f8d7  933d035  933cccf  933caa0
+              932bfaf  931b9fc  933bd3a  933bbb1  932acf6  931b7ac  813e99f
+
+Process:      ssh_init, PROC_PC_TOTAL: 514, MAXHOG: 17, LASTHOG: 15
+LASTHOG At:   14:33:57 CDT Sep 29 2017
+PC:           8c6a37c (suspend)
+
+Process:      ssh_init, NUMHOG: 514, MAXHOG: 17, LASTHOG: 15
+LASTHOG At:   14:33:57 CDT Sep 29 2017
+PC:           8c6a37c (suspend)
+Call stack:   8c6a37c  8c76ffd  8c74f4e  8c750f8  8c76181  8c6fa74  8062823
+            
+
+Process:      ssh, NUMHOG: 5, MAXHOG: 27, LASTHOG: 18
+LASTHOG At:   14:34:04 CDT Sep 29 2017
+PC:           84a619e (suspend)
+Call stack:   84a619e  84a6512  84a70e1  84a7987  84a7aaa  8558b9b  8558e8a
+              83d3518  83ca145  80659d1  89196d9  8919790  89ff711  8a27468
+
+Process:      ssh, PROC_PC_TOTAL: 7, MAXHOG: 27, LASTHOG: 18
+LASTHOG At:   14:34:04 CDT Sep 29 2017
+PC:           84a619e (suspend)
+
+Process:      ssh, NUMHOG: 4, MAXHOG: 23, LASTHOG: 23
+LASTHOG At:   14:34:04 CDT Sep 29 2017
+PC:           83d3cc7 (suspend)
+Call stack:   84a0a7e  84a6266  84a6512  84a70e1  84a7987  84a7aaa  8558b9b
+              8558e8a  83d3518  83ca145  80659d1  89196d9  8919790  89ff711
+
+Process:      ssh, PROC_PC_TOTAL: 5, MAXHOG: 25, LASTHOG: 25
+LASTHOG At:   14:34:04 CDT Sep 29 2017
+PC:           83d3cc7 (suspend)
+
+Process:      ssh, NUMHOG: 1, MAXHOG: 25, LASTHOG: 25
+LASTHOG At:   14:34:04 CDT Sep 29 2017
+PC:           83d3cc7 (suspend)
+Call stack:   84a0a7e  84a4d34  8558f98  8558bcc  8558e8a  83d3518  83ca145
+              80659d1  89196d9  8919790  89ff711  8a27468  892ecb2  88fcff6
+
+CPU hog threshold (msec): 10.240
+Last cleared: None
+
+------------------ show process ------------------
+
+
+    PC       SP       STATE       Runtime    SBASE     Stack Process
+Lwe 080550cc c6aa0cf4 09fac2d8          0 c6a9edf0 7544/8192 block_diag
+Mrd 081bcfa4 c6ad087c 09fab838     954948 c6ab0a38 122600/131072 Dispatch Unit
+Msi 08f572ef c6f843bc 09fab24c      13355 c6f824b8 7792/8192 y88acs06 OneSec Thread
+Mwe 08068b66 c6f887bc 09fab24c          0 c6f86918 7576/8192 Reload Control Thread
+Mwe 08070896 c6f93744 09fadbf8         60 c6f8fb90 12496/16384 aaa
+Mwe 08cfe90d c792766c 09fab24c          5 c6f93d18 6856/8192 UserFromCert Thread
+Mwe 080a4796 c6f9c7ac 09fadc54          0 c6f988b8 15712/16384 CMGR Server Process
+Mwe 080a4ca5 c6f9e8d4 09fab24c          0 c6f9ca40 7520/8192 CMGR Timer Process
+Lwe 081bc3cc c6fa72ac 09fbbfa8          0 c6fa53a8 7216/8192 dbgtrace
+Mwe 08492ea5 c6faf89c 09fab24c        118 c6fadb18 4712/8192 eswilp_svi_init
+Msi 08615215 c6fc2e04 09fab24c      22705 c6fc0f20 5372/8192 MUS Timeout Check Thread
+Mwe 08cfe90d c72369ec 09fab24c          0 c6fc97b0 7016/8192 netfs_thread_init
+Mwe 0936a985 c6fd7bfc 09fab24c          0 c6fd5da8 7612/8192 Chunk Manager
+Msi 08945f4e c6fda3ac 09fab24c      13980 c6fd84c8 6196/8192 PIX Garbage Collector
+Mwe 0892bc74 c6fe94cc 09eaafec          0 c6fe75c8 7904/8192 IP Address Assign
+Mwe 08b37be6 c717bfac 09eefcb8          0 c717a0a8 7904/8192 QoS Support Module
+Mwe 089bd07f c717e174 09eac070          0 c717c270 7904/8192 Client Update Task
+Lwe 093b413a c7182ad4 09fab24c     427209 c717ec40 14364/16384 Checkheaps
+Mwe 08b3b905 c718af3c 09fab24c        606 c71872c8 8256/16384 Quack process
+Mwe 08b94bc2 c71932c4 09fab24c       1837 c718b450 31788/32768 Session Manager
+Mwe 08ca9fa5 c71991b4 c9867820          7 c7195760 14312/16384 uauth
+Mwe 08c48bc5 c719b7ec 09efcd04          0 c71998e8 7376/8192 Uauth_Proxy
+Msp 08c7f9ae c71a1c84 09fab24c       1830 c719fd80 6364/8192 SSL
+Mwe 08ca7f36 c71a3dec 09f028b4          0 c71a1f08 7272/8192 SMTP
+Mwe 08ca0ad6 c71a7f74 09f02818          0 c71a4090 15376/16384 Logger
+Mwe 08ca1338 c71a9fdc 09fab24c          0 c71a8218 7552/8192  Syslog Retry Thread 
+Mwe 08c9b36e c71ac234 09fab24c          0 c71aa3a0 7344/8192 Thread Logger
+Mwe 08e91722 c71d693c 09f366e8          0 c71d4a58 7040/8192 vpnlb_thread
+Mwe 0828636d c721d524 09fab24c          0 c721b6a0 7660/8192 TLS Proxy Inspector
+Msi 08baee73 c72a8aa4 09fab24c      12413 c72a6ba0 7792/8192 emweb/cifs_timer
+Mwe 086e4ea7 c72fb7b4 09e9f574          0 c72f98c0 7432/8192 netfs_mount_handler
+Msi 0856d618 c6fd5af4 09fab24c      68532 c6fd3c20 6332/8192 arp_timer
+Mwe 085771bc c6f01bcc 09fd14a8          0 c6effd18 7824/8192 arp_forward_thread
+Msi 08caceb1 c79b0c4c 09fab24c     204456 c79aed58 6212/8192 tcp_fast
+Msi 08caff81 c79b2c6c 09fab24c      81797 c79b0d88 2348/8192 tcp_slow
+Mwe 08cdb949 c79c156c 09f0aa88          0 c79bf678 7776/8192 udp_timer
+Mwe 081212ef c79f36dc c6fa0bd0        207 c79ef838 11964/16384 IPsec message handler
+Msi 081373dc c6fd393c 09fab24c     163149 c6fd1a98 5848/8192 CTM message handler
+Mwe 085e9dff c7a1cbc4 09fd6340          3 c7a1acf0 7840/8192 Lic TMR
+Mwe 085e9ac5 c7a1ec14 09e9d05c        736 c7a1cd20 7872/8192 Lic HA
+Mwe 08107318 c71dcd84 09fab24c          0 c71daef0 7760/8192 CTCP Timer process
+Mwe 08e3fa83 c71ded94 09fab24c          0 c71dcf20 7728/8192 L2TP data daemon
+Mwe 08e40853 c82b41d4 09fab24c          0 c82b2350 7744/8192 L2TP mgmt daemon
+Mwe 08e2c638 c82ec324 09f302e4       2605 c82e8470 16028/16384 ppp_timer_thread
+Msi 08e91bf7 c82ee374 09fab24c      15182 c82ec4a0 7744/8192 vpnlb_timer_thread
+Mwe 081a4560 c835ba7c 09e4a308       9265 c833bc58 119368/131072 tmatch compile thread
+Mwe 08b67bd8 c97808ec 09fab24c          0 c977ea48 7776/8192 ICMP event handler
+Mwe 08dfb27d c9786054 09fab24c          0 c97841c0 7760/8192 Dynamic Filter VC Housekeeper
+Mwe 0888e383 c979734c 09fab24c       1518 c97934a8 12460/16384 IP Background
+Mwe 08a72a85 c993b87c 09fab24c          0 c99379c8 15900/16384 Crypto PKI RECV
+Mwe 08a763aa c9940564 09fab24c          0 c993c6d0 15868/16384 Crypto CA
+Mwe 08aac2d4 c99445a4 09fab24c          0 c9940700 15884/16384 CERT API
+Mwe 0861f51d c719fa7c 09fab24c        412 c719dbf8 7296/8192 ESW_MRVL switch interrupt service
+Mwe 08ae7790 c71cc194 09ebc150          1 c71ca2b0 7776/8192 lina_int
+Mrd 09388a14 c71d8754 09fab838  112824139 c71d6be0 5452/8192 esw_stats
+Lsi 08957778 c6fb86ec 09fab24c        408 c6fb67d8 7808/8192 uauth_urlb clean
+Lwe 089329ef c99a8fac 09fab24c       9640 c99a7138 5080/8192 pm_timer_thread
+Mwe 084ebef5 c99aaffc 09fab24c      35510 c99a9168 7484/8192 IKE Timekeeper
+Mwe 084db74d c99b13ac 09e996b8      18801 c99ad7d8 8112/16384 IKE Daemon
+Mwe 08c5bfab c99b60c4 09f01414          0 c99b41e0 7872/8192 RADIUS Proxy Event Daemon
+Mwe 08c2997b c99b810c c9a231f8         24 c99b6368 6792/8192 RADIUS Proxy Listener
+Mwe 08c5aba7 c99ba384 09fab24c          0 c99b84f0 7760/8192 RADIUS Proxy Time Keeper
+Mwe 0855ddac c99bc4bc 09fd1428          0 c99ba678 7024/8192 Integrity FW Task
+Mwe 081d328b c9a47a9c 09994a7c          1 c9a282b8 124948/131072 ci/console
+Msi 08977c7c c9a4a354 09fab24c     213698 c9a48440 6632/8192 update_cpu_usage
+Msi 08972e6a c9a545dc 09fab24c          0 c9a527b8 3340/8192 NIC status poll
+Mwe 08be14cb c9a5cb44 09ef4564        245 c9a5ac50 2000/8192 SNMP Notify Thread
+Mwe 08568b16 c9a81384 09fd1b74      12541 c9a794b0 30476/32768 IP Thread
+Mwe 0856f58e c9a8352c 09fd1528       2205 c9a81638 2576/8192 ARP Thread
+Mwe 08470150 c9a85774 09fd1b60       1174 c9a83930 4492/8192 icmp_thread
+Mwe 08cdc9c6 c9a8794c 09fab24c       1263 c9a85ab8 7512/8192 udp_thread
+Mwe 08cb20bc c9a89994 09fd1b7c      30700 c9a87c40 4252/8192 tcp_thread
+Mwe 08cbc003 c9a8bc5c 09fab24c         43 c9a89dc8 5260/8192 npshim_thread
+Mwe 08cfe90d c9b095bc 09fab24c        296 c9a8c648 24816/32768 rtcli async executor process
+Mwe 08c2997b c9d2146c c9d21898         24 c9d1f708 7208/8192 EAPoUDP-sock
+Mwe 081f98e5 c9d73ad4 09fab24c          0 c9d71f70 6860/8192 EAPoUDP
+Lsi 08e1112c ca85acfc 09fab24c        221 ca858de8 7808/8192 websns_clean_cache
+Msi 08e10bc7 ca85cde4 09fab24c      40940 ca85af20 1676/8192 websns_keepalive
+Mwe 08ca9fa5 ca85ef0c c9867848       6718 ca85d0a8 4660/8192 websns_rcv_tcp
+Mwe 08e10045 ca861124 09f0f168       3184 ca85f230 7496/8192 websns_snd
+Mwe 08cdb9f8 ca86321c c79bf384          0 ca8613b8 6952/8192 websns_rcv_udp
+Mwe 08cdb9f8 ca8653a4 c79bf2c0          0 ca863540 7064/8192 n2h2_rcv_udp
+Mwe 0822feb3 cab6dddc 09fab24c       1683 cab6a348 14504/16384 emweb/https
+Mwe 08225f56 cab70cec 09fab24c        574 cab6ee48 7544/8192 Timekeeper
+Mwe 08cfe90d cacb98ac 09fab24c       6471 cabe8268 6696/8192 Unicorn Proxy Thread
+Mwe 08cdb9f8 cb0fa7bc c79bf138     123439 cb0f8bc8 1724/8192 snmp
+Mwe 08c2997b cb113944 cb1152e0         97 cb111c40 5224/8192 IKE Receiver
+Mwe 08cbd114 cb11c1b4 cb119ce0         88 cb11a500 6776/8192 listen/ssh
+Mwe 081db931 cb1263a4 09fab24c        321 cb124500 7704/8192 DHCPD Timer
+Mwe 081dd51e cb12f49c 09fab24c         70 cb12b658 10672/16384 dhcp_daemon
+Mwe 08821913 cb148e0c 09fab24c      28466 cb146f78 2416/8192 NTP
+Mwe 08e7138d cb2d1f9c 09f36418          0 cb2ca0a8 32464/32768 vpnfol_thread_msg
+Msi 08e77d02 cb2d3fbc 09fab24c      12311 cb2d20d8 7760/8192 vpnfol_thread_timer
+Mwe 08e75ef2 cb2d5f9c 09f36580          0 cb2d4108 7792/8192 vpnfol_thread_sync
+Msi 08e7782c cb2d801c 09fab24c      54912 cb2d6138 7760/8192 vpnfol_thread_unsent
+Mwe 0855a118 c71dabfc 09fab24c          0 c71d8d68 7760/8192 Integrity Fw Timer Thread
+Msi 086e4f8c c9a58994 09fab24c        601 c9a56ab0 7756/8192 netfs_vnode_reclaim
+Mwe 08c7090b cb35d07c 09fab24c          5 cb35b1e8 7696/8192 ssh/timer
+M*  08c6a37c c65f6f48 09fab838       1705 cb3aa908 22036/32768 ssh
+-      -        -         -             0    -         -     DATAPATH-0-506
+ -     -        -         -    1779528354    -         -     scheduler
+ -     -        -         -    1896219812    -         -     total elapsed
+
+------------------ show kernel process ------------------
+
+
+PID PPID PRI NI      VSIZE      RSS      WCHAN STAT  RUNTIME COMMAND
+
+  1    0  20  0    1748992      564 3725685307    S      372 init
+
+  2    0  15 -5          0        0 3725735132    S        0 kthreadd
+
+  3    2  15 -5          0        0 3725689723    S        0 ksoftirqd/0
+
+  4    2  15 -5          0        0 3725724711    S        5 events/0
+
+  5    2  15 -5          0        0 3725724711    S        0 khelper
+
+ 50    2  15 -5          0        0 3725724711    S        0 kblockd/0
+
+ 53    2  15 -5          0        0 3726741597    S        0 kseriod
+
+ 99    2  20  0          0        0 3725827062    S        0 pdflush
+
+100    2  20  0          0        0 3725827062    S        0 pdflush
+
+101    2  15 -5          0        0 3725839279    S        0 kswapd0
+
+102    2  15 -5          0        0 3725724711    S        0 aio/0
+
+103    2  15 -5          0        0 3725724711    S        0 nfsiod
+
+214    2  15 -5          0        0 3725724711    S        0 hid_compat
+
+217    2  15 -5          0        0 3725724711    S        0 rpciod/0
+
+247    1  16 -4    1519616      508 3725965951    S       18 udevd
+
+497    1  20  0    1740800      516 3725685307    S        0 sh
+
+498  497  20  0   10076160      452 3725704771    S        0 lina_monitor
+
+499  498  20  0   10076160      452 3725965951    S        0 lina_monitor
+
+500  499  20  0   10076160      452 3726384723    S        0 lina_monitor
+
+501  498   0 -20  463507456    42928 3725707883    S     1093 lina
+
+502  501   0 -20  463507456    42928 3725965951    S        0 lina
+
+503  502   0 -20  463507456    42928 3725965951    S        0 lina
+
+504  502   0 -20  463507456    42928 3725707883    S        0 lina
+
+505  502   0 -20  463507456    42928 3725965951    S        0 lina
+
+506  502   0 -20  463507456    42928          0    R 190361244 lina
+
+------------------ show traffic ------------------
+
+inside:
+	received (in 1903723.240 secs):
+		15855337 packets	3023023436 bytes
+		1 pkts/sec	1001 bytes/sec
+	transmitted (in 1903723.240 secs):
+		24226080 packets	14728657862 bytes
+		1 pkts/sec	7001 bytes/sec
+      1 minute input rate 7 pkts/sec,  2133 bytes/sec
+      1 minute output rate 8 pkts/sec,  4243 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 17 pkts/sec,  2959 bytes/sec
+      5 minute output rate 12 pkts/sec,  2581 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+outside:
+	received (in 1903723.260 secs):
+		24944167 packets	16329507149 bytes
+		1 pkts/sec	8000 bytes/sec
+	transmitted (in 1903723.260 secs):
+		16754282 packets	4114404351 bytes
+		2 pkts/sec	2001 bytes/sec
+      1 minute input rate 8 pkts/sec,  4800 bytes/sec
+      1 minute output rate 7 pkts/sec,  2615 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 12 pkts/sec,  3372 bytes/sec
+      5 minute output rate 17 pkts/sec,  4128 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+_internal_loopback:
+	received (in 1903723.290 secs):
+		1 packets	28 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.290 secs):
+		1 packets	28 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+
+----------------------------------------
+Aggregated Traffic on Physical Interface
+----------------------------------------
+Ethernet0/0:
+	received (in 1903723.320 secs):
+		25749543 packets	17033309957 bytes
+		2 pkts/sec	8002 bytes/sec
+	transmitted (in 1903723.320 secs):
+		16753203 packets	4415789419 bytes
+		2 pkts/sec	2001 bytes/sec
+      1 minute input rate 9 pkts/sec,  5106 bytes/sec
+      1 minute output rate 7 pkts/sec,  2787 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 13 pkts/sec,  3852 bytes/sec
+      5 minute output rate 18 pkts/sec,  4639 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/1:
+	received (in 1903723.340 secs):
+		93642 packets	15718801 bytes
+		0 pkts/sec	1 bytes/sec
+	transmitted (in 1903723.340 secs):
+		398975 packets	310937970 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  31 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  25 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/2:
+	received (in 1903723.360 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.360 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/3:
+	received (in 1903723.380 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.380 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/4:
+	received (in 1903723.410 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.410 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/5:
+	received (in 1903723.430 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.430 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/6:
+	received (in 1903723.450 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+	transmitted (in 1903723.450 secs):
+		0 packets	0 bytes
+		0 pkts/sec	0 bytes/sec
+      1 minute input rate 0 pkts/sec,  0 bytes/sec
+      1 minute output rate 0 pkts/sec,  0 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 0 pkts/sec,  0 bytes/sec
+      5 minute output rate 0 pkts/sec,  0 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Ethernet0/7:
+	received (in 1903723.480 secs):
+		16069426 packets	3348902832 bytes
+		1 pkts/sec	1001 bytes/sec
+	transmitted (in 1903723.480 secs):
+		24013811 packets	14902642100 bytes
+		1 pkts/sec	7000 bytes/sec
+      1 minute input rate 7 pkts/sec,  2263 bytes/sec
+      1 minute output rate 7 pkts/sec,  4259 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 18 pkts/sec,  3473 bytes/sec
+      5 minute output rate 12 pkts/sec,  2918 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Internal-Data0/0:
+	received (in 1903723.500 secs):
+		40736815 packets	20245737677 bytes
+		1 pkts/sec	10000 bytes/sec
+	transmitted (in 1903723.500 secs):
+		40980496 packets	19745191069 bytes
+		1 pkts/sec	10001 bytes/sec
+      1 minute input rate 15 pkts/sec,  7277 bytes/sec
+      1 minute output rate 15 pkts/sec,  7204 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 29 pkts/sec,  6977 bytes/sec
+      5 minute output rate 29 pkts/sec,  7361 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+Internal-Data0/1:
+	received (in 1903723.520 secs):
+		40979733 packets	19745024563 bytes
+		1 pkts/sec	10001 bytes/sec
+	transmitted (in 1903723.520 secs):
+		40736259 packets	20245662137 bytes
+		1 pkts/sec	10000 bytes/sec
+      1 minute input rate 15 pkts/sec,  6783 bytes/sec
+      1 minute output rate 14 pkts/sec,  6863 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      5 minute input rate 31 pkts/sec,  7766 bytes/sec
+      5 minute output rate 31 pkts/sec,  7345 bytes/sec
+      5 minute drop rate, 0 pkts/sec
+
+------------------ show perfmon ------------------
+
+
+PERFMON STATS:                     Current      Average
+Xlates                                0/s          0/s
+Connections                           0/s          0/s
+TCP Conns                             0/s          0/s
+UDP Conns                             0/s          0/s
+URL Access                            0/s          0/s
+URL Server Req                        0/s          0/s
+TCP Fixup                             0/s          0/s
+TCP Intercept Established Conns       0/s          0/s
+TCP Intercept Attempts                0/s          0/s
+TCP Embryonic Conns Timeout           0/s          0/s
+HTTP Fixup                            0/s          0/s
+FTP Fixup                             0/s          0/s
+AAA Authen                            0/s          0/s
+AAA Author                            0/s          0/s
+AAA Account                           0/s          0/s
+
+VALID CONNS RATE in TCP INTERCEPT:    Current      Average
+                                       N/A         N/A
+
+------------------ show counters ------------------
+
+Protocol     Counter                             Value   Context
+IP           IN_PKTS                            644193   Summary
+IP           OUT_PKTS                         17685452   Summary
+IP           IN_DROP_NFU                            22   Summary
+IP           OUT_DROP_DWN                           13   Summary
+IP           TO_ARP                             105874   Summary
+IP           TO_UDP                             138927   Summary
+IP           TO_ICMP                             17630   Summary
+IP           TO_TCP                             381740   Summary
+TCP          IN_PKTS                            381740   Summary
+TCP          OUT_PKTS                          1141795   Summary
+TCP          RCV_GOOD                           380368   Summary
+TCP          DROP_NRST                            1305   Summary
+TCP          SESS_CTOD                              36   Summary
+TCP          SYNS_RST                                3   Summary
+TCP          DROP_UNACC                              7   Summary
+TCP          DROP_IGNORE4                       760736   Summary
+TCP          OUT_CLSD                              131   Summary
+TCP          HASH_ADD                              133   Summary
+TCP          HASH_MISS                            1305   Summary
+TCP          SND_SYN                               221   Summary
+TCP          SND_ACK                            380431   Summary
+TCP          RCV_ACK                                 1   Summary
+UDP          IN_PKTS                            138927   Summary
+UDP          OUT_PKTS                           140173   Summary
+UDP          DROP_NO_APP                           783   Summary
+ICMP         IN_PKTS                             17630   Summary
+ICMP         OUT_PKTS                            16739   Summary
+ICMP         DROP_IGNORE                            20   Summary
+SSLERR       BAD_SIGNATURE                           4   Summary
+SSLERR       UNKNOWN_PROTOCOL                       98   Summary
+SSLALERT     RX_CLOSE_NOTIFY                       393   Summary
+SSLALERT     RX_WARNING_ALERT                      393   Summary
+SSLALERT     TX_CLOSE_NOTIFY                      6151   Summary
+SSLALERT     TX_WARNING_ALERT                     6151   Summary
+SSLDEV       NEW_CTX                                 1   Summary
+SSLNP        OPEN_CONN                               1   Summary
+SSLNP        MOD_CREATE                              2   Summary
+SSLNP        HANDSHAKE_START                      6566   Summary
+SSLNP        HANDSHAKE_DONE                       6174   Summary
+SSLNP        DOWNSTREAM_CLOSE                    10194   Summary
+SSLNP        DOWNSTREAM_CLOSE_NEXT               10194   Summary
+SSLNP        UPSTREAM_CLOSE                      10860   Summary
+SSLNP        UPSTREAM_CLOSE_NEXT                 10194   Summary
+SSLNP        FREE_CONN                           10194   Summary
+SSLNP        NEW_CONN_SERVER                     10194   Summary
+SSLNP        IN_PKTS_RX                          23501   Summary
+SSLNP        IN_PKTS_TX                           6076   Summary
+SSLNP        OUT_PKTS_RX                             3   Summary
+SSLNP        OUT_PKTS_TX                         18796   Summary
+SSLNP        SESSIONS_CLEARED                        2   Summary
+NPSHIM       READ_CTX_CLOSED                        18   Summary
+NPSHIM       READ_NOBLOCK_NO_BUF                  8924   Summary
+NPSHIM       READ_RECV                            1867   Summary
+NPSHIM       READ_EOF                               64   Summary
+NPSHIM       SLCT_REQUEST                          810   Summary
+NPSHIM       SLCT_EVENT                            809   Summary
+NPSHIM       CTX_ALLOC                             814   Summary
+NPSHIM       CTX_FREE                              810   Summary
+NPSHIM       CONN_PEND                               1   Summary
+NPSHIM       CONN_PEND_PROCESS                       1   Summary
+NPSHIM       CLOSE_LISTEN                            2   Summary
+VPIF         BAD_VALUE                              30   Summary
+VPIF         NOT_FOUND                         3232661   Summary
+SECSTR       NOT_PRESENT                             1   Summary
+IPSEC        IN_SA_CREATED                         192   Summary
+IPSEC        OUT_SA_CREATED                        192   Summary
+IPSEC        IN_SA_ACTIVATED                        58   Summary
+IPSEC        SA_DELETION_RETRY                       5   Summary
+SSLENC       CONTEXT_CREATED                      6468   Summary
+SSLENC       CONTEXT_UPDATED                      6174   Summary
+SSLENC       CONTEXT_DESTROYED                    6468   Summary
+
+------------------ show service-policy ------------------
+
+
+Global policy: 
+  Service-policy: global_policy
+    Class-map: inspection_default
+      Inspect: dns preset_dns_map, packet 2557, drop 0, reset-drop 0
+        message-length maximum client auto, drop 0
+        message-length maximum 512, drop 0
+        dns-guard, count 1251
+        protocol-enforcement, drop 0
+        nat-rewrite, count 0
+      Inspect: ftp, packet 24, drop 0, reset-drop 0
+      Inspect: h323 h225 _default_h323_map, packet 0, drop 0, reset-drop 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+        h245-tunnel-block drops 0 connection
+      Inspect: h323 ras _default_h323_map, packet 0, drop 0, reset-drop 0
+        h245-tunnel-block drops 0 connection
+      Inspect: rsh, packet 0, drop 0, reset-drop 0
+      Inspect: rtsp, packet 0, drop 0, reset-drop 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: esmtp _default_esmtp_map, packet 12, drop 0, reset-drop 0
+        mask-banner, count 0
+        match cmd line length gt 512 
+          drop-connection log, packet 0
+        match cmd RCPT count gt 100 
+          drop-connection log, packet 0
+        match body line length gt 998 
+          log, packet 0
+        match header line length gt 998 
+          drop-connection log, packet 0
+        match sender-address length gt 320 
+          drop-connection log, packet 0
+        match MIME filename length gt 255 
+          drop-connection log, packet 0
+        match ehlo-reply-parameter others 
+          mask, packet 0
+      Inspect: sqlnet, packet 0, drop 0, reset-drop 0
+      Inspect: skinny , packet 0, drop 0, reset-drop 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: sunrpc, packet 0, drop 0, reset-drop 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: xdmcp, packet 0, drop 0, reset-drop 0
+      Inspect: sip , packet 0, drop 0, reset-drop 0
+               tcp-proxy: bytes in buffer 0, bytes dropped 0
+      Inspect: netbios, packet 1302, drop 0, reset-drop 0
+      Inspect: tftp, packet 0, drop 0, reset-drop 0
+      Inspect: ip-options _default_ip_options_map, packet 0, drop 0, reset-drop 0
+        Router Alert:  allow 0, clear 0
+
+------------------ show history ------------------
+
+  enable
+  terminal pager 0
+  terminal width 511
+  show running-config
+  show tech-support
+
+------------------ show firewall ------------------
+
+Firewall mode: Router
+
+------------------ show running-config ------------------
+
+: Saved
+:
+ASA Version 8.3(1) 
+!
+hostname 1835-ASA-5505
+enable password <removed>
+passwd <removed>
+names
+!
+interface Vlan1
+ nameif inside
+ security-level 100
+ ip address 10.40.50.1 255.255.255.0 
+!
+interface Vlan2
+ nameif outside
+ security-level 0
+ ip address 97.77.25.118 255.255.255.252 
+!
+interface Ethernet0/0
+ switchport access vlan 2
+!
+interface Ethernet0/1
+!
+interface Ethernet0/2
+ shutdown
+!
+interface Ethernet0/3
+ shutdown
+!
+interface Ethernet0/4
+ shutdown
+!
+interface Ethernet0/5
+ shutdown
+!
+interface Ethernet0/6
+ shutdown
+!
+interface Ethernet0/7
+ description Wireless AP
+!
+ftp mode passive
+clock timezone CST -6
+clock summer-time CDT recurring
+same-security-traffic permit inter-interface
+same-security-traffic permit intra-interface
+object network obj_any 
+ subnet 0.0.0.0 0.0.0.0
+object network StewPot-PUBLIC 
+ host 97.77.25.118
+ description Public network       
+object-group network StewPot-LOCAL
+ network-object 10.40.50.0 255.255.255.0
+ network-object object StewPot-PUBLIC
+object-group network COLO
+ network-object 192.168.0.0 255.255.0.0
+ network-object 10.25.0.0 255.255.0.0
+ network-object 10.30.0.0 255.255.0.0
+ network-object 10.42.0.0 255.255.0.0
+ network-object 10.199.0.0 255.255.0.0
+ network-object 10.218.0.0 255.255.0.0
+ network-object 10.137.0.0 255.255.0.0
+ network-object 10.149.0.0 255.255.0.0
+object-group network Montfort
+ network-object 10.200.10.0 255.255.255.0
+ network-object 10.200.15.0 255.255.255.0
+access-list outside_cryptomap extended permit ip object-group StewPot-LOCAL object-group COLO 
+access-list outside_cryptomap extended permit ip object-group StewPot-LOCAL object-group Montfort 
+pager lines 24
+logging timestamp
+logging buffer-size 16384
+logging console critical
+logging trap informational
+logging asdm informational
+mtu inside 1500
+mtu outside 1500
+icmp unreachable rate-limit 1 burst-size 1
+icmp deny any echo-reply outside
+no asdm history enable
+arp timeout 14400
+nat (inside,outside) source static StewPot-LOCAL StewPot-LOCAL destination static COLO COLO
+nat (inside,outside) source static StewPot-LOCAL StewPot-LOCAL destination static Montfort Montfort
+!
+object network obj_any
+ nat (inside,outside) dynamic interface
+route outside 0.0.0.0 0.0.0.0 97.77.25.117 1
+timeout xlate 3:00:00
+timeout conn 1:00:00 half-closed 0:10:00 udp 0:02:00 icmp 0:00:02
+timeout sunrpc 0:10:00 h323 0:05:00 h225 1:00:00 mgcp 0:05:00 mgcp-pat 0:05:00
+timeout sip 0:30:00 sip_media 0:02:00 sip-invite 0:03:00 sip-disconnect 0:02:00
+timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+timeout tcp-proxy-reassembly 0:01:00
+dynamic-access-policy-record DfltAccessPolicy
+url-server (inside) vendor websense host 192.168.42.115 timeout 30 protocol TCP version 4 connections 5
+aaa authentication ssh console LOCAL 
+filter url except 10.40.50.0 255.255.255.0 10.0.0.0 255.0.0.0 
+filter url except 10.40.50.0 255.255.255.0 192.168.0.0 255.255.0.0 
+http server enable
+http 192.168.1.0 255.255.255.0 inside
+snmp-server group MHMR v3 priv 
+snmp-server user MCSUser MHMR v3 encrypted auth md5 aa:a8:ad:4f:54:0d:43:ec:02:b7:eb:e7:cd:d7:5d:ef priv aes 128 96:73:02:37:74:ec:5d:57:90:68:47:71:27:19:31:67 
+snmp-server host inside 192.168.42.116 version 3 MCSUser udp-port 161
+snmp-server location 1835 Young street - StewPot
+snmp-server contact IT Department
+snmp-server enable traps snmp authentication linkup linkdown coldstart
+snmp-server enable traps syslog
+snmp-server enable traps ipsec start stop
+snmp-server enable traps entity config-change fru-insert fru-remove
+snmp-server enable traps remote-access session-threshold-exceeded
+crypto ipsec transform-set ESP-AES-256-SHA esp-aes-256 esp-sha-hmac 
+crypto ipsec security-association lifetime seconds 28800
+crypto ipsec security-association lifetime kilobytes 4608000
+crypto map outside_map0 1 match address outside_cryptomap
+crypto map outside_map0 1 set peer 70.87.24.219 
+crypto map outside_map0 1 set transform-set ESP-AES-256-SHA
+crypto map outside_map0 interface outside
+crypto isakmp enable outside
+crypto isakmp policy 20
+ authentication rsa-sig
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 30
+ authentication pre-share
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 40
+ authentication crack
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 50
+ authentication rsa-sig
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 60
+ authentication pre-share
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 70
+ authentication crack
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 80
+ authentication rsa-sig
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 90
+ authentication pre-share
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 100
+ authentication crack
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 110
+ authentication rsa-sig
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 120
+ authentication pre-share
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 130
+ authentication crack
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 140
+ authentication rsa-sig
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 150
+ authentication pre-share
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+telnet timeout 5
+ssh 10.199.20.0 255.255.255.0 inside
+ssh 192.168.42.0 255.255.255.0 inside
+ssh 10.42.20.0 255.255.255.0 inside
+ssh 10.199.20.0 255.255.255.0 outside
+ssh 70.87.24.219 255.255.255.255 outside
+ssh 70.87.24.200 255.255.255.255 outside
+ssh timeout 5
+ssh version 2
+console timeout 5
+management-access inside
+dhcpd auto_config outside
+!
+dhcprelay server 10.42.20.24 outside
+dhcprelay enable inside
+dhcprelay timeout 60
+
+threat-detection basic-threat
+threat-detection statistics access-list
+no threat-detection statistics tcp-intercept
+ntp server 131.107.13.100 source outside
+ntp server 129.6.15.29 source outside
+webvpn
+username admin password <removed> privilege 15
+tunnel-group 70.87.24.219 type ipsec-l2l
+tunnel-group 70.87.24.219 ipsec-attributes
+ pre-shared-key *****
+!
+class-map inspection_default
+ match default-inspection-traffic
+!
+!
+policy-map type inspect dns preset_dns_map
+ parameters
+  message-length maximum client auto
+  message-length maximum 512
+policy-map global_policy
+ class inspection_default
+  inspect dns preset_dns_map 
+  inspect ftp 
+  inspect h323 h225 
+  inspect h323 ras 
+  inspect rsh 
+  inspect rtsp 
+  inspect esmtp 
+  inspect sqlnet 
+  inspect skinny  
+  inspect sunrpc 
+  inspect xdmcp 
+  inspect sip  
+  inspect netbios 
+  inspect tftp 
+  inspect ip-options 
+!
+service-policy global_policy global
+smtp-server 192.168.42.116
+prompt hostname context 
+Cryptochecksum:d0a11711184101b76f69e1b84c87220b
+: end
+
+------------------ show startup-config errors ------------------
+
+Reading from flash...
+!!NAT migration logs:
+
+------------------ console logs ------------------
+
+Message #1 : Message #2 : 
+Total SSMs found: 0
+Message #3 : 
+Total NICs found: 10
+Message #4 : 88E6095 rev 2 Gigabit Ethernet @ index 09Message #5 :  MAC: 0000.0003.0002
+Message #6 : 88E6095 rev 2 Ethernet @ index 08Message #7 :  MAC: 5475.d03e.4b94
+Message #8 : 88E6095 rev 2 Ethernet @ index 07Message #9 :  MAC: 5475.d03e.4b93
+Message #10 : 88E6095 rev 2 Ethernet @ index 06Message #11 :  MAC: 5475.d03e.4b92
+Message #12 : 88E6095 rev 2 Ethernet @ index 05Message #13 :  MAC: 5475.d03e.4b91
+Message #14 : 88E6095 rev 2 Ethernet @ index 04Message #15 :  MAC: 5475.d03e.4b90
+Message #16 : 88E6095 rev 2 Ethernet @ index 03Message #17 :  MAC: 5475.d03e.4b8f
+Message #18 : 88E6095 rev 2 Ethernet @ index 02Message #19 :  MAC: 5475.d03e.4b8e
+Message #20 : 88E6095 rev 2 Ethernet @ index 01Message #21 :  MAC: 5475.d03e.4b8d
+Message #22 : y88acs06 rev16 Gigabit Ethernet @ index 00 MAC: 5475.d03e.4b95
+Message #23 : Encryption hardware device : Cisco ASA-5505 on-board accelerator (revision 0x0)
+Message #24 :                              Boot microcode   : CN1000-MC-BOOT-2.00 
+Message #25 :                              SSL/IKE microcode: CNLite-MC-SSLm-PLUS-2.03
+Message #26 :                              IPSec microcode  : CNlite-MC-IPSECm-MAIN-2.06
+Message #27 : Verify the activation-key, it might take a while...
+Message #28 : Running Permanent Message #29 : Activation Key: Message #30 : 0xf33acc5b Message #31 : 0x60e7b553 Message #32 : 0x30122528 Message #33 : 0xb9d038e4 Message #34 : 0xc9142f9e Message #35 : 
+Message #36 : 
+Licensed Message #37 : features for this platform:
+Message #38 : Maximum Physical Interfaces    : 8              perpetual
+Message #39 : VLANs                          : 3              DMZ Restricted
+Message #40 : Dual ISPs                      : Disabled       perpetual
+Message #41 : VLAN Trunk Ports               : 0              perpetual
+Message #42 : Inside Hosts                   : Unlimited      perpetual
+Message #43 : Failover                       : Disabled       perpetual
+Message #44 : VPN-DES                        : Enabled        perpetual
+Message #45 : VPN-3DES-AES                   : Enabled        perpetual
+Message #46 : SSL VPN Peers                  : 2              perpetual
+Message #47 : Total VPN Peers                : 10             perpetual
+Message #48 : Shared License                 : Disabled       perpetual
+Message #49 : AnyConnect for Mobile          : Disabled       perpetual
+Message #50 : AnyConnect for Cisco VPN Phone : Disabled       perpetual
+Message #51 : AnyConnect Essentials          : Disabled       perpetual
+Message #52 : Advanced Endpoint Assessment   : Disabled       perpetual
+Message #53 : UC Phone Proxy Sessions        : 2              perpetual
+Message #54 : Total UC Proxy Sessions        : 2              perpetual
+Message #55 : Botnet Traffic Filter          : Disabled       perpetual
+Message #56 : Intercompany Media Engine      : Disabled       perpetual
+Message #57 : 
+This platform has a Base license.
+Message #58 : 
+Message #59 : 
+Cisco Adaptive Security Appliance Software Version 8.3(1) 
+Message #60 : 
+Message #61 :   ****************************** Warning *******************************
+Message #62 :   This product contains cryptographic features and is
+Message #63 :   subject to United States and local country laws
+Message #64 :   governing, import, export, transfer, and use.
+Message #65 :   Delivery of Cisco cryptographic products does not
+Message #66 :   imply third-party authority to import, export,
+Message #67 :   distribute, or use encryption. Importers, exporters,
+Message #68 :   distributors and users are responsible for compliance
+Message #69 :   with U.S. and local country laws. By using this
+Message #70 :   product you agree to comply with applicable laws and
+Message #71 :   regulations. If you are unable to comply with U.S.
+Message #72 :   and local laws, return the enclosed items immediately.
+Message #73 : 
+Message #74 :   A summary of U.S. laws governing Cisco cryptographic
+Message #75 :   products may be found at:
+Message #76 :   http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+Message #77 : 
+Message #78 :   If you require further assistance please contact us by
+Message #79 :   sending email to export@cisco.com.
+Message #80 :   ******************************* Warning *******************************
+Message #81 : 
+Message #82 : Copyright (c) 1996-2010 by Cisco Systems, Inc.
+
+Message #83 :                 Restricted Rights Legend
+
+Message #84 : Use, duplication, or disclosure by the Government is
+Message #85 : subject to restrictions as set forth in subparagraph
+Message #86 : (c) of the Commercial Computer Software - Restricted
+Message #87 : Rights clause at FAR sec. 52.227-19 and subparagraph
+Message #88 : (c) (1) (ii) of the Rights in Technical Data and Computer
+Message #89 : Software clause at DFARS sec. 252.227-7013.
+
+Message #90 :                 Cisco Systems, Inc.
+Message #91 :                 170 West Tasman Drive
+Message #92 :                 San Jose, California 95134-1706
+
+Message #93 : *************************************************************************
+Message #94 : **                                                                     **
+Message #95 : **  Note that for a failover deployment, both devices in the pair      **
+Message #96 : **  must have identical memory.                                        **
+Message #97 : **                                                                     **
+Message #98 : *************************************************************************
+

@@ -544,3 +544,1889 @@ AttributeError: 'module' object has no attribute 'nethydra_input'
 2017-09-22 14:25:58,703 - NetHydra - INFO - frw_Dayton_action - CONNECTING...
 2017-09-22 14:26:06,728 - NetHydra - WARNING - frw_Dayton_action - CONNECTION FAILED
 2017-09-22 14:26:06,729 - NetHydra - ERROR - frw_Dayton_action - CONNECTION FAILED - 2nd user
+2017-10-01 12:52:24,068 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-01 12:52:27,374 - NetHydra - WARNING - 192.168.48.1 - CONNECTION FAILED
+2017-10-01 12:52:27,374 - NetHydra - ERROR - 192.168.48.1 - CONNECTION FAILED - 2nd user
+2017-10-01 12:52:27,374 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-01 22:40:58,297 - NetHydra - INFO - 10.218.50.24-config-20170929
+2017-10-01 22:40:58,297 - NetHydra - INFO - 10.42.20.3-config-20170929
+2017-10-01 22:40:58,297 - NetHydra - INFO - 192.168.132.1-config-20170929
+2017-10-01 22:40:58,297 - NetHydra - INFO - 10.200.50.20-config-20170929
+2017-10-01 22:40:58,298 - NetHydra - INFO - 10.135.50.23-config-20170929
+2017-10-01 22:40:58,298 - NetHydra - INFO - 10.104.50.22-config-20170929
+2017-10-01 22:40:58,298 - NetHydra - INFO - 10.211.50.25-config-20170929
+2017-10-01 22:40:58,298 - NetHydra - INFO - 10.199.35.1-config-20170929
+2017-10-01 22:40:58,298 - NetHydra - INFO - 192.168.130.1-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.38.50.21-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.34.50.20-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.193.50.1-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.218.35.1-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.199.50.21-config-20170929
+2017-10-01 22:40:58,299 - NetHydra - INFO - 10.30.10.1-config-20170929
+2017-10-01 22:40:58,300 - NetHydra - INFO - 192.168.217.1-config-20170929
+2017-10-01 22:40:58,300 - NetHydra - INFO - 192.168.152.1-config-20170929
+2017-10-01 22:40:58,300 - NetHydra - INFO - 10.135.50.25-config-20170929
+2017-10-01 22:40:58,300 - NetHydra - INFO - 10.211.50.40-config-20170929
+2017-10-01 22:40:58,300 - NetHydra - INFO - 10.193.50.32-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.199.25.1-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.30.50.1-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.211.50.1-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.135.50.27-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.137.50.21-config-20170929
+2017-10-01 22:40:58,301 - NetHydra - INFO - 10.135.50.21-config-20170929
+2017-10-01 22:40:58,302 - NetHydra - INFO - 10.211.50.33-config-20170929
+2017-10-01 22:40:58,302 - NetHydra - INFO - 10.33.50.20-config-20170929
+2017-10-01 22:40:58,302 - NetHydra - INFO - 10.211.50.22-config-20170929
+2017-10-01 22:40:58,302 - NetHydra - INFO - 192.168.225.1-config-20170929
+2017-10-01 22:40:58,302 - NetHydra - INFO - 10.211.50.24-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 10.40.35.1-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 10.211.50.23-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 192.168.90.1-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 10.193.50.33-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 192.168.140.1-config-20170929
+2017-10-01 22:40:58,303 - NetHydra - INFO - 192.168.227.1-config-20170929
+2017-10-01 22:40:58,304 - NetHydra - INFO - 10.38.50.27-config-20170929
+2017-10-01 22:40:58,304 - NetHydra - INFO - 10.25.15.1-config-20170929
+2017-10-01 22:40:58,304 - NetHydra - INFO - 192.168.214.1-config-20170929
+2017-10-01 22:40:58,304 - NetHydra - INFO - 10.199.50.28-config-20170929
+2017-10-01 22:40:58,304 - NetHydra - INFO - 192.168.242.1-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 10.135.50.24-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 192.168.232.1-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 10.199.36.1-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 10.137.50.1-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 10.199.37.1-config-20170929
+2017-10-01 22:40:58,305 - NetHydra - INFO - 10.199.10.1-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 10.135.50.1-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 10.137.50.20-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 10.104.50.20-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 192.168.220.1-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 192.168.101.1-config-20170929
+2017-10-01 22:40:58,306 - NetHydra - INFO - 10.25.10.28-config-20170929
+2017-10-01 22:40:58,307 - NetHydra - INFO - 10.199.50.1-config-20170929
+2017-10-01 22:40:58,307 - NetHydra - INFO - 192.168.210.1-config-20170929
+2017-10-01 22:40:58,307 - NetHydra - INFO - 10.25.10.26-config-20170929
+2017-10-01 22:40:58,307 - NetHydra - INFO - 10.30.50.21-config-20170929
+2017-10-01 22:40:58,307 - NetHydra - INFO - 192.168.150.1-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 10.199.50.24-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 192.168.200.1-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 10.211.50.31-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 10.61.35.1-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 10.135.50.22-config-20170929
+2017-10-01 22:40:58,308 - NetHydra - INFO - 192.168.185.1-config-20170929
+2017-10-01 22:40:58,309 - NetHydra - INFO - 10.38.50.26-config-20170929
+2017-10-01 22:40:58,309 - NetHydra - INFO - 10.137.50.22-config-20170929
+2017-10-01 22:40:58,309 - NetHydra - INFO - 10.33.50.22-config-20170929
+2017-10-01 22:40:58,309 - NetHydra - INFO - 10.211.50.29-config-20170929
+2017-10-01 22:40:58,309 - NetHydra - INFO - 10.30.15.1-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 192.168.230.1-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 192.168.45.1-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 10.199.50.20-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 10.43.35.1-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 10.199.30.1-config-20170929
+2017-10-01 22:40:58,310 - NetHydra - INFO - 10.193.50.37-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 10.104.50.21-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 192.168.151.1-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 10.104.50.23-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 10.193.50.35-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 192.168.142.1-config-20170929
+2017-10-01 22:40:58,311 - NetHydra - INFO - 10.38.50.28-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.218.50.21-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.39.50.20-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.193.50.26-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.218.50.20-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.39.50.21-config-20170929
+2017-10-01 22:40:58,312 - NetHydra - INFO - 10.199.50.22-config-20170929
+2017-10-01 22:40:58,313 - NetHydra - INFO - 10.31.50.20-config-20170929
+2017-10-01 22:40:58,313 - NetHydra - INFO - 10.211.50.34-config-20170929
+2017-10-01 22:40:58,313 - NetHydra - INFO - 10.137.10.1-config-20170929
+2017-10-01 22:40:58,313 - NetHydra - INFO - 10.135.50.26-config-20170929
+2017-10-01 22:40:58,313 - NetHydra - INFO - 10.30.50.20-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 10.211.50.20-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 192.168.100.1-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 10.38.50.20-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 10.211.50.36-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 10.200.50.21-config-20170929
+2017-10-01 22:40:58,314 - NetHydra - INFO - 10.199.50.23-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 192.168.186.1-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 192.168.235.1-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 10.25.10.37-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 10.218.15.1-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 10.199.15.1-config-20170929
+2017-10-01 22:40:58,315 - NetHydra - INFO - 10.199.50.29-config-20170929
+2017-10-01 22:40:58,316 - NetHydra - INFO - 10.218.50.22-config-20170929
+2017-10-01 22:40:58,316 - NetHydra - INFO - 10.218.10.1-config-20170929
+2017-10-01 22:40:58,316 - NetHydra - INFO - 192.168.102.1-config-20170929
+2017-10-01 22:40:58,316 - NetHydra - INFO - 192.168.215.1-config-20170929
+2017-10-01 22:40:58,316 - NetHydra - INFO - 10.199.50.26-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 192.168.240.1-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 10.211.50.35-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 10.104.50.1-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 10.218.50.1-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 10.199.20.1-config-20170929
+2017-10-01 22:40:58,317 - NetHydra - INFO - 10.193.50.36-config-20170929
+2017-10-01 22:40:58,318 - NetHydra - INFO - 192.168.237.1-config-20170929
+2017-10-01 22:40:58,318 - NetHydra - INFO - 10.193.50.34-config-20170929
+2017-10-01 22:40:58,318 - NetHydra - INFO - 10.38.50.29-config-20170929
+2017-10-01 22:40:58,318 - NetHydra - INFO - 10.42.20.1-config-20170929
+2017-10-01 22:40:58,318 - NetHydra - INFO - 10.211.50.42-config-20170929
+2017-10-01 22:40:58,319 - NetHydra - INFO - 10.40.50.1-config-20170929
+2017-10-01 22:40:58,319 - NetHydra - INFO - 10.33.50.21-config-20170929
+2017-10-01 22:40:58,319 - NetHydra - INFO - 192.168.103.1-config-20170929
+2017-10-01 22:40:58,319 - NetHydra - INFO - 192.168.207.1-config-20170929
+2017-10-01 22:40:58,319 - NetHydra - INFO - 10.38.50.22-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 10.218.50.23-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 192.168.175.1-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 10.40.50.20-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 10.31.50.21-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 10.38.50.23-config-20170929
+2017-10-01 22:40:58,320 - NetHydra - INFO - 10.211.50.41-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 10.199.50.27-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 10.211.50.28-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 192.168.175.5-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 10.42.20.2-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 192.168.205.1-config-20170929
+2017-10-01 22:40:58,321 - NetHydra - INFO - 192.168.202.1-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 10.135.50.20-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 10.199.50.25-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 10.211.50.30-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 10.25.10.1-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 10.34.50.21-config-20170929
+2017-10-01 22:40:58,322 - NetHydra - INFO - 192.168.222.1-config-20170929
+2017-10-01 22:42:19,783 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.24-config-20170929
+2017-10-01 22:42:19,783 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.3-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.132.1-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.20-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.23-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.22-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.25-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.35.1-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.130.1-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.21-config-20170929
+2017-10-01 22:42:19,784 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.20-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.1-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.35.1-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.21-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.10.1-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.217.1-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.152.1-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.25-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.40-config-20170929
+2017-10-01 22:42:19,785 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.32-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.25.1-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.1-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.1-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.27-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.21-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.21-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.33-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.20-config-20170929
+2017-10-01 22:42:19,786 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.22-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.225.1-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.24-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.35.1-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.23-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.90.1-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.33-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.140.1-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.227.1-config-20170929
+2017-10-01 22:42:19,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.27-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.15.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.214.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.28-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.242.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.24-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.232.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.36.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.1-config-20170929
+2017-10-01 22:42:19,788 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.37.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.10.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.20-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.20-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.220.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.101.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.28-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.1-config-20170929
+2017-10-01 22:42:19,789 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.210.1-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.26-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.21-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.150.1-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.24-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.200.1-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.31-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.61.35.1-config-20170929
+2017-10-01 22:42:19,790 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.22-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.185.1-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.26-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.22-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.22-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.29-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.15.1-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.230.1-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.45.1-config-20170929
+2017-10-01 22:42:19,791 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.20-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.43.35.1-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.30.1-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.37-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.21-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.151.1-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.23-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.35-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.142.1-config-20170929
+2017-10-01 22:42:19,792 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.28-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.21-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.20-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.26-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.20-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.21-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.22-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.20-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.34-config-20170929
+2017-10-01 22:42:19,793 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.10.1-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.26-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.20-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.20-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.100.1-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.20-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.36-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.21-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.23-config-20170929
+2017-10-01 22:42:19,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.186.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.235.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.37-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.15.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.15.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.29-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.22-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.10.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.102.1-config-20170929
+2017-10-01 22:42:19,795 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.215.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.26-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.240.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.35-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.20.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.36-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.237.1-config-20170929
+2017-10-01 22:42:19,796 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.34-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.29-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.1-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.42-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.1-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.21-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.103.1-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.207.1-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.22-config-20170929
+2017-10-01 22:42:19,797 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.23-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.1-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.20-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.21-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.23-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.41-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.27-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.28-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.5-config-20170929
+2017-10-01 22:42:19,798 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.2-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.205.1-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.202.1-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.20-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.25-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.30-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.1-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.21-config-20170929
+2017-10-01 22:42:19,799 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.222.1-config-20170929
+2017-10-01 22:43:42,495 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.24-config-20170929
+2017-10-01 22:43:42,495 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.24-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,495 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.3-config-20170929
+2017-10-01 22:43:42,495 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.42.20.3-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,496 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.132.1-config-20170929
+2017-10-01 22:43:42,496 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.132.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,496 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.20-config-20170929
+2017-10-01 22:43:42,496 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.200.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,496 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.23-config-20170929
+2017-10-01 22:43:42,496 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,496 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.22-config-20170929
+2017-10-01 22:43:42,497 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.104.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,497 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.25-config-20170929
+2017-10-01 22:43:42,497 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.25-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,497 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.35.1-config-20170929
+2017-10-01 22:43:42,497 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.35.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,497 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.130.1-config-20170929
+2017-10-01 22:43:42,497 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.130.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,498 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.21-config-20170929
+2017-10-01 22:43:42,498 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,498 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.20-config-20170929
+2017-10-01 22:43:42,498 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.34.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,498 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.1-config-20170929
+2017-10-01 22:43:42,498 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,498 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.35.1-config-20170929
+2017-10-01 22:43:42,499 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.35.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,499 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.21-config-20170929
+2017-10-01 22:43:42,499 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,499 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.10.1-config-20170929
+2017-10-01 22:43:42,499 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.30.10.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,499 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.217.1-config-20170929
+2017-10-01 22:43:42,499 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.217.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,500 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.152.1-config-20170929
+2017-10-01 22:43:42,500 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.152.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,500 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.25-config-20170929
+2017-10-01 22:43:42,500 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.25-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,500 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.40-config-20170929
+2017-10-01 22:43:42,500 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.40-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,500 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.32-config-20170929
+2017-10-01 22:43:42,501 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.32-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,501 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.25.1-config-20170929
+2017-10-01 22:43:42,501 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.25.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,501 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.1-config-20170929
+2017-10-01 22:43:42,501 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.30.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,501 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.1-config-20170929
+2017-10-01 22:43:42,501 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,501 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.27-config-20170929
+2017-10-01 22:43:42,502 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.27-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,502 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.21-config-20170929
+2017-10-01 22:43:42,502 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.137.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,502 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.21-config-20170929
+2017-10-01 22:43:42,502 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,502 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.33-config-20170929
+2017-10-01 22:43:42,502 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.33-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,503 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.20-config-20170929
+2017-10-01 22:43:42,503 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.33.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,503 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.22-config-20170929
+2017-10-01 22:43:42,503 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,503 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.225.1-config-20170929
+2017-10-01 22:43:42,503 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.225.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,503 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.24-config-20170929
+2017-10-01 22:43:42,504 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.24-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,504 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.35.1-config-20170929
+2017-10-01 22:43:42,504 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.40.35.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,504 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.23-config-20170929
+2017-10-01 22:43:42,504 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,504 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.90.1-config-20170929
+2017-10-01 22:43:42,504 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.90.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,505 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.33-config-20170929
+2017-10-01 22:43:42,505 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.33-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,505 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.140.1-config-20170929
+2017-10-01 22:43:42,505 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.140.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,505 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.227.1-config-20170929
+2017-10-01 22:43:42,505 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.227.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,505 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.27-config-20170929
+2017-10-01 22:43:42,505 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.27-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,506 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.15.1-config-20170929
+2017-10-01 22:43:42,506 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.25.15.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,506 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.214.1-config-20170929
+2017-10-01 22:43:42,506 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.214.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,506 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.28-config-20170929
+2017-10-01 22:43:42,506 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.28-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,506 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.242.1-config-20170929
+2017-10-01 22:43:42,506 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.242.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,507 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.24-config-20170929
+2017-10-01 22:43:42,507 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.24-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,507 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.232.1-config-20170929
+2017-10-01 22:43:42,507 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.232.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,507 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.36.1-config-20170929
+2017-10-01 22:43:42,507 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.36.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,507 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.1-config-20170929
+2017-10-01 22:43:42,507 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.137.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,508 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.37.1-config-20170929
+2017-10-01 22:43:42,508 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.37.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,508 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.10.1-config-20170929
+2017-10-01 22:43:42,508 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.10.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,508 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.1-config-20170929
+2017-10-01 22:43:42,508 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,508 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.20-config-20170929
+2017-10-01 22:43:42,509 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.137.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,509 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.20-config-20170929
+2017-10-01 22:43:42,509 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.104.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,509 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.220.1-config-20170929
+2017-10-01 22:43:42,509 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.220.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,509 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.101.1-config-20170929
+2017-10-01 22:43:42,509 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.101.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,509 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.28-config-20170929
+2017-10-01 22:43:42,510 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.25.10.28-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,510 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.1-config-20170929
+2017-10-01 22:43:42,510 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,510 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.210.1-config-20170929
+2017-10-01 22:43:42,510 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.210.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,510 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.26-config-20170929
+2017-10-01 22:43:42,510 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.25.10.26-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,511 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.21-config-20170929
+2017-10-01 22:43:42,511 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.30.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,511 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.150.1-config-20170929
+2017-10-01 22:43:42,511 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.150.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,511 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.24-config-20170929
+2017-10-01 22:43:42,511 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.24-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,511 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.200.1-config-20170929
+2017-10-01 22:43:42,511 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.200.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,512 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.31-config-20170929
+2017-10-01 22:43:42,512 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.31-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,512 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.61.35.1-config-20170929
+2017-10-01 22:43:42,512 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.61.35.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,512 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.22-config-20170929
+2017-10-01 22:43:42,512 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,512 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.185.1-config-20170929
+2017-10-01 22:43:42,513 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.185.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,513 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.26-config-20170929
+2017-10-01 22:43:42,513 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.26-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,513 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.22-config-20170929
+2017-10-01 22:43:42,513 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.137.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,513 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.22-config-20170929
+2017-10-01 22:43:42,513 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.33.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,514 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.29-config-20170929
+2017-10-01 22:43:42,514 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.29-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,514 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.15.1-config-20170929
+2017-10-01 22:43:42,514 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.30.15.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,514 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.230.1-config-20170929
+2017-10-01 22:43:42,514 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.230.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,514 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.45.1-config-20170929
+2017-10-01 22:43:42,514 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.45.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,515 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.20-config-20170929
+2017-10-01 22:43:42,515 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,515 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.43.35.1-config-20170929
+2017-10-01 22:43:42,515 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.43.35.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,515 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.30.1-config-20170929
+2017-10-01 22:43:42,515 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.30.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,515 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.37-config-20170929
+2017-10-01 22:43:42,516 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.37-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,516 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.21-config-20170929
+2017-10-01 22:43:42,516 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.104.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,516 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.151.1-config-20170929
+2017-10-01 22:43:42,516 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.151.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,516 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.23-config-20170929
+2017-10-01 22:43:42,516 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.104.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,516 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.35-config-20170929
+2017-10-01 22:43:42,517 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.35-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,517 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.142.1-config-20170929
+2017-10-01 22:43:42,517 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.142.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,517 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.28-config-20170929
+2017-10-01 22:43:42,517 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.28-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,517 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.21-config-20170929
+2017-10-01 22:43:42,517 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,518 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.20-config-20170929
+2017-10-01 22:43:42,518 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.39.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,518 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.26-config-20170929
+2017-10-01 22:43:42,518 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.26-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,518 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.20-config-20170929
+2017-10-01 22:43:42,518 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,518 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.21-config-20170929
+2017-10-01 22:43:42,519 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.39.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,519 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.22-config-20170929
+2017-10-01 22:43:42,519 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,519 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.20-config-20170929
+2017-10-01 22:43:42,519 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.31.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,519 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.34-config-20170929
+2017-10-01 22:43:42,519 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.34-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,520 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.10.1-config-20170929
+2017-10-01 22:43:42,520 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.137.10.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,520 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.26-config-20170929
+2017-10-01 22:43:42,520 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.26-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,520 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.20-config-20170929
+2017-10-01 22:43:42,520 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.30.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,520 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.20-config-20170929
+2017-10-01 22:43:42,521 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,521 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.100.1-config-20170929
+2017-10-01 22:43:42,521 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.100.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,521 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.20-config-20170929
+2017-10-01 22:43:42,521 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,521 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.36-config-20170929
+2017-10-01 22:43:42,521 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.36-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,521 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.21-config-20170929
+2017-10-01 22:43:42,522 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.200.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,522 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.23-config-20170929
+2017-10-01 22:43:42,522 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,522 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.186.1-config-20170929
+2017-10-01 22:43:42,522 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.186.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,522 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.235.1-config-20170929
+2017-10-01 22:43:42,522 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.235.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,523 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.37-config-20170929
+2017-10-01 22:43:42,523 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.25.10.37-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,523 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.15.1-config-20170929
+2017-10-01 22:43:42,523 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.15.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,523 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.15.1-config-20170929
+2017-10-01 22:43:42,523 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.15.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,523 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.29-config-20170929
+2017-10-01 22:43:42,524 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.29-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,524 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.22-config-20170929
+2017-10-01 22:43:42,524 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,524 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.10.1-config-20170929
+2017-10-01 22:43:42,524 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.10.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,524 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.102.1-config-20170929
+2017-10-01 22:43:42,524 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.102.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,524 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.215.1-config-20170929
+2017-10-01 22:43:42,525 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.215.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,525 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.26-config-20170929
+2017-10-01 22:43:42,525 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.26-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,525 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.240.1-config-20170929
+2017-10-01 22:43:42,525 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.240.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,525 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.35-config-20170929
+2017-10-01 22:43:42,525 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.35-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,525 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.1-config-20170929
+2017-10-01 22:43:42,526 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.104.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,526 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.1-config-20170929
+2017-10-01 22:43:42,526 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,526 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.20.1-config-20170929
+2017-10-01 22:43:42,526 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.20.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,526 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.36-config-20170929
+2017-10-01 22:43:42,526 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.36-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,527 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.237.1-config-20170929
+2017-10-01 22:43:42,527 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.237.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,527 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.34-config-20170929
+2017-10-01 22:43:42,527 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.193.50.34-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,527 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.29-config-20170929
+2017-10-01 22:43:42,527 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.29-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,527 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.1-config-20170929
+2017-10-01 22:43:42,528 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.42.20.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,528 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.42-config-20170929
+2017-10-01 22:43:42,528 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.42-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,528 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.1-config-20170929
+2017-10-01 22:43:42,528 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.40.50.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,528 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.21-config-20170929
+2017-10-01 22:43:42,528 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.33.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,528 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.103.1-config-20170929
+2017-10-01 22:43:42,529 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.103.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,529 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.207.1-config-20170929
+2017-10-01 22:43:42,529 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.207.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,529 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.22-config-20170929
+2017-10-01 22:43:42,529 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.22-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,529 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.23-config-20170929
+2017-10-01 22:43:42,529 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.218.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,529 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.1-config-20170929
+2017-10-01 22:43:42,530 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.175.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,530 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.20-config-20170929
+2017-10-01 22:43:42,530 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.40.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,530 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.21-config-20170929
+2017-10-01 22:43:42,530 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.31.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,530 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.23-config-20170929
+2017-10-01 22:43:42,530 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.38.50.23-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,531 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.41-config-20170929
+2017-10-01 22:43:42,531 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.41-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,531 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.27-config-20170929
+2017-10-01 22:43:42,531 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.27-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,531 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.28-config-20170929
+2017-10-01 22:43:42,531 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.28-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,531 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.5-config-20170929
+2017-10-01 22:43:42,532 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.175.5-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,532 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.2-config-20170929
+2017-10-01 22:43:42,532 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.42.20.2-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,532 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.205.1-config-20170929
+2017-10-01 22:43:42,532 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.205.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,532 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.202.1-config-20170929
+2017-10-01 22:43:42,532 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.202.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,532 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.20-config-20170929
+2017-10-01 22:43:42,532 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.135.50.20-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,533 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.25-config-20170929
+2017-10-01 22:43:42,533 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.199.50.25-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,533 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.30-config-20170929
+2017-10-01 22:43:42,533 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.211.50.30-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,533 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.1-config-20170929
+2017-10-01 22:43:42,533 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.25.10.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,533 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.21-config-20170929
+2017-10-01 22:43:42,534 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/10.34.50.21-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:43:42,534 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.222.1-config-20170929
+2017-10-01 22:43:42,534 - NetHydra - ERROR - ERROR parsing config - /opt/nethydra/Metrocare/output/configs/192.168.222.1-config-20170929
+Traceback (most recent call last):
+  File "cisco_parse.py", line 34, in parse_cisco_config
+    logger.debug("Parsing the config")
+NameError: global name 'logger' is not defined
+2017-10-01 22:44:08,733 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.24-config-20170929
+2017-10-01 22:44:08,741 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.3-config-20170929
+2017-10-01 22:44:08,756 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.132.1-config-20170929
+2017-10-01 22:44:08,766 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.20-config-20170929
+2017-10-01 22:44:08,772 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.23-config-20170929
+2017-10-01 22:44:08,780 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.22-config-20170929
+2017-10-01 22:44:08,787 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.25-config-20170929
+2017-10-01 22:44:08,794 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.35.1-config-20170929
+2017-10-01 22:44:08,804 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.130.1-config-20170929
+2017-10-01 22:44:08,813 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.21-config-20170929
+2017-10-01 22:44:08,821 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.20-config-20170929
+2017-10-01 22:44:08,827 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.1-config-20170929
+2017-10-01 22:44:08,835 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.35.1-config-20170929
+2017-10-01 22:44:08,843 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.21-config-20170929
+2017-10-01 22:44:08,852 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.10.1-config-20170929
+2017-10-01 22:44:08,858 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.217.1-config-20170929
+2017-10-01 22:44:08,863 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.152.1-config-20170929
+2017-10-01 22:44:08,871 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.25-config-20170929
+2017-10-01 22:44:08,878 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.40-config-20170929
+2017-10-01 22:44:08,886 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.32-config-20170929
+2017-10-01 22:44:08,894 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.25.1-config-20170929
+2017-10-01 22:44:08,903 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.1-config-20170929
+2017-10-01 22:44:08,910 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.1-config-20170929
+2017-10-01 22:44:08,915 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.27-config-20170929
+2017-10-01 22:44:08,922 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.21-config-20170929
+2017-10-01 22:44:08,929 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.21-config-20170929
+2017-10-01 22:44:08,938 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.33-config-20170929
+2017-10-01 22:44:08,945 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.20-config-20170929
+2017-10-01 22:44:08,952 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.22-config-20170929
+2017-10-01 22:44:08,959 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.225.1-config-20170929
+2017-10-01 22:44:08,964 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.24-config-20170929
+2017-10-01 22:44:08,972 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.35.1-config-20170929
+2017-10-01 22:44:08,982 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.23-config-20170929
+2017-10-01 22:44:08,989 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.90.1-config-20170929
+2017-10-01 22:44:08,997 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.33-config-20170929
+2017-10-01 22:44:09,004 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.140.1-config-20170929
+2017-10-01 22:44:09,012 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.227.1-config-20170929
+2017-10-01 22:44:09,018 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.27-config-20170929
+2017-10-01 22:44:09,027 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.15.1-config-20170929
+2017-10-01 22:44:09,034 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.214.1-config-20170929
+2017-10-01 22:44:09,039 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.28-config-20170929
+2017-10-01 22:44:09,046 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.242.1-config-20170929
+2017-10-01 22:44:09,052 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.24-config-20170929
+2017-10-01 22:44:09,059 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.232.1-config-20170929
+2017-10-01 22:44:09,069 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.36.1-config-20170929
+2017-10-01 22:44:09,078 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.1-config-20170929
+2017-10-01 22:44:09,084 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.37.1-config-20170929
+2017-10-01 22:44:09,093 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.10.1-config-20170929
+2017-10-01 22:44:09,101 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.1-config-20170929
+2017-10-01 22:44:09,110 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.20-config-20170929
+2017-10-01 22:44:09,117 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.20-config-20170929
+2017-10-01 22:44:09,124 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.220.1-config-20170929
+2017-10-01 22:44:09,128 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.101.1-config-20170929
+2017-10-01 22:44:09,135 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.28-config-20170929
+2017-10-01 22:44:09,143 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.1-config-20170929
+2017-10-01 22:44:09,152 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.210.1-config-20170929
+2017-10-01 22:44:09,157 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.26-config-20170929
+2017-10-01 22:44:09,164 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.21-config-20170929
+2017-10-01 22:44:09,170 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.150.1-config-20170929
+2017-10-01 22:44:09,178 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.24-config-20170929
+2017-10-01 22:44:09,186 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.200.1-config-20170929
+2017-10-01 22:44:09,191 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.31-config-20170929
+2017-10-01 22:44:09,198 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.61.35.1-config-20170929
+2017-10-01 22:44:09,206 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.22-config-20170929
+2017-10-01 22:44:09,213 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.185.1-config-20170929
+2017-10-01 22:44:09,221 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.26-config-20170929
+2017-10-01 22:44:09,228 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.50.22-config-20170929
+2017-10-01 22:44:09,234 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.22-config-20170929
+2017-10-01 22:44:09,241 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.29-config-20170929
+2017-10-01 22:44:09,248 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.15.1-config-20170929
+2017-10-01 22:44:09,254 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.230.1-config-20170929
+2017-10-01 22:44:09,260 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.45.1-config-20170929
+2017-10-01 22:44:09,262 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.20-config-20170929
+2017-10-01 22:44:09,269 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.43.35.1-config-20170929
+2017-10-01 22:44:09,278 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.30.1-config-20170929
+2017-10-01 22:44:09,286 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.37-config-20170929
+2017-10-01 22:44:09,293 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.21-config-20170929
+2017-10-01 22:44:09,302 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.151.1-config-20170929
+2017-10-01 22:44:09,309 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.23-config-20170929
+2017-10-01 22:44:09,316 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.35-config-20170929
+2017-10-01 22:44:09,323 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.142.1-config-20170929
+2017-10-01 22:44:09,330 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.28-config-20170929
+2017-10-01 22:44:09,337 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.21-config-20170929
+2017-10-01 22:44:09,346 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.20-config-20170929
+2017-10-01 22:44:09,352 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.26-config-20170929
+2017-10-01 22:44:09,359 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.20-config-20170929
+2017-10-01 22:44:09,366 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.39.50.21-config-20170929
+2017-10-01 22:44:09,372 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.22-config-20170929
+2017-10-01 22:44:09,379 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.20-config-20170929
+2017-10-01 22:44:09,387 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.34-config-20170929
+2017-10-01 22:44:09,394 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.137.10.1-config-20170929
+2017-10-01 22:44:09,400 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.26-config-20170929
+2017-10-01 22:44:09,407 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.30.50.20-config-20170929
+2017-10-01 22:44:09,414 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.20-config-20170929
+2017-10-01 22:44:09,421 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.100.1-config-20170929
+2017-10-01 22:44:09,429 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.20-config-20170929
+2017-10-01 22:44:09,436 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.36-config-20170929
+2017-10-01 22:44:09,442 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.200.50.21-config-20170929
+2017-10-01 22:44:09,449 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.23-config-20170929
+2017-10-01 22:44:09,456 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.186.1-config-20170929
+2017-10-01 22:44:09,463 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.235.1-config-20170929
+2017-10-01 22:44:09,469 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.37-config-20170929
+2017-10-01 22:44:09,475 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.15.1-config-20170929
+2017-10-01 22:44:09,483 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.15.1-config-20170929
+2017-10-01 22:44:09,492 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.29-config-20170929
+2017-10-01 22:44:09,498 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.22-config-20170929
+2017-10-01 22:44:09,507 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.10.1-config-20170929
+2017-10-01 22:44:09,520 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.102.1-config-20170929
+2017-10-01 22:44:09,527 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.215.1-config-20170929
+2017-10-01 22:44:09,532 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.26-config-20170929
+2017-10-01 22:44:09,539 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.240.1-config-20170929
+2017-10-01 22:44:09,543 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.35-config-20170929
+2017-10-01 22:44:09,550 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.104.50.1-config-20170929
+2017-10-01 22:44:09,559 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.1-config-20170929
+2017-10-01 22:44:09,566 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.20.1-config-20170929
+2017-10-01 22:44:09,575 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.36-config-20170929
+2017-10-01 22:44:09,581 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.237.1-config-20170929
+2017-10-01 22:44:09,586 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.193.50.34-config-20170929
+2017-10-01 22:44:09,594 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.29-config-20170929
+2017-10-01 22:44:09,601 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.1-config-20170929
+2017-10-01 22:44:09,615 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.42-config-20170929
+2017-10-01 22:44:09,622 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.1-config-20170929
+2017-10-01 22:44:09,625 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.33.50.21-config-20170929
+2017-10-01 22:44:09,633 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.103.1-config-20170929
+2017-10-01 22:44:09,640 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.207.1-config-20170929
+2017-10-01 22:44:09,645 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.22-config-20170929
+2017-10-01 22:44:09,651 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.218.50.23-config-20170929
+2017-10-01 22:44:09,658 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.1-config-20170929
+2017-10-01 22:44:09,660 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.40.50.20-config-20170929
+2017-10-01 22:44:09,666 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.31.50.21-config-20170929
+2017-10-01 22:44:09,674 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.38.50.23-config-20170929
+2017-10-01 22:44:09,681 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.41-config-20170929
+2017-10-01 22:44:09,687 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.27-config-20170929
+2017-10-01 22:44:09,694 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.28-config-20170929
+2017-10-01 22:44:09,701 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.175.5-config-20170929
+2017-10-01 22:44:09,704 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.42.20.2-config-20170929
+2017-10-01 22:44:09,719 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.205.1-config-20170929
+2017-10-01 22:44:09,724 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.202.1-config-20170929
+2017-10-01 22:44:09,728 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.135.50.20-config-20170929
+2017-10-01 22:44:09,735 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.199.50.25-config-20170929
+2017-10-01 22:44:09,742 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.211.50.30-config-20170929
+2017-10-01 22:44:09,750 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.25.10.1-config-20170929
+2017-10-01 22:44:09,757 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/10.34.50.21-config-20170929
+2017-10-01 22:44:09,763 - NetHydra - INFO - /opt/nethydra/Metrocare/output/configs/192.168.222.1-config-20170929
+2017-10-08 20:58:47,488 - NetHydra - INFO - 192.168.1.1 - CONNECTING...
+2017-10-08 20:58:55,495 - NetHydra - WARNING - 192.168.1.1 - CONNECTION FAILED
+2017-10-08 20:58:55,495 - NetHydra - ERROR - 192.168.1.1 - CONNECTION FAILED - 2nd user
+2017-10-08 21:00:10,661 - NetHydra - INFO - 192.168.1.1 - CONNECTING...
+2017-10-08 22:51:13,593 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "textfsm_cisco_show_version.py", line 20, in main
+    for filename in os.listdir(local.tech_support_file_path):
+OSError: [Errno 2] No such file or directory: '/opt/nethydra/NYAP/output/tech-support/'
+2017-10-08 22:51:36,752 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "textfsm_cisco_show_version.py", line 26, in main
+    template = open('{0}cisco_ios_show_version.template'.format(local.textfsm_templates), 'r')
+IOError: [Errno 2] No such file or directory: '/textfsm/cisco_ios_show_version.template'
+2017-10-08 22:52:10,328 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "textfsm_cisco_show_version.py", line 27, in main
+    re_table = textfsm.TextFSM(template)
+NameError: global name 'textfsm' is not defined
+2017-10-08 22:52:22,288 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "textfsm_cisco_show_version.py", line 28, in main
+    re_table = textfsm.TextFSM(template)
+  File "/usr/local/lib/python2.7/dist-packages/textfsm.py", line 550, in __init__
+    self._Parse(template)
+  File "/usr/local/lib/python2.7/dist-packages/textfsm.py", line 651, in _Parse
+    while self._ParseFSMState(template):
+  File "/usr/local/lib/python2.7/dist-packages/textfsm.py", line 756, in _ParseFSMState
+    % (line, self._line_num))
+TextFSMTemplateError: Invalid state name: '<!DOCTYPE html>'. Line: 7
+2017-10-09 02:24:08,198 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,199 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,200 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,200 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,202 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,202 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,204 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,204 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,205 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,205 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,206 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,206 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,207 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,207 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,208 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,209 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,209 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,210 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,212 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:24:08,212 - NetHydra - ERROR - get_version_info
+Traceback (most recent call last):
+  File "cisco.py", line 182, in get_version_info
+    if (is_ios(blob)):
+TypeError: is_ios() takes no arguments (1 given)
+2017-10-09 02:44:17,812 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:17,955 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:18,111 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:18,265 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:19,110 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:19,215 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,117 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,249 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,259 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,585 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,812 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:20,936 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:21,080 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:21,097 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:21,234 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:21,375 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:21,385 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:22,165 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:23,030 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:44:23,048 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:50:45,829 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:50:45,837 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+  File "/usr/local/lib/python2.7/dist-packages/ciscoconfparse/ciscoconfparse.py", line 279, in __init__
+    raise RuntimeError
+RuntimeError
+2017-10-09 02:51:32,547 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:32,677 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:32,765 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:32,853 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:33,375 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:33,503 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,026 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,118 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,148 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,203 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,344 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,430 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,519 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,576 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,668 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,787 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:34,813 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:35,340 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:35,888 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 02:51:35,944 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 181, in get_management_ip
+    int_mgmt = parse.find_object(r"^interfa")
+AttributeError: 'CiscoConfParse' object has no attribute 'find_object'
+2017-10-09 03:00:31,221 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,222 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,222 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,223 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,224 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,225 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,226 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,227 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,227 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,227 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,227 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,228 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,228 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,228 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,228 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,229 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,229 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,230 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,231 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-09 03:00:31,232 - NetHydra - ERROR - get_management_ip
+Traceback (most recent call last):
+  File "cisco.py", line 178, in get_management_ip
+    parse = CiscoConfParse(blob)
+UnboundLocalError: local variable 'blob' referenced before assignment
+2017-10-10 02:25:33,113 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "cisco.py", line 62, in poll_devices_online
+    with open(device_list) as csvfile:
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/montana/input/nethydra_input.csv'
+2017-10-10 02:25:46,725 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-10 02:25:50,032 - NetHydra - WARNING - 192.168.48.1 - CONNECTION FAILED
+2017-10-10 02:25:50,032 - NetHydra - ERROR - 192.168.48.1 - CONNECTION FAILED - 2nd user
+2017-10-10 02:25:50,032 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-10 02:26:03,552 - NetHydra - WARNING - 192.168.48.236 - CONNECTION FAILED
+2017-10-10 02:26:03,552 - NetHydra - ERROR - 192.168.48.236 - CONNECTION FAILED - 2nd user
+2017-10-10 02:26:03,552 - NetHydra - INFO - 192.168.48.237 - CONNECTING...
+2017-10-10 02:26:18,616 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-10 02:26:23,970 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-10-10 02:26:24,124 - NetHydra - INFO - 192.168.48.1 - Executing show cdp neighbors
+2017-10-10 02:26:24,725 - NetHydra - INFO - 192.168.48.1 - Saving cdp neighbors to file
+2017-10-10 02:26:24,725 - NetHydra - ERROR - 192.168.48.1 - COMMAND EXECUTION FAILED
+Traceback (most recent call last):
+  File "cisco.py", line 144, in get_cdp_file
+    config_file = config_file_path + ip + '-cdp-' + date
+NameError: global name 'config_file_path' is not defined
+2017-10-10 02:26:24,732 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-10 02:28:14,608 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-10 02:28:19,962 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-10-10 02:28:20,137 - NetHydra - INFO - 192.168.48.1 - Executing show cdp neighbors
+2017-10-10 02:28:20,739 - NetHydra - INFO - 192.168.48.1 - Saving cdp neighbors to file
+2017-10-10 02:28:20,739 - NetHydra - ERROR - 192.168.48.1 - COMMAND EXECUTION FAILED
+Traceback (most recent call last):
+  File "cisco.py", line 146, in get_cdp_file
+    f=open(config_file, 'w+')
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/UCC/output/cdp/192.168.48.1-cdp-20171010'
+2017-10-10 02:28:20,846 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-10 02:28:35,757 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-10 02:28:41,086 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-10-10 02:28:41,229 - NetHydra - INFO - 192.168.48.1 - Executing show cdp neighbors
+2017-10-10 02:28:41,830 - NetHydra - INFO - 192.168.48.1 - Saving cdp neighbors to file
+2017-10-10 02:28:41,830 - NetHydra - ERROR - 192.168.48.1 - COMMAND EXECUTION FAILED
+Traceback (most recent call last):
+  File "cisco.py", line 146, in get_cdp_file
+    f=open(config_file, 'w+')
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/UCC/output/cdp/192.168.48.1-cdp-20171010'
+2017-10-10 02:28:41,837 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-10 02:29:29,943 - NetHydra - INFO - 192.168.48.1 - CONNECTING...
+2017-10-10 02:29:35,268 - NetHydra - INFO - 192.168.48.1 - CONNECTION SUCCESSFUL
+2017-10-10 02:29:35,411 - NetHydra - INFO - 192.168.48.1 - Executing show cdp neighbors
+2017-10-10 02:29:36,012 - NetHydra - INFO - 192.168.48.1 - Saving cdp neighbors to file
+2017-10-10 02:29:36,019 - NetHydra - INFO - 192.168.48.236 - CONNECTING...
+2017-10-10 02:29:44,742 - NetHydra - INFO - 192.168.48.236 - CONNECTION SUCCESSFUL
+2017-10-10 02:29:45,144 - NetHydra - INFO - 192.168.48.236 - Executing show cdp neighbors
+2017-10-10 02:29:45,746 - NetHydra - INFO - 192.168.48.236 - Saving cdp neighbors to file
+2017-10-10 02:29:45,846 - NetHydra - INFO - 192.168.48.237 - CONNECTING...
+2017-10-10 02:29:54,569 - NetHydra - INFO - 192.168.48.237 - CONNECTION SUCCESSFUL
+2017-10-10 02:29:54,970 - NetHydra - INFO - 192.168.48.237 - Executing show cdp neighbors
+2017-10-10 02:29:55,572 - NetHydra - INFO - 192.168.48.237 - Saving cdp neighbors to file
+2017-10-10 02:29:55,673 - NetHydra - INFO - 192.168.48.238 - CONNECTING...
+2017-10-10 02:30:04,397 - NetHydra - INFO - 192.168.48.238 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:04,800 - NetHydra - INFO - 192.168.48.238 - Executing show cdp neighbors
+2017-10-10 02:30:05,402 - NetHydra - INFO - 192.168.48.238 - Saving cdp neighbors to file
+2017-10-10 02:30:05,503 - NetHydra - INFO - 192.168.48.239 - CONNECTING...
+2017-10-10 02:30:14,225 - NetHydra - INFO - 192.168.48.239 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:14,627 - NetHydra - INFO - 192.168.48.239 - Executing show cdp neighbors
+2017-10-10 02:30:15,228 - NetHydra - INFO - 192.168.48.239 - Saving cdp neighbors to file
+2017-10-10 02:30:15,329 - NetHydra - INFO - 192.168.48.240 - CONNECTING...
+2017-10-10 02:30:24,054 - NetHydra - INFO - 192.168.48.240 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:24,456 - NetHydra - INFO - 192.168.48.240 - Executing show cdp neighbors
+2017-10-10 02:30:25,058 - NetHydra - INFO - 192.168.48.240 - Saving cdp neighbors to file
+2017-10-10 02:30:25,158 - NetHydra - INFO - 192.168.48.241 - CONNECTING...
+2017-10-10 02:30:33,883 - NetHydra - INFO - 192.168.48.241 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:34,285 - NetHydra - INFO - 192.168.48.241 - Executing show cdp neighbors
+2017-10-10 02:30:34,887 - NetHydra - INFO - 192.168.48.241 - Saving cdp neighbors to file
+2017-10-10 02:30:34,987 - NetHydra - INFO - 192.168.48.242 - CONNECTING...
+2017-10-10 02:30:43,708 - NetHydra - INFO - 192.168.48.242 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:44,110 - NetHydra - INFO - 192.168.48.242 - Executing show cdp neighbors
+2017-10-10 02:30:44,712 - NetHydra - INFO - 192.168.48.242 - Saving cdp neighbors to file
+2017-10-10 02:30:44,812 - NetHydra - INFO - 192.168.48.243 - CONNECTING...
+2017-10-10 02:30:53,535 - NetHydra - INFO - 192.168.48.243 - CONNECTION SUCCESSFUL
+2017-10-10 02:30:53,937 - NetHydra - INFO - 192.168.48.243 - Executing show cdp neighbors
+2017-10-10 02:30:54,538 - NetHydra - INFO - 192.168.48.243 - Saving cdp neighbors to file
+2017-10-10 02:30:54,639 - NetHydra - INFO - 192.168.48.244 - CONNECTING...
+2017-10-10 02:31:03,361 - NetHydra - INFO - 192.168.48.244 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:03,763 - NetHydra - INFO - 192.168.48.244 - Executing show cdp neighbors
+2017-10-10 02:31:04,365 - NetHydra - INFO - 192.168.48.244 - Saving cdp neighbors to file
+2017-10-10 02:31:04,465 - NetHydra - INFO - 192.168.48.245 - CONNECTING...
+2017-10-10 02:31:13,188 - NetHydra - INFO - 192.168.48.245 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:13,589 - NetHydra - INFO - 192.168.48.245 - Executing show cdp neighbors
+2017-10-10 02:31:14,191 - NetHydra - INFO - 192.168.48.245 - Saving cdp neighbors to file
+2017-10-10 02:31:14,292 - NetHydra - INFO - 192.168.48.246 - CONNECTING...
+2017-10-10 02:31:23,017 - NetHydra - INFO - 192.168.48.246 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:23,418 - NetHydra - INFO - 192.168.48.246 - Executing show cdp neighbors
+2017-10-10 02:31:24,021 - NetHydra - INFO - 192.168.48.246 - Saving cdp neighbors to file
+2017-10-10 02:31:24,122 - NetHydra - INFO - 192.168.48.247 - CONNECTING...
+2017-10-10 02:31:32,845 - NetHydra - INFO - 192.168.48.247 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:33,247 - NetHydra - INFO - 192.168.48.247 - Executing show cdp neighbors
+2017-10-10 02:31:33,849 - NetHydra - INFO - 192.168.48.247 - Saving cdp neighbors to file
+2017-10-10 02:31:33,949 - NetHydra - INFO - 192.168.48.252 - CONNECTING...
+2017-10-10 02:31:38,099 - NetHydra - INFO - 192.168.48.252 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:38,305 - NetHydra - INFO - 192.168.48.252 - Executing show cdp neighbors
+2017-10-10 02:31:38,906 - NetHydra - INFO - 192.168.48.252 - Saving cdp neighbors to file
+2017-10-10 02:31:38,909 - NetHydra - INFO - 192.168.48.253 - CONNECTING...
+2017-10-10 02:31:47,631 - NetHydra - INFO - 192.168.48.253 - CONNECTION SUCCESSFUL
+2017-10-10 02:31:47,731 - NetHydra - INFO - 192.168.48.253 - Executing show cdp neighbors
+2017-10-10 02:31:48,333 - NetHydra - INFO - 192.168.48.253 - Saving cdp neighbors to file

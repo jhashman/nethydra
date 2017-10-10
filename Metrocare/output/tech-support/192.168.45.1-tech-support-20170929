@@ -1,0 +1,2343 @@
+
+------------------ show version ------------------
+
+
+Cisco IOS Software, 1841 Software (C1841-IPBASEK9-M), Version 15.1(4)M10, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Tue 24-Mar-15 08:31 by prod_rel_team
+
+ROM: System Bootstrap, Version 12.3(8r)T9, RELEASE SOFTWARE (fc1)
+
+Wilmer_Main_1841ISR uptime is 38 weeks, 22 hours, 29 minutes
+System returned to ROM by power-on
+System restarted at 16:10:04 CST Thu Jan 5 2017
+System image file is "flash:c1841-ipbasek9-mz.151-4.M10.bin"
+Last reload type: Normal Reload
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 1841 (revision 6.0) with 237568K/24576K bytes of memory.
+Processor board ID FTX1029W0TH
+2 FastEthernet interfaces
+1 Serial interface
+DRAM configuration is 64 bits wide with parity disabled.
+191K bytes of NVRAM.
+62720K bytes of ATA CompactFlash (Read/Write)
+
+
+License Info:
+
+License UDI:
+
+-------------------------------------------------
+Device#	  PID			SN
+-------------------------------------------------
+*0  	  CISCO1841             FTX1029W0TH     
+
+
+
+Configuration register is 0x2102
+
+
+------------------ show running-config ------------------
+
+
+Building configuration...
+
+Current configuration : 5075 bytes
+!
+! Last configuration change at 13:09:37 CST Fri Jan 27 2017 by admin
+! NVRAM config last updated at 13:09:37 CST Fri Jan 27 2017 by admin
+! NVRAM config last updated at 13:09:37 CST Fri Jan 27 2017 by admin
+version 15.1
+service timestamps debug uptime
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service sequence-numbers
+!
+hostname Wilmer_Main_1841ISR
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging buffered 16384
+logging console critical
+no logging monitor
+enable secret 5 <removed>
+!
+aaa new-model
+!
+!
+aaa authentication login default local enable
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone CST -6 0
+clock summer-time CDT recurring
+dot11 syslog
+no ip source-route
+!
+!
+!
+ip dhcp bootp ignore
+!
+!
+ip cef
+no ip domain lookup
+multilink bundle-name authenticated
+!
+crypto pki token default removal timeout 0
+!
+crypto pki trustpoint TP-self-signed-333255410
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-333255410
+ revocation-check none
+ rsakeypair TP-self-signed-333255410
+!
+!
+crypto pki certificate chain TP-self-signed-333255410
+ certificate self-signed 01
+  30820249 308201B2 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33333332 35353431 30301E17 0D313630 31323932 30313532 
+  325A170D 32303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F 
+  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3333 33323535 
+  34313030 819F300D 06092A86 4886F70D 01010105 0003818D 00308189 02818100 
+  C36A5469 02131AF4 1B136FC6 5F74189D FA2BC581 572EDC28 FB34AB4A 6BA629D7 
+  155CDCC9 712CFD0A E0B90EEE 73819259 5873773A 6C0D5CE9 0A52587B 5A67D924 
+  C99599D9 698CBC36 CAAD6F29 059B2C2E BDC1B153 E4DFF5A6 16D3CBC2 4EF10C57 
+  3749F8D2 643446F8 6D0F57D7 1D0004B9 46C60C43 69FAE46D 528B2740 D6CE3B19 
+  02030100 01A37330 71300F06 03551D13 0101FF04 05300301 01FF301E 0603551D 
+  11041730 15821357 696C6D65 725F4D61 696E5F31 38343149 5352301F 0603551D 
+  23041830 16801449 6952C82F F3C9917B 6BAF191B 89E4CA02 45310930 1D060355 
+  1D0E0416 04144969 52C82FF3 C9917B6B AF191B89 E4CA0245 3109300D 06092A86 
+  4886F70D 01010405 00038181 001A8923 4565CBB1 C5DF00BC CBE4B9F0 C05E178C 
+  61A2B39C 066DCF84 202A0A7D 6580B5BF 2A18A787 A8A3D156 602351F5 E1C807CC 
+  88EB7E44 726A9D10 16368AC1 51A3780E 37DA27B9 E5087D3A 0C77D01B 6A7BAD83 
+  581ECA65 20AC41E8 15C142F5 C8A6F893 9A3E8713 94F8BCC5 A98778F4 81CDD11E 
+  A0C9DFA8 AB04BE66 6BF9319D D8
+  	quit
+!
+!
+license udi pid CISCO1841 sn FTX1029W0TH
+username admin password 7 <removed>
+!
+!
+ip ssh logging events
+ip ssh version 2
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 192.168.45.1 255.255.255.0
+ ip helper-address 10.42.20.24
+ ip helper-address 10.42.20.25
+ ip directed-broadcast
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Serial0/0/0
+ description Data and VOIP Circuit ID 11.DHXS.001592
+ ip address 192.168.30.14 255.255.255.252
+ no ip proxy-arp
+!
+!
+router eigrp 23
+ network 192.168.30.0
+ network 192.168.45.0
+ no eigrp log-neighbor-changes
+!
+ip forward-protocol nd
+!
+no ip http server
+ip http authentication local
+no ip http secure-server
+!
+!
+logging origin-id hostname
+logging facility syslog
+logging server-arp
+logging 192.168.42.116
+access-list 1 permit 192.168.42.0 0.0.0.255
+access-list 1 permit 10.42.20.0 0.0.0.255
+access-list 1 permit 10.199.20.0 0.0.0.255
+access-list 1 deny   any log
+!
+snmp-server group MHMR v3 priv 
+snmp-server location Wilmer bldg C
+snmp-server contact IT Department
+!
+!
+!
+control-plane
+!
+!
+banner motd ^CTHIS IS A PRIVATE COMPUTER SYSTEM. It is for authorized use only.
+Users (authorized or unauthorized) have no explicit or implicit
+expectation of privacy.
+
+Any or all uses of this system and all files on this system may
+be intercepted, monitored, recorded, copied, audited, inspected,
+and disclosed to authorized site and law enforcement personnel,
+as well as authorized officials of other agencies, both domestic
+and foreign.  By using this system, the user consents to such
+interception, monitoring, recording, copying, auditing, inspection,
+and disclosure at the discretion of authorized site personnel.
+
+Unauthorized or improper use of this system may result in
+administrative disciplinary action and civil and criminal penalties.
+By continuing to use this system you indicate your awareness of and
+consent to these terms and conditions of use.   LOG OFF IMMEDIATELY
+if you do not agree to the conditions stated in this warning.
+^C
+!
+line con 0
+ session-timeout 5 
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+ transport output ssh
+line aux 0
+line vty 0 4
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ password 7 <removed>
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ session-timeout 5 
+ access-class 1 in
+ privilege level 15
+ logging synchronous level all
+ transport input ssh
+ transport output ssh
+!
+scheduler allocate 20000 1000
+ntp server 108.61.73.243 prefer
+end
+
+
+------------------ show stacks ------------------
+
+
+Minimum process stacks:
+ Free/Size   Name
+ 8044/9000   EEM ED RF
+11016/12000  MRIB IPv4 Init Process
+ 4100/6000   EEM Shell Director
+ 4728/6000   SPAN Subsystem
+19244/24000  Init
+ 2140/3000   config_verify
+58648/60000  EEM Auto Registration Proc
+ 5016/6000   Auto Upgrade Startup Process
+ 4780/6000   DIB error message
+ 5144/6000   SASL MAIN
+ 5048/6000   LICENSE AGENT DEFAULT
+10824/12000  Router Init
+ 8112/9000   EIGRP-IPv4
+ 4928/6000   RADIUS INITCONFIG
+ 2140/3000   Rom Random Update Process
+ 5052/6000   URPF stats
+20584/24000  Exec
+34852/36000  TCP Command
+20584/24000  Virtual Exec
+ 8476/12000  SSH Process
+
+Interrupt level stacks:
+Level    Called Unused/Size  Name
+  1  1185402101   7336/9000  Network interfaces
+  2    17238524   8568/9000  DMA/Timer Interrupt
+  3           0   9000/9000  PA Management Int Handler
+  4        1571   8536/9000  Console MPSC
+  5           0   9000/9000  External Interrupt
+  7  1470881290   8544/9000  NMI Interrupt Handler
+
+------------------ show interfaces ------------------
+
+
+FastEthernet0/0 is up, line protocol is up 
+  Hardware is Gt96k FE, address is 0018.b97d.3f4c (bia 0018.b97d.3f4c)
+  Internet address is 192.168.45.1/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:02, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 99000 bits/sec, 52 packets/sec
+  5 minute output rate 561000 bits/sec, 68 packets/sec
+     300558651 packets input, 3102752948 bytes
+     Received 5095589 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     223 input errors, 0 CRC, 0 frame, 0 overrun, 223 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     360789633 packets output, 2545010456 bytes, 0 underruns
+     0 output errors, 0 collisions, 3 interface resets
+     1 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+FastEthernet0/1 is administratively down, line protocol is down 
+  Hardware is Gt96k FE, address is 0018.b97d.3f4d (bia 0018.b97d.3f4d)
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Auto-duplex, Auto Speed, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Serial0/0/0 is up, line protocol is up 
+  Hardware is GT96K with integrated T1 CSU/DSU
+  Description: Data and VOIP Circuit ID 11.DHXS.001592
+  Internet address is 192.168.30.14/30
+  MTU 1500 bytes, BW 1536 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 15/255, rxload 92/255
+  Encapsulation HDLC, loopback not set
+  Keepalive set (10 sec)
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 49068
+  Queueing strategy: weighted fair
+  Output queue: 0/1000/64/48984 (size/max total/threshold/drops) 
+     Conversations  0/170/256 (active/max active/max total)
+     Reserved Conversations 0/0 (allocated/max allocated)
+     Available Bandwidth 1152 kilobits/sec
+  5 minute input rate 555000 bits/sec, 68 packets/sec
+  5 minute output rate 96000 bits/sec, 52 packets/sec
+     359060039 packets input, 3270283921 bytes, 0 no buffer
+     Received 2683060 broadcasts (4970441 IP multicasts)
+     0 runts, 8 giants, 0 throttles
+     48313 input errors, 9391 CRC, 3323 frame, 11677 overrun, 0 ignored, 23914 abort
+     308036248 packets output, 152805482 bytes, 0 underruns
+     0 output errors, 0 collisions, 1826 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     39 carrier transitions
+     DCD=up  DSR=up  DTR=up  RTS=up  CTS=up
+
+
+------------------ show interfaces history ------------------
+
+
+
+------------------ show controllers ------------------
+
+
+Interface FastEthernet0/0
+Hardware is GT96K FE ADDR: 6507F64C, FASTSEND: 62A9E95C, MCI_INDEX: 0
+DIST ROUTE ENABLED: 0Route Cache Flag: 11
+GPIO 2 CONF= 67FF07A8 GPIO 2 IO= 187D303F  CIU arbit = 80F002BF 
+ PHY add register = 0xA4  PHY data register = 0xF04003B 
+ Port Conf Reg= 0x80 ENABLE HT8K HMOD0 
+ Port Conf Ex Reg= 0x10CD00 
+TX1:1 RXPRI=DE(00) ~FLCNTL ~FLNKP MFL64KB E RMII 
+Port Com Reg= 0x0
+ Port Status Reg= 0xB 100MB FDPX FCTL EN  LNK UP ~PAUSED TX oFF 
+ Serial Param Reg= 0x218823  Hash table pointer= 0xE9AAD20 
+Source ADDR L= 0x3F4C Source ADDR H= 0x18B97D 
+SDMA conf reg= 0x223C RETX 15 RX BE TX BE FRINT BSIZE 4 
+SDMA com reg= 0x1010080 SRT TXL STP TXH EN RX 
+IMASK= 0x90003DCD ICause= 0x0 
+Serial 0 mask 30FFFC3Serial 0 cause 0
+IpDiffservP0L= 0x0 IpDiffservP0H= 0x0 IpDiffservP1L= 0x0 IpDiffservP1H= 0x0 
+ IP VLAN TAG PRI= 0xF0CC  IP VLAN TAG PRI= 0xF0CC 
+ First rxd Q0= 0xE9EAF60  Curr rxd Q0= 0xE9EAF60 
+ First rxd Q1= 0xE9EB200  Curr rxd Q1= 0xE9EB200 
+ First rxd Q2= 0xE9EB660  Curr rxd Q2= 0xE9EB660 
+ First rxd Q3= 0xE9EBAC0  Curr rxd Q3= 0xE9EBAC0 
+ First txd Q0= 0xE9EC710  First txd Q1= 0xE9EC760 
+gt96kfe_instance=0x650813E8, registers=0x24084800
+RxRing entries=64, tx ring entries=128
+       RxR0=0x E9EADA0, RxR1=0x E9EB200, RxR2=0x E9EB660, RxR3=0x E9EBAC0 
+Malloc RxR0=0xEE9EADA0, RxR1=0xEE9EB200, RxR2=0xEE9EB660, RxR3=0xEE9EBAC0 
+SDOW RxR0=0x65081A24, RxR1=0x65081B58, RxR2=0x65081C8C, RxR3=0x65081DC0 
+HEAD RxR0=0x1C, RxR1=0x0, RxR2=0x0, RxR3=0x0 
+TAIL RxR0=0x0, RxR1=0x0, RxR2=0x0, RxR30x0 
+
+tx_limited=0(128)
+TxR0=0x E9EBF20, TxR1=0x E9EC760 
+COUNT TxR0=0x0, TxR1=0x0
+Head TxR0=0x7F, TxR1=0x0 Tail TxR0=0x7F, TxR1=0x0
+
+ PHY registers:
+  Register 0x00:   1000  782D  0040  61E4  01E1  41E1  0007  2001
+  Register 0x08:   0000  0000  0000  0000  0000  0000  0000  0000
+  Register 0x10:   1000  0321  0000  0001  0200  0200  0100  0000
+  Register 0x18:   003B  F51F  9F00  008A  082B  0000  80A0
+Bytes_recvd 1728588588 Bytes_sent 4268652000 Frames_recvd 314263755 Frames_sent 360789607
+total_bytes_RX 1728588588 Total_frames_RX 314263755 Bcast_frames_recvd 3257857
+Mcast_frames_RX 15537604 CRC_err 0 Ovr_sized_frames 0
+Fragments 0 Jabber 0 collision 0
+Late_collision 0 64B frame 182174754; 65_127B_frames 95660374
+128_255B_frames 135354744 256_511B_frames 41788826 512_1023B_frames 14383584
+1023_maxB_frames 205691080 Rx_error 0 Dropped_frames 0
+Mcast_frames_tx 5450480 Bcast_frames_tx 3020178 Sml_frame_recvd 0
+
+
+ Software MAC address filter(hash:length/addr/mask/hits):
+  0x00:  0  ffff.ffff.ffff  0000.0000.0000         0
+  0x54:  0  0100.5e00.000a  0000.0000.0000         0
+  0xC0:  0  0100.0ccc.cccc  0000.0000.0000         0
+  0xC0:  1  0180.c200.0002  0000.0000.0000         0
+  0xC5:  0  0180.c200.0007  0000.0000.0000         0
+  0xF5:  0  0018.b97d.3f4c  0000.0000.0000         0
+
+======= Driver Counters =======
+Number of Transmitter Hang =  0 
+tx_more_col_err=  0 tx_one_col_err=  0 
+tx_exc_collision_err=  0 tx_late_collision_err=  0 
+tx_underrun_err=  0 tx_error_intr=  0 
+rx_soft_overflow_err=  0  rx_overflow_err= 0 
+
+Interface FastEthernet0/1
+Hardware is GT96K FE ADDR: 6508DB28, FASTSEND: 62A9E95C, MCI_INDEX: 0
+DIST ROUTE ENABLED: 0Route Cache Flag: 11
+GPIO 2 CONF= 67FF07A8 GPIO 2 IO= 187D303F  CIU arbit = 80F002BF 
+ PHY add register = 0xA4  PHY data register = 0xFC480A0 
+ Port Conf Reg= 0x0 DISABLE HT8K HMOD0 
+ Port Conf Ex Reg= 0x10CD00 
+TX1:1 RXPRI=DE(00) ~FLCNTL ~FLNKP MFL64KB E RMII 
+Port Com Reg= 0x0
+ Port Status Reg= 0x0 10MB  HDPX FCTL EN  LNK DN ~PAUSED TX oFF 
+ Serial Param Reg= 0x218823  Hash table pointer= 0xEABCFE0 
+Source ADDR L= 0x3F4D Source ADDR H= 0x18B97D 
+SDMA conf reg= 0x223C RETX 15 RX BE TX BE FRINT BSIZE 4 
+SDMA com reg= 0x30000 STP TXL STP TXH 
+IMASK= 0x90003DCD ICause= 0x20000000 SMI 
+Serial 0 mask 30FFFC3Serial 0 cause 0
+IpDiffservP0L= 0x0 IpDiffservP0H= 0x0 IpDiffservP1L= 0x0 IpDiffservP1H= 0x0 
+ IP VLAN TAG PRI= 0xF0CC  IP VLAN TAG PRI= 0xF0CC 
+ First rxd Q0= 0xEAFD060  Curr rxd Q0= 0xEAFD060 
+ First rxd Q1= 0xEAFD4C0  Curr rxd Q1= 0xEAFD4C0 
+ First rxd Q2= 0xEAFD920  Curr rxd Q2= 0xEAFD920 
+ First rxd Q3= 0xEAFDD80  Curr rxd Q3= 0xEAFDD80 
+ First txd Q0= 0xEAFE1E0  First txd Q1= 0xEAFEA20 
+gt96kfe_instance=0x6508ECD8, registers=0x24088800
+RxRing entries=64, tx ring entries=128
+       RxR0=0x EAFD060, RxR1=0x EAFD4C0, RxR2=0x EAFD920, RxR3=0x EAFDD80 
+Malloc RxR0=0xEEAFD060, RxR1=0xEEAFD4C0, RxR2=0xEEAFD920, RxR3=0xEEAFDD80 
+SDOW RxR0=0x6508F314, RxR1=0x6508F448, RxR2=0x6508F57C, RxR3=0x6508F6B0 
+HEAD RxR0=0x0, RxR1=0x0, RxR2=0x0, RxR3=0x0 
+TAIL RxR0=0x0, RxR1=0x0, RxR2=0x0, RxR30x0 
+
+tx_limited=0(128)
+TxR0=0x EAFE1E0, TxR1=0x EAFEA20 
+COUNT TxR0=0x0, TxR1=0x0
+Head TxR0=0x0, TxR1=0x0 Tail TxR0=0x0, TxR1=0x0
+
+ PHY registers:
+  Register 0x00:   1400  7809  0040  61E4  01E1  0000  0004  2001
+  Register 0x08:   0000  0000  0000  0000  0000  0000  0000  0000
+  Register 0x10:   3000  0000  0000  0000  0200  0600  0100  0000
+  Register 0x18:   0038  1002  1F10  008A  0828  0008  0018
+Bytes_recvd 0 Bytes_sent 0 Frames_recvd 0 Frames_sent 0
+total_bytes_RX 0 Total_frames_RX 0 Bcast_frames_recvd 0
+Mcast_frames_RX 0 CRC_err 0 Ovr_sized_frames 0
+Fragments 0 Jabber 0 collision 0
+Late_collision 0 64B frame 0; 65_127B_frames 0
+128_255B_frames 0 256_511B_frames 0 512_1023B_frames 0
+1023_maxB_frames 0 Rx_error 0 Dropped_frames 0
+Mcast_frames_tx 0 Bcast_frames_tx 0 Sml_frame_recvd 0
+
+
+ Software MAC address filter(hash:length/addr/mask/hits):
+  0x00:  0  ffff.ffff.ffff  0000.0000.0000         0
+  0xC0:  0  0180.c200.0002  0000.0000.0000         0
+  0xC0:  1  0100.0ccc.cccc  0000.0000.0000         0
+  0xC5:  0  0180.c200.0007  0000.0000.0000         0
+  0xF4:  0  0018.b97d.3f4d  0000.0000.0000         0
+
+======= Driver Counters =======
+Number of Transmitter Hang =  0 
+tx_more_col_err=  0 tx_one_col_err=  0 
+tx_exc_collision_err=  0 tx_late_collision_err=  0 
+tx_underrun_err=  0 tx_error_intr=  0 
+rx_soft_overflow_err=  0  rx_overflow_err= 0 
+
+Interface Serial0/0/0
+Hardware is GT96K with Integrated FT1 CSU/DSU module 
+ TX and RX clocks detected.
+idb at 0x6509BD60, driver data structure at 0x650A357C
+wic_info 0x650A3BA8
+Physical Port 0, SCC Num 0
+MPSC Registers:
+MMCR_L=0x000304C0, MMCR_H=0x00000000, MPCR=0x00000000
+CHR1=0x00FE007E, CHR2=0x00000000, CHR3=0x0000064A, CHR4=0x00000000
+CHR5=0x00000000, CHR6=0x00000000, CHR7=0x00000000, CHR8=0x00000000
+CHR9=0x00000000, CHR10=0x00003008
+SDMA Registers:
+SDC=0x00002201, SDCM=0x00000080, SGC=0x0000C000
+CRDP=0x0EBCF330, CTDP=0x0EBCFA00, FTDB=0x0EBCFA00
+Main Routing Register=0x0003FFF8 BRG Conf Register=0x00480000
+Rx Clk Routing Register=0x76543218 Tx Clk Routing Register=0x76543219
+GPP Registers:
+Conf=0x30002   , Io=0x64050   , Data=0x7F7BBFAB, Level=0x180000  
+Conf0=0x30002   , Io0=0x64050   , Data0=0x7F1BBFAB, Level0=0x180000  
+23914 input aborts on receiving flag sequence
+0 throttles, 0 enables
+11677 overruns
+0 transmitter underruns
+0 transmitter CTS losts
+362127617 rxintr, 306248461 txintr, 0 rxerr, 0 txerr
+503464929 mpsc_rx, 0 mpsc_rxerr, 1169 mpsc_rlsc, 36740 mpsc_rhnt, 503445976 mpsc_rfsc
+1864 mpsc_rcsc, 0 mpsc_rovr, 0 mpsc_rcdl, 0 mpsc_rckg, 0 mpsc_bper
+0 mpsc_txerr, 221270847 mpsc_teidl, 0 mpsc_tudr, 0 mpsc_tctsl, 0 mpsc_tckg
+0 sdma_rx_sf, 8 sdma_rx_mfl, 11677 sdma_rx_or, 23914 sdma_rx_abr, 3323 sdma_rx_no
+0 sdma_rx_de, 0 sdma_rx_cdl, 9391 sdma_rx_ce, 0 sdma_tx_rl, 0 sdma_tx_ur, 0 sdma_tx_ctsl
+0 sdma_rx_reserr, 0 sdma_tx_reserr
+0 rx_bogus_pkts, rx_bogus_flag FALSE 
+0 sdma_tx_ur_processed
+
+tx_limited = 1(2), errata19 count1 - 0, count2 - 0
+Receive Ring 
+rxr head (9)(0x0EBCF330), rxr tail (0)(0x0EBCF2A0)
+  rmd(EBCF2A0): nbd EBCF2B0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD3080
+  rmd(EBCF2B0): nbd EBCF2C0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD0A40
+  rmd(EBCF2C0): nbd EBCF2D0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE42A0
+  rmd(EBCF2D0): nbd EBCF2E0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDEFC0
+  rmd(EBCF2E0): nbd EBCF2F0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD6380
+  rmd(EBCF2F0): nbd EBCF300 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD56C0
+  rmd(EBCF300): nbd EBCF310 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDC320
+  rmd(EBCF310): nbd EBCF320 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD1700
+  rmd(EBCF320): nbd EBCF330 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDFC80
+  rmd(EBCF330): nbd EBCF340 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE4900
+  rmd(EBCF340): nbd EBCF350 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE1C60
+  rmd(EBCF350): nbd EBCF360 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD89C0
+  rmd(EBCF360): nbd EBCF370 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD76A0
+  rmd(EBCF370): nbd EBCF380 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDB000
+  rmd(EBCF380): nbd EBCF390 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDBCC0
+  rmd(EBCF390): nbd EBCF3A0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD7040
+  rmd(EBCF3A0): nbd EBCF3B0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE2920
+  rmd(EBCF3B0): nbd EBCF3C0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE35E0
+  rmd(EBCF3C0): nbd EBCF3D0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD2A20
+  rmd(EBCF3D0): nbd EBCF3E0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD03E0
+  rmd(EBCF3E0): nbd EBCF3F0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD23C0
+  rmd(EBCF3F0): nbd EBCF400 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD69E0
+  rmd(EBCF400): nbd EBCF410 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE02E0
+  rmd(EBCF410): nbd EBCF420 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDA9A0
+  rmd(EBCF420): nbd EBCF430 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE2F80
+  rmd(EBCF430): nbd EBCF440 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDE300
+  rmd(EBCF440): nbd EBCF450 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDC980
+  rmd(EBCF450): nbd EBCF460 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBDB660
+  rmd(EBCF460): nbd EBCF470 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD9CE0
+  rmd(EBCF470): nbd EBCF480 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBE3C40
+  rmd(EBCF480): nbd EBCF490 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD8360
+  rmd(EBCF490): nbd EBCF2A0 cmd_sts 80800000 buf_sz 06000000 buf_ptr EBD7D00
+Transmit Ring 
+txr head (87)(0x0EBCFA50), txr tail (89)(0x0EBCFA70)
+  tmd(EBCF4E0): nbd EBCF4F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAAD26A
+  tmd(EBCF4F0): nbd EBCF500 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA7B2EA
+  tmd(EBCF500): nbd EBCF510 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAB476A
+  tmd(EBCF510): nbd EBCF520 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAB33EA
+  tmd(EBCF520): nbd EBCF530 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA0426A
+  tmd(EBCF530): nbd EBCF540 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA9806A
+  tmd(EBCF540): nbd EBCF550 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E9FF46A
+  tmd(EBCF550): nbd EBCF560 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC1F4
+  tmd(EBCF560): nbd EBCF570 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECEF4
+  tmd(EBCF570): nbd EBCF580 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC534
+  tmd(EBCF580): nbd EBCF590 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECBB4
+  tmd(EBCF590): nbd EBCF5A0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBED234
+  tmd(EBCF5A0): nbd EBCF5B0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D3F4
+  tmd(EBCF5B0): nbd EBCF5C0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C074
+  tmd(EBCF5C0): nbd EBCF5D0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CD74
+  tmd(EBCF5D0): nbd EBCF5E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB4F4
+  tmd(EBCF5E0): nbd EBCF5F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBEB4
+  tmd(EBCF5F0): nbd EBCF600 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB834
+  tmd(EBCF600): nbd EBCF610 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C3B4
+  tmd(EBCF610): nbd EBCF620 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC874
+  tmd(EBCF620): nbd EBCF630 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80EB74
+  tmd(EBCF630): nbd EBCF640 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBED574
+  tmd(EBCF640): nbd EBCF650 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEDC54
+  tmd(EBCF650): nbd EBCF660 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBF1A34
+  tmd(EBCF660): nbd EBCF670 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBF1354
+  tmd(EBCF670): nbd EBCF680 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEF0F4
+  tmd(EBCF680): nbd EBCF690 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80F254
+  tmd(EBCF690): nbd EBCF6A0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEFEB4
+  tmd(EBCF6A0): nbd EBCF6B0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80DDB4
+  tmd(EBCF6B0): nbd EBCF6C0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEF7D4
+  tmd(EBCF6C0): nbd EBCF6D0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EABBC6A
+  tmd(EBCF6D0): nbd EBCF6E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA68E6A
+  tmd(EBCF6E0): nbd EBCF6F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA69B6A
+  tmd(EBCF6F0): nbd EBCF700 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA7A5EA
+  tmd(EBCF700): nbd EBCF710 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B6B4
+  tmd(EBCF710): nbd EBCF720 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B034
+  tmd(EBCF720): nbd EBCF730 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECEF4
+  tmd(EBCF730): nbd EBCF740 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC534
+  tmd(EBCF740): nbd EBCF750 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBED234
+  tmd(EBCF750): nbd EBCF760 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C074
+  tmd(EBCF760): nbd EBCF770 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CD74
+  tmd(EBCF770): nbd EBCF780 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBEB4
+  tmd(EBCF780): nbd EBCF790 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBB74
+  tmd(EBCF790): nbd EBCF7A0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C3B4
+  tmd(EBCF7A0): nbd EBCF7B0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B9F4
+  tmd(EBCF7B0): nbd EBCF7C0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D734
+  tmd(EBCF7C0): nbd EBCF7D0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80DA74
+  tmd(EBCF7D0): nbd EBCF7E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C6F4
+  tmd(EBCF7E0): nbd EBCF7F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D0B4
+  tmd(EBCF7F0): nbd EBCF800 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECBB4
+  tmd(EBCF800): nbd EBCF810 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B6B4
+  tmd(EBCF810): nbd EBCF820 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECEF4
+  tmd(EBCF820): nbd EBCF830 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBED234
+  tmd(EBCF830): nbd EBCF840 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB4F4
+  tmd(EBCF840): nbd EBCF850 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C074
+  tmd(EBCF850): nbd EBCF860 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB834
+  tmd(EBCF860): nbd EBCF870 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E9FC06A
+  tmd(EBCF870): nbd EBCF880 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA8896A
+  tmd(EBCF880): nbd EBCF890 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EABA26A
+  tmd(EBCF890): nbd EBCF8A0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAA0F6A
+  tmd(EBCF8A0): nbd EBCF8B0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA72A6A
+  tmd(EBCF8B0): nbd EBCF8C0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAAF2EA
+  tmd(EBCF8C0): nbd EBCF8D0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA7376A
+  tmd(EBCF8D0): nbd EBCF8E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAB2D6A
+  tmd(EBCF8E0): nbd EBCF8F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B374
+  tmd(EBCF8F0): nbd EBCF900 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC874
+  tmd(EBCF900): nbd EBCF910 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBEB4
+  tmd(EBCF910): nbd EBCF920 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80ACF4
+  tmd(EBCF920): nbd EBCF930 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBB74
+  tmd(EBCF930): nbd EBCF940 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA8BD6A
+  tmd(EBCF940): nbd EBCF950 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CA34
+  tmd(EBCF950): nbd EBCF960 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA8FE6A
+  tmd(EBCF960): nbd EBCF970 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C3B4
+  tmd(EBCF970): nbd EBCF980 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B9F4
+  tmd(EBCF980): nbd EBCF990 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D734
+  tmd(EBCF990): nbd EBCF9A0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC1F4
+  tmd(EBCF9A0): nbd EBCF9B0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80DA74
+  tmd(EBCF9B0): nbd EBCF9C0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D3F4
+  tmd(EBCF9C0): nbd EBCF9D0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C6F4
+  tmd(EBCF9D0): nbd EBCF9E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B034
+  tmd(EBCF9E0): nbd EBCF9F0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D0B4
+  tmd(EBCF9F0): nbd EBCFA00 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E811B14
+  tmd(EBCFA00): nbd EBCFA10 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC534
+  tmd(EBCFA10): nbd EBCFA20 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B6B4
+  tmd(EBCFA20): nbd EBCFA30 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E8124D4
+  tmd(EBCFA30): nbd EBCFA40 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECEF4
+  tmd(EBCFA40): nbd EBCFA50 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBED234
+  tmd(EBCFA50): nbd EBCFA60 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB4F4
+  tmd(EBCFA60): nbd EBCFA70 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C074
+  tmd(EBCFA70): nbd EBCFA80 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB834
+  tmd(EBCFA80): nbd EBCFA90 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CD74
+  tmd(EBCFA90): nbd EBCFAA0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECBB4
+  tmd(EBCFAA0): nbd EBCFAB0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B374
+  tmd(EBCFAB0): nbd EBCFAC0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC874
+  tmd(EBCFAC0): nbd EBCFAD0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBEB4
+  tmd(EBCFAD0): nbd EBCFAE0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80ACF4
+  tmd(EBCFAE0): nbd EBCFAF0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEBB74
+  tmd(EBCFAF0): nbd EBCFB00 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CA34
+  tmd(EBCFB00): nbd EBCFB10 cmd_sts 80C30000 byt_cnt 02440244 buf_ptr E80B9F4
+  tmd(EBCFB10): nbd EBCFB20 cmd_sts 80C30000 byt_cnt 02440244 buf_ptr E80D734
+  tmd(EBCFB20): nbd EBCFB30 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA569EA
+  tmd(EBCFB30): nbd EBCFB40 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80A7F4
+  tmd(EBCFB40): nbd EBCFB50 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C6F4
+  tmd(EBCFB50): nbd EBCFB60 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B6B4
+  tmd(EBCFB60): nbd EBCFB70 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B034
+  tmd(EBCFB70): nbd EBCFB80 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC1F4
+  tmd(EBCFB80): nbd EBCFB90 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC534
+  tmd(EBCFB90): nbd EBCFBA0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBECBB4
+  tmd(EBCFBA0): nbd EBCFBB0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D3F4
+  tmd(EBCFBB0): nbd EBCFBC0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C074
+  tmd(EBCFBC0): nbd EBCFBD0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CD74
+  tmd(EBCFBD0): nbd EBCFBE0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB4F4
+  tmd(EBCFBE0): nbd EBCFBF0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEB834
+  tmd(EBCFBF0): nbd EBCFC00 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C3B4
+  tmd(EBCFC00): nbd EBCFC10 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EBEC874
+  tmd(EBCFC10): nbd EBCFC20 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B9F4
+  tmd(EBCFC20): nbd EBCFC30 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80CA34
+  tmd(EBCFC30): nbd EBCFC40 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80DA74
+  tmd(EBCFC40): nbd EBCFC50 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80BD34
+  tmd(EBCFC50): nbd EBCFC60 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80C6F4
+  tmd(EBCFC60): nbd EBCFC70 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B6B4
+  tmd(EBCFC70): nbd EBCFC80 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80D0B4
+  tmd(EBCFC80): nbd EBCFC90 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E80B034
+  tmd(EBCFC90): nbd EBCFCA0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA7FA6A
+  tmd(EBCFCA0): nbd EBCFCB0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EA74AEA
+  tmd(EBCFCB0): nbd EBCFCC0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAA2FEA
+  tmd(EBCFCC0): nbd EBCFCD0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr E9F37EA
+  tmd(EBCFCD0): nbd EBCF4E0 cmd_sts 00C30000 byt_cnt ABCDABCD buf_ptr EAB616A
+
+buffer size 1524
+
+
+------------------ show user ------------------
+
+
+    Line       User       Host(s)              Idle       Location
+*194 vty 0     admin      idle                 00:00:00 10.42.20.113
+
+  Interface    User               Mode         Idle     Peer Address
+
+
+------------------ show file systems ------------------
+
+
+File Systems:
+
+       Size(b)       Free(b)      Type  Flags  Prefixes
+             -             -    opaque     rw   archive:
+             -             -    opaque     rw   system:
+             -             -    opaque     rw   tmpsys:
+             -             -    opaque     rw   null:
+             -             -   network     rw   tftp:
+        196600        183538     nvram     rw   nvram:
+*     64012288      19861504      disk     rw   flash:#
+             -             -    opaque     wo   syslog:
+             -             -    opaque     rw   xmodem:
+             -             -    opaque     rw   ymodem:
+             -             -   network     rw   rcp:
+             -             -   network     rw   http:
+             -             -   network     rw   ftp:
+             -             -   network     rw   scp:
+             -             -    opaque     ro   tar:
+             -             -   network     rw   https:
+             -             -    opaque     ro   cns:
+
+
+------------------ show file descriptors ------------------
+
+
+File Descriptors:
+
+   FD  Position  Open  PID  Path
+  No open file descriptors
+
+
+------------------ dir nvram: ------------------
+
+
+Directory of nvram:/
+
+  185  -rw-        3769                    <no date>  startup-config
+  186  ----        2073                    <no date>  private-config
+  187  -rw-        3769                    <no date>  underlying-config
+    1  -rw-           0                    <no date>  ifIndex-table
+    2  -rw-         589                    <no date>  IOS-Self-Sig#3030.cer
+    3  ----          55                    <no date>  persistent-data
+    4  -rw-        2945                    <no date>  cwmp_inventory
+    7  -rw-         589                    <no date>  IOS-Self-Sig#1.cer
+
+196600 bytes total (183538 bytes free)
+
+------------------ show flash: all ------------------
+
+-#- --length-- -----date/time------ path
+1         1821 Jul 19 2006 23:58:20 -05:00 sdmconfig-18xx.cfg
+2      4734464 Jul 19 2006 23:58:56 -05:00 sdm.tar
+3       833024 Jul 19 2006 23:59:18 -05:00 es.tar
+4      1052160 Jul 19 2006 23:59:42 -05:00 common.tar
+5         1038 Jul 20 2006 00:00:02 -05:00 home.shtml
+6       102400 Jul 20 2006 00:00:20 -05:00 home.tar
+7       491213 Jul 20 2006 00:00:42 -05:00 128MB.sdf
+8      1684577 Jul 20 2006 00:01:16 -05:00 securedesktop-ios-3.1.1.27-k9.pkg
+9       398305 Jul 20 2006 00:01:44 -05:00 sslclient-win-1.1.0.154.pkg
+10    34834388 Feb 29 2016 09:13:26 -06:00 c1841-ipbasek9-mz.151-4.M10.bin
+
+19861504 bytes available (44150784 bytes used)
+
+******** ATA Flash Card Geometry/Format Info ********
+
+ATA CARD GEOMETRY
+   Manufacturer Name      
+   Model Number           STI Flash 7.2.0     
+   Serial Number          STI J18a006180042403
+   Firmware Revision      05-02-05
+   Number of Heads        8     
+   Number of Cylinders    490   
+   Sectors per Cylinder   32    
+   Sector Size            512   
+   Total Sectors          125440
+
+ATA PARTITION 1 INFO
+   Start Sector           32    
+   Number of Sectors      125408
+   Size in Bytes          64208896
+   File System Type       FAT16
+   Number of FAT Sectors  62    
+   Sectors Per Cluster    8     
+   Number of Clusters     15628 
+   Number of Data Sectors 125024
+   Base FAT Sector        111   
+   Base Root Sector       235   
+   Base Data Sector       267   
+
+ATA MONLIB INFO
+   Image Monlib size      122780
+   Disk Monlib Size       52248 
+   Disk Space Available   56320 
+   Name                   piptom-atafslib-m
+   Start sector           2     
+   End sector             104   
+   Updated By             C1841-IPBASE-M12.4(1c)
+   Version                1     
+
+
+------------------ show data-corruption ------------------
+
+
+No data inconsistency errors have been recorded.
+
+
+------------------ show memory statistics ------------------
+
+
+                Head    Total(b)     Used(b)     Free(b)   Lowest(b)  Largest(b)
+Processor   649B5300   165981440    24872676   141108764   135589704   135378488
+      I/O   EE800000    25165824     4446588    20719236    20694288    20699516
+
+------------------ show process memory ------------------
+
+
+Processor Pool Total:  165981440 Used:   24872372 Free:  141109068
+      I/O Pool Total:   25165824 Used:    4446576 Free:   20719248
+
+ PID TTY  Allocated      Freed    Holding    Getbufs    Retbufs Process
+   0   0   49726376   23897256   23189548        600   26269713 *Init*          
+   0   0      12328    6882800      12328          0          0 *Sched*         
+   0   0   76681836   75629520     660236        923        506 *Dead*          
+   0   0          0          0     394840          0          0 *MallocLite*    
+   1   0     224796          0     232028          0          0 Chunk Manager   
+   2   0        240        240       4232          0          0 Load Meter      
+   3   0      20988        688      46100          0          0 LICENSE AGENT   
+   4   0          0          0       7232          0          0 RO Notify Timers
+   5   0       3404        304      10332          0          0 Check heaps     
+   6   0   29139092   35784852     100100         49          0 Pool Manager    
+   7   0          0          0       7232          0          0 DiscardQ Backgro
+   8   0        240        240       7232          0          0 Timers          
+   9   0          0          0       4232          0          0 WATCH_AFS       
+  10   0          0          0       7232          0          0 License Client N
+  11   0          0          0      13232          0          0 OIR Handler     
+  12   0          0          0       7232          0          0 IPC Event Notifi
+  13   0          0          0       7232          0          0 IPC Dynamic Cach
+  14   0          0          0       7232          0          0 IPC Session Serv
+  15   0          0          0       7232          0          0 IPC Zone Manager
+  16   0          0          0       7232          0          0 IPC Periodic Tim
+  17   0          0          0       7232          0          0 IPC Deferred Por
+  18   0          0          0       7232          0          0 IPC Process leve
+  19   0       1704          0       8936          0          0 IPC Seat Manager
+  20   0          0          0       7232          0          0 IPC Check Queue 
+  21   0          0          0       7232          0          0 IPC Seat RX Cont
+  22   0          0          0       7232          0          0 IPC Seat TX Cont
+  23   0          0          0       7232          0          0 IPC Keep Alive M
+  24   0          0          0       7232          0          0 IPC Loadometer  
+  25   0        240        240       7232          0          0 Environmental mo
+  26   0          0          0      25232          0          0 Crash writer    
+  27   0        352          0       7584          0          0 Exception contro
+  28 194    1208872    1086164     134904        284        284 SSH Process     
+  29   0     189996     156332      40896    2602029    2602029 ARP Input       
+  30   0  175336628  184696404       7232      19592      19592 ARP Background  
+  31   0        240        240       7232          0          0 ATM Idle Timer  
+  32   0          0          0       7232          0          0 ATM ASYNC PROC  
+  33   0          0          0       7232          0          0 CEF MIB API     
+  34   0          0          0       7232          0          0 AAA_SERVER_DEADT
+  35   0          0          0      13232          0          0 Policy Manager  
+  36   0        240        240       7232          0          0 DDR Timers      
+  37   0       2832          0      10064         23         23 Entity MIB API  
+  38   0        896        896       7232          0          0 PrstVbl         
+  39   0        240        240       7232          0          0 Serial Backgroun
+  40   0          0          0       4232          0          0 RMI RM Notify Wa
+  41   0        240        240       7232          0          0 SMART           
+  42   0        240        240       7232          0          0 GraphIt         
+  43   0        240        240      13232          0          0 Dialer event    
+  44   0          0          0       7232          0          0 SERIAL A'detect 
+  45   0        240        240      13232          0          0 XML Proxy Client
+  46   0          0          0       7232          0          0 Critical Bkgnd  
+  47   0      43604       7268      19064    4608906    4608906 Net Background  
+  48   0        456        456      13232          0          0 IDB Work        
+  49   0        240        240      13232       2107       2107 Logger          
+  50   0      51156        240       7232          0          0 TTY Background  
+  51   0      65904          0      73136          0          0 IF-MGR control p
+  52   0          0          0       7232          0          0 IF-MGR event pro
+  53   0          0          0       4232          0          0 Inode Table Dest
+  54   0          0          0       7232          0          0 AggMgr Process  
+  55   0          0          0       7232          0          0 Token Daemon    
+  56   0          0          0       7232          0          0 Transport Port A
+  57   0          0          0       7232          0          0 HC Counter Timer
+  58   0        240        240       7232          0          0 ESWPPM          
+  59   0        240        240       7232          0          0 Eswilp Storm Con
+  60   0          0          0       4232          0          0 dev_device_inser
+  61   0          0          0       4232          0          0 dev_device_remov
+  62   0        240        240       7232          0          0 SM Monitor      
+  63   0     300768  122693520     310376          0          0 EEM ED ND       
+  64   0       6616          0      16848          0          0 EEM ED Identity 
+  65   0          0          0       7232          0          0 IGMP Snooping Pr
+  66   0          0          0       7232          0          0 IGMP Snooping Re
+  67   0     661352       1484     641868          0          0 USB Startup     
+  69   0          0          0       7232          0          0 Platform Compact
+  70   0        240        240       7232          0          0 Call Management 
+  71   0          0          0       7232          0          0 Service-module a
+  72   0        240        240       7232          0          0 PI MATM Aging Pr
+  73   0      11156        240      18148          0          0 DTP Protocol    
+  74   0        240        240       7232          0          0 Dot1x Mgr Proces
+  75   0          0          0       7232          0          0 MAB Framework   
+  76   0          0          0       7232          0          0 EAP Framework   
+  77   0       3168          0      28400          0          0 SMI Director DB 
+  78   0          0          0       7232          0          0 SMI CDP Update H
+  79   0        704          0      25936          0          0 SMI Backup Proce
+  80   0        240        240      13232          0          0 Ethernet CFM    
+  81   0        240        240      13232          0          0 Ethernet Timer C
+  82   0        240        240      13232          0          0 Ethernet Msec Ti
+  83   0       3208        240      10200          0          0 call_home_les_oi
+  84   0          0          0       7232          0          0 linktest        
+  85   0        240        240       9232          0          0 Dot11 Mgmt & Ass
+  86   0        240        240      10232          0          0 Dot11 aaa proces
+  87   0          0          0      10232          0          0 pmkid           
+  88   0        240        240      10232          0          0 Dot11 auth Dot1x
+  89   0          0          0       7232          0          0 Dot11 Mac Auth  
+  90   0      16832        240      23824          0          0 AAA Server      
+  91   0          0          0       7232          0          0 AAA ACCT Proc   
+  92   0      49396          0      56628          0          0 ACCT Periodic Pr
+  93   0  122702588       5356      10144    3074710    3074710 CDP Protocol    
+  94   0        240        240       7232          0          0 AAA Dictionary R
+  95   0        240        240      13232          0          0 Ethernet LMI    
+  96   0       5292        240      15284          0          0 Ethernet OAM Pro
+  97   0        224          0      13456          0          0 CEF switching ba
+  98   0        224          0       4456          0          0 ADJ NSF process 
+  99   0        240        240      13232          0          0 ATM OAM Input   
+ 100   0        240        240      13232          0          0 ATM OAM TIMER   
+ 101   0        240        240       7232          0          0 IPAM/ODAP Events
+ 102   0      49384          0      62616          0          0 IPAM Manager    
+ 103   0        240        240      13232          0          0 IPAM Events     
+ 104   0      59744      16212      56764          0          0 IP ARP Adjacency
+ 105   0      49384          0      56616          0          0 IP ARP Retry Age
+ 106   0   13803964     579340      14932   13652568   13652570 IP Input        
+ 107   0          0          0       7232          0          0 ICMP event handl
+ 108   0        240        240       7232          0          0 PIM register asy
+ 109   0        240        240       7232      76784      76784 MOP Protocols   
+ 110   0        240        240       7232          0          0 PPP SIP         
+ 111   0        240        240       7232          0          0 PPP Bind        
+ 112   0        240        240      13232          0          0 PPP IP Route    
+ 114   0          0          0      13232          0          0 SSS Manager     
+ 115   0          0          0      13232          0          0 SSS Policy Manag
+ 116   0          0          0       7232          0          0 SSS Feature Mana
+ 117   0          0          0       7232          0          0 SSS Feature Time
+ 118   0        480        240      13472          0          0 Spanning Tree   
+ 119   0        240        240      13232          0          0 SSM connection m
+ 120   0       6172          0      13404          0          0 X.25 Encaps Mana
+ 121   0          0          0       7232          0          0 IPC UDP Input   
+ 122   0        480        240       7472          0          0 Dot1x Supplicant
+ 123   0        480        240       7472          0          0 Dot1x Supplicant
+ 124   0        480        240       7472          0          0 Dot1x Supplicant
+ 125   0        240          0       4472          0          0 Async write proc
+ 126   0        240          0       4472          0          0 Async write proc
+ 127   0        240          0       4472          0          0 Async write proc
+ 128   0        240          0       4472          0          0 Async write proc
+ 129   0          0          0       4232          0          0 DFS flush period
+ 130   0 3388606708 3388607924       7232          0          0 Licensing Auto U
+ 131   0      14692       2544      20092          0          0 CEF background p
+ 132   0        224          0      13456          0          0 fib_fib_bfd_sb e
+ 133   0          0          0       7232          0          0 Socket Timers   
+ 134   0        756        160       7988          0          0 L2MM            
+ 135   0          0          0       7232          0          0 MRD             
+ 136   0          0          0       7232          0          0 IGMPSN          
+ 137   0        240        240       4232          0          0 L2X Switching Ev
+ 138   0          0          0      13232          0          0 Routing Topology
+ 139   0     102092      82416      30448          0          0 IP RIB Update   
+ 140   0       2220       9436      10764          0          0 IP Background   
+ 141   0      35704       5080      40856          0          0 IP Connected Rou
+ 142   0          0          0       7232          0          0 IP Traceroute   
+ 143   0          0     200600      13232         60         60 TCP Timer       
+ 144   0    7165440   12935300      14956          0          0 TCP Protocols   
+ 145   0        944          0      26176          0          0 HTTP CORE       
+ 146   0          0          0       7232          0          0 AAA System Acct 
+ 147   0          0          0       7300          0          0 SNMP Timers     
+ 148   0      85324        784      26488          0          0 SCTP Main Proces
+ 149   0          0          0       7232          0          0 IUA Main Process
+ 150   0        240        240       7232          0          0 RUDPV1 Main Proc
+ 151   0          0          0       7232          0          0 bsm_timers      
+ 152   0          0          0       7232          0          0 bsm_xmt_proc    
+ 153   0        240        240       7232          0          0 PPP Compress Inp
+ 154   0        240        240       7232          0          0 PPP Compress Res
+ 155   0        944          0      62176          0          0 COPS            
+ 156   0        240        240       7232          0          0 Dialer Forwarder
+ 157   0      21000        852      20224          0          0 CEF: IPv4 proces
+ 158   0        224          0       7456          0          0 ADJ background  
+ 159   0  204634868  188933904      13456    3019884    3019884 ADJ resolve proc
+ 160   0        240        240       7232          0          0 Flow Exporter Ti
+ 161   0          0          0       7256          0          0 Call Home Timer 
+ 162   0        224          0      13456          0          0 MFIB Master back
+ 163   0        480        240      10472          0          0 Multicast Offloa
+ 164   0          0          0       7232          0          0 RARP Input      
+ 165   0        240        240      10232          0          0 static          
+ 166   0          0          0      10232          0          0 IP IRDP         
+ 167   0          0          0       7232          0          0 LAPB Process    
+ 168   0          0          0       7232          0          0 PAD InCall      
+ 169   0        240        240      13232          0          0 X.25 Background 
+ 170   0          0          0       7232          0          0 MQC Flow Event B
+ 171   0          0          0       7232          0          0 HQF Shaper Backg
+ 172   0          0          0      13232          0          0 VPDN call manage
+ 174   0        240        240       7232          0          0 AAA Cached Serve
+ 175   0        240        240       7232          0          0 ENABLE AAA      
+ 176   0          0          0       7232          0          0 EM Background Pr
+ 177   0          0          0       7232          0          0 IDMGR CORE      
+ 178   0          0          0       7232          0          0 Key chain liveke
+ 179   0        240        240       7232          0          0 LINE AAA        
+ 180   0      95768      92052      10948          0          0 LOCAL AAA       
+ 181   0      66844        240       8036          0          0 TPLUS           
+ 182   0  152755564  152754072       8724      19215      19215 NIST rng proc   
+ 183   0       1044        240       8036          0          0 LDAP process    
+ 184   0        240        240       7232          0          0 CSDB Timer proce
+ 185   0          0          0       7232          0          0 crypto engine pr
+ 186   0       3764       2188      15416          1          1 Crypto CA       
+ 187   0          0          0      13232          0          0 Crypto PKI-CRL  
+ 188   0          0          0      13232          0          0 encrypt proc    
+ 189   0  261538716  261877168       7772          0          0 crypto sw pk pro
+ 190   0          0          0       7232          0          0 PM Callback     
+ 191   0          0          0      10232          0          0 Licensing MIB pr
+ 192   0        240        240       7232          0          0 Control-plane ho
+ 193   0          0          0       7232          0          0 Atheros LED Ctro
+ 195   0      84528     415584       7232          0          0 AAA SEND STOP EV
+ 196   0          0          0      13232          0          0 Test AAA Client 
+ 197   0       4564          0      14796          0          0 EEM ED Routing  
+ 198   0     273628          0     283860       1237       1205 EEM ED Syslog   
+ 199   0       4564          0      14796          0          0 EEM ED Track    
+ 200   0       6388          0      16620          0          0 EEM ED Resource 
+ 201   0        240        240       7232          0          0 RMON Recycle Pro
+ 202   0        240        240       7232          0          0 RMON Deferred Se
+ 203   0          0          0       7232          0          0 Syslog Traps    
+ 204   0      75032       1552      80552          0          0 VLAN Manager    
+ 206   0     214700          0     221932          0          0 EEM Server      
+ 208   0      78356      29056      74224          0          0 Call Home proces
+ 209   0      11508       1744      17036          0          0 EEM Policy Direc
+ 210   0        224          0      13456          0          0 Collection proce
+ 211   0       4564          0      14796          0          0 EEM ED CLI      
+ 212   0       4564          0      14796          0          0 EEM ED Counter  
+ 213   0       4564          0      14796          0          0 EEM ED Interface
+ 214   0       4564          0      14796          0          0 EEM ED IOSWD    
+ 215   0       4564          0      14796          0          0 EEM ED None     
+ 216   0       4564          0      14796          0          0 EEM ED OIR      
+ 217   0        240          0      25472          0          0 tHUB            
+ 218   0       4564          0      14796          0          0 EEM ED SNMP     
+ 219   0       4564          0      14796          0          0 EEM ED SNMP Obje
+ 220   0       4564          0      14796          0          0 EEM ED SNMP Noti
+ 221   0       4564          0      14796          0          0 EEM ED Timer    
+ 222   0       4564          0      14796          0          0 EEM ED Test     
+ 223   0       4564          0      14796          0          0 EEM ED Config   
+ 224   0       4564          0      14796          0          0 EEM ED Env      
+ 225   0       4564          0      14796          0          0 EM ED GOLD      
+ 226   0       9616          0      19848          0          0 EEM ED Nf       
+ 227   0     305864     304456      14640       2482       2482 Syslog          
+ 228   0       4564          0      14796          0          0 EEM ED RPC      
+ 229   0          0          0       7144          0          0 DHCPD Timer     
+ 230   0          0          0       7232    2299727    2299727 Net Input       
+ 231   0        288        288       7232          0          0 Compute load avg
+ 232   0          0          0       7232          0          0 Per-minute Jobs 
+ 233   0       1544       1120      10976          0          0 Per-Second Jobs 
+ 234   0       1696        240      14688          0          0 MRIB Process    
+ 236   0      82984          0      15652          2          2 SSH Event handle
+ 237   0  679495264  678550424      14304    4314046    4314046 IP SNMP         
+ 238   0 2495156076 2485848704      13336          0          0 PDU DISPATCHER  
+ 239   0  234579596  244827908      16124          0          0 SNMP ENGINE     
+ 240   0       1212        240      14236          0          0 IP SNMPV6       
+ 241   0          0          0      13264          0          0 SNMP ConfCopyPro
+ 242   0        240        240      13264          0          0 SNMP Traps      
+ 243   0     149604      92068      56528     941232     941232 DHCPD Receive   
+ 245   0       3704        240      16696     486830     486830 NTP             
+ 246   0        224          0       7320          0          0 DHCPD Database  
+ 248   0     395196     322984      78480        562        562 EIGRP-IPv4      
+ 249   0      75096          0      82232   14926563   14926563 EIGRP-IPv4 Hello
+                                 29315156 Total
+
+------------------ show process cpu ------------------
+
+
+CPU utilization for five seconds: 12%/0%; one minute: 3%; five minutes: 2%
+ PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process 
+   1           4           8        500  0.00%  0.00%  0.00%   0 Chunk Manager    
+   2       13128     4612674          2  0.00%  0.01%  0.00%   0 Load Meter       
+   3           4           1       4000  0.00%  0.00%  0.00%   0 LICENSE AGENT    
+   4           0           1          0  0.00%  0.00%  0.00%   0 RO Notify Timers 
+   5    23435948     3510972       6675  0.00%  0.06%  0.09%   0 Check heaps      
+   6       15904      384495         41  0.00%  0.00%  0.00%   0 Pool Manager     
+   7           0           1          0  0.00%  0.00%  0.00%   0 DiscardQ Backgro 
+   8           0           2          0  0.00%  0.00%  0.00%   0 Timers           
+   9          68        1432         47  0.00%  0.00%  0.00%   0 WATCH_AFS        
+  10           0           1          0  0.00%  0.00%  0.00%   0 License Client N 
+  11           0           1          0  0.00%  0.00%  0.00%   0 OIR Handler      
+  12      246536     4612059         53  0.00%  0.00%  0.00%   0 IPC Event Notifi 
+  13         404      384340          1  0.00%  0.00%  0.00%   0 IPC Dynamic Cach 
+  14           0           1          0  0.00%  0.00%  0.00%   0 IPC Session Serv 
+  15           0           1          0  0.00%  0.00%  0.00%   0 IPC Zone Manager 
+  16       13308    22522235          0  0.00%  0.00%  0.00%   0 IPC Periodic Tim 
+  17        8428    22522235          0  0.00%  0.00%  0.00%   0 IPC Deferred Por 
+  18           0           1          0  0.00%  0.00%  0.00%   0 IPC Process leve 
+  19           0           1          0  0.00%  0.00%  0.00%   0 IPC Seat Manager 
+  20          68     1317907          0  0.00%  0.00%  0.00%   0 IPC Check Queue  
+  21           0           1          0  0.00%  0.00%  0.00%   0 IPC Seat RX Cont 
+  22           0           1          0  0.00%  0.00%  0.00%   0 IPC Seat TX Cont 
+  23         232     2306338          0  0.00%  0.00%  0.00%   0 IPC Keep Alive M 
+  24          96     4612665          0  0.00%  0.00%  0.00%   0 IPC Loadometer   
+  25        2144      768679          2  0.00%  0.00%  0.00%   0 Environmental mo 
+  26           0           1          0  0.00%  0.00%  0.00%   0 Crash writer     
+  27           0           1          0  0.00%  0.00%  0.00%   0 Exception contro 
+  28        1960         158      12405 10.63%  0.85%  0.17% 194 SSH Process      
+  29     1072012     2581364        415  0.00%  0.00%  0.00%   0 ARP Input        
+  30       79652    24012776          3  0.00%  0.00%  0.00%   0 ARP Background   
+  31           0           2          0  0.00%  0.00%  0.00%   0 ATM Idle Timer   
+  32           0           1          0  0.00%  0.00%  0.00%   0 ATM ASYNC PROC   
+  33           0           1          0  0.00%  0.00%  0.00%   0 CEF MIB API      
+  34           0           1          0  0.00%  0.00%  0.00%   0 AAA_SERVER_DEADT 
+  35           0           1          0  0.00%  0.00%  0.00%   0 Policy Manager   
+  36           0          19          0  0.00%  0.00%  0.00%   0 DDR Timers       
+  37           4           2       2000  0.00%  0.00%  0.00%   0 Entity MIB API   
+  38        2984          27     110518  0.00%  0.00%  0.00%   0 PrstVbl          
+  39           0        1834          0  0.00%  0.00%  0.00%   0 Serial Backgroun 
+  40           0           1          0  0.00%  0.00%  0.00%   0 RMI RM Notify Wa 
+  41           0           2          0  0.00%  0.00%  0.00%   0 SMART            
+  42        1312    23063366          0  0.00%  0.00%  0.00%   0 GraphIt          
+  43           0           2          0  0.00%  0.00%  0.00%   0 Dialer event     
+  44           0           1          0  0.00%  0.00%  0.00%   0 SERIAL A'detect  
+  45           0           2          0  0.00%  0.00%  0.00%   0 XML Proxy Client 
+  46           0           1          0  0.00%  0.00%  0.00%   0 Critical Bkgnd   
+  47      559084     2476107        225  0.00%  0.00%  0.00%   0 Net Background   
+  48           0           2          0  0.00%  0.00%  0.00%   0 IDB Work         
+  49          32        1405         22  0.07%  0.00%  0.00%   0 Logger           
+  50      188136    23060279          8  0.00%  0.00%  0.00%   0 TTY Background   
+  51           0           2          0  0.00%  0.00%  0.00%   0 IF-MGR control p 
+  52           0          39          0  0.00%  0.00%  0.00%   0 IF-MGR event pro 
+  53           0           1          0  0.00%  0.00%  0.00%   0 Inode Table Dest 
+  54           0           1          0  0.00%  0.00%  0.00%   0 AggMgr Process   
+  55           0           1          0  0.00%  0.00%  0.00%   0 Token Daemon     
+  56           0        7025          0  0.00%  0.00%  0.00%   0 Transport Port A 
+  57       27104     2306031         11  0.00%  0.00%  0.00%   0 HC Counter Timer 
+  58           0           2          0  0.00%  0.00%  0.00%   0 ESWPPM           
+  59           0           2          0  0.00%  0.00%  0.00%   0 Eswilp Storm Con 
+  60           0           1          0  0.00%  0.00%  0.00%   0 dev_device_inser 
+  61           0           1          0  0.00%  0.00%  0.00%   0 dev_device_remov 
+  62           0           2          0  0.00%  0.00%  0.00%   0 SM Monitor       
+  63      194764     2223585         87  0.00%  0.00%  0.00%   0 EEM ED ND        
+  64           0           2          0  0.00%  0.00%  0.00%   0 EEM ED Identity  
+  65           0           1          0  0.00%  0.00%  0.00%   0 IGMP Snooping Pr 
+  66           0           1          0  0.00%  0.00%  0.00%   0 IGMP Snooping Re 
+  67         276           4      69000  0.00%  0.00%  0.00%   0 USB Startup      
+  69           0           1          0  0.00%  0.00%  0.00%   0 Platform Compact 
+  70        2236      768679          2  0.00%  0.00%  0.00%   0 Call Management  
+  71           8          41        195  0.00%  0.00%  0.00%   0 Service-module a 
+  72       55912    23060283          2  0.00%  0.00%  0.00%   0 PI MATM Aging Pr 
+  73           0           2          0  0.00%  0.00%  0.00%   0 DTP Protocol     
+  74           0           2          0  0.00%  0.00%  0.00%   0 Dot1x Mgr Proces 
+  75           0           1          0  0.00%  0.00%  0.00%   0 MAB Framework    
+  76           0           1          0  0.00%  0.00%  0.00%   0 EAP Framework    
+  77           0           1          0  0.00%  0.00%  0.00%   0 SMI Director DB  
+  78           0           1          0  0.00%  0.00%  0.00%   0 SMI CDP Update H 
+  79           0           1          0  0.00%  0.00%  0.00%   0 SMI Backup Proce 
+  80           0           2          0  0.00%  0.00%  0.00%   0 Ethernet CFM     
+  81        1524   139550759          0  0.00%  0.01%  0.00%   0 Ethernet Timer C 
+  82       26152  2929229462          0  0.55%  0.60%  0.57%   0 Ethernet Msec Ti 
+  83           0           2          0  0.00%  0.00%  0.00%   0 call_home_les_oi 
+  84        4572    23060289          0  0.00%  0.00%  0.00%   0 linktest         
+  85           0           2          0  0.00%  0.00%  0.00%   0 Dot11 Mgmt & Ass 
+  86           0           2          0  0.00%  0.00%  0.00%   0 Dot11 aaa proces 
+  87         840      384340          2  0.00%  0.00%  0.00%   0 pmkid            
+  88           0           2          0  0.00%  0.00%  0.00%   0 Dot11 auth Dot1x 
+  89           0           1          0  0.00%  0.00%  0.00%   0 Dot11 Mac Auth   
+  90          56         634         88  0.00%  0.00%  0.00%   0 AAA Server       
+  91           0           1          0  0.00%  0.00%  0.00%   0 AAA ACCT Proc    
+  92           4           1       4000  0.00%  0.00%  0.00%   0 ACCT Periodic Pr 
+  93      736172     5206455        141  0.00%  0.00%  0.00%   0 CDP Protocol     
+  94           0           2          0  0.00%  0.00%  0.00%   0 AAA Dictionary R 
+  95           0           2          0  0.00%  0.00%  0.00%   0 Ethernet LMI     
+  96           0           2          0  0.00%  0.00%  0.00%   0 Ethernet OAM Pro 
+  97           0           2          0  0.00%  0.00%  0.00%   0 CEF switching ba 
+  98           0           1          0  0.00%  0.00%  0.00%   0 ADJ NSF process  
+  99           0           2          0  0.00%  0.00%  0.00%   0 ATM OAM Input    
+ 100           0           2          0  0.00%  0.00%  0.00%   0 ATM OAM TIMER    
+ 101           0           2          0  0.00%  0.00%  0.00%   0 IPAM/ODAP Events 
+ 102       58132   720317372          0  0.07%  0.12%  0.10%   0 IPAM Manager     
+ 103           0           2          0  0.00%  0.00%  0.00%   0 IPAM Events      
+ 104         396         940        421  0.00%  0.00%  0.00%   0 IP ARP Adjacency 
+ 105           4           1       4000  0.00%  0.00%  0.00%   0 IP ARP Retry Age 
+ 106     4018660    10331665        388  0.15%  0.07%  0.02%   0 IP Input         
+ 107           0           1          0  0.00%  0.00%  0.00%   0 ICMP event handl 
+ 108           0           3          0  0.00%  0.00%  0.00%   0 PIM register asy 
+ 109           8       38394          0  0.00%  0.00%  0.00%   0 MOP Protocols    
+ 110           0           2          0  0.00%  0.00%  0.00%   0 PPP SIP          
+ 111           0           2          0  0.00%  0.00%  0.00%   0 PPP Bind         
+ 112           0           2          0  0.00%  0.00%  0.00%   0 PPP IP Route     
+ 114           0           1          0  0.00%  0.00%  0.00%   0 SSS Manager      
+ 115           0           1          0  0.00%  0.00%  0.00%   0 SSS Policy Manag 
+ 116           0           1          0  0.00%  0.00%  0.00%   0 SSS Feature Mana 
+ 117        7792    90091289          0  0.00%  0.00%  0.00%   0 SSS Feature Time 
+ 118           0           2          0  0.00%  0.00%  0.00%   0 Spanning Tree    
+ 119           0           2          0  0.00%  0.00%  0.00%   0 SSM connection m 
+ 120           0           1          0  0.00%  0.00%  0.00%   0 X.25 Encaps Mana 
+ 121           0           1          0  0.00%  0.00%  0.00%   0 IPC UDP Input    
+ 122           0           2          0  0.00%  0.00%  0.00%   0 Dot1x Supplicant 
+ 123           0           2          0  0.00%  0.00%  0.00%   0 Dot1x Supplicant 
+ 124           0           2          0  0.00%  0.00%  0.00%   0 Dot1x Supplicant 
+ 125           0           1          0  0.00%  0.00%  0.00%   0 Async write proc 
+ 126           0           1          0  0.00%  0.00%  0.00%   0 Async write proc 
+ 127           0           1          0  0.00%  0.00%  0.00%   0 Async write proc 
+ 128           0           1          0  0.00%  0.00%  0.00%   0 Async write proc 
+ 129        1948      384340          5  0.00%  0.00%  0.00%   0 DFS flush period 
+ 130     3077460      384340       8007  0.00%  0.00%  0.00%   0 Licensing Auto U 
+ 131       12396      461007         26  0.00%  0.00%  0.00%   0 CEF background p 
+ 132           0           1          0  0.00%  0.00%  0.00%   0 fib_fib_bfd_sb e 
+ 133           0           1          0  0.00%  0.00%  0.00%   0 Socket Timers    
+ 134           0           2          0  0.00%  0.00%  0.00%   0 L2MM             
+ 135           0           1          0  0.00%  0.00%  0.00%   0 MRD              
+ 136           0           1          0  0.00%  0.00%  0.00%   0 IGMPSN           
+ 137           0           2          0  0.00%  0.00%  0.00%   0 L2X Switching Ev 
+ 138           0           2          0  0.00%  0.00%  0.00%   0 Routing Topology 
+ 139         340         296       1148  0.00%  0.00%  0.00%   0 IP RIB Update    
+ 140        3328      384377          8  0.00%  0.00%  0.00%   0 IP Background    
+ 141           4        1895          2  0.00%  0.00%  0.00%   0 IP Connected Rou 
+ 142           0           1          0  0.00%  0.00%  0.00%   0 IP Traceroute    
+ 143         424       10226         41  0.00%  0.00%  0.00%   0 TCP Timer        
+ 144        1936        8733        221  0.00%  0.00%  0.00%   0 TCP Protocols    
+ 145          24       76879          0  0.00%  0.00%  0.00%   0 HTTP CORE        
+ 146           0           1          0  0.00%  0.00%  0.00%   0 AAA System Acct  
+ 147           0           3          0  0.00%  0.00%  0.00%   0 SNMP Timers      
+ 148           4           4       1000  0.00%  0.00%  0.00%   0 SCTP Main Proces 
+ 149           0           1          0  0.00%  0.00%  0.00%   0 IUA Main Process 
+ 150       39812    23060373          1  0.00%  0.00%  0.00%   0 RUDPV1 Main Proc 
+ 151           0           1          0  0.00%  0.00%  0.00%   0 bsm_timers       
+ 152        1580    23060290          0  0.00%  0.00%  0.00%   0 bsm_xmt_proc     
+ 153           0           2          0  0.00%  0.00%  0.00%   0 PPP Compress Inp 
+ 154           0           2          0  0.00%  0.00%  0.00%   0 PPP Compress Res 
+ 155           0           1          0  0.00%  0.00%  0.00%   0 COPS             
+ 156           0           2          0  0.00%  0.00%  0.00%   0 Dialer Forwarder 
+ 157       23816    24030958          0  0.00%  0.02%  0.00%   0 CEF: IPv4 proces 
+ 158           0          19          0  0.00%  0.00%  0.00%   0 ADJ background   
+ 159     1409840     5975177        235  0.00%  0.00%  0.00%   0 ADJ resolve proc 
+ 160           0           3          0  0.00%  0.00%  0.00%   0 Flow Exporter Ti 
+ 161        1656      384341          4  0.00%  0.00%  0.00%   0 Call Home Timer  
+ 162           0           3          0  0.00%  0.00%  0.00%   0 MFIB Master back 
+ 163           0           2          0  0.00%  0.00%  0.00%   0 Multicast Offloa 
+ 164           0           1          0  0.00%  0.00%  0.00%   0 RARP Input       
+ 165           0           2          0  0.00%  0.00%  0.00%   0 static           
+ 166           0           1          0  0.00%  0.00%  0.00%   0 IP IRDP          
+ 167           0           1          0  0.00%  0.00%  0.00%   0 LAPB Process     
+ 168           0           1          0  0.00%  0.00%  0.00%   0 PAD InCall       
+ 169           0           2          0  0.00%  0.00%  0.00%   0 X.25 Background  
+ 170           0           1          0  0.00%  0.00%  0.00%   0 MQC Flow Event B 
+ 171           0           2          0  0.00%  0.00%  0.00%   0 HQF Shaper Backg 
+ 172           0           1          0  0.00%  0.00%  0.00%   0 VPDN call manage 
+ 174           4           2       2000  0.00%  0.00%  0.00%   0 AAA Cached Serve 
+ 175           4           2       2000  0.00%  0.00%  0.00%   0 ENABLE AAA       
+ 176           0           1          0  0.00%  0.00%  0.00%   0 EM Background Pr 
+ 177           0           1          0  0.00%  0.00%  0.00%   0 IDMGR CORE       
+ 178           0           1          0  0.00%  0.00%  0.00%   0 Key chain liveke 
+ 179           0           2          0  0.00%  0.00%  0.00%   0 LINE AAA         
+ 180         252         634        397  0.00%  0.00%  0.00%   0 LOCAL AAA        
+ 181           0           2          0  0.00%  0.00%  0.00%   0 TPLUS            
+ 182     5820320     3945808       1475  0.00%  0.49%  0.24%   0 NIST rng proc    
+ 183           0           3          0  0.00%  0.00%  0.00%   0 LDAP process     
+ 184           0           2          0  0.00%  0.00%  0.00%   0 CSDB Timer proce 
+ 185           0           2          0  0.00%  0.00%  0.00%   0 crypto engine pr 
+ 186           0           4          0  0.00%  0.00%  0.00%   0 Crypto CA        
+ 187           0           1          0  0.00%  0.00%  0.00%   0 Crypto PKI-CRL   
+ 188           0           1          0  0.00%  0.00%  0.00%   0 encrypt proc     
+ 189     1307572      109998      11887  0.07%  0.00%  0.00%   0 crypto sw pk pro 
+ 190           0           1          0  0.00%  0.00%  0.00%   0 PM Callback      
+ 191           0           1          0  0.00%  0.00%  0.00%   0 Licensing MIB pr 
+ 192           0           2          0  0.00%  0.00%  0.00%   0 Control-plane ho 
+ 193        8456   115316838          0  0.00%  0.01%  0.00%   0 Atheros LED Ctro 
+ 195         144         612        235  0.00%  0.00%  0.00%   0 AAA SEND STOP EV 
+ 196           0           1          0  0.00%  0.00%  0.00%   0 Test AAA Client  
+ 197           0           2          0  0.00%  0.00%  0.00%   0 EEM ED Routing   
+ 198         160        1035        154  0.00%  0.00%  0.00%   0 EEM ED Syslog    
+ 199           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Track     
+ 200           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Resource  
+ 201        2668     2306030          1  0.00%  0.00%  0.00%   0 RMON Recycle Pro 
+ 202           0           2          0  0.00%  0.00%  0.00%   0 RMON Deferred Se 
+ 203           0           1          0  0.00%  0.00%  0.00%   0 Syslog Traps     
+ 204           4           2       2000  0.00%  0.00%  0.00%   0 VLAN Manager     
+ 206          16         101        158  0.00%  0.00%  0.00%   0 EEM Server       
+ 208          16           2       8000  0.00%  0.00%  0.00%   0 Call Home proces 
+ 209           0           2          0  0.00%  0.00%  0.00%   0 EEM Policy Direc 
+ 210           4          14        285  0.00%  0.00%  0.00%   0 Collection proce 
+ 211           0           2          0  0.00%  0.00%  0.00%   0 EEM ED CLI       
+ 212           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Counter   
+ 213           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Interface 
+ 214           0           3          0  0.00%  0.00%  0.00%   0 EEM ED IOSWD     
+ 215           0           3          0  0.00%  0.00%  0.00%   0 EEM ED None      
+ 216           4           2       2000  0.00%  0.00%  0.00%   0 EEM ED OIR       
+ 217           0           1          0  0.00%  0.00%  0.00%   0 tHUB             
+ 218           0           3          0  0.00%  0.00%  0.00%   0 EEM ED SNMP      
+ 219           0           3          0  0.00%  0.00%  0.00%   0 EEM ED SNMP Obje 
+ 220           0           2          0  0.00%  0.00%  0.00%   0 EEM ED SNMP Noti 
+ 221          84     1156905          0  0.00%  0.00%  0.00%   0 EEM ED Timer     
+ 222           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Test      
+ 223           4           3       1333  0.00%  0.00%  0.00%   0 EEM ED Config    
+ 224           0           3          0  0.00%  0.00%  0.00%   0 EEM ED Env       
+ 225           0           3          0  0.00%  0.00%  0.00%   0 EM ED GOLD       
+ 226           0           2          0  0.00%  0.00%  0.00%   0 EEM ED Nf        
+ 227         148         763        193  0.00%  0.00%  0.00%   0 Syslog           
+ 228           0           3          0  0.00%  0.00%  0.00%   0 EEM ED RPC       
+ 229           8      192195          0  0.00%  0.00%  0.00%   0 DHCPD Timer      
+ 230      243704     2299728        105  0.00%  0.00%  0.00%   0 Net Input        
+ 231        1080     4612794          0  0.00%  0.00%  0.00%   0 Compute load avg 
+ 232     7696892      799595       9626  0.00%  0.03%  0.00%   0 Per-minute Jobs  
+ 233       32312    23063866          1  0.00%  0.01%  0.00%   0 Per-Second Jobs  
+ 234           4           2       2000  0.00%  0.00%  0.00%   0 MRIB Process     
+ 236          60        6930          8  0.00%  0.00%  0.00%   0 SSH Event handle 
+ 237     1419324     4307857        329  0.00%  0.00%  0.00%   0 IP SNMP          
+ 238     2973016     2155962       1378  0.00%  0.00%  0.00%   0 PDU DISPATCHER   
+ 239     5721660     2156245       2653  0.00%  0.00%  0.00%   0 SNMP ENGINE      
+ 240           0           2          0  0.00%  0.00%  0.00%   0 IP SNMPV6        
+ 241           0           1          0  0.00%  0.00%  0.00%   0 SNMP ConfCopyPro 
+ 242           0           2          0  0.00%  0.00%  0.00%   0 SNMP Traps       
+ 243      468972     1184015        396  0.00%  0.00%  0.00%   0 DHCPD Receive    
+ 245       46520    23306021          1  0.07%  0.01%  0.00%   0 NTP              
+ 246         264      384339          0  0.00%  0.00%  0.00%   0 DHCPD Database   
+ 248      796224     4973963        160  0.00%  0.00%  0.00%   0 EIGRP-IPv4       
+ 249      599648    14944830         40  0.07%  0.01%  0.00%   0 EIGRP-IPv4 Hello
+
+------------------ show process cpu history ------------------
+
+
+
+Wilmer_Main_1841ISR   03:10:36 PM Friday Sep 29 2017 CDT
+
+                                                                  
+                                                                  
+                                                                  
+      11111                                                       
+      222221111111111222222222244444333334444433333111112222222222
+  100                                                             
+   90                                                             
+   80                                                             
+   70                                                             
+   60                                                             
+   50                                                             
+   40                                                             
+   30                                                             
+   20                                                             
+   10 *****                                                       
+     0....5....1....1....2....2....3....3....4....4....5....5....6
+               0    5    0    5    0    5    0    5    0    5    0
+               CPU% per second (last 60 seconds)
+
+                                                                  
+                                                                  
+                                                                  
+      1                                                           
+      232334211233332333222212258122222222111222111222122122318323
+  100                                                             
+   90                                                             
+   80                                                             
+   70                                                             
+   60                                                             
+   50                                                             
+   40                                                             
+   30                                                             
+   20                                                             
+   10 *                        **                             *   
+     0....5....1....1....2....2....3....3....4....4....5....5....6
+               0    5    0    5    0    5    0    5    0    5    0
+               CPU% per minute (last 60 minutes)
+              * = maximum CPU%   # = average CPU%
+
+                                                                              
+                                                                              
+                                                                              
+      212122112212222221222122222112222221122122121211222221222121122212221121
+      190710890030000004000700000930000004900601909019011126010719900010019907
+  100                                                                         
+   90                                                                         
+   80                                                                         
+   70                                                                         
+   60                                                                         
+   50                                                                         
+   40                                                                         
+   30                                                                         
+   20 ********** ****** ********** ****** ********** ***************** *******
+   10 ************************************************************************
+     0....5....1....1....2....2....3....3....4....4....5....5....6....6....7..
+               0    5    0    5    0    5    0    5    0    5    0    5    0  
+                   CPU% per hour (last 72 hours)
+                  * = maximum CPU%   # = average CPU%
+
+
+
+------------------ show diag ------------------
+
+
+Slot 0:
+	C1841 2FE 2SLOT Mainboard Port adapter, 3 ports
+	Port adapter is analyzed 
+	Port adapter insertion time 38w0d ago
+	EEPROM contents at hardware discovery:
+	Chassis MAC Address      : 0018.b97d.3f4c
+	MAC Address block size   : 34
+	PCB Serial Number        : FOC10275H99
+	Hardware Revision        : 6.0
+	Part Number              : 73-8191-07
+	Board Revision           : A0
+	Top Assy. Part Number    : 800-23434-04
+	Deviation Number         : 0
+	Fab Version              : 04
+	CLEI Code                : IPM7R00CRA
+	RMA Test History         : 00
+	RMA Number               : 0-0-0-0
+	RMA History              : 00
+	Product (FRU) Number     : CISCO1841
+	Version Identifier       : V03 
+	Processor type           : 86 
+	Chassis Serial Number    : FTX1029W0TH
+	EEPROM format version 4
+	EEPROM contents (hex):
+	  0x00: 04 FF C3 06 00 18 B9 7D 3F 4C 43 00 22 C1 8B 46
+	  0x10: 4F 43 31 30 32 37 35 48 39 39 40 04 1B 41 06 00
+	  0x20: 82 49 1F FF 07 42 41 30 C0 46 03 20 00 5B 8A 04
+	  0x30: 88 00 00 00 00 02 04 C6 8A 49 50 4D 37 52 30 30
+	  0x40: 43 52 41 03 00 81 00 00 00 00 04 00 CB 89 43 49
+	  0x50: 53 43 4F 31 38 34 31 89 56 30 33 20 D9 02 C1 40
+	  0x60: 09 86 C2 8B 46 54 58 31 30 32 39 57 30 54 48 FF
+	  0x70: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x80: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x90: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xA0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xB0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xC0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xD0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xE0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0xF0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x100: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x110: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x120: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x130: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x140: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x150: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x160: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x170: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x180: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x190: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1A0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1B0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1C0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1D0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1E0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x1F0: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+
+	WIC/HWIC Slot 0:
+	FT1 PMC4351
+	Hardware Revision        : 1.2
+	PCB Serial Number        : FOC10270NR5
+	Part Number              : 73-8346-05
+	Board Revision           : A0
+	RMA Test History         : 00
+	RMA Number               : 0-0-0-0
+	RMA History              : 00
+	Deviation Number         : 0-0
+	Product (FRU) Number     : WIC-1DSU-T1-V2      
+	Top Assy. Part Number    : 800-22193-03
+	CLEI Code                : IPUIAPRRAA
+	EEPROM format version 4
+	EEPROM contents (hex):
+	  0x00: 04 FF 40 00 52 41 01 02 C1 8B 46 4F 43 31 30 32
+	  0x10: 37 30 4E 52 35 82 49 20 9A 05 42 41 30 03 00 81
+	  0x20: 00 00 00 00 04 00 80 00 00 00 00 CB 94 57 49 43
+	  0x30: 2D 31 44 53 55 2D 54 31 2D 56 32 20 20 20 20 20
+	  0x40: 20 C0 46 03 20 00 56 B1 03 C6 8A 49 50 55 49 41
+	  0x50: 50 52 52 41 41 FF FF FF FF FF FF FF FF FF FF FF
+	  0x60: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	  0x70: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+
+
+
+------------------ show platform ------------------
+
+ 1841 Network IO Interrupt Throttling:
+ throttle count=170440, timer count=4301
+ throttle counts= 170437 2 0 0 1
+ active=0, configured=1
+ netint usec=20000, netint mask usec=1000
+ real netint usec=4000, real netint mask usec=200
+ IO Mask is E0
+ 1841,  r4k_cpu_level: 0
+ r4k_cpu_level: 0
+Level 1 Intr Mask is 7FE0 Level 3-5 Intr Mask is DF40E51F
+        Level               Intr count  
+----------------------------------------
+       1(netio)                 1185402468      
+       2(dma/wd)                17238623      
+       3(net mgt)               0      
+       4(console)               1571      
+       5(error)                 0      
+       6(unknown)               0      
+       7(timer)                 1470881542      
+
+
+
+CPU Registers:
+  Processor Revision ID    : 0x2831
+  Configuration            : 0x1043E6F3
+  Status                   : 0x3401FF01
+  Cause                    : 0x0
+  Count                    : 0xF0E74CFB
+  Compare                  : 0xF0EAAF8B
+
+
+TLB entries :
+Size  Virt Address range      Phy Address range       Attributes
+ 4M   0x21000000:0x217FFFFF   0x21000000:0x217FFFFF   CacheMode=2, RW, Valid
+ 4M   0x24000000:0x247FFFFF   0x24000000:0x247FFFFF   CacheMode=2, RW, Valid
+ 4M   0x29000000:0x297FFFFF   0x29000000:0x297FFFFF   CacheMode=2, RW, Valid
+ 1M   0x4B000000:0x4B1FFFFF   0x4B000000:0x4B1FFFFF   CacheMode=2, RW, Valid
+ 16M  0x32000000:0x33FFFFFF   0x32000000:0x33FFFFFF   CacheMode=2, RW, Valid
+ 4M   0x4A000000:0x4A7FFFFF   0x4A000000:0x4A7FFFFF   CacheMode=2, RW, Valid
+ 4M   0x4A800000:0x4AFFFFFF   0x4A800000:0x4AFFFFFF   CacheMode=2, RW, Valid
+ 1M   0x3C200000:0x3C3FFFFF   0x3C200000:0x3C3FFFFF   CacheMode=2, RW, Valid
+ 1M   0x1FC00000:0x1FDFFFFF   0x1FC00000:0x1FDFFFFF   CacheMode=2, RW, Valid
+ 1M   0x1FE00000:0x1FFFFFFF   0x1FE00000:0x1FFFFFFF   CacheMode=2, RW, Valid
+ 16M  0x50000000:0x51FFFFFF   0x70000000:0x71FFFFFF   CacheMode=2, RW, Valid
+ 16M  0x52000000:0x53FFFFFF   0x72000000:0x73FFFFFF   CacheMode=2, RW, Valid
+ 16M  0x60000000:0x61FFFFFF   0x00000000:0x01FFFFFF   CacheMode=3, RO, Valid
+ 4M   0x62000000:0x627FFFFF   0x02000000:0x027FFFFF   CacheMode=3, RO, Valid
+ 1M   0x62800000:0x629FFFFF   0x02800000:0x029FFFFF   CacheMode=3, RO, Valid
+ 256K 0x62A00000:0x62A7FFFF   0x02A00000:0x02A7FFFF   CacheMode=3, RO, Valid
+ 256K 0x62A80000:0x62AFFFFF   0x02A80000:0x02AFFFFF   CacheMode=3, RO, Valid
+ 256K 0x62B00000:0x62B7FFFF   0x02B00000:0x02B7FFFF   CacheMode=3, RW, Valid
+ 256K 0x62B80000:0x62BFFFFF   0x02B80000:0x02BFFFFF   CacheMode=3, RW, Valid
+ 1M   0x62C00000:0x62DFFFFF   0x02C00000:0x02DFFFFF   CacheMode=3, RW, Valid
+ 1M   0x62E00000:0x62FFFFFF   0x02E00000:0x02FFFFFF   CacheMode=3, RW, Valid
+ 4M   0x63000000:0x637FFFFF   0x03000000:0x037FFFFF   CacheMode=3, RW, Valid
+ 4M   0x63800000:0x63FFFFFF   0x03800000:0x03FFFFFF   CacheMode=3, RW, Valid
+ 16M  0x64000000:0x65FFFFFF   0x04000000:0x05FFFFFF   CacheMode=3, RW, Valid
+ 16M  0x66000000:0x67FFFFFF   0x06000000:0x07FFFFFF   CacheMode=3, RW, Valid
+ 16M  0x68000000:0x69FFFFFF   0x08000000:0x09FFFFFF   CacheMode=3, RW, Valid
+ 16M  0x6A000000:0x6BFFFFFF   0x0A000000:0x0BFFFFFF   CacheMode=3, RW, Valid
+ 16M  0x6C000000:0x6DFFFFFF   0x0C000000:0x0DFFFFFF   CacheMode=3, RW, Valid
+ 16M  0x6E000000:0x6FFFFFFF   0x0E000000:0x0FFFFFFF   CacheMode=3, RW, Valid
+ 4M   0x0E800000:0x0EFFFFFF   0x0E800000:0x0EFFFFFF   CacheMode=2, RW, Valid
+ 4M   0x0F000000:0x0F7FFFFF   0x0F000000:0x0F7FFFFF   CacheMode=2, RW, Valid
+ 4M   0x0F800000:0x0FFFFFFF   0x0F800000:0x0FFFFFFF   CacheMode=2, RW, Valid
+ 4M   0xEE800000:0xEEFFFFFF   0x0E800000:0x0EFFFFFF   CacheMode=0, RW, Valid
+ 4M   0xEF000000:0xEF7FFFFF   0x0F000000:0x0F7FFFFF   CacheMode=0, RW, Valid
+ 4M   0xEF800000:0xEFFFFFFF   0x0F800000:0x0FFFFFFF   CacheMode=0, RW, Valid
+
+
+Dimm 0 SPD data :
+Size of dimm                 = 128 Megabytes
+Memory Type                  = 0x4 
+Row Addresses                = 0xD 
+Column Address               = 0x9 
+Module Rows                  = 0x1 
+Data Width                   = 0x40  
+Voltage Interface            = 0x1 
+Cycle Time                   = 0x70
+Access Time                  = 0x54
+Configuration Type           = 0x0 
+Refresh Rate/Type            = 0x82
+Primary Width                = 0x10
+Error Width                  = 0x0 
+Minimum Clock Delay          = 0x1 
+Burst Lengths                = 0x8F
+Number of Banks              = 0x4 
+Cas Latencies                = 0x6 
+Write Latency                = 0x1 
+Module Attributes            = 0x0 
+General Attributes           = 0xE 
+Min Cycle Time, CAS of 2     = 0x75
+Access Clock Cycle, CAS of 2 = 0x54
+Min Cycle Time, CAS of 1     = 0x0 
+Access Clock Cycle, CAS of 2 = 0x0 
+Row Precharge                = 0xF 
+Row Active to Row Active     = 0xF 
+RAS CAS Delay                = 0xF 
+Ras Pulse Width              = 0x2D
+Row Density                  = 0x20
+Vendor Id                    = 7F40FFFFFFFFFFFF
+Module Part Number           = 
+Module Revision Code         = FFFF
+	SPD contents (hex):
+	 0x00: 80 08 04 0D 09 01 40 00 01 70 54 00 82 10 00 01
+	 0x10: 8F 04 06 01 01 00 0E 75 54 00 00 0F 0F 0F 2D 20
+	 0x20: 15 08 15 08 00 00 00 00 00 00 00 00 00 00 00 00
+	 0x30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 73
+	 0x40: 7F 40 FF FF FF FF FF FF 01 FF FF FF FF FF FF FF
+	 0x50: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	 0x60: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+	 0x70: FF FF FF FF FF FF FF FF FF FF FF FF FF FF 64 8F
+
+
+GIO version information:
+GIO ASIC present in the system
+GIO ASIC version is 127
+
+------------------ show pci hardware ------------------
+
+
+GT64120 External PCI Configuration registers:
+PCI_0:
+ Vendor / Device ID   : 0xAB115396 (b/s 0x965311AB)
+ Status / Command     : 0x46018002 (b/s 0x02800146)
+ Class / Revision     : 0x04008005 (b/s 0x05800004)
+ Latency              : 0x07000000 (b/s 0x00000007)
+ RAS[1:0] Base        : 0x00000000 (b/s 0x00000000)
+ RAS[3:2] Base        : 0x00000008 (b/s 0x08000000)
+ CS[2:0] Base         : 0x00000000 (b/s 0x00000000)
+ CS[3] Base           : 0x00000000 (b/s 0x00000000)
+ Mem Map Base         : 0x00000024 (b/s 0x24000000)
+ IO Map Base          : 0x00000000 (b/s 0x00000000)
+ Subsystem Vendor / D : 0x00000000 (b/s 0x00000000)
+ Int Pin / Line       : 0x00010000 (b/s 0x00000100)
+ Swap RAS[1:0] Base   : 0x000000C0 (b/s 0xC0000000)
+ Swap RAS[3:2] Base   : 0x000000C8 (b/s 0xC8000000)
+ Swap CS[3] Base      : 0x00000000 (b/s 0x00000000)
+PCI_1:
+ Vendor / Device ID   : 0x00000000 (b/s 0x00000000)
+ Status / Command     : 0x00000000 (b/s 0x00000000)
+ Class / Revision     : 0x00000000 (b/s 0x00000000)
+ Latency              : 0x00000000 (b/s 0x00000000)
+ RAS[1:0] Base        : 0x00000000 (b/s 0x00000000)
+ RAS[3:2] Base        : 0x00000000 (b/s 0x00000000)
+ CS[2:0] Base         : 0x00000000 (b/s 0x00000000)
+ CS[3] Base           : 0x00000000 (b/s 0x00000000)
+ Mem Map Base         : 0x00000000 (b/s 0x00000000)
+ IO Map Base          : 0x00000000 (b/s 0x00000000)
+ Subsystem Vendor / D : 0x00000000 (b/s 0x00000000)
+ Int Pin / Line       : 0x00000000 (b/s 0x00000000)
+ Swap RAS[1:0] Base   : 0x00000000 (b/s 0x00000000)
+ Swap RAS[3:2] Base   : 0x00000000 (b/s 0x00000000)
+ Swap CS[3] Base      : 0x00000000 (b/s 0x00000000)
+
+
+------------------ show pci controller ------------------
+
+
+GT64120 Channel 1 DMA (Packet coalescing DMA channel):
+ dma_list=0x64A07020, dma_ring=0xE9A9CE0, dma_entries=256
+ dma_free=0x64A07C78, dma_reqt=0x64A07C78, dma_done=0x64A07C78
+ thread=0x64A07C64, thread_end=0x64A07C64
+ backup_thread=0x0, backup_thread_end=0x0
+ dma_working=0, dma_stalls=0, dma_stall_loop=0
+ dma_complete=17234334, post_coalesce_frames=17234334
+ exhausted_dma_entries=0, post_dma_callback=17080666
+
+GT64120 Rev level     : 4
+GT64120 Register Dump : Registers at 0x24000000
+CPU Interface :
+ cpu_interface_conf   : 0x00080100 (b/s 0x00010800)
+ multi_gt             : 0x03000000 (b/s 0x00000003)
+Processor Address Space :
+ ras10_low            : 0x00000000 (b/s 0x00000000)
+ ras10_high           : 0x3F000000 (b/s 0x0000003F)
+ ras32_low            : 0x40000000 (b/s 0x00000040)
+ ras32_high           : 0x7F000000 (b/s 0x0000007F)
+ cs20_low             : 0x90010000 (b/s 0x00000190)
+ cs20_high            : 0xE1010000 (b/s 0x000001E1)
+ cs3_boot_low         : 0xFE000000 (b/s 0x000000FE)
+ cs3_boot_high        : 0x08010000 (b/s 0x00000108)
+ pci_io_low           : 0xFF7F0000 (b/s 0x00007FFF)
+ pci_io_high          : 0x00000000 (b/s 0x00000000)
+ pci_mem_low          : 0x50020000 (b/s 0x00000250)
+ pci_mem_high         : 0x57020000 (b/s 0x00000257)
+ pci_mem1_low         : 0x58020000 (b/s 0x00000258)
+ pci_mem1_high        : 0x5F020000 (b/s 0x0000025F)
+ pci1_io_low          : 0x0F010000 (b/s 0x0000010F)
+ pci1_io_high         : 0x00000000 (b/s 0x00000000)
+ pci1_mem0_low        : 0x1F010000 (b/s 0x0000011F)
+ pci1_mem0_high       : 0x10010000 (b/s 0x00000110)
+ pci1_mem1_low        : 0x2F010000 (b/s 0x0000012F)
+ pci1_mem1_high       : 0x20010000 (b/s 0x00000120)
+ internal_spc_decode  : 0x20010000 (b/s 0x00000120)
+ bus_err_low          : 0x00000000 (b/s 0x00000000)
+ bus_err_high         : 0x00000000 (b/s 0x00000000)
+ pci0_sync_barrier    : 0x00000000 (b/s 0x00000000)
+ pci1_sync_barrier    : 0x00000000 (b/s 0x00000000)
+ ras10_addr_remap     : 0x00000000 (b/s 0x00000000)
+ ras32_addr_remap     : 0x40000000 (b/s 0x00000040)
+ cs20_remap           : 0x90010000 (b/s 0x00000190)
+ cs3_boot_remap       : 0xFE000000 (b/s 0x000000FE)
+ pci0_io_remap        : 0xFF070000 (b/s 0x000007FF)
+ pci0_mem0_remap      : 0x50020000 (b/s 0x00000250)
+ pci0_mem1_remap      : 0x58020000 (b/s 0x00000258)
+ pci1_io_remap        : 0xFF070000 (b/s 0x000007FF)
+ pci1_mem0_remap      : 0x6F020000 (b/s 0x0000026F)
+ pci1_mem1_remap      : 0xFF070000 (b/s 0x000007FF)
+SDRAM/Device Address Space :
+ ras0_low             : 0x00000000 (b/s 0x00000000)
+ ras0_high            : 0x7F000000 (b/s 0x0000007F)
+ ras1_low             : 0xFF000000 (b/s 0x000000FF)
+ ras1_high            : 0x00000000 (b/s 0x00000000)
+ ras2_low             : 0x80000000 (b/s 0x00000080)
+ ras2_high            : 0xFF000000 (b/s 0x000000FF)
+ ras3_low             : 0xFF000000 (b/s 0x000000FF)
+ ras3_high            : 0x00000000 (b/s 0x00000000)
+ cs0_low              : 0x20030000 (b/s 0x00000320)
+ cs0_high             : 0x3F030000 (b/s 0x0000033F)
+ cs1_low              : 0xFF0F0000 (b/s 0x00000FFF)
+ cs1_high             : 0x00000000 (b/s 0x00000000)
+ cs2_low              : 0xC2030000 (b/s 0x000003C2)
+ cs2_high             : 0xC3030000 (b/s 0x000003C3)
+ cs3_low              : 0x10020000 (b/s 0x00000210)
+ cs3_high             : 0x11020000 (b/s 0x00000211)
+ boot_cs_low          : 0xFC010000 (b/s 0x000001FC)
+ boot_cs_high         : 0xFF010000 (b/s 0x000001FF)
+ addr_decode_err      : 0x70040000 (b/s 0x00000470)
+ addr_decode          : 0x75040000 (b/s 0x00000475)
+ dram_config          : 0x08C21101 (b/s 0x0111C208)
+ dram_bank0_param     : 0x61681001 (b/s 0x01106861)
+ dram_bank1_param     : 0x61681001 (b/s 0x01106861)
+ dram_bank2_param     : 0x61681001 (b/s 0x01106861)
+ dram_bank3_param     : 0x61681001 (b/s 0x01106861)
+ dram_oper_mode       : 0x60681001 (b/s 0x01106860)
+Device Parameters :
+ device_bank0_param   : 0x9FDF5638 (b/s 0x3856DF9F)
+ device_bank1_param   : 0x9FDF5638 (b/s 0x3856DF9F)
+ device_bank2_param   : 0x9FD94638 (b/s 0x3846D99F)
+ device_bank3_param   : 0x9FD94638 (b/s 0x3846D99F)
+ boot_bank_param      : 0xFFFF5F14 (b/s 0x145FFFFF)
+DMA Channels :
+ ch0_dma_count        : 0x00000000 (b/s 0x00000000)
+ ch1_dma_count        : 0x00000000 (b/s 0x00000000)
+ ch2_dma_count        : 0x00000000 (b/s 0x00000000)
+ ch3_dma_count        : 0x00000000 (b/s 0x00000000)
+ ch0_dma_src          : 0x08000000 (b/s 0x00000008)
+ ch1_dma_src          : 0xACFCBD0E (b/s 0x0EBDFCAC)
+ ch2_dma_src          : 0x08000000 (b/s 0x00000008)
+ ch3_dma_src          : 0x00000000 (b/s 0x00000000)
+ ch0_dma_dst          : 0x00000000 (b/s 0x00000000)
+ ch1_dma_dst          : 0xA096800E (b/s 0x0E8096A0)
+ ch2_dma_dst          : 0x00000000 (b/s 0x00000000)
+ ch3_dma_dst          : 0x00000000 (b/s 0x00000000)
+ ch0_next_ptr         : 0x00000000 (b/s 0x00000000)
+ ch1_next_ptr         : 0x00000000 (b/s 0x00000000)
+ ch2_next_ptr         : 0x00000000 (b/s 0x00000000)
+ ch3_next_ptr         : 0x00000000 (b/s 0x00000000)
+ ch0_current_ptr      : 0x00000000 (b/s 0x00000000)
+ ch1_current_ptr      : 0xC0A69A0E (b/s 0x0E9AA6C0)
+ ch2_current_ptr      : 0x00000000 (b/s 0x00000000)
+ ch3_current_ptr      : 0x00000000 (b/s 0x00000000)
+ ch0_ctrl             : 0x00000000 (b/s 0x00000000)
+ ch1_ctrl             : 0xC01C0000 (b/s 0x00001CC0)
+ ch2_ctrl             : 0x00000000 (b/s 0x00000000)
+ ch3_ctrl             : 0x00000000 (b/s 0x00000000)
+ arbiter_ctrl         : 0x00000000 (b/s 0x00000000)
+Timer/Counters :
+ ct0                  : 0x00000000 (b/s 0x00000000)
+ ct1                  : 0xF4250000 (b/s 0x000025F4)
+ ct2                  : 0x00000000 (b/s 0x00000000)
+ ct3                  : 0x00000000 (b/s 0x00000000)
+ counter_ctrl         : 0x00000000 (b/s 0x00000000)
+PCI Internal Registers :
+ pci_cmd              : 0x010C0100 (b/s 0x00010C01)
+ pci1_cmd             : 0x00000000 (b/s 0x00000000)
+ pci_timeout          : 0xFFFF0000 (b/s 0x0000FFFF)
+ pci1_timeout         : 0x00000000 (b/s 0x00000000)
+ pci_ras10_size       : 0x00F0FF07 (b/s 0x07FFF000)
+ pci1_ras10_size      : 0x00000000 (b/s 0x00000000)
+ pci_ras32_size       : 0x00F0FF07 (b/s 0x07FFF000)
+ pci1_ras32_size      : 0x00000000 (b/s 0x00000000)
+ pci_cs20_size        : 0x00000000 (b/s 0x00000000)
+ pci1_cs20_size       : 0x00000000 (b/s 0x00000000)
+ pci_cs3_boot_size    : 0x00000000 (b/s 0x00000000)
+ pci1_cs3_boot_size   : 0x00000000 (b/s 0x00000000)
+ pci0_prefetch_burst_ : 0x20000000 (b/s 0x00000020)
+ pci1_prefetch_burst_ : 0x00000000 (b/s 0x00000000)
+ pci0_ras10_remap     : 0x00000000 (b/s 0x00000000)
+ pci1_ras10_remap     : 0x00000000 (b/s 0x00000000)
+ pci0_ras32_remap     : 0x00000008 (b/s 0x08000000)
+ pci1_ras32_remap     : 0x00000000 (b/s 0x00000000)
+ pci0_cs20_remap      : 0x00000000 (b/s 0x00000000)
+ pci1_cs20_remap      : 0x00000000 (b/s 0x00000000)
+ pci0_cs3_boot_remap  : 0x00000000 (b/s 0x00000000)
+ pci1_cs3_boot_remap  : 0x00000000 (b/s 0x00000000)
+ pci0_swapped_ras10_r : 0x00000000 (b/s 0x00000000)
+ pci1_swapped_ras10_r : 0x00000000 (b/s 0x00000000)
+ pci0_swapped_ras32_r : 0x00000008 (b/s 0x08000000)
+ pci1_swapped_ras32_r : 0x00000000 (b/s 0x00000000)
+ pci0_swapped_cs3_boo : 0x00000000 (b/s 0x00000000)
+ pci1_swapped_cs3_boo : 0x00000000 (b/s 0x00000000)
+ pci0_base_addr_regs_ : 0x69000000 (b/s 0x00000069)
+Interrupt Control :
+ pci_int_cause        : 0x0100E003 (b/s 0x03E00001)
+ pci_high_int_cause   : 0x00000000 (b/s 0x00000000)
+ pci_cpu_mask         : 0xF00F0000 (b/s 0x00000FF0)
+ pci_high_cpu_mask    : 0x00000000 (b/s 0x00000000)
+ pci_pci_mask         : 0x0ED01F00 (b/s 0x001FD00E)
+ pci0_high_pci_mask   : 0x00000000 (b/s 0x00000000)
+ pci1_int_cause_mask  : 0x00000000 (b/s 0x00000000)
+ pci1_high_int_cause_ : 0x00000000 (b/s 0x00000000)
+ pci_serr_mask        : 0x3F000000 (b/s 0x0000003F)
+ pci1_serr_mask       : 0x00000000 (b/s 0x00000000)
+ pci0_int_select      : 0x0000E003 (b/s 0x03E00000)
+ pci1_int_select      : 0x0000E003 (b/s 0x03E00000)
+ cpu_int_select       : 0x0000E003 (b/s 0x03E00000)
+
+Parity detections on PCI1: 0
+
+
+------------------ show service-module ------------------
+
+Interface Serial0/0/0
+Module type is T1/fractional
+    Hardware revision is 1.2, Software revision is 20150324,
+    Image checksum is 0x4347ED, Protocol revision is 0.1 
+Receiver has no alarms.
+Framing is ESF, Line Code is B8ZS, Current clock source is line, 
+Fraction has 24 timeslots (64 Kbits/sec each), Net bandwidth is 1536 Kbits/sec.
+Last module self-test (done at startup): Passed
+Last clearing of alarm counters 38w0d
+    loss of signal        :    5, last occurred 4w1d
+    loss of frame         :   13, last occurred 4w1d
+    AIS alarm             :    6, last occurred 4w1d
+    Remote alarm          :    7, last occurred 9w4d
+    Module access errors  :    0, 
+Total Data (last 96 15 minute intervals):
+    0 Line Code Violations, 0 Path Code Violations
+    0 Slip Secs, 0 Fr Loss Secs, 0 Line Err Secs, 0 Degraded Mins
+    0 Errored Secs, 0 Bursty Err Secs, 0 Severely Err Secs, 0 Unavail Secs
+Data in current interval (112 seconds elapsed):
+    0 Line Code Violations, 0 Path Code Violations
+    0 Slip Secs, 0 Fr Loss Secs, 0 Line Err Secs, 0 Degraded Mins
+    0 Errored Secs, 0 Bursty Err Secs, 0 Severely Err Secs, 0 Unavail Secs
+
+
+------------------ show hwic dot11 registers ------------------
+
+
+
+------------------ show controllers t1 ------------------
+
+
+
+------------------ show controllers e1 ------------------
+
+
+
+------------------ show controllers j1 ------------------
+
+
+
+------------------ show dot11 associations all-client ------------------
+
+
+
+------------------ show ip nbar version ------------------
+
+
+
+NBAR software version:  7
+
+1   base                 Mv: 2
+2   ftp                  Mv: 3
+3   http                 Mv: 14
+      Iv:               kazaa2 - 8
+      Iv:              youtube - 1
+      Iv:                  msn - 1
+      Iv:                yahoo - 1
+4   static               Mv: 7
+5   secure-http          Mv: 1
+      Iv:                  aim - 1
+6   netbios              Mv: 1
+      Iv:                 cifs - 1
+7   socks                Mv: 1
+      Iv:                yahoo - 1
+      Iv:                  msn - 1
+      Iv:                  aim - 1
+      Iv:           bittorrent - 4
+8   nntp                 Mv: 1
+      Iv:                yahoo - 1
+9   tftp                 Mv: 1
+10  exchange             Mv: 1
+11  vdolive              Mv: 1
+12  sqlnet               Mv: 1
+13  rcmd                 Mv: 1
+14  netshow              Mv: 1
+15  sunrpc               Mv: 2
+16  streamwork           Mv: 1
+17  citrix               Mv: 12
+18  fasttrack            Mv: 2
+19  gnutella             Mv: 4
+20  kazaa2               Mv: 8
+      Iv:                 http - 13
+21  custom-protocols     Mv: 1
+22  rtsp                 Mv: 5
+23  rtp                  Mv: 6
+      Iv:   telepresence-media - 1
+24  mgcp                 Mv: 2
+25  skinny               Mv: 2
+      Iv:          cisco-phone - 1
+26  h323                 Mv: 1
+27  sip                  Mv: 2
+      Iv:          cisco-phone - 1
+      Iv: telepresence-control - 1
+28  rtcp                 Mv: 3
+      Iv: telepresence-control - 1
+29  edonkey              Mv: 5
+30  winmx                Mv: 4
+31  bittorrent           Mv: 4
+      Iv:                socks - 1
+      Iv:                  wow - 1
+32  directconnect        Mv: 3
+33  smtp                 Mv: 1
+34  dns                  Mv: 1
+35  hl7                  Mv: 1
+36  fix                  Mv: 1
+37  msn                  Mv: 1
+      Iv:                socks - 1
+      Iv:                 http - 13
+38  yahoo                Mv: 1
+      Iv:                socks - 1
+      Iv:                 http - 13
+      Iv:                 nntp - 1
+39  mapi                 Mv: 1
+40  aim                  Mv: 1
+      Iv:          secure-http - 1
+      Iv:                socks - 1
+41  cifs                 Mv: 1
+      Iv:              netbios - 1
+42  cisco-phone          Mv: 1
+      Iv:                  sip - 2
+      Iv:               skinny - 2
+      Iv: telepresence-control - 1
+43  youtube              Mv: 1
+      Iv:                 http - 12
+44  skype                Mv: 3
+45  wow                  Mv: 1
+      Iv:           bittorrent - 4
+46  microsoftds          Mv: 1
+      Iv:                 cifs - 1
+47  telepresence-media   Mv: 1
+      Iv:                  rtp - 6
+      Iv:                 rtcp - 3
+48  telepresence-control Mv: 1
+      Iv:                 rtcp - 3
+      Iv:          cisco-phone - 1
+      Iv:                  sip - 2
+49  sap                  Mv: 1
+50  iana                 Mv: 1
+51  dicom                Mv: 2
+
+
+{<No.>}<PDLM name> Mv: <PDLM Version>, {Nv: <NBAR Software Version>; <File name>}
+            {Iv: <PDLM Interdependency Name>   - <PDLM Interdependency Version>}
+
+
+------------------ show crypto key mypubkey rsa ------------------
+
+% Key pair was generated at: 12:23:49 CST Feb 27 2015
+Key name: TP-self-signed-333255410
+Key type: RSA KEYS
+ Storage Device: private-config
+ Usage: General Purpose Key
+ Key is not exportable.
+ Key Data:
+  30819F30 0D06092A 864886F7 0D010101 05000381 8D003081 89028181 00C36A54 
+  6902131A F41B136F C65F7418 9DFA2BC5 81572EDC 28FB34AB 4A6BA629 D7155CDC 
+  C9712CFD 0AE0B90E EE738192 59587377 3A6C0D5C E90A5258 7B5A67D9 24C99599 
+  D9698CBC 36CAAD6F 29059B2C 2EBDC1B1 53E4DFF5 A616D3CB C24EF10C 573749F8 
+  D2643446 F86D0F57 D71D0004 B946C60C 4369FAE4 6D528B27 40D6CE3B 19020301 0001
+% Key pair was generated at: 09:29:56 CST Jan 27 2017
+Key name: TP-self-signed-333255410.server
+Key type: RSA KEYS
+Temporary key
+ Usage: Encryption Key
+ Key is not exportable.
+ Key Data:
+  307C300D 06092A86 4886F70D 01010105 00036B00 30680261 0099BF25 3B8C3D51 
+  F44EFD7B 07CEE49B C5EB2063 480C5FD2 5B44EFAB 409FF415 FE81F34B 058640DD 
+  72620295 6BD3434A AFDE74DA B8780784 C019CDFA 513DD2B8 041E7B2C 1451502E 
+  0F9FD72B 83A3D4F3 422F595F 6D8783BC 57A5EEA9 DFE5167F 87020301 0001
+
+------------------ show license udi ------------------
+
+Device#	  PID			SN		UDI
+-----------------------------------------------------------------------------
+*0  	  CISCO1841             FTX1029W0TH     CISCO1841:FTX1029W0TH
+
+
+------------------ show license feature ------------------
+
+No features are licensed in this image
+
+
+------------------ show license file ------------------
+
+License Store: Primary License Storage
+
+
+------------------ show license detail ------------------
+
+% Error: No licenses found
+
+------------------ show license status ------------------
+
+		License Type Supported
+	permanent               Non-expiring node locked license
+
+		License Operation Supported
+	install    Install license
+	clear      Clear license
+	annotate   Comment license
+	save       Save license
+	revoke     Revoke license
+	call-home  License call-home
+
+		Call-home Operation Supported
+	show pak   Display license pak via call-home
+	install    Install license via call-home
+	revoke     Revoke license via call-home
+	resend     Fetch license via call-home
+
+		Device status
+	Device Credential type: IMAGE
+	Device Credential Verification: PASS
+	Rehost Type: HARDWARE
+		
+SWIFT url status
+	Swift URL set to default value : https://tools.cisco.com/SWIFT/Licensing 
+
+
+------------------ show license statistics ------------------
+
+		Administrative statistics
+	Install success count:   0    
+	Install failure count:   0    
+	Install duplicate count: 0    
+	Comment add count:       0    
+	Comment delete count:    0    
+	Clear count:             0    
+	Save count:              0    
+	Save cred count:         0    
+
+		Client statistics
+	Request success count:   0    
+	Request failure count:   0    
+	Release count:           0    
+	Global Notify count:     0    
+
+
+
+------------------ show buffers ------------------
+
+
+Buffer elements:
+     608 in free list (500 max allowed)
+     99342319 hits, 0 misses, 617 created
+
+Public buffer pools:
+Small buffers, 104 bytes (total 50, permanent 50, peak 75 @ 1w1d):
+     45 in free list (20 min, 150 max allowed)
+     36251440 hits, 1529 misses, 4333 trims, 4333 created
+     0 failures (0 no memory)
+Middle buffers, 600 bytes (total 31, permanent 25, peak 61 @ 7w0d):
+     14 in free list (10 min, 150 max allowed)
+     6446251 hits, 50 misses, 144 trims, 150 created
+     0 failures (0 no memory)
+Big buffers, 1536 bytes (total 50, permanent 50, peak 51 @ 7w0d):
+     50 in free list (5 min, 150 max allowed)
+     3028650 hits, 0 misses, 1 trims, 1 created
+     0 failures (0 no memory)
+VeryBig buffers, 4520 bytes (total 10, permanent 10, peak 11 @ 7w0d):
+     10 in free list (0 min, 100 max allowed)
+     0 hits, 0 misses, 1 trims, 1 created
+     0 failures (0 no memory)
+Large buffers, 5024 bytes (total 1, permanent 0, peak 1 @ 7w0d):
+     1 in free list (0 min, 10 max allowed)
+     0 hits, 0 misses, 2373 trims, 2374 created
+     0 failures (0 no memory)
+Huge buffers, 18024 bytes (total 1, permanent 0, peak 1 @ 7w0d):
+     1 in free list (0 min, 4 max allowed)
+     0 hits, 0 misses, 2373 trims, 2374 created
+     0 failures (0 no memory)
+
+Interface buffer pools:
+Syslog ED Pool buffers, 600 bytes (total 133, permanent 132, peak 133 @ 7w0d):
+     101 in free list (132 min, 132 max allowed)
+     1237 hits, 0 misses
+IPC buffers, 4096 bytes (total 2, permanent 2):
+     1 in free list (1 min, 8 max allowed)
+     1 hits, 0 fallbacks, 0 trims, 0 created
+     0 failures (0 no memory)
+IPC Medium buffers, 16384 bytes (total 2, permanent 2):
+     2 in free list (1 min, 8 max allowed)
+     0 hits, 0 fallbacks, 0 trims, 0 created
+     0 failures (0 no memory)
+IPC Large buffers, 65535 bytes (total 17, permanent 16, peak 17 @ 7w0d):
+     17 in free list (16 min, 16 max allowed)
+     0 hits, 0 misses, 384389 trims, 384390 created
+     0 failures (0 no memory)
+
+Header pools:
+Header buffers, 0 bytes (total 768, permanent 768):
+     256 in free list (128 min, 1024 max allowed)
+     512 hits, 0 misses, 0 trims, 0 created
+     0 failures (0 no memory)
+     512 max cache size, 512 in cache
+     22567387 hits in cache, 0 misses in cache
+
+Particle Clones:
+     1024 clones, 0 hits, 0 misses
+
+Public particle pools:
+F/S buffers, 256 bytes (total 768, permanent 768):
+     256 in free list (128 min, 1024 max allowed)
+     512 hits, 0 misses, 0 trims, 0 created
+     0 failures (0 no memory)
+     512 max cache size, 512 in cache
+     0 hits in cache, 0 misses in cache
+Normal buffers, 1548 bytes (total 768, permanent 768):
+     768 in free list (128 min, 1024 max allowed)
+     124 hits, 0 misses, 0 trims, 0 created
+     0 failures (0 no memory)
+
+Private particle pools:
+HQF buffers, 0 bytes (total 2000, permanent 2000):
+     2000 in free list (500 min, 2000 max allowed)
+     0 hits, 0 misses, 0 trims, 0 created
+     0 failures (0 no memory)
+Serial0/0/0 buffers, 1536 bytes (total 64, permanent 64):
+     0 in free list (0 min, 64 max allowed)
+     64 hits, 0 fallbacks
+     64 max cache size, 32 in cache
+     362130167 hits in cache, 0 misses in cache
+FastEthernet0/0 buffers, 1552 bytes (total 512, permanent 512):
+     0 in free list (0 min, 512 max allowed)
+     512 hits, 124 fallbacks
+     512 max cache size, 256 in cache
+     300558802 hits in cache, 124 misses in cache
+FastEthernet0/1 buffers, 1552 bytes (total 512, permanent 512):
+     0 in free list (0 min, 512 max allowed)
+     512 hits, 0 fallbacks
+     512 max cache size, 256 in cache
+     256 hits in cache, 0 misses in cache
+
+
+
+------------------ show buffers usage ------------------
+
+
+Statistics for the Small pool
+Input IDB    :    Se0/0/0 count:       12
+Caller pc    : 0x6005D820 count:       12
+Resource User:   IP Input count:       12
+Number of Buffers used by packets generated by system:   38
+Number of Buffers used by incoming packets:              12
+
+Statistics for the Middle pool
+Output IDB   :    Se0/0/0 count:       16
+Caller pc    : 0x61A622A0 count:       16
+Resource User: SSH Proces count:       16
+Caller pc    : 0x6005D820 count:        1
+Resource User:   IP Input count:        1
+Number of Buffers used by packets generated by system:   30
+Number of Buffers used by incoming packets:               1
+
+Statistics for the Big pool
+Number of Buffers used by packets generated by system:   50
+Number of Buffers used by incoming packets:               0
+
+Statistics for the VeryBig pool
+Number of Buffers used by packets generated by system:   10
+Number of Buffers used by incoming packets:               0
+
+Statistics for the Large pool
+Number of Buffers used by packets generated by system:    1
+Number of Buffers used by incoming packets:               0
+
+Statistics for the Huge pool
+Number of Buffers used by packets generated by system:    1
+Number of Buffers used by incoming packets:               0
+
+Statistics for the Syslog ED Pool pool
+Caller pc    : 0x6147A570 count:       32
+Resource User: EEM ED Sys count:       32
+Number of Buffers used by packets generated by system:  133
+Number of Buffers used by incoming packets:               0
+
+Statistics for the IPC pool
+Caller pc    : 0x601FE98C count:        1
+Resource User:       Init count:        1
+Number of Buffers used by packets generated by system:    2
+Number of Buffers used by incoming packets:               0
+
+Statistics for the IPC Medium pool
+Number of Buffers used by packets generated by system:    2
+Number of Buffers used by incoming packets:               0
+
+Statistics for the IPC Large pool
+Number of Buffers used by packets generated by system:   17
+Number of Buffers used by incoming packets:               0
+
+Statistics for the Header pool
+Number of Buffers used by packets generated by system:  768
+Number of Buffers used by incoming packets:               0
+
+Statistics for the FS Header pool
+Caller pc    : 0x6001B77C count:        8
+Resource User:       Init count:       22
+Caller pc    : 0x6092D628 count:        1
+Caller pc    : 0x603D04C0 count:        1
+Caller pc    : 0x613FDB2C count:        8
+Caller pc    : 0x6158E430 count:        1
+Caller pc    : 0x61F304E4 count:        1
+Caller pc    : 0x6001FCD4 count:        1
+Caller pc    : 0x61F2F7C0 count:        1
+Number of Buffers used by packets generated by system:   38
+Number of Buffers used by incoming packets:               0
+
+Statistics for the SW Crypto Header pool
+Caller pc    : 0x627C9990 count:        1
+Resource User:       Init count:        1
+Number of Buffers used by packets generated by system:    2
+Number of Buffers used by incoming packets:               0
+
+
+------------------ show inventory ------------------
+
+NAME: "chassis", DESCR: "1841 chassis"
+PID: CISCO1841         , VID: V03 , SN: FTX1029W0TH
+
+NAME: "motherboard", DESCR: "C1841 Motherboard with 2 Fast Ethernet"
+PID: CISCO1841         , VID: V03 , SN: FOC10275H99
+
+NAME: "WIC 0", DESCR: "WAN Interface Card - DSU/CSU T1 Fractional (V2)"
+PID: WIC-1DSU-T1-V2      , VID: 1.2, SN: FOC10270NR5
+
+
+
+------------------ show region ------------------
+
+
+Region Manager:
+
+      Start         End     Size(b)  Class  Media  Name
+ 0x0E800000  0x0FFFFFFF    25165824  Iomem  R/W    iomem:(iomem)
+ 0x60000000  0x6E7FFFFF   243269632  Local  R/W    main
+ 0x600156D0  0x62AFFFFF    45001008  IText  R/O    main:text
+ 0x62B05E00  0x64109E7F    23085184  IData  R/W    main:data
+ 0x64109E80  0x649B52FF     9090176  IBss   R/W    main:bss
+ 0x649B5300  0x6E7FFFFF   165981440  Local  R/W    main:heap
+ 0x80000000  0x8E7FFFFF   243269632  Local  R/W    main:(main_k0)
+ 0xA0000000  0xAE7FFFFF   243269632  Local  R/W    main:(main_k1)
+ 0xEE800000  0xEFFFFFFF    25165824  Iomem  R/W    iomem
+
+
+Free Region Manager:
+
+      Start         End     Size(b)  Class  Media  Name
+
+
+
+------------------ Mempool statistics ------------------
+
+
+                Head    Total(b)     Used(b)     Free(b)   Lowest(b)  Largest(b)
+Processor   649B5300   165981440    24922092   141059348   135589704   135312900
+      I/O   EE800000    25165824     4446588    20719236    20694288    20699516
+
+-------------- Top 100 allocator pc summary -----------
+
+
+Allocator PC Summary for: Processor
+
+    PC          Total   Count  Name
+0x6105EADC     345304      24  Exec
+0x60F9D840      65588       1  AAA DB Elt Chun
+0x623A7948      65588       1  AAA Small Chunk
+0x60FCFE08      65588       1  AAA AttrL Sub
+0x60FCFCA8      36000       1  AAA AttrL Hdr
+0x60FAEB60      20052       1  AAA Acct DB chu
+0x60FABA34      13336       1  AAA Acct Rec ch
+0x6141CCE4       9764       1  EEM Shell Director
+0x60FCEF50       9652       1  AAA attr list handle IDs
+0x60CA99EC       8744       1  AAA Acct AVLnod
+0x6121CEC8       5744       1  EIGRP-v4: Work 
+0x60F9D51C       4148       1  AAA Unique Id Hash Table
+0x62408FA0       1212       1  Watcher Message
+0x60FCFF14       1076       1  AAA attr list handle IDs
+0x61259760        920       2  Ether OAM subblock
+0x61078FB0        820       1  SSH Process
+0x62A92314        692       3  Router Init
+0x62408F74        532       1  Watched Message
+0x610348F8        512       4  TTY timer block
+0x6243DD8C        400       3  SDB String
+0x6126182C        324       2  Ether OAM Shim data
+0x611BF218        324       1  EIGRP: IOS Socket
+0x617281A4        312       1  IPV4 STATS FWD sw subblock
+0x61727FE4        264       1  Exec
+0x60FAEB34        228       1  AAA Acct DB chunk
+0x6217DDF4        220       2  State Machine Instance
+0x60FDDA10        220       1  Ion hash Block
+0x60F9D5BC        172       1  AAA DB Elt Chunk
+0x60FCFC7C        168       1  AAA AttrL Hdr
+0x617A62CC        168       1  MRIB route entry
+0x60FCFDD8        168       1  AAA AttrL Sub
+0x623A753C        168       1  AAA Small Chunk
+0x60FABA08        168       1  AAA Acct Rec chunk
+0x60CA99C0        168       1  AAA Acct AVLnode chunk
+0x623A7694        156       1  AAA String Malloc
+0x6243DF30        152       2  MRIB IPv4 Init Process
+0x61648C20        136       1  HTTP
+0x616259DC        132       1  HTTP
+0x610730AC        112       1  Parser Mode
+0x617A6284        108       1  MRIB IPv4 Init Process
+0x616315D0        108       1  HTTP
+0x61626214         96       1  HTTP
+0x611BF414         96       1  EIGRP: Socket
+0x61058790         84       1  Parser Linkage
+0x628A24E8         84       1  AAA Cursor
+0x61F668A8         76       1  AAA MI SG NAME
+0x61073120         76       1  Parser Mode Q1
+0x61073144         76       1  Parser Mode Q2
+
+
+Allocator PC Summary for: I/O
+
+    PC          Total   Count  Name
+
+
+------------------ show dmvpn detail ------------------
+
+Legend: Attrb --> S - Static, D - Dynamic, I - Incomplete
+	N - NATed, L - Local, X - No Socket
+	# Ent --> Number of NHRP entries with same NBMA peer
+	NHS Status: E --> Expecting Replies, R --> Responding, W --> Waiting
+	UpDn Time --> Up or Down Time for a Tunnel
+==========================================================================
+
+

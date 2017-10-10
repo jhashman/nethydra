@@ -1,0 +1,10 @@
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+CLEL3S6-CORE.national.ucc
+                 Gig 0/1           168          R S I     WS-C4506- Gig 2/47
+CLEL3S6-CORE.national.ucc
+                 Gig 0/2           168          R S I     WS-C4506- Gig 2/48
+00180a360148     Fas 0/43          162           R S      Meraki MR Port 0
+00180a360140     Fas 0/33          179           R S      Meraki MR Port 0
