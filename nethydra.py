@@ -66,7 +66,7 @@ def poll_devices_online(input_file):
 						cisco.get_techsupport_file(net_connect, local.tech_support_file_path)
 						cisco.get_cdp_file(net_connect, local.cdp_neighbor_file_path)
 						net_connect.disconnect()
-					
+
 					if (row['device_type'] contains 'fortinet'):
 						fortinet.disable_paging(net_connect)
 						fortinet.get_version(net_connect)
@@ -85,7 +85,7 @@ def poll_devices_online(input_file):
 def validate_input_file(input_file):
 	try:
 		# Create variable to hold the updated string that will be written to nethydra_input.csv
-		
+
 		with open(input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
@@ -96,7 +96,7 @@ def validate_input_file(input_file):
 				output = output.split('\n')
 				if ('ASA' in output[0]):
 					# Update the device_type to cisco_asa
-					
+
 				net_connect.disconnect()
 
 		with open(input_file, 'r') as f:
