@@ -2430,3 +2430,13 @@ IOError: [Errno 2] No such file or directory: '/opt/nethydra/UCC/output/cdp/192.
 2017-10-10 02:31:47,631 - NetHydra - INFO - 192.168.48.253 - CONNECTION SUCCESSFUL
 2017-10-10 02:31:47,731 - NetHydra - INFO - 192.168.48.253 - Executing show cdp neighbors
 2017-10-10 02:31:48,333 - NetHydra - INFO - 192.168.48.253 - Saving cdp neighbors to file
+2017-10-10 22:09:47,558 - NetHydra - INFO - 192.168.48.242 - CONNECTING...
+2017-10-10 22:10:31,513 - NetHydra - INFO - 192.168.48.242 - CONNECTING...
+2017-10-10 22:10:40,239 - NetHydra - INFO - 192.168.48.242 - CONNECTION SUCCESSFUL
+2017-10-10 22:10:40,941 - NetHydra - ERROR - ERROR
+Traceback (most recent call last):
+  File "cisco.py", line 97, in poll_devices_online
+    output = net_connect.send_command_from_file('{0}update_ACL_25'.format(local.commands_file_path))
+AttributeError: 'CiscoIosBase' object has no attribute 'send_command_from_file'
+2017-10-10 22:18:18,809 - NetHydra - INFO - 192.168.48.242 - CONNECTING...
+2017-10-10 22:18:27,532 - NetHydra - INFO - 192.168.48.242 - CONNECTION SUCCESSFUL

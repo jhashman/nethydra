@@ -13,6 +13,8 @@ import csv
 from datetime import datetime
 import local
 import cisco
+import fortinet
+import connect
 
 # Setup logging - the default_level is only used if the logging.json file cannot be found
 default_level=logging.WARN
@@ -41,6 +43,40 @@ def setup_org_folder():
 		if Exception.errno != errno.EEXIST:
 			con_log.error('setup_org_folder', exc_info=True)
 			raise
+
+
+'''
+def poll_devices_online(device_list):
+ This function will connected to each device and run different commands
+	try:
+		with open(device_list) as csvfile:
+			reader = csv.DictReader(csvfile)
+			for row in reader:
+				net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
+
+				 Get info from the devices
+				try:
+					if (row['device_type'] contains 'cisco'):
+						net_connect.enable()
+						cisco.get_running_config_file(net_connect, local.config_file_path)
+						cisco.get_techsupport_file(net_connect, local.tech_support_file_path)
+						cisco.get_cdp_file(net_connect, local.cdp_neighbor_file_path)
+						net_connect.disconnect()
+
+					if (row['device_type'] contains 'fortinet'):
+						fortinet.disable_paging(net_connect)
+						fortinet.get_version(net_connect)
+						fortinet.get_running_config_file(net_connect, local.config_file_path)
+				except netmiko_exceptions as e:
+					con_log.error('NetMiko Error', exc_info=True)
+					continue
+				except Exception:
+					con_log.error('ERROR', exc_info=True)
+					continue
+	except Exception:
+		con_log.error('ERROR', exc_info=True)
+'''
+
 
 def main():
 	setup_org_folder()

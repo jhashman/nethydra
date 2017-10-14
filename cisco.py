@@ -16,6 +16,7 @@ import local
 import nethydra
 import textfsm
 
+
 con_log = logging.getLogger('NetHydra')
 
 netmiko_exceptions = (netmiko.ssh_exception.NetMikoTimeoutException,netmiko.ssh_exception.NetMikoAuthenticationException)
@@ -23,11 +24,42 @@ netmiko_exceptions = (netmiko.ssh_exception.NetMikoTimeoutException,netmiko.ssh_
 
 def main():
 	try:
-		#poll_devices_folder(local.tech_support_file_path)
+		# Use poll_devices_online to work with active network devices
 		poll_devices_online(local.nethydra_input_file)
+
+		# Use poll_devices_folder to work with offline file backups
+		# poll_devices_folder(local.tech_support_file_path)
+
 	except Exception:
 		con_log.error('ERROR', exc_info=True)
 
+
+def poll_devices_online(device_list):
+# This function will connected to each device in the device_list and collect the running-config
+# and tech-support info and save it to the Linux server
+	try:
+		with open(device_list) as csvfile:
+			reader = csv.DictReader(csvfile)
+			for row in reader:
+				if "cisco" in row['device_type']:
+					net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
+					net_connect.enable()
+
+					# ---Get info from the devices and save to the server---
+					get_running_config_file(net_connect, local.config_file_path)
+					#get_techsupport_file(net_connect, local.tech_support_file_path)
+					#get_cdp_file(net_connect, local.cdp_neighbor_file_path)
+
+					# ---Run commands against the devices---
+					#output = net_connect.send_command_timing("show cdp neighbors", delay_factor=2)
+					#output = net_connect.send_command_from_file('{0}update_ACL_25'.format(local.commands_file_path))
+					#print output
+
+					net_connect.disconnect()
+	except netmiko_exceptions as e:
+		con_log.error('NetMiko Error', exc_info=True)
+	except Exception:
+		con_log.error('ERROR', exc_info=True)
 
 
 def poll_devices_folder(folder_path):
@@ -54,105 +86,61 @@ def poll_devices_folder(folder_path):
 		con_log.error('ERROR', exc_info=True)
 
 
-
-def poll_devices_online(device_list):
-# This function will connected to each device in the device_list and collect the running-config
-# and tech-support info and save it to the Linux server
+def get_running_config_file(net_connect, file_path):
 	try:
-		with open(device_list) as csvfile:
-			reader = csv.DictReader(csvfile)
-			for row in reader:
-				# For connections to local devices the IP can be used, through a tunnel use the hostname
-				ip = row['ip']
-				port = row['port']
-				device_type = row['device_type']
-
-				con_log.info('{0} - CONNECTING...'.format(ip))
-
-				# Make the connection to the network device
-				try:
-					net_connect = connect.direct(ip, port, device_type, local.username1, local.password1, local.enable_pass)
-					con_log.info('{0} - CONNECTION SUCCESSFUL'.format(ip))
-				except Exception:
-					con_log.warn('{0} - CONNECTION FAILED'.format(ip))
-					try:
-						net_connect = connect.direct(ip, port, device_type, local.username2, local.password2, local.enable_pass)
-						con_log.info('{0} - CONNECTION SUCCESSFUL - 2nd user'.format(ip))
-					except Exception:
-						con_log.error('{0} - CONNECTION FAILED - 2nd user'.format(ip))
-						continue
-
-				# Get info from the devices
-				try:
-					net_connect.enable()
-					#get_running_config_file(net_connect, ip, local.config_file_path)
-					#get_techsupport_file(net_connect, ip, local.tech_support_file_path)
-					get_cdp_file(net_connect, ip, local.cdp_neighbor_file_path)
-					net_connect.disconnect()
-				except netmiko_exceptions as e:
-					con_log.error('NetMiko Error', exc_info=True)
-					continue
-				except Exception:
-					con_log.error('ERROR', exc_info=True)
-	except Exception:
-		con_log.error('ERROR', exc_info=True)
-
-
-def get_running_config_file(net_connect, ip, file_path):
-	try:
-		con_log.info('{0} - Executing show running-config'.format(ip))
+		con_log.info('{0} - Executing show running-config'.format(net_connect.ip))
 		output = net_connect.send_command("show running-config")
 
-		con_log.info('{0} - Saving running-config to file'.format(ip))
+		con_log.info('{0} - Saving running-config to file'.format(net_connect.ip))
 		date = datetime.now().strftime("%Y%m%d")
-		config_file = file_path + ip + '-config-' + date
+		config_file = file_path + net_connect.ip + '-config-' + date
 
 		f=open(config_file, 'w+')
 		f.write(output)
 		f.close()
 	except netmiko_exceptions as e:
-		con_log.error('{0} - Failed to retrieve the config'.format(ip), exc_info=True)
+		con_log.error('{0} - Failed to retrieve the config'.format(net_connect.ip), exc_info=True)
 	except Exception:
-		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(ip), exc_info=True)
+		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(net_connect.ip), exc_info=True)
 
 
-def get_techsupport_file(net_connect, ip, file_path):
+def get_techsupport_file(net_connect, file_path):
 	try:
-		con_log.info('{0} - Executing show tech-support'.format(ip))
+		con_log.info('{0} - Executing show tech-support'.format(net_connect.ip))
 		output = net_connect.send_command("show tech-support")
 
-		con_log.info('{0} - Saving tech-support to file'.format(ip))
+		con_log.info('{0} - Saving tech-support to file'.format(net_connect.ip))
 		date = datetime.now().strftime("%Y%m%d")
-		config_file = file_path + ip + '-tech-support-' + date
+		config_file = file_path + net_connect.ip + '-tech-support-' + date
 
 		f=open(config_file, 'w+')
 		f.write(output)
 		f.close()
 	except netmiko_exceptions as e:
-		con_log.error('{0} - Failed to retrieve tech-support'.format(ip), exc_info=True)
+		con_log.error('{0} - Failed to retrieve tech-support'.format(net_connect.ip), exc_info=True)
 	except Exception:
-		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(ip), exc_info=True)
+		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(net_connect.ip), exc_info=True)
 
 
-def get_cdp_file(net_connect, ip, file_path):
+def get_cdp_file(net_connect, file_path):
 	try:
-		con_log.info('{0} - Executing show cdp neighbors'.format(ip))
+		con_log.info('{0} - Executing show cdp neighbors'.format(net_connect.ip))
 		output = net_connect.send_command("show cdp neighbors")
 
-		con_log.info('{0} - Saving cdp neighbors to file'.format(ip))
+		con_log.info('{0} - Saving cdp neighbors to file'.format(net_connect.ip))
 		date = datetime.now().strftime("%Y%m%d")
-		config_file = file_path + ip + '-cdp-' + date
+		config_file = file_path + net_connect.ip + '-cdp-' + date
 
 		f=open(config_file, 'w+')
 		f.write(output)
 		f.close()
 	except netmiko_exceptions as e:
-		con_log.error('{0} - Failed to retrieve cdp neighbors'.format(ip), exc_info=True)
+		con_log.error('{0} - Failed to retrieve cdp neighbors'.format(net_connect.ip), exc_info=True)
 	except Exception:
-		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(ip), exc_info=True)
+		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(net_connect.ip), exc_info=True)
 
 
-def get_parse_test(blob):
+def get_parse_test(config_file):
 	try:
 		con_log.debug("Parsing the config")
 

@@ -1,0 +1,2 @@
+access-list 25 permit 192.168.48.62
+wr mem

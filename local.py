@@ -1,4 +1,4 @@
-base_path = '/opt/nethydra'
+base_path = 'c:/netsmart/nethydra'
 org = 'UCC'
 org_path = base_path + '/' + org
 
@@ -6,11 +6,11 @@ org_path = base_path + '/' + org
 log_config = base_path + '/etc/logging.json'
 nethydra_input_file = org_path + '/input/nethydra_input.csv'
 nethydra_input_nyap = org_path + '/input/nyap-devices.csv'
-username1 = ''
-password1 = ''
+username1 = 'nocops'
+password1 = 'Cyber780'
 username2 = ''
-username2 = ''
-enable_pass = ''
+password2 = ''
+enable_pass = 'Cyber780'
 ssh_config_file = ''
 
 # nethydra_scan.py
@@ -24,5 +24,5 @@ nmap_csv = org_path + '/output/' + org + '-devices.csv'
 config_file_path = org_path + '/output/configs/'
 tech_support_file_path = org_path + '/output/tech-support/'
 cdp_neighbor_file_path = org_path + '/output/cdp/'
-
+commands_file_path = base_path + '/commands/'
 textfsm_templates = base_path + '/etc/templates/'
