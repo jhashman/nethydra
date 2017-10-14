@@ -25,26 +25,26 @@ def main():
 	try:
 		# Use poll_devices_online to work with active network devices
 		poll_devices_online(local.nethydra_input_file)
-
+		
 		# Use poll_devices_folder to work with offline file backups
 		# poll_devices_folder(local.tech_support_file_path)
 	except Exception:
 		con_log.error('ERROR', exc_info=True)
 
 
-def poll_devices_online(device_list):
+def poll_devices_online(input_file):
 # This function will connected to each device in the device_list and collect the running-config
 # and tech-support info and save it to the Linux server
 	try:
-		with open(device_list) as csvfile:
+		with open(input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
 				if "fortinet" in row['device_type']:
 					net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
-
+					
 					# ---Get info from the devices and save to the server---
 					get_version_info(net_connect)
-
+				
 					net_connect.disconnect()
 	except netmiko_exceptions as e:
 		con_log.error('NetMiko Error', exc_info=True)
@@ -82,7 +82,7 @@ def get_version_info(net_connect):
 	except Exception:
 		con_log.error('get_version_info', exc_info=True)
 
-
+		
 def disable_paging(net_connect):
 	try:
 		net_connect.send_command_timing("set cli pager off", delay_factor=2)

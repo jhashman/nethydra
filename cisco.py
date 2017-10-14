@@ -26,7 +26,7 @@ def main():
 	try:
 		# Use poll_devices_online to work with active network devices
 		poll_devices_online(local.nethydra_input_file)
-
+		
 		# Use poll_devices_folder to work with offline file backups
 		# poll_devices_folder(local.tech_support_file_path)
 
@@ -34,27 +34,27 @@ def main():
 		con_log.error('ERROR', exc_info=True)
 
 
-def poll_devices_online(device_list):
+def poll_devices_online(input_file):
 # This function will connected to each device in the device_list and collect the running-config
 # and tech-support info and save it to the Linux server
 	try:
-		with open(device_list) as csvfile:
+		with open(input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
 				if "cisco" in row['device_type']:
 					net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
 					net_connect.enable()
-
+					
 					# ---Get info from the devices and save to the server---
-					get_running_config_file(net_connect, local.config_file_path)
+					#get_running_config_file(net_connect, local.config_file_path)
 					#get_techsupport_file(net_connect, local.tech_support_file_path)
 					#get_cdp_file(net_connect, local.cdp_neighbor_file_path)
-
+					
 					# ---Run commands against the devices---
 					#output = net_connect.send_command_timing("show cdp neighbors", delay_factor=2)
 					#output = net_connect.send_command_from_file('{0}update_ACL_25'.format(local.commands_file_path))
 					#print output
-
+					
 					net_connect.disconnect()
 	except netmiko_exceptions as e:
 		con_log.error('NetMiko Error', exc_info=True)

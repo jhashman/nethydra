@@ -16,7 +16,7 @@ def direct(ip, port, device_type, username, password, enable):
 	try:
 		iport = int(port)
 		check_port(ip, iport)
-
+		
 		device = {}
 		device['ip'] = ip
 		device['port'] = port
@@ -25,7 +25,7 @@ def direct(ip, port, device_type, username, password, enable):
 		device['password'] = password
 		device['secret'] = enable
 		device['verbose'] = False
-
+		
 		net_connect = ConnectHandler(**device)
 		con_log.info('{0} - CONNECTION SUCCESSFUL'.format(ip))
 
@@ -39,7 +39,7 @@ def direct(ip, port, device_type, username, password, enable):
 			con_log.info('{0} - CONNECTION SUCCESSFUL - 2nd user'.format(ip))
 			return net_connect
 
-'''	
+'''				
 def tunnel(ip, port, device_type, username, password, secret, ssh_config_file):
 	iport = int(port)
 	# Need to see if ssh_config_file is supplied, if not don't use it in the ConnecHandler

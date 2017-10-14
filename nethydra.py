@@ -30,6 +30,10 @@ logger = logging.getLogger(__name__)
 con_log = logging.getLogger('NetHydra')
 
 
+def main():
+	setup_org_folder()
+
+
 def setup_org_folder():
 	try:
 		os.makedirs(local.org_path)
@@ -46,10 +50,10 @@ def setup_org_folder():
 
 
 '''
-def poll_devices_online(device_list):
+def poll_devices_online(input_file):
  This function will connected to each device and run different commands
 	try:
-		with open(device_list) as csvfile:
+		with open(input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
 				net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
@@ -62,7 +66,7 @@ def poll_devices_online(device_list):
 						cisco.get_techsupport_file(net_connect, local.tech_support_file_path)
 						cisco.get_cdp_file(net_connect, local.cdp_neighbor_file_path)
 						net_connect.disconnect()
-
+					
 					if (row['device_type'] contains 'fortinet'):
 						fortinet.disable_paging(net_connect)
 						fortinet.get_version(net_connect)
@@ -77,9 +81,34 @@ def poll_devices_online(device_list):
 		con_log.error('ERROR', exc_info=True)
 '''
 
+'''
+def validate_input_file(input_file):
+	try:
+		# Create variable to hold the updated string that will be written to nethydra_input.csv
+		
+		with open(input_file) as csvfile:
+			reader = csv.DictReader(csvfile)
+			for row in reader:
+				net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
 
-def main():
-	setup_org_folder()
+				# Determine if the device in the input file is correct, if not update with the correct one
+				output = net_connect.send_command('show inventory')
+				output = output.split('\n')
+				if ('ASA' in output[0]):
+					# Update the device_type to cisco_asa
+					
+				net_connect.disconnect()
+
+		with open(input_file, 'r') as f:
+			Iterate through each line of the updated input line variable
+			Write each line to the input_file
+
+
+	except netmiko_exceptions as e:
+		con_log.error('NetMiko Error', exc_info=True)
+	except Exception:
+		con_log.error('ERROR', exc_info=True)
+'''
 
 
 if __name__ == '__main__':
