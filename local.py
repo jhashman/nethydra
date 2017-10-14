@@ -1,15 +1,15 @@
 base_path = 'c:/netsmart/nethydra'
-org = 'UCC'
+org = ''
 org_path = base_path + '/' + org
 
 # nethydra.py
 log_config = base_path + '/etc/logging.json'
 nethydra_input_file = org_path + '/input/nethydra_input.csv'
-username1 = 'nocops'
-password1 = 'Cyber780'
+username1 = ''
+password1 = ''
 username2 = ''
 password2 = ''
-enable_pass = 'Cyber780'
+enable_pass = ''
 ssh_config_file = ''
 
 # scan.py
