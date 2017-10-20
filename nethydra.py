@@ -8,13 +8,16 @@ import logging
 import logging.config
 import os
 import errno
+import netmiko
 import json
+from collections import defaultdict
 import csv
 from datetime import datetime
 import local
 import cisco
 import fortinet
 import connect
+import socket
 
 # Setup logging - the default_level is only used if the logging.json file cannot be found
 default_level=logging.WARN
@@ -29,9 +32,12 @@ else:
 logger = logging.getLogger(__name__)
 con_log = logging.getLogger('NetHydra')
 
+netmiko_exceptions = (netmiko.ssh_exception.NetMikoTimeoutException,netmiko.ssh_exception.NetMikoAuthenticationException)
+
 
 def main():
-	setup_org_folder()
+	#setup_org_folder()
+	validate_input_file(local.nethydra_input_file)
 
 
 def setup_org_folder():
@@ -81,11 +87,12 @@ def poll_devices_online(input_file):
 		con_log.error('ERROR', exc_info=True)
 '''
 
-'''
+
 def validate_input_file(input_file):
+	con_log.info('Validating the nethydra input file')
 	try:
 		# Create variable to hold the updated string that will be written to nethydra_input.csv
-
+		devices = defaultdict(list)
 		with open(input_file) as csvfile:
 			reader = csv.DictReader(csvfile)
 			for row in reader:
@@ -96,19 +103,33 @@ def validate_input_file(input_file):
 				output = output.split('\n')
 				if ('ASA' in output[0]):
 					# Update the device_type to cisco_asa
+					con_log.info('ASA detected - updating device_type')
+					devices[row['ip']].append(row['ip'])
+					devices[row['ip']].append(row['port'])
+					devices[row['ip']].append('cisco_asa')
+
+				else:
+					devices[row['ip']].append(row['ip'])
+					devices[row['ip']].append(row['port'])
+					devices[row['ip']].append(row['device_type'])
 
 				net_connect.disconnect()
 
-		with open(input_file, 'r') as f:
-			Iterate through each line of the updated input line variable
-			Write each line to the input_file
+		con_log.debug(json.dumps(devices, indent=4))
 
+		with open(input_file, 'w') as nethydra_file:
+			nethydra_file.write('ip,port,device_type\n')
+			for device in devices:
+				info = devices[device]
+				nethydra_input_line = info[0] + ',' + info[1] + ',' + info[2] + '\n'
+				nethydra_file.write(nethydra_input_line)
 
 	except netmiko_exceptions as e:
 		con_log.error('NetMiko Error', exc_info=True)
 	except Exception:
 		con_log.error('ERROR', exc_info=True)
-'''
+
+
 
 
 if __name__ == '__main__':

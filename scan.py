@@ -7,6 +7,7 @@ import os
 import subprocess
 from libnmap.parser import NmapParser
 import re
+import socket
 from collections import defaultdict
 import local
 import nethydra
@@ -90,7 +91,7 @@ def masscan_parse():
 
 		scan_log.info('Parsed output: {0}'.format(local.masscan_parsed_file))
 	except:
-        scan_log.error('Masscan parse error', exc_info=True)
+		scan_log.error('Masscan parse error', exc_info=True)
 
 
 def nmap_network_device_scan():
@@ -194,10 +195,13 @@ def nmap_xml_parse():
 
 
 def main():
-	masscan_scan()
-	masscan_parse()
-	nmap_network_device_scan()
-	nmap_xml_parse()
+	try:
+		#masscan_scan()
+		#masscan_parse()
+		#nmap_network_device_scan()
+		nmap_xml_parse()
+	except Exception:
+		scan_log.error('Scan.py ERROR', exc_info=True)
 
 
 if __name__ == '__main__':

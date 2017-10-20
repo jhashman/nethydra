@@ -117,3 +117,67 @@
 2017-09-28 21:52:10,366 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
 2017-09-28 21:52:10,368 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
 2017-09-28 21:52:10,368 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-10-18 11:12:09,430 - scan - INFO - Using this file for subnets to scan: /opt/nethydra/UCC/input/UCCsubnets
+2017-10-18 11:12:09,430 - scan - ERROR - Masscan scan error
+Traceback (most recent call last):
+  File "scan.py", line 20, in masscan_scan
+    with open(local.masscan_input_file) as f:
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/UCC/input/UCCsubnets'
+2017-10-18 11:12:09,431 - scan - INFO - Parsed output: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 11:12:09,431 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 11:12:09,431 - scan - INFO - Initiating nmap scan...
+2017-10-18 11:12:09,435 - scan - INFO - Nmap scan complete
+2017-10-18 11:12:09,435 - scan - ERROR - NMAP parse error
+Traceback (most recent call last):
+  File "scan.py", line 108, in nmap_xml_parse
+    rep = NmapParser.parse_fromfile(local.nmap_xml)
+  File "/usr/local/lib/python2.7/dist-packages/libnmap/parser.py", line 191, in parse_fromfile
+    with open(nmap_report_path, 'r') as fileobj:
+IOError: [Errno 2] No such file or directory: '/opt/nethydra/UCC/output/nmap/UCC-devices.xml'
+2017-10-18 11:14:10,388 - scan - INFO - Using this file for subnets to scan: /opt/nethydra/UCC/input/UCC-subnets
+2017-10-18 11:14:10,388 - scan - INFO - 192.168.0.0/16: Initiating masscan
+2017-10-18 11:58:11,639 - scan - INFO - 192.168.0.0/16: Masscan Complete
+2017-10-18 11:58:11,640 - scan - INFO - Parsing file 192.168.0.0
+2017-10-18 11:58:11,641 - scan - ERROR - Masscan parse error
+Traceback (most recent call last):
+  File "scan.py", line 87, in masscan_parse
+    IPs = sorted(hosts_all.items(), key=lambda item: socket.inet_aton(item[0]))
+  File "scan.py", line 87, in <lambda>
+    IPs = sorted(hosts_all.items(), key=lambda item: socket.inet_aton(item[0]))
+NameError: global name 'socket' is not defined
+2017-10-18 11:58:11,641 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 11:58:11,641 - scan - INFO - Initiating nmap scan...
+2017-10-18 11:58:12,335 - scan - INFO - Nmap scan complete
+2017-10-18 11:58:12,335 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-10-18 11:58:12,336 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-10-18 11:58:12,336 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-10-18 11:58:12,336 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-10-18 14:32:28,196 - scan - INFO - Parsing file 192.168.0.0
+2017-10-18 14:32:28,196 - scan - INFO - Parsed output: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 14:32:28,197 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 14:32:28,197 - scan - INFO - Initiating nmap scan...
+2017-10-18 14:36:34,879 - scan - INFO - Nmap scan complete
+2017-10-18 14:36:34,880 - scan - ERROR - NMAP parse error
+Traceback (most recent call last):
+  File "scan.py", line 109, in nmap_xml_parse
+    rep = NmapParser.parse_fromfile(local.nmap_xml)
+  File "/usr/local/lib/python2.7/dist-packages/libnmap/parser.py", line 193, in parse_fromfile
+    rval = cls.parse(fdata, data_type, incomplete)
+  File "/usr/local/lib/python2.7/dist-packages/libnmap/parser.py", line 41, in parse
+    nmapobj = cls._parse_xml(nmap_data, incomplete)
+  File "/usr/local/lib/python2.7/dist-packages/libnmap/parser.py", line 92, in _parse_xml
+    raise NmapParserException("Wrong XML structure: cannot parse data")
+NmapParserException: Wrong XML structure: cannot parse data
+2017-10-18 15:07:32,295 - scan - INFO - Parsing file 192.168.0.0
+2017-10-18 15:07:32,295 - scan - INFO - Parsed output: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 15:07:32,295 - scan - INFO - Using this file for IPs to scan: /opt/nethydra/UCC/input/nmap/UCC-masscan-parsed
+2017-10-18 15:07:32,295 - scan - INFO - Initiating nmap scan...
+2017-10-18 15:17:57,883 - scan - INFO - Nmap scan complete
+2017-10-18 15:17:57,909 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-10-18 15:17:57,909 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-10-18 15:17:57,910 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-10-18 15:17:57,910 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv
+2017-10-20 02:31:59,552 - scan - INFO - Opening /opt/nethydra/UCC/input/nethydra_input.csv to create nethydra input
+2017-10-20 02:31:59,552 - scan - INFO - Opening /opt/nethydra/UCC/output/UCC-devices.csv for nmap services csv
+2017-10-20 02:31:59,554 - scan - INFO - Closing /opt/nethydra/UCC/input/nethydra_input.csv
+2017-10-20 02:31:59,554 - scan - INFO - Closing /opt/nethydra/UCC/output/UCC-devices.csv

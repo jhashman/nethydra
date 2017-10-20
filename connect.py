@@ -15,21 +15,20 @@ netmiko_exceptions = (netmiko.ssh_exception.NetMikoTimeoutException,netmiko.ssh_
 def direct(ip, port, device_type, username, password, enable):
 	try:
 		iport = int(port)
-		check_port(ip, iport)
-		
-		device = {}
-		device['ip'] = ip
-		device['port'] = port
-		device['device_type'] = device_type
-		device['username'] = username
-		device['password'] = password
-		device['secret'] = enable
-		device['verbose'] = False
-		
-		net_connect = ConnectHandler(**device)
-		con_log.info('{0} - CONNECTION SUCCESSFUL'.format(ip))
+		if (check_port(ip, iport)):
+			device = {}
+			device['ip'] = ip
+			device['port'] = port
+			device['device_type'] = device_type
+			device['username'] = username
+			device['password'] = password
+			device['secret'] = enable
+			device['verbose'] = False
 
-		return net_connect
+			net_connect = ConnectHandler(**device)
+			con_log.info('{0} - CONNECTION SUCCESSFUL'.format(ip))
+
+			return net_connect
 	except Exception:
 		con_log.error('{0} - CONNECTION FAILED'.format(ip))
 		if local.password2:
@@ -39,7 +38,7 @@ def direct(ip, port, device_type, username, password, enable):
 			con_log.info('{0} - CONNECTION SUCCESSFUL - 2nd user'.format(ip))
 			return net_connect
 
-'''				
+'''	
 def tunnel(ip, port, device_type, username, password, secret, ssh_config_file):
 	iport = int(port)
 	# Need to see if ssh_config_file is supplied, if not don't use it in the ConnecHandler

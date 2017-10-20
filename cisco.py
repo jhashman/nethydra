@@ -10,6 +10,9 @@ import netmiko
 import socket
 import connect
 import csv
+import re
+import json
+from collections import defaultdict
 import os
 from datetime import datetime
 import local
@@ -26,9 +29,11 @@ def main():
 	try:
 		# Use poll_devices_online to work with active network devices
 		poll_devices_online(local.nethydra_input_file)
-		
+
 		# Use poll_devices_folder to work with offline file backups
-		# poll_devices_folder(local.tech_support_file_path)
+		#poll_devices_folder(local.config_file_path)
+
+		#create_spreadsheet_online(local.nethydra_input_file)
 
 	except Exception:
 		con_log.error('ERROR', exc_info=True)
@@ -44,17 +49,36 @@ def poll_devices_online(input_file):
 				if "cisco" in row['device_type']:
 					net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
 					net_connect.enable()
-					
-					# ---Get info from the devices and save to the server---
+
+ 					# ---Get info from the devices and save to the server---
 					#get_running_config_file(net_connect, local.config_file_path)
 					#get_techsupport_file(net_connect, local.tech_support_file_path)
 					#get_cdp_file(net_connect, local.cdp_neighbor_file_path)
-					
+
 					# ---Run commands against the devices---
-					#output = net_connect.send_command_timing("show cdp neighbors", delay_factor=2)
-					#output = net_connect.send_command_from_file('{0}update_ACL_25'.format(local.commands_file_path))
-					#print output
-					
+					rc = net_connect.send_command_timing("more system:running-config", delay_factor=2)
+					ts = net_connect.send_command_timing("show tech-support", delay_factor=2)
+
+					hostname = get_hostname(rc)
+					print hostname
+
+					#snmp_lines = get_snmp(rc)
+					#print snmp_lines
+					#update_snmp(rc)
+					update_dhcp(rc)
+
+					#dhcp_lines = get_dhcp(rc)
+					#print dhcp_lines
+
+					#access_lines = get_access_lists(rc)
+					#print access_lines
+
+#					version = get_version_info(ts)
+#					print version
+
+#					cdp_neighbors = get_cdp_neighbors(net_connect)
+#					print cdp_neighbors
+
 					net_connect.disconnect()
 	except netmiko_exceptions as e:
 		con_log.error('NetMiko Error', exc_info=True)
@@ -63,15 +87,15 @@ def poll_devices_online(input_file):
 
 
 def poll_devices_folder(folder_path):
-# This function is a workspace where multiple commands can be run against the tech-support
+# This function is a workspace where multiple commands can be run against the
 # files that have previously been retrieved
 	try:
-		# Open all tech-support files in a directory and parse them based on our criteria
+		# Open al; files in a directory and parse them based on our criteria
 		for filename in os.listdir(folder_path):
-			tech_support_file = folder_path + filename
-			con_log.debug(tech_support_file)
+			file_path = folder_path + filename
+			con_log.debug(file_path)
 
-			with open(tech_support_file, 'r') as input_file:
+			with open(file_path, 'r') as input_file:
 				raw_text_data = input_file.read()
 
 			# Now use raw_text_data to pull information from, this glob of data can just as easily
@@ -80,20 +104,66 @@ def poll_devices_folder(folder_path):
 			#version_info = get_version_info(raw_text_data)
 			#print version_info
 
-			get_management_ip(tech_support_file)
+			#get_parse_test(file_path)
+			#get_management_ip(file_path)
 
 	except Exception:
 		con_log.error('ERROR', exc_info=True)
 
 
+def create_spreadsheet_online(input_file):
+	try:
+		devices = defaultdict(list)
+
+		with open(input_file) as csvfile:
+			reader = csv.DictReader(csvfile)
+			for row in reader:
+				if "cisco" in row['device_type']:
+					net_connect = connect.direct(row['ip'], row['port'], row['device_type'], local.username1, local.password1, local.enable_pass)
+					net_connect.enable()
+
+					ts = net_connect.send_command_timing("show tech-support", delay_factor=2)
+					ip = row['ip']
+					device_info = get_version_info(ts)
+					devices[ip].append(ip)
+					devices[ip].append(device_info[0][2])
+					devices[ip].append(device_info[0][0])
+					image = device_info[0][4].split("/")
+					devices[ip].append(image[1])
+					devices[ip].append(device_info[0][5][0])
+					devices[ip].append(device_info[0][6][0])
+
+					net_connect.disconnect()
+
+			print(json.dumps(devices, indent=4))
+
+	except netmiko_exceptions as e:
+		con_log.error('NetMiko Error', exc_info=True)
+	except Exception:
+		con_log.error('ERROR', exc_info=True)
+
+
+
+def get_running_config(net_connect):
+	try:
+		con_log.info('{0} - Executing more system:running-config'.format(net_connect.ip))
+		output = net_connect.send_command_timing("more system:running-config", delay_factor=2)
+		return output
+	except netmiko_exceptions as e:
+		con_log.error('{0} - Failed to retrieve the config'.format(net_connect.ip), exc_info=True)
+	except Exception:
+		con_log.error('{0} - COMMAND EXECUTION FAILED'.format(net_connect.ip), exc_info=True)
+
+
 def get_running_config_file(net_connect, file_path):
 	try:
-		con_log.info('{0} - Executing show running-config'.format(net_connect.ip))
-		output = net_connect.send_command("show running-config")
+		con_log.info('{0} - Executing more system:running-config'.format(net_connect.ip))
+		output = net_connect.send_command("more system:running-config")
 
+		hostname = get_hostname(output)
 		con_log.info('{0} - Saving running-config to file'.format(net_connect.ip))
 		date = datetime.now().strftime("%Y%m%d")
-		config_file = file_path + net_connect.ip + '-config-' + date
+		config_file = file_path + net_connect.ip + '-' + hostname + '-config-' + date
 
 		f=open(config_file, 'w+')
 		f.write(output)
@@ -109,9 +179,10 @@ def get_techsupport_file(net_connect, file_path):
 		con_log.info('{0} - Executing show tech-support'.format(net_connect.ip))
 		output = net_connect.send_command("show tech-support")
 
+		hostname = get_hostname(output)
 		con_log.info('{0} - Saving tech-support to file'.format(net_connect.ip))
 		date = datetime.now().strftime("%Y%m%d")
-		config_file = file_path + net_connect.ip + '-tech-support-' + date
+		config_file = file_path + net_connect.ip + '-' + hostname + '-tech-support-' + date
 
 		f=open(config_file, 'w+')
 		f.write(output)
@@ -156,9 +227,14 @@ def get_parse_test(config_file):
 			#print "Text:", obj.text
 			print obj.text
 
-		print '\n'
+#		print '\n'
 
-		for obj in parse.find_objects("^access-list"):
+#		for obj in parse.find_objects("^access-list"):
+#			print obj.text
+
+#		print '\n'
+
+		for obj in parse.find_objects("^dhcp"):
 			print obj.text
 
 		print '\n'
@@ -172,22 +248,12 @@ def get_parse_test(config_file):
 
 
 
-def get_device_csv_info(blob):
-	pass
-
-
-
 def get_ip_subnets(blob):
 	pass
 
 
-def get_management_ip(file):
+def get_management_ip(blob):
 	try:
-		parse = CiscoConfParse(file)
-
-		with open(file, 'r') as input_file:
-			blob = input_file.read()
- 
 		if (is_ios(blob)):
 			int_mgmt = parse.find_objects(r"^interfa")
 			for obj in int_mgmt:
@@ -202,8 +268,58 @@ def get_management_ip(file):
 		con_log.error('get_management_ip', exc_info=True)
 
 
-def get_cdp_neighbors(blob):
-	pass
+
+def get_dhcp(blob):
+	match = re.findall(r'^dhcp .*$', blob, re.MULTILINE)
+	return match
+
+
+def update_dhcp(blob):
+	dhcp_update = []
+	dhcp_lines = get_dhcp(blob)
+
+	if any(re.match('dhcpd enable inside') for entry in dhcp_lines):
+		for line in dhcp_lines:
+			if 'dhcpd dns' in line:
+				dhcp_update.append('no {}'.format(line))
+			if 'dhcpd wins' in line:
+				dhcp_update.append('no {}'.format(line))
+			if 'dhcpd domain' in line:
+				dhcp_update.append('no {}'.format(line))
+
+			dhcp_update.append('dhcpd dns 192.168.1.10 192.168.1.4')
+			dhcp_update.append('dhcpd domain nyap.local')
+			dhcp_update.append('dhcpd dns 192.168.1.10 192.168.1.4 interface inside')
+			dhcp_update.append('dhcpd lease 86400 interface inside')
+			dhcp_update.append('dhcpd ping_timeout 20 interface inside')
+			dhcp_update.append('dhcpd domain nyapit interface inside')
+
+	return dhcp_update
+
+
+def get_snmp(blob):
+	match = re.findall(r'^snmp-server .*$', blob, re.MULTILINE)
+	return match
+
+
+def update_snmp(blob):
+	snmp_lines = get_snmp(blob)
+	for line in snmp_lines:
+		print line
+		match = re.findall(r'.* access (\d+)$', line)
+		if match:
+			print match[0]
+	return match
+
+
+def get_access_lists(blob):
+	match = re.findall(r'^access-list .*$', blob, re.MULTILINE)
+	return match
+
+
+def get_hostname(blob):
+	match = re.findall(r'^hostname (.*)$', blob, re.MULTILINE)
+	return match
 
 
 def get_version_info(blob):
@@ -220,6 +336,18 @@ def get_version_info(blob):
 			re_table = textfsm.TextFSM(template)
 			fsm_results = re_table.ParseText(blob)
 			return fsm_results
+	except Exception:
+		con_log.error('get_version_info', exc_info=True)
+
+
+def get_cdp_neighbors(net_connect):
+	# See the template file for the order each show version command returns its fields
+	try:
+		cdp = net_connect.send_command_timing("show cdp neighbor detail", delay_factor=2)
+		template = open('{0}cisco_ios_show_cdp_neighbors_detail.template'.format(local.textfsm_templates), 'r')
+		re_table = textfsm.TextFSM(template)
+		fsm_results = re_table.ParseText(cdp)
+		return fsm_results
 	except Exception:
 		con_log.error('get_version_info', exc_info=True)
 
