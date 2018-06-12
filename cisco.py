@@ -51,13 +51,13 @@ def poll_devices_online(input_file):
 					net_connect.enable()
 
  					# ---Get info from the devices and save to the server---
-					#get_running_config_file(net_connect, local.config_file_path)
+					get_running_config_file(net_connect, local.config_file_path)
 					#get_techsupport_file(net_connect, local.tech_support_file_path)
 					#get_cdp_file(net_connect, local.cdp_neighbor_file_path)
 
 					# ---Run commands against the devices---
 					rc = net_connect.send_command_timing("more system:running-config", delay_factor=2)
-					ts = net_connect.send_command_timing("show tech-support", delay_factor=2)
+					#ts = net_connect.send_command_timing("show tech-support", delay_factor=2)
 
 					hostname = get_hostname(rc)
 					print hostname
@@ -65,7 +65,7 @@ def poll_devices_online(input_file):
 					#snmp_lines = get_snmp(rc)
 					#print snmp_lines
 					#update_snmp(rc)
-					update_dhcp(rc)
+					#update_dhcp(rc)
 
 					#dhcp_lines = get_dhcp(rc)
 					#print dhcp_lines
@@ -73,11 +73,11 @@ def poll_devices_online(input_file):
 					#access_lines = get_access_lists(rc)
 					#print access_lines
 
-#					version = get_version_info(ts)
-#					print version
+					#version = get_version_info(ts)
+					#print version
 
-#					cdp_neighbors = get_cdp_neighbors(net_connect)
-#					print cdp_neighbors
+					#cdp_neighbors = get_cdp_neighbors(net_connect)
+					#print cdp_neighbors
 
 					net_connect.disconnect()
 	except netmiko_exceptions as e:
@@ -161,8 +161,9 @@ def get_running_config_file(net_connect, file_path):
 		output = net_connect.send_command("more system:running-config")
 
 		hostname = get_hostname(output)
+		
 		con_log.info('{0} - Saving running-config to file'.format(net_connect.ip))
-		date = datetime.now().strftime("%Y%m%d")
+		date = datetime.now().strftime("%Y%m%d-%H%M%S")
 		config_file = file_path + net_connect.ip + '-' + hostname + '-config-' + date
 
 		f=open(config_file, 'w+')
@@ -319,7 +320,11 @@ def get_access_lists(blob):
 
 def get_hostname(blob):
 	match = re.findall(r'^hostname (.*)$', blob, re.MULTILINE)
-	return match
+	
+	if isinstance(match, (list,)):
+		return match[0]
+	else:
+		return match
 
 
 def get_version_info(blob):
